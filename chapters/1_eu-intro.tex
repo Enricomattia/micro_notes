@@ -10,13 +10,35 @@
 
 \section{How to model uncertainty}\label{sec:L1-intro}
 
-Let's start by thinking about how we represent uncertainty. Say that you did a bet with a friend of yours, if a fair coin toss results in head, you get \(10\) euros, otherwise you pay \(10\) euros to your friend. There are two outcomes, \(10\) and \(-10\), and since the coin is fair, each realises with a probability of \(\frac{1}{2}\). The describe this simple example, we started from a set of outcomes, monetary transfers, and detailed the probability of each outcome realising. I refer to such object as a \textit{lottery}. Denote the set of outcomes with \(X\), generic elements of \(X\) are \(x,y,z\). For now, we assume that \(X\) contains only a finite set of elements. Outcomes are not enough to describe a lottery, we need to consider probability distributions over outcomes, as the \(\frac{1}{2}\)-\(\frac{1}{2}\) distribution of the fair coin above. The set of lotteries over the set of outcomes \(X\) is denoted with \(\Delta (X)\). Each element of \(\Delta(X)\) is a function \(p : X \rightarrow [0,1]\) such that \(\sum_{x \in X} p(x) =1\) mapping each outcome \(x\) to a number \(p(x)\) between \(0\) and \(1\), representing the probability \(x\) realises, so that the sum of all these probabilities is \(1\).\footnote{Why do we write the sum \(\sum_{x \in X} p(x) =1\) instead of an integral?}
+Let's start by thinking about how we represent uncertainty. Say that you made a bet with a friend: if a fair coin toss results in heads, you get \(10\) euros; otherwise you pay \(10\) euros to your friend. There are two outcomes, \(10\) and \(-10\), and since the coin is fair, each occurs with probability \(\nicefrac{1}{2}\). To describe this simple example, we started from a set of outcomes, monetary transfers, and specified the probability of each outcome occurring. I refer to such an object as a \textit{lottery}. Denote the set of outcomes by \(X\). Generic elements of \(X\) will be denoted \(x,y,z\). For now, we assume that \(X\) is finite. Outcomes alone are not enough to describe a lottery: we need probability distributions over outcomes, as in the \(\nicefrac{1}{2}\)–\(\nicefrac{1}{2}\) distribution of the fair coin above. The set of lotteries over \(X\) is denoted by \(\Delta(X)\).\footnote{Wonder why this notation? You will realise soon.} Each element of \(\Delta(X)\) is a function \(p : X \to [0,1]\) such that \(\sum_{x \in X} p(x) = 1\), it maps each outcome \(x\) to a number \(p(x)\) in \([0,1]\), representing the probability that \(x\) occurs.\footnote{Why do we write the sum \(\sum_{x \in X} p(x) = 1\) instead of an integral?}
 
 \begin{example}
-	In the example above, the set of outcomes is \(\{10,-10\}\) and the lottery induced by the fair coin toss is such that \(p(10) =  p(-10) =\frac{1}{2}\).
+	In the example above, the set of outcomes is \(\{10,-10\}\) and the lottery induced by the fair coin toss satisfies \(p(10) = p(-10) = \nicefrac{1}{2}\).
 \end{example}
 
-Check \cite{krepsNotesTheoryChoice1988}.
+\begin{remark}
+	Notice that, in this setup, we are missing something: whether the coin lands on heads or tails is irrelevant; only the probabilities of outcomes matter, not the events that induced them. This is a limitation of this model, which we will address when we introduce a state-space representation of uncertainty.
+\end{remark}
+
+We now need to make statements such as \textquote{an individual prefers lottery \(p\) to lottery \(q\).} To do so, we introduce a binary relation \(\succsim\) over \(\Delta(X)\), so that \(p \succsim q\) means that the individual weakly prefers lottery \(p\) to lottery \(q\). Compared to choice under certainty, we are now comparing lotteries—i.e., probability distributions over outcomes—rather than outcomes themselves. The set we are ranking, the set of lotteries, has \emph{structure}, whereas the set of outcomes does not. For example, we can consider a lottery \(r\) that yields \(p\) with probability \(\alpha\) and \(q\) with probability \(1-\alpha\), where \(\alpha \in [0,1]\). This is called a \textit{compound lottery}, and it is an element of \(\Delta(X)\) as well, we can write \(r = \alpha p + (1-\alpha) q\). For instance, if \(p(10)=1\) and \(q(-10)=1\), then \(r(10) = \alpha\) and \(r(-10) = 1-\alpha\). This \emph{mixing} operation is generally not possible with an unstructured set of outcomes. As an illustration, suppose the set of outcomes comprises fruits. We can have an apple or a banana, but there is no fruit that is a mixture of an apple and a banana. Imposing structure on the set of elements to be ranked is a key move of microeconomic theory. In fact, we will later assume that the set of outcomes is \(\mathbb{R}\), the set of real numbers representing monetary outcomes, allowing us to say more than what we can say with a generic set of outcomes.
+
+\begin{techremark}
+	Technically, \(\succsim\) is a subset of \(\Delta(X) \times \Delta(X)\), i.e., a set of ordered pairs of lotteries. For example, if \(p,q,r \in \Delta(X)\), the individual prefers \(p\) to \(q\), and is indifferent between \(q\) and \(r\), then \(\succsim\) contains at least the pairs \((p,q),(q,r),(p,r),(p,p),(q,q),(r,r)\).
+\end{techremark}
+
+In what follows, we consider what assumptions preferences over lotteries might satisfy, and what these assumptions imply.
+
+\section{Things to read}
+
+Check \citet[p. 31-33]{krepsNotesTheoryChoice1988} for an introduction of the lottery model in this chapter.
+
+\section{Exercises}
+
+Some exercises here.
+
+\begin{exercise}
+	Nice exercise.
+\end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/

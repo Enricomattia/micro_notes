@@ -69,7 +69,7 @@
 \usepackage{subfig}
 \usepackage{amsthm}
 
-\newtheorem{remark}{Remark}
+\newtheorem{remark}{Remark}[chapter]
 \newtheorem{conjecture}{Conjecture}
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{prop}{Proposition}[chapter]
@@ -82,6 +82,9 @@
 
 \theoremstyle{definition}
 \newtheorem{example}{Example}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
 
 %\usepackage{natbib}
 %\setlength{\bibsep}{0.0pt}
@@ -186,6 +189,14 @@
 \addto\captionsenglish{\renewcommand{\chaptername}{Lecture}}
 \providecommand*{\chapterautorefname}{Lecture}
 
+\newenvironment{techremark}{
+  \par\medskip
+  \noindent\rule{\linewidth}{0.4pt}\par
+  \begingroup\small
+}{
+  \par\noindent\rule{\linewidth}{0.4pt}\par
+  \endgroup\medskip
+}
 
 % vertical space before/after the heading   left  before  after
 \titlespacing*{\chapter}{0pt}{-8pt}{24pt}

@@ -1,27 +1,239 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Spiegler%
+Debreu%
 }{%
-Spiegler%
+Debreu%
 }{%
-{\protect \APACyear {2019}}%
+{\protect \APACyear {1959}}%
 }]{%
-spieglerBehavioralEconomicsAtheoretical2019}
+debreuTheoryValueAxiomatic1959}
 \APACinsertmetastar {%
-spieglerBehavioralEconomicsAtheoretical2019}%
+debreuTheoryValueAxiomatic1959}%
 \begin{APACrefauthors}%
-Spiegler, R.%
+Debreu, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2019}{}{}.
+\APACrefYear{1959}.
 \newblock
-{\BBOQ}\APACrefatitle {Behavioral Economics and the Atheoretical Style}
-  {Behavioral economics and the atheoretical style}.{\BBCQ}
+\APACrefbtitle {Theory of Value: {{An}} Axiomatic Analysis of Economic
+  Equilibrium} {Theory of value: {{An}} axiomatic analysis of economic
+  equilibrium}\ (\BVOL~17).
 \newblock
-\APACjournalVolNumPages{American Economic Journal:
-  Microeconomics}{11}{2}{173--194}.
+\APACaddressPublisher{}{Yale University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fishburn%
+}{%
+Fishburn%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+fishburnUtilityTheoryDecision1970}
+\APACinsertmetastar {%
+fishburnUtilityTheoryDecision1970}%
+\begin{APACrefauthors}%
+Fishburn, P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1970}.
+\newblock
+\APACrefbtitle {Utility Theory for Decision Making} {Utility theory for
+  decision making}.
+\newblock
+\APACaddressPublisher{New York}{Wiley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+fleurbaeyTheoryFairnessSocial2011}
+\APACinsertmetastar {%
+fleurbaeyTheoryFairnessSocial2011}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+\BCBT {}\ \BBA {} Maniquet, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {A Theory of Fairness and Social Welfare} {A theory of fairness
+  and social welfare}\ (\BVOL~48).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gilboa%
+}{%
+Gilboa%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+gilboaTheoryDecisionUncertainty2009}
+\APACinsertmetastar {%
+gilboaTheoryDecisionUncertainty2009}%
+\begin{APACrefauthors}%
+Gilboa, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Theory of Decision under Uncertainty} {Theory of decision under
+  uncertainty}\ (\BVOL~45).
+\newblock
+\APACaddressPublisher{}{Cambridge university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+krepsNotesTheoryChoice1988}
+\APACinsertmetastar {%
+krepsNotesTheoryChoice1988}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Notes on the Theory of Choice} {Notes on the theory of choice}.
+\newblock
+\APACaddressPublisher{}{Westview Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+krepsMicroeconomicFoundations2013}
+\APACinsertmetastar {%
+krepsMicroeconomicFoundations2013}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Microeconomic Foundations} {Microeconomic foundations}\
+  (\BVOL~1).
+\newblock
+\APACaddressPublisher{}{Princeton university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Mas-Colell}%
+, Whinston%
+\BCBL {}\ \BBA {} Green%
+}{%
+{Mas-Colell}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+mas-colellMicroeconomicTheory1995}
+\APACinsertmetastar {%
+mas-colellMicroeconomicTheory1995}%
+\begin{APACrefauthors}%
+{Mas-Colell}, A.%
+, Whinston, M\BPBI D.%
+\BCBL {}\ \BBA {} Green, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+\newblock
+\APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McKenzie%
+}{%
+McKenzie%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+mckenzieClassicalGeneralEquilibrium2005}
+\APACinsertmetastar {%
+mckenzieClassicalGeneralEquilibrium2005}%
+\begin{APACrefauthors}%
+McKenzie, L\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Classical General Equilibrium Theory} {Classical general
+  equilibrium theory}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{MIT Press Books}{1}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Myerson%
+}{%
+Myerson%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+myersonGameTheoryAnalysis1997}
+\APACinsertmetastar {%
+myersonGameTheoryAnalysis1997}%
+\begin{APACrefauthors}%
+Myerson, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {Game Theory: {{Analysis}} of Conflict} {Game theory:
+  {{Analysis}} of conflict}.
+\newblock
+\APACaddressPublisher{Cambridge, Massachusetts, USA}{Harvard University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Savage%
+}{%
+Savage%
+}{%
+{\protect \APACyear {1972}}%
+}]{%
+savageFoundationsStatistics1972}
+\APACinsertmetastar {%
+savageFoundationsStatistics1972}%
+\begin{APACrefauthors}%
+Savage, L\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1972}.
+\newblock
+\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}\
+  (\PrintOrdinal{2nd rev.}\ \BEd).
+\newblock
+\APACaddressPublisher{New York}{Dover Publications}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
