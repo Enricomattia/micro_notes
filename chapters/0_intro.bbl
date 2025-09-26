@@ -1,0 +1,27 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Spiegler%
+}{%
+Spiegler%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+spieglerBehavioralEconomicsAtheoretical2019}
+\APACinsertmetastar {%
+spieglerBehavioralEconomicsAtheoretical2019}%
+\begin{APACrefauthors}%
+Spiegler, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Behavioral Economics and the Atheoretical Style}
+  {Behavioral economics and the atheoretical style}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Journal:
+  Microeconomics}{11}{2}{173--194}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

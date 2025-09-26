@@ -1,0 +1,209 @@
+\linespread{1.2}\selectfont
+\usepackage{amsfonts}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\setlength{\marginparwidth}{2.5cm} % before \usepackage{todonotes}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[hang,flushmargin, bottom]{footmisc}
+%\usepackage[colorlinks=true,backref=page]{hyperref}
+%\hypersetup{linkcolor=gray, citecolor=gray, urlcolor=gray}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{multirow, array}
+\usepackage{mathtools}
+\usetikzlibrary{calc}
+\usepackage{pstricks-add}
+\usepackage{float}
+\usepackage{textgreek}
+\usepackage{epigraph}
+\usepackage{amsmath}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{titling}
+\usepackage{apacite}
+\usepackage{authblk}
+\usepackage{multirow}
+\pgfplotsset{compat=1.15}
+\usepackage[top=2.54cm, bottom=2.54cm, outer=2.54cm, inner=2.54cm, heightrounded, headsep=0.7cm, headheight=15pt]{geometry}
+
+%\usepackage[top=1.8cm, bottom=1.8cm, outer=1.8cm, inner=1.8cm, heightrounded, headsep=0.2cm, headheight=5pt]{geometry}
+
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage{times}
+%\usepackage{newpxtext}
+%\usepackage{lmodern}   % scalable Computer Modern
+\usepackage{type1ec}
+\usepackage[title]{appendix}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{bigints}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+\usepackage{verbatim}
+%\usepackage{txfonts}
+%\usepackage{bookman}
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage{caption}
+\apptocmd{\sloppy}{\vbadness 10000\relax}{}{}
+
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+
+%\usetikzlibrary{external}
+%\tikzexternalize[prefix=tikz/]
+
+\AtBeginDocument{%
+    \renewcommand*{\PrintBackRefs}[1]{}%
+}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\DeclareMathOperator{\one}{\mathbbm{1}}
+
+\usepackage{subfig}
+\usepackage{amsthm}
+
+\newtheorem{remark}{Remark}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{prop}{Proposition}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem*{result*}{Result}
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{assumption}{Assumption}[chapter]
+\newtheorem{axiom}{Axiom}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+
+%\usepackage{natbib}
+%\setlength{\bibsep}{0.0pt}
+%\def\bibfont{\small}
+
+\newenvironment{thmproof}{%
+  \renewcommand{\proofname}{Proof of Theorem \ref{thm:rep}}\proof}{\endproof}
+
+\newenvironment{uniqproof}{%
+  \renewcommand{\proofname}{Proof of Corollary \ref{cor:uniq}}\proof}{\endproof}
+
+%  \newenvironment{thmproof}{%
+%  \renewcommand{\proofname}{Proof of Theorem \ref{thm:rep}}\proof}%{\endproof}
+
+\newenvironment{corproof}{%
+  \renewcommand{\proofname}{Proof of Corollary \ref{cor:uniq}}\proof}{\endproof}
+
+  \newenvironment{implproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:impl}}\proof}{\endproof}
+
+\newenvironment{paretoproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:pareto}}\proof}{\endproof}
+
+\newenvironment{propproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:prop}}\proof}%{\endproof}
+
+%\newenvironment{propproof}{%
+ % \renewcommand{\proofname}{Proof of Proposition \ref{prop:mix}}\proof}%{\endproof}
+
+\newenvironment{linproof}{%
+  \renewcommand{\proofname}{Proof of Theorem \ref{thm:sep}}\proof}{\endproof}
+
+\newenvironment{deoproof}{%
+  \renewcommand{\proofname}{Proof of Lemma \ref{lem:optdeo}}\proof}{\endproof}
+
+\newenvironment{simpleproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:simple}}\proof}{\endproof}
+
+\newenvironment{hmproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:hm}}\proof}{\endproof}
+
+\newenvironment{multproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:mult}}\proof}{\endproof}
+
+\newenvironment{eqproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:equivalentapp}}\proof}{\endproof}
+
+\newenvironment{skeproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:ske}}\proof}{\endproof}
+
+\newenvironment{mkeproof}{%
+  \renewcommand{\proofname}{Proof of Proposition \ref{prop:mke}}\proof}{\endproof}
+
+% ---------- chapter‑abstract environment (roman text) ----------
+\newenvironment{chapterabstract}%
+  {\bigskip                   % space below the chapter title
+   \begin{center}\bfseries Abstract\end{center}%
+   \begin{quotation}\normalfont}%
+  {\end{quotation}\bigskip}
+
+  \newcommand{\chapthanks}[1]{%  #1 = text of the footnote
+  \renewcommand{\thefootnote}{\fnsymbol{footnote}}% use *, †, …
+  \footnotetext{#1}%                print the footnote
+  \setcounter{footnote}{0}%         reset for the next chapter (optional)
+  \renewcommand{\thefootnote}{\arabic{footnote}}% back to normal
+}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyfoot[LE,RO]{\thepage}
+%\fancyhead[RE,LO]{\leftmark}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\notimplies}{%
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+
+\usepackage[underscores = false, codeSpans = false,fencedCode,inlineFootnotes,citations,definitionLists,hashEnumerators,smartEllipses,pipeTables,tableCaptions,hybrid]{markdown}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+\DeclareMathOperator{\p}{\mathbb{P}}
+
+\setlength\epigraphwidth{0.9\textwidth}
+\setlength\epigraphrule{0pt}
+
+\let\rfb\reflectbox
+\newcommand{\uglyfrac}[2]{\rfb{\nicefrac{\rfb{#1}}{\rfb{#2}}}}
+
+%\titleformat{\section}[block]{\large\scshape\bfseries\filcenter}{\thesection}{1em}{}
+%\titleformat{\subsection}[block]{\large\scshape\bfseries\filcenter}{\thesubsection}{1em}{}
+
+% ---------- chapter heading: stacked “Chapter N” + title, smaller than default
+\titleformat{\chapter}%           <- which heading
+  [display]%                      <- put label on its own line
+  {\normalfont\LARGE\bfseries}%   <- overall font for both lines
+  {Lecture \ \thechapter}%         <- label line  (“Chapter 2” …)
+  {1ex}%                          <- vertical gap between label and title
+  {\LARGE\bfseries}%              <- font for the title line
+  []
+
+\addto\captionsenglish{\renewcommand{\chaptername}{Lecture}}
+\providecommand*{\chapterautorefname}{Lecture}
+
+
+% vertical space before/after the heading   left  before  after
+\titlespacing*{\chapter}{0pt}{-8pt}{24pt}
+
+%%%%%%%%%% AXIOMS AND CONDITIONS
+
+\theoremstyle{plain}
+\newtheorem*{namedthm}{\namedthmname}
+\newcounter{namedthm}
+
+\makeatletter
+\newcommand{\labelname}[2]{%
+  \expandafter\gdef\csname#1@name\endcsname{#2}%
+  \hypertarget{#1}{}%
+}
+\newcommand{\usename}[1]{%
+  \hyperlink{#1}{\csname#1@name\endcsname}%
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,25 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+krepsNotesTheoryChoice1988}
+\APACinsertmetastar {%
+krepsNotesTheoryChoice1988}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Notes on the Theory of Choice} {Notes on the theory of choice}.
+\newblock
+\APACaddressPublisher{}{Westview Press}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

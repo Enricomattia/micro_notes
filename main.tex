@@ -1,0 +1,71 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{Others/preamble}     % your custom style file (already uploaded)
+\usepackage{pdfpages}   
+\usepackage[round,sort,sectionbib]{natbib}  %  → References heading gets correct size
+
+\usepackage{chapterbib}   % enables a separate .bbl for every \include
+
+% hyperref should come **last**                                    
+\usepackage[colorlinks=true,backref=page]{hyperref}
+\hypersetup{linkcolor=gray, citecolor=gray, urlcolor=gray}
+
+\title{Microeconomics 1 Lecture Notes}
+\author{Enrico Mattia Salonia}
+\date{\today}  % or a fixed date
+
+% --------------------------------------------------------------------
+\begin{document}
+% --------------------------------------------------------------------
+
+% --- Roman numerals start; count the title page as i (but don't print it)
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+% Title page ---------------------------------------------------------
+\begin{titlepage}
+	\centering
+	\makeatletter                   % <— open access to @‑macros
+	{\LARGE\bfseries \@title\par}\vspace{2cm}
+
+	%{\Large \textit{A thesis submitted for the degree of Doctor of Philosophy}\par}\vspace{1.5cm}
+
+	%{\Large by\par}\vspace{0.5cm}
+	{\Large\bfseries \@author\par}\vspace{0.5cm}  % line 44 — now defined
+
+	{\@date}                        % uses whatever you put in \date{}
+	\makeatother                    % <— close @ access
+\end{titlepage}
+
+\cleardoublepage
+
+% Roman‑numeral prelims ----------------------------------------------
+\pagenumbering{roman}
+
+\cleardoublepage          % or \clearpage   –– finish previous text
+\thispagestyle{empty}     % 1. suppress header/footer (hides the number)
+
+% ... any material that belongs on the un-numbered page ...
+
+\addtocounter{page}{-1}
+
+\setcounter{page}{2} % title‑page is p. i
+\tableofcontents
+\cleardoublepage
+
+% Arabic‑numeral main matter -----------------------------------------
+\pagenumbering{arabic}
+\include{chapters/0_intro}
+\setcounter{chapter}{0}% <—  important!
+\include{chapters/1_eu-intro}
+
+
+%\appendix
+
+% — Appendix to Chapter 1 —
+%\include{appendices/1_universalisation_appendix}
+
+
+% --------------------------------------------------------------------
+\end{document}
