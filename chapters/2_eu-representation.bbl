@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Acz{\'e}l%
+}{%
+Acz{\'e}l%
+}{%
+{\protect \APACyear {1966}}%
+}]{%
+aczelLecturesFunctionalEquations1966}
+\APACinsertmetastar {%
+aczelLecturesFunctionalEquations1966}%
+\begin{APACrefauthors}%
+Acz{\'e}l, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1966}.
+\newblock
+\APACrefbtitle {Lectures on Functional Equations and Their Applications}
+  {Lectures on functional equations and their applications}\ (\BVOL~19).
+\newblock
+\APACaddressPublisher{New York}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

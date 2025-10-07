@@ -1,21 +1,29 @@
 # Fdb version 4
-["bibtex chapters/0_intro"] 1758927770 "chapters/0_intro.aux" "chapters/0_intro.bbl" "chapters/0_intro" 1758927849 0
+["bibtex chapters/0_intro"] 1759850379 "chapters/0_intro.aux" "chapters/0_intro.bbl" "chapters/0_intro" 1759853878 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454666614 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/0_intro.aux" 1758927848 5018 b8d475c1c0eba5601c1c20a4717cbab3 "pdflatex"
+  "chapters/0_intro.aux" 1759853876 5295 a71eaecbd74cb44eac2a2de9ccbc494e "pdflatex"
   (generated)
   "chapters/0_intro.bbl"
   "chapters/0_intro.blg"
   (rewritten before read)
-["bibtex chapters/1_eu-intro"] 1758927377 "chapters/1_eu-intro.aux" "chapters/1_eu-intro.bbl" "chapters/1_eu-intro" 1758927849 0
+["bibtex chapters/1_eu-intro"] 1759852873 "chapters/1_eu-intro.aux" "chapters/1_eu-intro.bbl" "chapters/1_eu-intro" 1759853878 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454666614 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/1_eu-intro.aux" 1758927848 2660 c716925eeb1d339e4599f5588e01b979 "pdflatex"
+  "chapters/1_eu-intro.aux" 1759853876 4782 7b77390cb15fd67ed59e9ade7501032b "pdflatex"
   (generated)
   "chapters/1_eu-intro.bbl"
   "chapters/1_eu-intro.blg"
   (rewritten before read)
-["pdflatex"] 1758927845 "c:/Users/enric/OneDrive/Desktop/micro_notes/main.tex" "main.pdf" "main" 1758927849 0
+["bibtex chapters/2_eu-representation"] 1759853873 "chapters/2_eu-representation.aux" "chapters/2_eu-representation.bbl" "chapters/2_eu-representation" 1759853878 0
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454666614 3843 4744c087bc34b85451b33d95346f9586 ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374952728 146156 9d7b79dbf9d91133318126032cff8c27 ""
+  "chapters/2_eu-representation.aux" 1759853876 2690 edb779daaf693eea2d5fc1016f54a0ad "pdflatex"
+  (generated)
+  "chapters/2_eu-representation.bbl"
+  "chapters/2_eu-representation.blg"
+  (rewritten before read)
+["pdflatex"] 1759853873 "c:/Users/enric/OneDrive/Desktop/micro_notes/main.tex" "main.pdf" "main" 1759853878 0
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757862627 409634 33ab44a304f033b2f5875279f1b535c0 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1626213698 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1626213701 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -23,6 +31,7 @@
   "C:/Users/enric/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1690058059 24118871 be3c61b0914ca5bb0eacf653e1680da1 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1001775420 2971 def0b6c1f0b107b3b936def894055589 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1001775420 2900 1537cc8184ad1792082cd229ecc269f4 ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbi1200.tfm" 993061910 2892 f5de7a62f7c1551b663588ecf7265280 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx2074.tfm" 993061964 3208 da5ec29ca7c2f5f55c296dd6713d4a74 ""
@@ -33,6 +42,7 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1728.tfm" 993062128 3168 11457c8185ce67fb79662ba8b03d6db1 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm2074.tfm" 993062130 3184 b2541675eba9fa86d240ec0ecc913558 ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecti1095.tfm" 993062322 2852 cf233cde705f180d95560390f0f826e7 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecti1200.tfm" 993062324 2832 28bbd97ca29f46e76c87a158a9915203 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -68,6 +78,7 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbi1200.pfb" 1215618300 205875 6ce66c36f4b1188cc9c3ab693ec2e6eb ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb" 1215618300 140176 d0f50dba675c56d445f84a32c1f93a79 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb" 1215618300 139826 3796482349bae544f13f54da58f9706d ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb" 1215618300 140194 2ca637cc5285f91f6a87c965fe8bd2eb ""
@@ -77,6 +88,7 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb" 1215618300 145929 5c9aebea9ba6e33fc93158c04a3bdcd8 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb" 1215618300 136101 b18d10b3436f8cb0cd04046deb340fe7 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.pfb" 1215618300 131438 c8884c67ccd7382f731c139fbb34a6cb ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb" 1215618300 196446 823e77efd89b89faab342901e22eb237 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb" 1215618300 198221 29e050730bc4b56b13a53cd149c0a42c ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575574700 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -345,22 +357,26 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/pst-xkey.sty" 1656236919 1694 74b0201cd6a70abed294b6332f129c41 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1673965817 123 a302f2c651a95033260db60e51527ae8 ""
-  "Others/preamble.sty" 1758927368 7270 986b96f0937b9c2ebdb1f4f2fefbef92 ""
-  "c:/Users/enric/OneDrive/Desktop/micro_notes/main.tex" 1758925195 2311 f0ae768610a23ffee67ecae914f44dba ""
-  "chapters/0_intro.aux" 1758927848 5018 b8d475c1c0eba5601c1c20a4717cbab3 "pdflatex"
-  "chapters/0_intro.bbl" 1758927771 5476 55f2d9103aab14974411d0543f0bdbc1 "bibtex chapters/0_intro"
-  "chapters/0_intro.tex" 1758927842 1484 1082bdf36f8354ecacd8e41bb78844fd ""
-  "chapters/1_eu-intro.aux" 1758927848 2660 c716925eeb1d339e4599f5588e01b979 "pdflatex"
-  "chapters/1_eu-intro.bbl" 1758927377 521 21c1c79d4f18ad636a6da52ea1ea0a05 "bibtex chapters/1_eu-intro"
-  "chapters/1_eu-intro.tex" 1758927371 4472 843910f541d89e10dd61b9e77f26972b ""
-  "main.aux" 1758927848 1285 f9388ea51260ccd4d105504d3a2f1693 "pdflatex"
-  "main.brf" 1758927848 1125 d7c71ddca994daaeebbaaf2d7bbf24f3 "pdflatex"
-  "main.out" 1758927848 728 768ff9aba4e4fb95c640a5f1dbc07eaf "pdflatex"
-  "main.tex" 1758925195 2311 f0ae768610a23ffee67ecae914f44dba ""
-  "main.toc" 1758927848 645 b9acf5e9fd4a093538578a2f2cdaed53 "pdflatex"
+  "Others/preamble.sty" 1759850357 7270 986b96f0937b9c2ebdb1f4f2fefbef92 ""
+  "c:/Users/enric/OneDrive/Desktop/micro_notes/main.tex" 1759853442 2351 4b8b53801cf7d9b1e89b653930af2401 ""
+  "chapters/0_intro.aux" 1759853876 5295 a71eaecbd74cb44eac2a2de9ccbc494e "pdflatex"
+  "chapters/0_intro.bbl" 1759850379 5476 55f2d9103aab14974411d0543f0bdbc1 "bibtex chapters/0_intro"
+  "chapters/0_intro.tex" 1759849862 2406 8c6b2b405be2755b8e28c850680ef754 ""
+  "chapters/1_eu-intro.aux" 1759853876 4782 7b77390cb15fd67ed59e9ade7501032b "pdflatex"
+  "chapters/1_eu-intro.bbl" 1759852873 2528 5a79b313f71e85e00357289cfb6d4810 "bibtex chapters/1_eu-intro"
+  "chapters/1_eu-intro.tex" 1759852894 13339 697b4ad18452ca5121eaa1aa93f06241 ""
+  "chapters/2_eu-representation.aux" 1759853876 2690 edb779daaf693eea2d5fc1016f54a0ad "pdflatex"
+  "chapters/2_eu-representation.bbl" 1759853873 621 fb62f725d86738431939a165e1b319da "bibtex chapters/2_eu-representation"
+  "chapters/2_eu-representation.tex" 1759853865 791 e64aba012ae6854b9ea586a10af70933 ""
+  "main.aux" 1759853876 1622 cb7e08ddf31108799c7b0c52582d58a0 "pdflatex"
+  "main.brf" 1759853876 1599 605747fa71cd6914b0baafdd3f7e231e "pdflatex"
+  "main.out" 1759853876 1338 df3822332844b2ef28b80263648b93fe "pdflatex"
+  "main.tex" 1759853442 2351 4b8b53801cf7d9b1e89b653930af2401 ""
+  "main.toc" 1759853876 1059 52eabde510d0c75e7daab675c004b5c6 "pdflatex"
   (generated)
   "chapters/0_intro.aux"
   "chapters/1_eu-intro.aux"
+  "chapters/2_eu-representation.aux"
   "main.aux"
   "main.brf"
   "main.log"

@@ -1,12 +1,19 @@
 \babel@toc {english}{}\relax 
 \gdef \the@ipfilectr {@-1}
-\contentsline {chapter}{Introduction}{1}{chapter*.2}%
+\contentsline {chapter}{Preamble}{1}{chapter*.2}%
 \contentsline {paragraph}{Choice under uncertainty.}{1}{paragraph*.3}%
 \contentsline {paragraph}{General equilibrium theory.}{1}{paragraph*.4}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
-\contentsline {chapter}{\numberline {1}Introduction to Expected Utility}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Introduction to uncertainty}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}How to model uncertainty}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Things to read}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Exercises}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.2}Preferences over lotteries}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Things to read}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Exercises}{6}{section.1.4}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\contentsline {chapter}{\numberline {2}Expected utility theory}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ciao}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Things to read}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Exercises}{8}{section.2.3}%
 \gdef \the@ipfilectr {}

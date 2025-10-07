@@ -28,33 +28,6 @@ Dillenberger, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Herstein%
-\ \BBA {} Milnor%
-}{%
-Herstein%
-\ \BBA {} Milnor%
-}{%
-{\protect \APACyear {1953}}%
-}]{%
-hersteinAxiomaticApproachMeasurable1953}
-\APACinsertmetastar {%
-hersteinAxiomaticApproachMeasurable1953}%
-\begin{APACrefauthors}%
-Herstein, I\BPBI N.%
-\BCBT {}\ \BBA {} Milnor, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1953}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {An Axiomatic Approach to Measurable Utility} {An
-  axiomatic approach to measurable utility}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Econometrica, Journal of the Econometric
-  Society}{}{}{291--297}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Kreps%
 }{%
 Kreps%
