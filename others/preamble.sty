@@ -46,6 +46,7 @@
 %\usepackage{txfonts}
 %\usepackage{bookman}
 \usepackage{etoolbox}
+\usepackage{xparse} 
 \usepackage{titlesec}
 \usepackage{csquotes}
 \usepackage{caption}
@@ -85,6 +86,19 @@
 
 \theoremstyle{definition}
 \newtheorem{exercise}{Exercise}[chapter]
+
+% Store the most recent exercise number for auto-titling the solution
+\newcommand{\currentexnumber}{}%
+\AtBeginEnvironment{exercise}{\gdef\currentexnumber{\theexercise}}
+
+% A "solution" environment that prints "Solution to Exercise <no.>"
+% If used right after an exercise, it picks up \currentexnumber automatically.
+% You can also do \begin{solution}[<ex:label>] to reference a specific exercise.
+\NewDocumentEnvironment{solution}{o}{%
+  \IfNoValueTF{#1}%
+    {\begin{proof}[Solution to Exercise \currentexnumber]}%
+    {\begin{proof}[Solution to Exercise~\ref{#1}]}%
+}{\end{proof}}
 
 %\usepackage{natbib}
 %\setlength{\bibsep}{0.0pt}

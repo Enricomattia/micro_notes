@@ -1,26 +1,183 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Acz{\'e}l%
+Camerer%
 }{%
-Acz{\'e}l%
+Camerer%
 }{%
-{\protect \APACyear {1966}}%
+{\protect \APACyear {2008}}%
 }]{%
-aczelLecturesFunctionalEquations1966}
+camererCaseMindfulEconomics2008}
 \APACinsertmetastar {%
-aczelLecturesFunctionalEquations1966}%
+camererCaseMindfulEconomics2008}%
 \begin{APACrefauthors}%
-Acz{\'e}l, J.%
+Camerer, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1966}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
-\APACrefbtitle {Lectures on Functional Equations and Their Applications}
-  {Lectures on functional equations and their applications}\ (\BVOL~19).
+{\BBOQ}\APACrefatitle {The Case for Mindful Economics} {The case for mindful
+  economics}.{\BBCQ}
 \newblock
-\APACaddressPublisher{New York}{Academic Press}.
+\APACjournalVolNumPages{Foundations of positive and normative
+  economics}{}{}{43--69}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gul%
+\ \BBA {} Pesendorfer%
+}{%
+Gul%
+\ \BBA {} Pesendorfer%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+gulCaseMindlessEconomics2011}
+\APACinsertmetastar {%
+gulCaseMindlessEconomics2011}%
+\begin{APACrefauthors}%
+Gul, F.%
+\BCBT {}\ \BBA {} Pesendorfer, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Case for Mindless Economics} {The case for mindless
+  economics}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {The {{Foundations}} of {{Positive}} and {{Normative
+  Economics}}: {{A Hand Book}}.} {The {{Foundations}} of {{Positive}} and
+  {{Normative Economics}}: {{A Hand Book}}.}
+\newblock
+\APACaddressPublisher{}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+K{\"o}szegi%
+\ \BBA {} Rabin%
+}{%
+K{\"o}szegi%
+\ \BBA {} Rabin%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+koszegiReferencedependentRiskAttitudes2007}
+\APACinsertmetastar {%
+koszegiReferencedependentRiskAttitudes2007}%
+\begin{APACrefauthors}%
+K{\"o}szegi, B.%
+\BCBT {}\ \BBA {} Rabin, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reference-Dependent Risk Attitudes} {Reference-dependent
+  risk attitudes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Review}{97}{4}{1047--1073}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Mas-Colell}%
+, Whinston%
+\BCBL {}\ \BBA {} Green%
+}{%
+{Mas-Colell}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+mas-colellMicroeconomicTheory1995}
+\APACinsertmetastar {%
+mas-colellMicroeconomicTheory1995}%
+\begin{APACrefauthors}%
+{Mas-Colell}, A.%
+, Whinston, M\BPBI D.%
+\BCBL {}\ \BBA {} Green, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+\newblock
+\APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Masatlioglu%
+\ \BBA {} Raymond%
+}{%
+Masatlioglu%
+\ \BBA {} Raymond%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+masatliogluBehavioralAnalysisStochastic2016}
+\APACinsertmetastar {%
+masatliogluBehavioralAnalysisStochastic2016}%
+\begin{APACrefauthors}%
+Masatlioglu, Y.%
+\BCBT {}\ \BBA {} Raymond, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Behavioral Analysis of Stochastic Reference
+  Dependence} {A behavioral analysis of stochastic reference
+  dependence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Review}{106}{9}{2760--2782}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Spiegler%
+}{%
+Spiegler%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+spieglerBehavioralEconomicsAtheoretical2019}
+\APACinsertmetastar {%
+spieglerBehavioralEconomicsAtheoretical2019}%
+\begin{APACrefauthors}%
+Spiegler, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Behavioral Economics and the Atheoretical Style}
+  {Behavioral economics and the atheoretical style}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Journal:
+  Microeconomics}{11}{2}{173--194}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thoma%
+}{%
+Thoma%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+thomaDefenceRevealedPreference2021}
+\APACinsertmetastar {%
+thomaDefenceRevealedPreference2021}%
+\begin{APACrefauthors}%
+Thoma, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {In Defence of Revealed Preference Theory} {In defence of
+  revealed preference theory}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics \& Philosophy}{37}{2}{163--187}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

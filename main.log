@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  7 OCT 2025 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  8 OCT 2025 17:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1800,7 +1800,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 (main.aux (chapters/0_intro.aux) (chapters/1_eu-intro.aux)
-(chapters/2_eu-representation.aux))
+(chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -2019,7 +2019,19 @@ Lecture 1.
 
 (chapters/2_eu-representation.tex
 Lecture 2.
-(chapters/2_eu-representation.bbl (main.brf))) [8
+[8
+
+
+
+
+
+] [9] [10] (chapters/2_eu-representation.bbl (main.brf) [11])) [12]
+\openout2 = `chapters/3_eu-money-aversion.aux'.
+
+
+(chapters/3_eu-money-aversion.tex
+Lecture 3.
+(chapters/3_eu-money-aversion.bbl (main.brf))) [13
 
 
 
@@ -2027,24 +2039,24 @@ Lecture 2.
 
 ] (main.aux
 (chapters/0_intro.aux) (chapters/1_eu-intro.aux)
-(chapters/2_eu-representation.aux))
+(chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DF3822332844B2EF28B80263648B93FE;1338.
+(rerunfilecheck)             Checksum: DD7BDC6F733E86DC6CC4DE05A336334B;1971.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 605747FA71CD6914B0BAAFDD3F7E231E;1599.
+(rerunfilecheck)             Checksum: 4BD1B9D8CBD7394AB6D1B316972BA820;2194.
  ) 
 Here is how much of TeX's memory you used:
- 50740 strings out of 475551
- 1179682 string characters out of 5762554
+ 50900 strings out of 475551
+ 1184796 string characters out of 5762554
  1936238 words of memory out of 5000000
- 71008 multiletter control sequences out of 15000+600000
- 577223 words of font info for 89 fonts, out of 8000000 for 9000
+ 71127 multiletter control sequences out of 15000+600000
+ 578596 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,10n,136p,1323b,1087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,12n,136p,1537b,1133s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -2073,9 +2085,9 @@ type1/public/cm-super/sfrm1200.pfb><C:/Users/enric/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/enric/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/Users/enric/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (10 pages, 424091 bytes).
+Output written on main.pdf (15 pages, 477445 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

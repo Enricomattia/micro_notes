@@ -8,31 +8,172 @@
 \setcounter{footnote}{0}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-\section{Ciao}\label{sec:L2-intro}
+\section{Assumptions on preferences}\label{sec:L2-intro}
 
-Let's talk about axioms.
+We now impose properties on preferences over lotteries. But first, a brief methodological aside on what we are doing. Before discussing properties of \( \succsim \), we should explicit what the interpretation of \( \succsim \) is. Different methodological stances are possible. Is \( \succsim \) tracking what an individual has in mind? What he would say if asked? How he chose in the past?
+
+Under \textit{revealed preference theory}, we interpret \( \succsim \) as a description of how an individual chooses. Therefore, there is no psychological content to \( \succsim \). Revealed preference theory has been the standard methodological stance in economics for a long time. But why? Wouldn't it be better to develop a theory that exploits psychological insights? Revealed preference theory is exclusively a methodological stance, not a psychological (or, for what matters, a moral) one. The assumption is not that choices are not driven by psychological motives, but that we abstract from these motives and attempt to find patterns in choices directly. There is a strong advantage in doing so: psychological motives are hard to observe, while choices can be observed easily. The implication is that a choice theory based on revealed preferences is more easily testable: if we observe choices that violate the assumptions of the theory, we can reject the it. Therefore, revealed preference theory is \textbf{not} a stance on how individuals make choices or what matters for choices, it is just silent about these issues. This is often misunderstood: there is a plethora of papers claiming that economics views individuals as cold robots.\footnote{If you are interested, you can read \cite{thomaDefenceRevealedPreference2021} for a discussion of the current status of revealed preference theory.}
+
+Such critics mostly come from behavioural economics, which is a field that attempts to incorporate psychological insights into economic models. Is therefore impossible to do behavioural economics under the revealed preference approach? Not at all. Good behavioural theories do what the name of the field suggests: characterise the behavioural content of the theory, so that, as economist, we know how different individuals behave. Two theories with different psychological content that are observationally equivalent, i.e., they make the same predictions about choices, are not equally useful for economists.\footnote{There is a huge debate on this topic. Among many, I suggest you to read \cite{gulCaseMindlessEconomics2011} and the response by \cite{camererCaseMindfulEconomics2008}. A more recent piece is \cite{spieglerBehavioralEconomicsAtheoretical2019}.}
+
+\begin{techremark}
+	An interesting case study is \cite{masatliogluBehavioralAnalysisStochastic2016}, where the authors show that the famous model by \cite{koszegiReferencedependentRiskAttitudes2007} is behaviourally equivalent to the intersection of rank-dependent utility and quadratic utility, two older models.
+\end{techremark}
+
+In what follows, you can have in mind the interpretation of \( \succsim \) that you prefer, but remember that it is important to be clear about it.
+
+Before discussing the properties of preferences over lotteries, let's consider a reasonable functional form for preferences. A natural candidate is the following: the utility of a lottery \( p \) is given by
+
+\begin{equation}\label{eq:eu}
+	\sum_{x\in X} p(x)u(x)
+\end{equation}
+
+for some function \( u \colon X \to \mathbb{R} \), assigning to each outcome \( x \) a number representing its utility \( u (x ) \). The idea is simple, the outcome \( x \) realises with probability \( p \), and when \( x \) realises, the individual gets utility \( u(x) \). The functional form in Equation \ref{eq:eu} is called \textbf{expected utility}. This is because it is the expectation, computed with the probability \( p \), of the utility the individual gets. Before turning to the properties of preferences that will lead us to this functional form, let's make some observations.
+
+Having expected utility preferences over lotteries implies that indifference curves on the simplex are straight lines. That is, say that \( p \sim q \). Then, for any \( \alpha \in (0,1) \) it holds that \( \alpha p + (1-\alpha) q \sim p \), as illustrate in Figure \ref{fig:simplex-ind}.
+
+\begin{figure}[H]
+	\centering
+	% \usetikzlibrary{calc} % <-- enable if you keep the ($(P)!t!(Q)$) syntax
+	\begin{tikzpicture}[scale=1]
+		% small filled dot style
+		\tikzset{dot/.style={circle,fill,inner sep=1.4pt}}
+
+		%--- simplex vertices --------------------------------------------------------
+		\coordinate (A) at (0,0);
+		\coordinate (B) at (6,0);
+		\coordinate (C) at (3,5.196); % = (sqrt(3)/2)*6
+
+		\draw[thick] (A)--(B)--(C)--cycle;
+
+		% vertex labels = degenerate lotteries
+		\node[dot] at (A) {};
+		\node[below,align=center] at (A) {$x$ \\ {\scriptsize $(1,0,0)$}};
+		\node[dot] at (B) {};
+		\node[below,align=center] at (B) {$y$ \\ {\scriptsize $(0,1,0)$}};
+		\node[dot] at (C) {};
+		\node[above,align=center] at (C) {{\scriptsize $(0,0,1)$}\\[-2pt] $z$};
+
+		%--- two interior lotteries p and q -----------------------------------------
+		\coordinate (P) at (1.7,1.35);
+		\coordinate (Q) at (4.2,1.15);
+
+		\node[dot] at (P) {};
+		\node[above left=2pt] at (P) {$p$};
+
+		\node[dot] at (Q) {};
+		\node[above right=2pt] at (Q) {$q$};
+
+		% segment of mixtures r_λ = λ p + (1-λ) q  (indifference set if p ~ q)
+		\draw[very thick] (P)--(Q);
+
+		% an example interior mixture point on the segment
+		\coordinate (R) at ($(P)!0.42!(Q)$); % requires calc library
+		\node[below=3pt] at (R) {$\alpha p+(1-\alpha)q$};
+
+	\end{tikzpicture}
+	\caption{If \( p \sim q \), then any mixture of \( p \) and \( q \) is also indifferent to \( p \) and \( q \).}
+	\label{fig:simplex-ind}
+\end{figure}
+
+Let's show this formally. Assume that \( p \sim q \). Then, by definition of expected utility, we have
+
+\[
+	\sum_{x\in X} p(x)u(x) = \sum_{x\in X} q(x)u(x).
+\]
+
+By applying expected utility again, for any \( \alpha \in (0,1) \), the utility of the lottery \( \alpha p + (1-\alpha) q \) is given by
+
+\begin{align*}
+	\sum_{x\in X} \big(\alpha p(x) + (1-\alpha) q(x)\big) u(x)
+	 & = \sum_{x\in X} \alpha p(x) u(x) + \sum_{x\in X} (1-\alpha) q(x) u(x) \\
+	 & = \alpha \sum_{x\in X} p(x) u(x) + (1-\alpha) \sum_{x\in X} q(x) u(x) \\
+	 & = \alpha \sum_{x\in X} q(x) u(x) + (1-\alpha) \sum_{x\in X} q(x) u(x) \\
+	 & = \sum_{x\in X} q(x) u(x).
+\end{align*}
+
+\begin{techremark}
+	Indifference curves are also parallel, you are asked to show this in Exercise \ref{ex:parallel-lines}.
+\end{techremark}
+
+Let's now turn to the properties of \( \succsim \) we will consider. First, we assume that preferences are a \textbf{weak order}.
 
 \begin{axiom}\label{ax:wo}
-	\labelname{axn:wo}{Weak order} (\textbf{Weak order}) Preferences \(\succsim_i\) are complete, transitive and continuous.
+	\labelname{axn:wo}{Weak order} (\textbf{Weak order}) Preferences \(\succsim\) are complete and transitive.
 \end{axiom}
 
-\usename{axn:wo}
+Recall that preferences are \textbf{complete} if for any two lotteries \(p,q\), either \(p\succsim q\) or \(q\succsim p\), or both. They are transitive if for any three lotteries \(p,q,r\), if \(p\succsim q\) and \(q\succsim r\), then \(p\succsim r\).
 
+\begin{axiom}\label{ax:continuity}
+	\labelname{axn:continuity}{Continuity} (\textbf{Continuity}) For any three lotteries \(p,q,r\), if \(p\succ q\succ r\) then there exist \(\alpha,\beta\in(0,1)\) such that \(\alpha p+(1-\alpha)r\succ q\succ \beta p+(1-\beta)r\).
+\end{axiom}
 
+\begin{axiom}
+	\labelname{axn:independence}{Independence} (\textbf{Independence}) For any three lotteries \(p,q,r\) and for any \(\alpha\in(0,1)\), we have \( p \succsim q \) if and only if \(\alpha p+(1-\alpha)r\succsim \alpha q+(1-\alpha)r\).
+\end{axiom}
 
+\section{Expected utility representation}
 
+\begin{theorem}\label{thm:eu}
+	Preferences over lotteries \(\succsim\) satisfy \usename{axn:wo}, \usename{axn:continuity}, \usename{axn:independence} if and only if then there exists a utility function \(u \colon X\to\mathbb{R}\) such that:
 
-\cite{aczelLecturesFunctionalEquations1966} come va.
+	\begin{equation}
+		p \succsim q \text{ if and only if } \sum_{x\in X} p(x)u(x) \geq \sum_{x\in X} q(x)u(x).
+	\end{equation}
+
+	We say that \(u\) \textbf{represents} \(\succsim\).
+\end{theorem}
+
+\begin{proof}
+	Come va.
+\end{proof}
+
+\begin{corollary}
+	If \( u \) represents \( \succsim \), then a function \( u^{\prime} \colon X \to \mathbb{R} \) represents \( \succsim \) if and only if there exist real numbers \( a > 0 \) and \( b \) such that \( u^{\prime} = a u + b \).
+\end{corollary}
 
 \section{Things to read}
 
-ciao
+There is already quite a lot to read that I mentioned in the main text. If you want a textbook source of the content of this lecture, check \citet[pp.~170–178]{mas-colellMicroeconomicTheory1995}.
 
 \section{Exercises}
 
 \begin{exercise}
-    Ciao.
+	Prove the direction of Theorem \ref{thm:eu} that we did not prove. If \( u \) represents \( \succsim \), then show that \( \succsim \) satisfies \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}.
 \end{exercise}
+
+\begin{exercise}\label{ex:parallel-lines}
+	Show that, if preferences are represented by an expected utility function, then indifference curves in the triangle are parallel lines.
+\end{exercise}
+
+\begin{solution}[ex:parallel-lines]
+	Let \(\{x,y,z\}\) be the outcomes and let
+
+	\[ U(p)=\sum_{w\in\{x,y,z\}} u(w)\,p(w) \]
+
+	be the expected utility
+	of lottery \(p\). Since \(p(z)=1-p(x)-p(y)\), we can write
+	\[
+		U(p) \;=\; \big(u(x)-u(z)\big)\,p(x)\;+\;\big(u(y)-u(z)\big)\,p(y)\;+\;u(z).
+	\]
+
+	Fix a utility level \(c\). The indifference set \(\{p:U(p)=c\}\) satisfies
+	\[
+		\big(u(x)-u(z)\big)\,p(x)\;+\;\big(u(y)-u(z)\big)\,p(y)\;=\;c-u(z).
+	\]
+
+	Solving for \(p(y)\) as a function of \(p(x)\),
+	\[
+		p(y)\;=\;\frac{c-u(z)}{\,u(y)-u(z)\,}\;-\;\frac{u(x)-u(z)}{\,u(y)-u(z)\,}\,p(x).
+	\]
+
+	The coefficient of \(p(x)\) is
+	\[
+		-\frac{u(x)-u(z)}{\,u(y)-u(z)\,},
+	\]
+	which does not depend on \(c\). Changing \(c\) only changes the intercept
+	\(\frac{c-u(z)}{u(y)-u(z)}\). Therefore, all indifference lines, the portions of these lines that lie inside the simplex, have the same slope and are parallel.
+\end{solution}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/
