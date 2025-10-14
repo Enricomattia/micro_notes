@@ -124,8 +124,116 @@ Recall that preferences are \textbf{complete} if for any two lotteries \(p,q\), 
 	We say that \(u\) \textbf{represents} \(\succsim\).
 \end{theorem}
 
+The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomicTheory1995}, but it is complemented by intuition and figures.
+
 \begin{proof}
-	Come va.
+	We proceed by steps.
+
+	\textbf{Step 1.} If \( p \succsim q \) then \( p \succsim \alpha p + (1-\alpha) q \succsim q \) for any \( \alpha \in (0,1) \). The intuition behind this step is simple: if \( p \) is better than \( q \), than any mixture between the two is worse than \( p \) and better than \( q \). Figure \ref{fig:step1} illustrates the idea.
+
+	\begin{figure}[H]
+		\centering
+		\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+		\begin{tikzpicture}[x=0.65pt,y=0.65pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,412); %set diagram left start at 0, and has height of 412
+
+			%Shape: Triangle [id:dp7624353544488017] 
+			\draw   (292.33,43.07) -- (474.67,369.07) -- (110,369.07) -- cycle ;
+			%Straight Lines [id:da31966546289590647] 
+			\draw  [dash pattern={on 4.5pt off 4.5pt}]  (262,220.92) -- (398.67,316.25) ;
+			%Shape: Circle [id:dp6804955961429688] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (396.25,316.25) .. controls (396.25,314.92) and (397.33,313.83) .. (398.67,313.83) .. controls (400,313.83) and (401.08,314.92) .. (401.08,316.25) .. controls (401.08,317.58) and (400,318.67) .. (398.67,318.67) .. controls (397.33,318.67) and (396.25,317.58) .. (396.25,316.25) -- cycle ;
+			%Shape: Circle [id:dp44734973339031014] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (259.58,220.92) .. controls (259.58,219.58) and (260.67,218.5) .. (262,218.5) .. controls (263.33,218.5) and (264.42,219.58) .. (264.42,220.92) .. controls (264.42,222.25) and (263.33,223.33) .. (262,223.33) .. controls (260.67,223.33) and (259.58,222.25) .. (259.58,220.92) -- cycle ;
+			%Curve Lines [id:da39390655998084656] 
+			\draw    (330.33,268.58) .. controls (378.93,256.92) and (391.95,237.98) .. (405.07,206.2) ;
+			\draw [shift={(405.67,204.74)}, rotate = 112.2] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+			%Shape: Circle [id:dp4485716510591613] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (327.92,268.58) .. controls (327.92,267.25) and (329,266.17) .. (330.33,266.17) .. controls (331.67,266.17) and (332.75,267.25) .. (332.75,268.58) .. controls (332.75,269.92) and (331.67,271) .. (330.33,271) .. controls (329,271) and (327.92,269.92) .. (327.92,268.58) -- cycle ;
+
+			% Text Node
+			\draw (392.67,176.4) node [anchor=north west][inner sep=0.75pt]    {$\alpha p +( 1-\alpha ) q\ $};
+			% Text Node
+			\draw (254,192.4) node [anchor=north west][inner sep=0.75pt]    {$p$};
+			% Text Node
+			\draw (406,306.4) node [anchor=north west][inner sep=0.75pt]    {$q$};
+
+
+		\end{tikzpicture}
+		\caption{Step 1.}
+		\label{fig:step1}
+	\end{figure}
+
+	This follows from \usename{axn:independence}.
+
+	\begin{equation}\label{eq:comp1}
+		p \succsim q \implies (1-\alpha) p + \alpha p \succsim (1-\alpha) q + \alpha q \implies p \succsim \alpha p + (1-\alpha) q \succsim q.
+	\end{equation}
+
+	\begin{equation}\label{eq:comp2}
+		p \succsim q \implies \alpha p + (1-\alpha) q \succsim \alpha q + (1-\alpha) q \implies \alpha p + (1-\alpha) q \succsim q.
+	\end{equation}
+
+	The conclusion follows from Equations \ref{eq:comp1} and \ref{eq:comp2}.
+
+	\textbf{Step 2.} \(\beta>\alpha \) if and only if \( \beta \overline{p} +(1-\beta) \underline{p} \succ \alpha \overline{p}+(1-\alpha) \underline{p} \).
+
+	The idea for this step is the following. From step 1., we know that a mixture between \( p \) and \( q \), where \( p \succsim q \) is better than \( q \) and worse than \( p \). Now, we know that \( \overline{p} \succ \alpha \overline{p} +(1-\alpha) \underline{p}\), since \( \overline{p} \) is the best lottery available. We want to show that \( \beta \overline{p} + (1-\beta) \underline{p} \) is a mixture between \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha) \underline{p} \), and therefore, by step 1, better than \( \alpha \overline{p} + (1-\alpha) \underline{p} \). The idea is illustrated in Figure \ref{fig:step2}.
+
+	\begin{figure}[H]
+		\centering
+		\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+		\begin{tikzpicture}[x=0.65pt,y=0.65pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,376); %set diagram left start at 0, and has height of 376
+			%Shape: Triangle [id:dp5718796353912894] 
+			\draw   (329.33,23.07) -- (511.67,349.07) -- (147,349.07) -- cycle ;
+			%Shape: Circle [id:dp9404346697828574] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (509.25,349.07) .. controls (509.25,347.74) and (510.33,346.66) .. (511.67,346.66) .. controls (513,346.66) and (514.08,347.74) .. (514.08,349.07) .. controls (514.08,350.41) and (513,351.49) .. (511.67,351.49) .. controls (510.33,351.49) and (509.25,350.41) .. (509.25,349.07) -- cycle ;
+			%Shape: Circle [id:dp21608178484403062] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (246.58,166.25) .. controls (246.58,164.92) and (247.67,163.83) .. (249,163.83) .. controls (250.33,163.83) and (251.42,164.92) .. (251.42,166.25) .. controls (251.42,167.58) and (250.33,168.67) .. (249,168.67) .. controls (247.67,168.67) and (246.58,167.58) .. (246.58,166.25) -- cycle ;
+			%Straight Lines [id:da0014271293885499414] 
+			\draw  [dash pattern={on 4.5pt off 4.5pt}]  (249,166.25) -- (511.67,349.07) ;
+			%Shape: Circle [id:dp09512564117547329] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (433.25,296.25) .. controls (433.25,294.92) and (434.33,293.83) .. (435.67,293.83) .. controls (437,293.83) and (438.08,294.92) .. (438.08,296.25) .. controls (438.08,297.58) and (437,298.67) .. (435.67,298.67) .. controls (434.33,298.67) and (433.25,297.58) .. (433.25,296.25) -- cycle ;
+			%Shape: Circle [id:dp3186545134308967] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (296.58,200.92) .. controls (296.58,199.58) and (297.67,198.5) .. (299,198.5) .. controls (300.33,198.5) and (301.42,199.58) .. (301.42,200.92) .. controls (301.42,202.25) and (300.33,203.33) .. (299,203.33) .. controls (297.67,203.33) and (296.58,202.25) .. (296.58,200.92) -- cycle ;
+			%Curve Lines [id:da7950025520809244] 
+			\draw    (435.67,296.25) .. controls (484.26,284.58) and (497.28,265.65) .. (510.4,233.87) ;
+			\draw [shift={(511,232.41)}, rotate = 112.2] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+			%Curve Lines [id:da31359625192132545] 
+			\draw    (299,200.92) .. controls (314.84,150.91) and (350.28,108.59) .. (396.27,99.99) ;
+			\draw [shift={(397.67,99.74)}, rotate = 170.27] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+			% Text Node
+			\draw (223.33,146.07) node [anchor=north west][inner sep=0.75pt]    {$\overline{p}$};
+			% Text Node
+			\draw (515.33,322.4) node [anchor=north west][inner sep=0.75pt]    {$\underline{p}$};
+			% Text Node
+			\draw (486.67,208.4) node [anchor=north west][inner sep=0.75pt]    {$\alpha \overline{p} +( 1-\alpha )\underline{p} \ $};
+			% Text Node
+			\draw (402.67,87.73) node [anchor=north west][inner sep=0.75pt]    {$\beta \overline{p} +( 1-\beta )\underline{p} \ $};
+			% Text Node
+			\draw (414.67,118.73) node [anchor=north west][inner sep=0.75pt]    {$=\ \gamma \overline{p} +( 1-\gamma )[ \alpha \overline{p} \ +\ ( 1-\alpha )\underline{p}]$};
+
+
+		\end{tikzpicture}
+		\caption{Step 2.}
+		\label{fig:step2}
+	\end{figure}
+
+	We want to write \( \beta \overline{p} + (1-\beta) \underline{p} \) as a mixture between \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha) \underline{p} \). That is, we want to find \( \gamma \in (0,1) \) such that
+
+	\[
+		\beta \overline{p} + (1-\beta) \underline{p} = \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}].
+	\]
+
+	With some algebra we get that \( \gamma = \frac{\beta - \alpha}{1 - \alpha} \). By step 1 we know that \( \overline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \), therefore, \( \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}] \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). Since \( \beta \overline{p} + (1-\beta) \underline{p} = \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}] \), the conclusion follows.
+
+	Until now we proved that if \( \beta > \alpha \) then \( \beta \overline{p} + (1-\beta) \underline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). But the statement says \textquote{if and only if}, so we have to prove that if \( \alpha \geq \beta \) then it is not the case that \( \beta \overline{p} + (1-\beta) \underline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). When \( \beta = \alpha \) the two are the same lotteries and therefore are indifferent. The relevant case is when \( \alpha > \beta \). By the argument above, we know that \( \alpha \overline{p} + (1-\alpha) \underline{p} \succ \beta \overline{p} + (1-\beta) \underline{p} \), and that's all.
+
+	\textbf{Step 3.} For any \( p \), there exists a unique \( \alpha_p \in [0,1] \) such that \( p \sim \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \).
+
 \end{proof}
 
 \begin{corollary}
@@ -139,7 +247,7 @@ There is already quite a lot to read that I mentioned in the main text. If you w
 \section{Exercises}
 
 \begin{exercise}
-	Prove the direction of Theorem \ref{thm:eu} that we did not prove. If \( u \) represents \( \succsim \), then show that \( \succsim \) satisfies \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}.
+	Prove the direction of Theorem \ref{thm:eu} that we did not prove. Show that if \( u \) represents \( \succsim \), then \( \succsim \) satisfies \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}. (It is not difficult, I promise!)
 \end{exercise}
 
 \begin{exercise}\label{ex:parallel-lines}
