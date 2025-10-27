@@ -1,18 +1,307 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\chapter[Money lotteries and risk aversion]%
- {Money lotteries and risk aversion}%
+\chapter[Money lotteries]%
+ {Money lotteries}%
 \label{ch:L3}
 
 % 3) Reset things so later footnotes go back to 1, 2, 3, …
-\setcounter{footnote}{0}
+%\setcounter{footnote}{0}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-\section{Hello}\label{sec:L3-intro}
+\section{Structuring the set  of outcomes}\label{sec:L3-intro}
 
-ciao
+In the previous section, we studied preferences with the expected utility form over lotteries on a \textit{finite} outcome set \( X \). We now study a setting where the outcome set is the set of real numbers \( \mathbb{R} \), representing monetary outcomes. This setting is particularly important in economics and finance, as it allows us to model decisions involving money, such as investments, insurance, and consumption choices.
 
-\cite{aczelLecturesFunctionalEquations1966}
+\begin{techremark}
+	You may wonder wether a form of Theorem \ref{thm:eu} can be extended to such a setting. The answer is yes, if you are interested check \citet[pp. 59-78]{krepsNotesTheoryChoice1988} or \citet[ch. 10]{fishburnUtilityTheoryDecision1970}.
+\end{techremark}
+
+Since the outcome set is now infinite, we need to be careful about how we define lotteries. We introduce cumulative distribution functions (CDFs) to represent lotteries over monetary outcomes. A CDF \( F: \mathbb{R} \to [0, 1] \) maps each monetary outcome \( x \) to the probability that the outcome is less than or equal to \( x \). It satisfies the following properties:
+\begin{itemize}
+	\item \( F \) is non-decreasing: if \( x \leq y \), then \( F(x) \leq F(y) \).
+	\item \( \lim_{x \to -\infty} F(x) = 0 \) and \( \lim_{x \to +\infty} F(x) = 1 \).
+	\item \( F \) is right-continuous, i.e. for every \( x \in \mathbb{R} \), \( \lim_{y \downarrow x} F(y) = F(x) \).\footnote{The symbol \(y \downarrow x\) means that \(y\) approaches \(x\) from above.}
+\end{itemize}
+
+
+\begin{example}
+	Consider a lottery that pays 1 dollar with probability \( \tfrac14 \), 4 dollars with probability \( \tfrac12 \), and 6 dollars with probability \( \tfrac14 \). The corresponding CDF \( F \) is given by:
+
+	\[
+		F(x) =
+		\begin{cases}
+			0        & \text{if } x < 1,        \\
+			\tfrac14 & \text{if } 1 \leq x < 4, \\
+			\tfrac34 & \text{if } 4 \leq x < 6, \\
+			1        & \text{if } x \geq 6,
+		\end{cases}
+	\]
+
+	it is represented in Figure \ref{fig:cdf_example}.
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[x=1cm,y=5cm,>=stealth]
+			% Axes
+			\draw[->] (0,0) -- (9,0) node[below right] {$x$};
+			\draw[->] (0,0) -- (0,1.15) node[above left] {$F(\,\cdot\,)$};
+
+			% y-ticks and labels
+			\foreach \y/\lab in {0.25/{$\tfrac14$}, 0.75/{$\tfrac34$}, 1/{$1$}}{
+			\draw (-0.07,\y) -- (0.07,\y);
+			\node[left] at (-0.07,\y) {\lab};
+			}
+
+			% x-ticks and labels
+			\foreach \x/\lab in {1/{1 dollar}, 4/{4 dollars}, 6/{6 dollars}}{
+			\draw (\x,0.03) -- (\x,-0.03);
+			\node[below] at (\x,-0.03) {\lab};
+			}
+
+			% Dashed guide at F=1 (optional)
+			\draw[dashed,gray] (0.2,1) -- (6,1);
+
+			% Step function segments (right-continuous) — BLUE
+			% Including the flat part from 0 to 1 dollar
+			\draw[blue,line width=1.0pt] (0,0) -- (1,0);
+			\draw[blue,line width=1.0pt] (1,0.25) -- (4,0.25);
+			\draw[blue,line width=1.0pt] (4,0.75) -- (6,0.75);
+			\draw[blue,line width=1.0pt] (6,1) -- (8.8,1) node[right,text=blue] {$F(\cdot)$};
+
+			% Open circles at left limits (showing jumps)
+			\draw[fill=white, line width=0.8pt] (1,0) circle (2pt);
+			\draw[fill=white, line width=0.8pt] (4,0.25) circle (2pt);
+			\draw[fill=white, line width=0.8pt] (6,0.75) circle (2pt);
+
+			% Closed (filled) circles at right-continuous values
+			\fill (1,0.25) circle (2pt);
+			\fill (4,0.75) circle (2pt);
+			\fill (6,1.0)   circle (2pt);
+		\end{tikzpicture}
+
+		\caption{Cumulative distribution function (CDF) representing a lottery over monetary outcomes.}
+		\label{fig:cdf_example}
+	\end{figure}
+\end{example}
+
+Notice that mixtures of CDFs are also CDFs, so we can employ the same mixture operation defined in Section \ref{sec:L1-intro}. In particular, given two CDFs \( F \) and \( G \), and \( \alpha \in [0, 1] \), the mixture \( H = \alpha F + (1 - \alpha) G \) is also a CDF, where \( H(x) = \alpha F(x) + (1 - \alpha) G(x) \) for all \( x \in \mathbb{R} \).
+
+We now define preferences \( \succsim \) over the set of CDFs over non-negative amounts of money that have the expected utility form. The idea is the same, we weight the utility of each monetary outcome by its probability, and sum these weighted utilities to get the expected utility of the lottery. Formally, a preference relation \( \succsim \) over the set of CDFs has the expected utility form if there exists a utility function \( u: \mathbb{R} \to \mathbb{R} \) such that for any two CDFs \( F \) and \( G \):
+
+\[
+	F \succsim G \quad \text{if and only if} \quad \int u(x)dF(x) \geq \int u(x)dG(x).
+\]
+
+Before we had a utility function over outcomes \( u : X \rightarrow \), but now the set of outcomes is \( \mathbb{R} \), that is why the domain is different. Such distinction allows us to introduce properties of the function \( u \) that are specific to monetary outcomes. From now on, we assume the following two.
+
+\begin{definition}\label{def:increasing}
+	The utility function \( u \) is \textbf{increasing} if for any \( x, y \) such that \( x > y \), we have \( u(x) > u(y) \).
+\end{definition}
+
+Definition \ref{def:increasing} captures the idea that more money is always preferred to less money. When the outcome set was \( X \), we could not state this property, as \( x > y \) meant nothing.\footnote{As an example, if \( x \) is an apple and \( y \) is a banana, what does \( x > y \) means?}
+
+\begin{definition}\label{def:continuity}
+	The utility function \( u \) is \textbf{continuous} if for any \( x \) and any \( \varepsilon > 0 \), there exists a \( \delta > 0 \) such that for all \( y \) with \( |x - y| < \delta \), we have \( |u(x) - u(y)| < \varepsilon \).
+\end{definition}
+
+Definition \ref{def:continuity} ensures that small changes in monetary outcomes lead to small changes in utility. This property could not be stated with a generic outcome set, as \( x - y \) had no meaning.
+
+\begin{techremark}
+	Definition \ref{def:continuity} is continuity in \textit{money}. What about continuity in probability?
+\end{techremark}
+
+\section{Risk aversion}
+
+We now have the tools to define and discuss the concept of risk aversion. Defining this concept allows us to answer the question: how much does an individual dislike risk? As we will see, the answer to this question has important implications for economic behavior, such as investment decisions and insurance choices.
+
+The definition of risk aversion is quite intuitive. Consider an individual offered the following opportunity: they can either receive \( 5 \) euros, or a lottery that pays \( 0 \) euros with probability \( 0.5 \) and \( 10 \) euros with probability \( 0.5 \). Both options have the same expected monetary value of \( 5 \) euros. Intuitively, if the individual prefers to receive the certain amount of \( 5 \) euros over the lottery, he dislikes risk, prefers getting the mean outcome for sure rather than facing uncertainty. Instead, if the individual prefers the lottery, he likes risk, as he is willing to face uncertainty for the chance of getting a lower payoff.
+
+For each lottery, we define an individual as risk averse if he prefers the certain amount equal to the expected value of the lottery over the lottery itself, as in the example above. For each CDF \( F \), the expected value of the lottery is given by:
+
+\begin{equation}\label{eq:ev}
+	\int x dF(x).
+\end{equation}
+
+An individual evaluates money using the utility function \( u \). Therefore, the certain amount equal to the expected value of the lottery provides utility
+
+\begin{equation}\label{eq:eu_certain}
+	u\left( \int x dF(x) \right).
+\end{equation}
+
+On the other hand, the lottery itself provides expected utility
+
+\begin{equation}\label{eq:eu_lottery}
+	\int u(x) dF(x).
+\end{equation}
+
+We say an individual is risk averse if his utility function \( u \) is such that, for each CDF \( F \), Equation \eqref{eq:eu_certain} is greater than or equal to Equation \eqref{eq:eu_lottery}.
+
+\begin{definition}\label{def:raversion}
+	An individual with expected utility preferences and utility function \( u \) is \textbf{risk averse} if for each CDF \( F \)
+
+	\begin{equation}\label{eq:risk_aversion}
+		u\left( \int x dF(x) \right) \geq \int u(x) dF(x).
+	\end{equation}
+\end{definition}
+
+\begin{techremark}
+	You should notice that, if \( u \) is not increasing (Definition \ref{def:increasing}), such definition of risk aversion does not make sense.
+\end{techremark}
+
+Equation \eqref{eq:risk_aversion} is \href{https://en.wikipedia.org/wiki/Jensen%27s_inequality}{Jensen's inequality}, and it defines concavity of the utility function \( u \). Therefore, the intuitive notion of risk aversion we discussed is technically equivalent to concavity of \( u \), as illustrated in Figure \ref{fig:risk_aversion}. Recall that concavity of \( u \), if it is twice differentiable, means that its second derivative is non-positive, i.e. \( u''(x) \leq 0 \) for all \( x \).
+
+\begin{figure}[H]
+	\centering
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+	\begin{tikzpicture}[x=0.65pt,y=0.65pt,yscale=-1,xscale=1]
+		%uncomment if require: \path (0,433); %set diagram left start at 0, and has height of 433
+
+		%Shape: Axis 2D [id:dp5660095663202026] 
+		\draw  (132,370.34) -- (506,370.34)(169.4,62) -- (169.4,404.6) (499,365.34) -- (506,370.34) -- (499,375.34) (164.4,69) -- (169.4,62) -- (174.4,69)  ;
+		%Curve Lines [id:da9973639319692577] 
+		\draw    (169.4,370.34) .. controls (172,276.6) and (342,108.6) .. (483,108.6) ;
+		%Straight Lines [id:da04174830964198639] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (430,370) -- (432,115.8) ;
+		%Straight Lines [id:da5426175275814586] 
+		\draw  [dash pattern={on 0.84pt off 2.51pt}]  (169.4,370.34) -- (432,115.8) ;
+		%Straight Lines [id:da33225594312232143] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (301,370.8) -- (300,181.8) ;
+		%Straight Lines [id:da6848091186315952] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (169,243.4) -- (300.7,243.07) ;
+
+		% Text Node
+		\draw (422,372.4) node [anchor=north west][inner sep=0.75pt]    {$10$};
+		% Text Node
+		\draw (510,369.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+		% Text Node
+		\draw (403,89.4) node [anchor=north west][inner sep=0.75pt]    {$u( 10)$};
+		% Text Node
+		\draw (155,372.4) node [anchor=north west][inner sep=0.75pt]    {$0$};
+		% Text Node
+		\draw (296,372.4) node [anchor=north west][inner sep=0.75pt]    {$5$};
+		% Text Node
+		\draw (279,148.4) node [anchor=north west][inner sep=0.75pt]    {$u( 5)$};
+		% Text Node
+		\draw (18,223.4) node [anchor=north west][inner sep=0.75pt]    {$\tfrac{1}{2} u( 0) \ +\ \tfrac{1}{2} u( 10)$};
+
+	\end{tikzpicture}
+	\caption{Example of a \( u \) exhibiting risk aversion.}
+	\label{fig:risk_aversion}
+
+\end{figure}
+
+Equivalently, an individual is risk loving if the inequality in Definition \ref{def:raversion} is reversed, and risk neutral if the individual is indifferent between the certain amount and the lottery, i.e. if the inequality holds with equality.
+
+There are other ways of defining risk aversion starting from different thought experiments that are equivalent to Definition \ref{def:raversion}. This is good news, it means the definition makes sense! If you are interested in other ways of defining risk aversion, check \citet[p. 186-187]{mas-colellMicroeconomicTheory1995}. We consider another one here. Define the \textbf{certainty equivalent} of a lottery as the certain amount of money that provides the same utility as the lottery itself. That is, the individual must be indifferent between receiving the certainty equivalent for sure and facing the lottery.
+
+\begin{definition}\label{def:ce}
+	The \textbf{certainty equivalent} of a lottery with CDF \( F \) for an individual with utility function \( u \) is defined as the solution to the equation
+
+	\begin{equation}\label{eq:ce}
+		u(c(F,u)) = \int u(x) dF(x).
+	\end{equation}
+\end{definition}
+
+Intuitively, if an individual is risk averse, his certainty equivalent must be less than the expected value of the lottery, as he prefers receiving the expected value for sure rather than facing the lottery. To capture this intuition we can define the \textbf{risk premium} of a lottery as the difference between the expected value of the lottery and its certainty equivalent.
+
+\begin{definition}
+	The \textbf{risk premium} of a lottery with CDF \( F \) for an individual with utility function \( u \) is
+
+	\begin{equation}\label{eq:rp}
+		\pi(F,u) = \int x dF(x) - c(F,u).
+	\end{equation}
+\end{definition}
+
+You should show in Exercise \ref{ex:cerp} that an individual is risk averse if and only if the risk premium is non-negative for each lottery.
+
+We now have a notion of risk aversion, but not a quantitative measure, which we will develop next. Again, we start from intuition, how could we measure risk aversion? The risk premium might be a starting point, the higher the risk premium, the more risk averse the individual, as he requires a lower certainty equivalent to face the lottery. Consider two individuals with utility function \( u \) and \( v \). If for each lottery \( F \), the risk premium of the first individual is higher than that of the second, i.e. \( \pi(F,u) \geq \pi(F,v) \), we can say that the first individual is more risk averse than the second. However, such condition boils down to comparing certainty equivalents:
+
+\[\pi(F,u) \geq \pi(F,v) \iff c(F,u) \leq c(F,v) \text{ for each lottery } F,\]
+
+you should show this. We therefore have the following definition.
+
+\begin{definition}\label{def:compare}
+	An individual with utility function \( u \) is \textbf{more risk averse} than an individual with utility function \( v \) if for each lottery \( F \)
+
+	\[
+		c(F,u) \leq c(F,v).
+	\]
+\end{definition}
+
+We now want to develop a measure of risk aversion that is related to the rate at which the certainty equivalent changes as we change the lottery. Consider a lottery over monetary outcomes that pays \(x + \varepsilon\) with probability \(1/2\) and \(x - \varepsilon\) with probability \(1/2\), call it \(F_\varepsilon\). By Definition~\ref{def:ce}
+
+\begin{equation}\label{eq:ce_eps}
+	u\!\big(c(F_\varepsilon,u)\big)
+	= \tfrac{1}{2}u(x+\varepsilon) + \tfrac{1}{2}u(x-\varepsilon).
+\end{equation}
+
+Since both sides of Equation \eqref{eq:ce_eps} are twice differentiable in \(\varepsilon\) and \(u'(c(F_\varepsilon,u))>0\) since \( u \) is increasing, the implicit function theorem implies that \(c(F_\varepsilon,u)\) is twice differentiable in a neighborhood of \(0\). Differentiating \eqref{eq:ce_eps} with respect to \(\varepsilon\) gives
+
+\[
+	u'\!\big(c(F_\varepsilon,u)\big)\,c'(\varepsilon)
+	= \tfrac{1}{2}u'(x+\varepsilon) - \tfrac{1}{2}u'(x-\varepsilon).
+\]
+
+Evaluating at \(\varepsilon = 0\),
+
+\[
+	u'(x)\,c'(0) = 0 \quad \Longrightarrow \quad c'(0) = 0,
+	\qquad c(0) = x.
+\]
+
+Differentiating again with respect to \(\varepsilon\),
+
+\[
+	u''\!\big(c(F_\varepsilon,u)\big)\!\big(c'(\varepsilon)\big)^2
+	+ u'\!\big(c(F_\varepsilon,u)\big)c''(\varepsilon)
+	= \tfrac{1}{2}u''(x+\varepsilon) + \tfrac{1}{2}u''(x-\varepsilon).
+\]
+
+Evaluating at \(\varepsilon = 0\) and using \(c'(0)=0\) and \(c(0)=x\), we obtain
+
+\[
+	u'(x)c''(0) = u''(x)
+	\quad \Longrightarrow \quad
+	c''(0) = \frac{u''(x)}{u'(x)}.
+\]
+
+The ratio between the second and first derivative of the utility function is the \textbf{Arrow-Pratt coefficient of absolute risk aversion}. It is not by chance that it appears here. As we noticed already, risk aversion is related to the concavity of the utility function, which is captured by its second derivative. In principle we could use the second derivative alone as a measure of risk aversion, but this would not be satisfactory, as multiplying the utility function by a positive constant would change the second derivative but not risk aversion. Dividing the second derivative by the first derivative solves this problem, as multiplying the utility function by a positive constant multiplies both derivatives by the same constant, leaving their ratio unchanged. The simplest modification of the measure to address such issue is to divide the second derivative by the first derivative, leading to the Arrow-Pratt coefficient.
+
+\begin{definition}\label{def:ap}
+	The \textbf{Arrow-Pratt coefficient of absolute risk aversion} for an individual with utility function \( u \) at outcome \( x \) is
+
+	\[
+		r(x,u) = -\frac{u''(x)}{u'(x)}.
+	\]
+\end{definition}
+
+Hence, we just showed that the limit of the second derivative of the certainty equivalent as \(\varepsilon \to 0\) is exactly \(-r(x,u)\). In the exercises, you are asked to show the following equivalence between certainty equivalents and the Arrow-Pratt coefficient.
+
+\begin{proposition}\label{prop:equiv}
+	An individual with utility function \( u \) is \textbf{more risk averse} than an individual with utility function \( v \) if and only if for each \( x \)
+
+	\[
+		r(x,u) \geq r(x,v),
+	\]
+
+	where \( r(x,u) \) and \( r(x,v) \) are the Arrow-Pratt coefficients of absolute risk aversion for individuals with utility functions \( u \) and \( v \).
+\end{proposition}
+
+\paragraph{Things to read.} This section mostly draws from \citet[ch. 6.C]{mas-colellMicroeconomicTheory1995}. Alternatives treatments can be found in \citet[ch. 6]{krepsNotesTheoryChoice1988} and \citet[ch. 6]{krepsMicroeconomicFoundations2013}.
+
+\section{Exercises}
+
+\begin{exercise}
+	Check that the CDF in Figure \ref{fig:cdf_example} satisfies the three properties of a CDF.
+\end{exercise}
+
+\begin{exercise}\label{ex:cerp}
+	Show that, if an individual with expected utility preferences and utility function \( u \) is risk averse, his risk premium is non-negative for each lottery.
+\end{exercise}
+
+\begin{exercise}
+	Prove Proposition \ref{prop:equiv}. (If you are stuck, check \cite{krepsMicroeconomicFoundations2013} or exercises 6.C.6 and 6.C.7 in \citet{mas-colellMicroeconomicTheory1995}.)
+\end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/

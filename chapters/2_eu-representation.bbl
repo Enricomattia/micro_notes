@@ -25,6 +25,33 @@ Camerer, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Eliaz%
+\ \BBA {} Spiegler%
+}{%
+Eliaz%
+\ \BBA {} Spiegler%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+eliazCanAnticipatoryFeelings2006}
+\APACinsertmetastar {%
+eliazCanAnticipatoryFeelings2006}%
+\begin{APACrefauthors}%
+Eliaz, K.%
+\BCBT {}\ \BBA {} Spiegler, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Can Anticipatory Feelings Explain Anomalous Choices of
+  Information Sources?} {Can anticipatory feelings explain anomalous choices of
+  information sources?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Games and Economic Behavior}{56}{1}{87--104}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Gul%
 \ \BBA {} Pesendorfer%
 }{%

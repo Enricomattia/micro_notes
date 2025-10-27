@@ -1,0 +1,29 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{Mas-Colell}%
+, Whinston%
+\BCBL {}\ \BBA {} Green%
+}{%
+{Mas-Colell}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+mas-colellMicroeconomicTheory1995}
+\APACinsertmetastar {%
+mas-colellMicroeconomicTheory1995}%
+\begin{APACrefauthors}%
+{Mas-Colell}, A.%
+, Whinston, M\BPBI D.%
+\BCBL {}\ \BBA {} Green, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+\newblock
+\APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

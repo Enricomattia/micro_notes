@@ -1,26 +1,97 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Acz{\'e}l%
+Fishburn%
 }{%
-Acz{\'e}l%
+Fishburn%
 }{%
-{\protect \APACyear {1966}}%
+{\protect \APACyear {1970}}%
 }]{%
-aczelLecturesFunctionalEquations1966}
+fishburnUtilityTheoryDecision1970}
 \APACinsertmetastar {%
-aczelLecturesFunctionalEquations1966}%
+fishburnUtilityTheoryDecision1970}%
 \begin{APACrefauthors}%
-Acz{\'e}l, J.%
+Fishburn, P\BPBI C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1966}.
+\APACrefYear{1970}.
 \newblock
-\APACrefbtitle {Lectures on Functional Equations and Their Applications}
-  {Lectures on functional equations and their applications}\ (\BVOL~19).
+\APACrefbtitle {Utility Theory for Decision Making} {Utility theory for
+  decision making}.
 \newblock
-\APACaddressPublisher{New York}{Academic Press}.
+\APACaddressPublisher{New York}{Wiley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+krepsNotesTheoryChoice1988}
+\APACinsertmetastar {%
+krepsNotesTheoryChoice1988}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Notes on the Theory of Choice} {Notes on the theory of choice}.
+\newblock
+\APACaddressPublisher{}{Westview Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+krepsMicroeconomicFoundations2013}
+\APACinsertmetastar {%
+krepsMicroeconomicFoundations2013}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Microeconomic Foundations} {Microeconomic foundations}\
+  (\BVOL~1).
+\newblock
+\APACaddressPublisher{}{Princeton university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Mas-Colell}%
+, Whinston%
+\BCBL {}\ \BBA {} Green%
+}{%
+{Mas-Colell}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+mas-colellMicroeconomicTheory1995}
+\APACinsertmetastar {%
+mas-colellMicroeconomicTheory1995}%
+\begin{APACrefauthors}%
+{Mas-Colell}, A.%
+, Whinston, M\BPBI D.%
+\BCBL {}\ \BBA {} Green, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+\newblock
+\APACaddressPublisher{}{Oxford university press New York}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

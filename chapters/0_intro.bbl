@@ -48,32 +48,6 @@ Fishburn, P\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Fleurbaey%
-\ \BBA {} Maniquet%
-}{%
-Fleurbaey%
-\ \BBA {} Maniquet%
-}{%
-{\protect \APACyear {2011}}%
-}]{%
-fleurbaeyTheoryFairnessSocial2011}
-\APACinsertmetastar {%
-fleurbaeyTheoryFairnessSocial2011}%
-\begin{APACrefauthors}%
-Fleurbaey, M.%
-\BCBT {}\ \BBA {} Maniquet, F.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2011}.
-\newblock
-\APACrefbtitle {A Theory of Fairness and Social Welfare} {A theory of fairness
-  and social welfare}\ (\BVOL~48).
-\newblock
-\APACaddressPublisher{}{Cambridge University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Gilboa%
 }{%
 Gilboa%
@@ -214,26 +188,28 @@ Myerson, R\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Savage%
+Thomson%
 }{%
-Savage%
+Thomson%
 }{%
-{\protect \APACyear {1972}}%
+{\protect \APACyear {2011}}%
 }]{%
-savageFoundationsStatistics1972}
+thomsonFairAllocationRules2011}
 \APACinsertmetastar {%
-savageFoundationsStatistics1972}%
+thomsonFairAllocationRules2011}%
 \begin{APACrefauthors}%
-Savage, L\BPBI J.%
+Thomson, W.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1972}.
+\APACrefYearMonthDay{2011}{}{}.
 \newblock
-\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}\
-  (\PrintOrdinal{2nd rev.}\ \BEd).
+{\BBOQ}\APACrefatitle {Fair Allocation Rules} {Fair allocation rules}.{\BBCQ}
 \newblock
-\APACaddressPublisher{New York}{Dover Publications}.
+\BIn{} \APACrefbtitle {Handbook of Social Choice and Welfare} {Handbook of
+  social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
