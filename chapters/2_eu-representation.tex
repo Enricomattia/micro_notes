@@ -12,12 +12,12 @@
 
 We now impose properties on preferences over lotteries. But first, a brief methodological aside on what we are doing. Before discussing properties of \( \succsim \), we should explicit what the interpretation of \( \succsim \) is. Different methodological stances are possible. Is \( \succsim \) tracking what an individual has in mind? What he would say if asked? How he chose in the past?
 
-Under \textit{revealed preference theory}, we interpret \( \succsim \) as a description of how an individual chooses. Therefore, there is no psychological content to \( \succsim \). Revealed preference theory has been the standard methodological stance in economics for a long time. But why? Wouldn't it be better to develop a theory that exploits psychological insights? Revealed preference theory is exclusively a methodological stance, not a psychological (or, for what matters, a moral) one. The assumption is not that choices are not driven by psychological motives, but that we abstract from these motives and attempt to find patterns in choices directly. There is a strong advantage in doing so: psychological motives are hard to observe, while choices can be observed easily. The implication is that a choice theory based on revealed preferences is more easily testable: if we observe choices that violate the assumptions of the theory, we can reject the it. Therefore, revealed preference theory is \textbf{not} a stance on how individuals make choices or what matters for choices, it is just silent about these issues. This is often misunderstood: there is a plethora of papers claiming that economics views individuals as cold robots.\footnote{If you are interested, you can read \cite{thomaDefenceRevealedPreference2021} for a discussion of the current status of revealed preference theory.}
+Under \textit{revealed preference theory}, we interpret \( \succsim \) as a description of how an individual \textbf{chooses}. Therefore, there is no psychological content to \( \succsim \). Revealed preference theory has been the standard methodological stance in economics for a long time. But why? Wouldn't it be better to develop a theory that exploits psychological insights? Revealed preference theory is exclusively a methodological stance, not a psychological (or, for what matters, a moral) one. The assumption is not that choices are not driven by psychological motives, but that we abstract from these motives and attempt to find patterns in choices directly. There is a strong advantage in doing so: psychological motives are hard to observe, while choices can be observed easily. The implication is that a choice theory based on revealed preferences is more easily testable: if we observe choices that violate the assumptions of the theory, we can reject it. Therefore, revealed preference theory is \textbf{not} a stance on how individuals make choices or what matters for choices, on the contrary, it is silent about these issues.\footnote{If you are interested, you can read \cite{thomaDefenceRevealedPreference2021} for a discussion of the current status of revealed preference theory.} This is often misunderstood: there is a plethora of critics claiming that economics views individuals as cold robots.\footnote{By the way, if you read Asimov's books you now that robots are not cold at all!}
 
-Such critics mostly come from behavioural economics, which is a field that attempts to incorporate psychological insights into economic models. Is therefore impossible to do behavioural economics under the revealed preference approach? Not at all. Good behavioural theories do what the name of the field suggests: characterise the behavioural content of the theory, so that, as economist, we know how different individuals behave. Two theories with different psychological content that are observationally equivalent, i.e., they make the same predictions about choices, are not equally useful for economists.\footnote{There is a huge debate on this topic. Among many, I suggest you to read \cite{gulCaseMindlessEconomics2011} and the response by \cite{camererCaseMindfulEconomics2008}. A more recent piece is \cite{spieglerBehavioralEconomicsAtheoretical2019}.}
+Such critics mostly come from behavioural economics, which is a field that attempts to incorporate psychological insights into economic models.\footnote{In \cite{spieglerCuriousCultureEconomic2024a} you can find a view of the motivations of the founding fathers of behavioural economics.} Is it therefore impossible to do behavioural economics under the revealed preference approach? Not at all. Good behavioural theories do what the name of the field suggests: characterise the behavioural content of the theory, so that, as economist, we know how different individuals behave. Two behavioural theories with different psychological content that are observationally equivalent, i.e., they make the same predictions about choices, are not equally useful for economists.\footnote{There is a huge debate on this topic. Among many, I suggest you to read \cite{gulCaseMindlessEconomics2011} and the response by \cite{camererCaseMindfulEconomics2008}. A more recent piece is \cite{spieglerBehavioralEconomicsAtheoretical2019}.}
 
 \begin{techremark}
-	An interesting case study is \cite{masatliogluBehavioralAnalysisStochastic2016}, where the authors show that the famous model by \cite{koszegiReferencedependentRiskAttitudes2007} is behaviourally equivalent to the intersection of rank-dependent utility and quadratic utility, two older models. Another example that is quite relevant today is \cite{eliazCanAnticipatoryFeelings2006}.
+	An interesting case study is \cite{masatliogluBehavioralAnalysisStochastic2016}, where the authors show that the famous model by \cite{koszegiReferencedependentRiskAttitudes2007} is behaviourally equivalent to the intersection of rank-dependent utility and quadratic utility, two older models. Another example that is quite relevant today is in \cite{eliazCanAnticipatoryFeelings2006}.
 \end{techremark}
 
 In what follows, you can have in mind the interpretation of \( \succsim \) that you prefer, but remember that it is important to be clear about it.
@@ -174,6 +174,8 @@ Recall that preferences are \textbf{complete} if for any two lotteries \(p,q\), 
 
 
 \section{Expected utility representation}
+
+We are ready to state and prove the theorem relating the properties of preferences over lotteries to the expected utility functional form.
 
 \begin{theorem}\label{thm:eu}
 	Preferences over lotteries \(\succsim\) satisfy \usename{axn:wo}, \usename{axn:continuity}, \usename{axn:independence} if and only if then there exists a utility function \(u \colon X\to\mathbb{R}\) such that:
@@ -461,6 +463,12 @@ The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomic
 	Show that, if preferences are represented by an expected utility function, then indifference curves in the triangle are parallel lines.
 \end{exercise}
 
+\begin{exercise}
+	Go back to the choice problem in Exercise \ref{ex:allais}. Show that the preferences exhibited there do not satisfy \usename{axn:independence}.
+\end{exercise}
+
+\begin{comment}
+
 \begin{solution}[ex:parallel-lines]
 	Let \(\{x,y,z\}\) be the outcomes and let
 
@@ -489,6 +497,8 @@ The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomic
 	which does not depend on \(c\). Changing \(c\) only changes the intercept
 	\(\frac{c-u(z)}{u(y)-u(z)}\). Therefore, all indifference lines, the portions of these lines that lie inside the simplex, have the same slope and are parallel.
 \end{solution}
+
+\end{comment}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/

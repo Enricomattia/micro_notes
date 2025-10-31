@@ -185,6 +185,29 @@ Spiegler, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Spiegler%
+}{%
+Spiegler%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+spieglerCuriousCultureEconomic2024a}
+\APACinsertmetastar {%
+spieglerCuriousCultureEconomic2024a}%
+\begin{APACrefauthors}%
+Spiegler, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\newblock
+\APACrefbtitle {The {{Curious Culture}} of {{Economic Theory}}} {The {{Curious
+  Culture}} of {{Economic Theory}}}.
+\newblock
+\APACaddressPublisher{}{The MIT Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Thoma%
 }{%
 Thoma%

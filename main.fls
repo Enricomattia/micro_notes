@@ -629,6 +629,7 @@ INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tf
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\enric\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1200.tfm
 INPUT .\chapters\1_eu-intro.bbl
 INPUT .\chapters\1_eu-intro.bbl
 INPUT chapters\1_eu-intro.bbl
@@ -641,7 +642,6 @@ OUTPUT chapters\2_eu-representation.aux
 INPUT .\chapters\2_eu-representation.tex
 INPUT .\chapters\2_eu-representation.tex
 INPUT chapters\2_eu-representation.tex
-INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1200.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti0800.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti0600.tfm
