@@ -1,23 +1,57 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\chapter[State space representation]%
- {State space representation}%
+\chapter[States and subjective expected utility]%
+ {States and subjective expected utility}%
 \label{ch:L5}
 
 % 3) Reset things so later footnotes go back to 1, 2, 3, …
 %\setcounter{footnote}{0}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-\section{States}\label{sec:L5-intro}
+\section{State space representation}\label{sec:L5-intro}
 
-ciao
+Until now we studied a model of uncertainty in which the underlying state generating the probability of outcomes was not modelled explicitly, as discussed in Remark \ref{rem:lottery-representation}. There are two advantages of modelling uncerlying states of the world explicitly. The first is that the individual might care about the state \textit{per se}. Consider the following example.
 
-\paragraph{Things to read.} leggi \cite{mas-colellMicroeconomicTheory1995}
+\begin{example}\label{ex:states}
+	Imagine you’re deciding whether to buy a raincoat today. Tomorrow it might rain, or it might be sunny. If it rains, you’ll be very happy to have bought the coat — you’ll stay dry and comfortable. But if it turns out sunny, you’ll regret spending the money and carrying the coat around for no reason. The same physical outcome — owning a raincoat — feels very different depending on the weather. Your satisfaction with it depends on the state of the world you find yourself in. That’s what economists mean by state-dependent utility: how much you value something can change with circumstances like weather, health, or mood, rather than depending only on the object or action itself.
+\end{example}
+
+There is a second advantage of modelling states explicitly, but it is easier to explain after we introduce the formal model. As for the model in Lecture \ref{ch:L1}, there is a finite set of outcomes \( X \), in Example \ref{ex:states} these are being dry or wet, carrying the coat around or not, and spending money or not. Moreover, there is a finite set of mutually exclusivestates of the world \( S \). In Example \ref{ex:states}, these are the weather conditions, rain or sun. The individual chooses an \textit{act}, which is a function from states to outcomes \( f: S \to X \). Act \( f \) in state \( s \) leads to the outcome \( f_s \). In Example \ref{ex:states}, an act is a choice to buy or not to buy the raincoat. If the individual buys the coat, then in the rain state she gets to be dry and comfortable, while in the sun state she gets to regret spending money and carrying the coat around for no reason. If instead she does not buy the coat, then in both states she gets to be dry and comfortable without spending money or carrying anything around.
+
+We can now discuss the second advantage of modelling states explicitly. In the model in Lecture \ref{ch:L1}, the individual chooses among lotteries, probability distributions over outcomes. From individual preferences over lotteries, we can infer his utility over outcomes \( u \), and various properties it might have, such as risk aversion. However, the probability of realisation of outcomes is \textit{given}. Most of the time, it is not clear what the probability of an outcome is, and the individual might have her own beliefs about these probabilities. Notice that, in the model with states, we have not introduced any probabilities yet. The idea is that we want to \textit{infer} both the individual’s utility over outcomes \( u \) and her beliefs about the likelihood of states \( p \) from her preferences over acts.
+
+\begin{techremark}
+	You should notice that, in this setting, there is no natural mixing operation comparable to the one we had for lotteries in Lecture \ref{ch:L1}.
+\end{techremark}
+
+\section{Subjective expected utility}
+
+We now study preferences over acts, that is, if \( f \succsim f^{\prime} \) we say the individual prefers act \( f \) to act \( f^{\prime} \). Under suitable conditions on preferences \( \succsim \), we can represent them through a form of expected utility paralleling the one we considered until now.
+
+\begin{definition}\label{def:seu}
+	Preferences \( \succsim \) over acts have a \textbf{subjective expected utility representation} if there exists a probability distribution over states \( p \in \Delta(S) \) and a utility function over outcomes \( u: X \to \mathbb{R} \) such that, for any two acts \( f, f^{\prime} \),
+	\[
+		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s \in S} p_s u(f_s) \geq \sum_{s \in S} p_s u(f^{\prime}_s).
+	\]
+\end{definition}
+
+You might be thinking that we are not exploting the first advantage of the state space representation of uncertainty, that is, preferences over outcomes that also depend on the state of the world. Indeed, we can extend subjective expected utility to allow for state-dependent utility functions.
+
+\begin{definition}\label{def:seus}
+	Preferences \( \succsim \) over acts have a \textbf{state-dependent subjective expected utility representation} if there exists a probability distribution over states \( p \in \Delta(S) \) and a utility function over outcomes \( u: X \to \mathbb{R} \) such that, for any two acts \( f, f^{\prime} \),
+	\[
+		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s \in S} p_s u_s(f_s) \geq \sum_{s \in S} p_s u_s (f^{\prime}_s).
+	\]
+\end{definition}
+
+In Definition \ref{def:seus}, contrary to Definition \ref{def:seu}, individual preferences over outcomes depend on the state \( u_s \).
+
+\paragraph{Things to read.} For a textbook treatment of the content of this lecture, see \citet[pp. 33-38]{krepsNotesTheoryChoice1988} or \citet[ch. 12]{fishburnUtilityTheoryDecision1970}. If you are interested in more details, read \citet[Chs. 8-9]{krepsNotesTheoryChoice1988} or \citet[ch. 14]{fishburnUtilityTheoryDecision1970}.
 
 \section{Exercises}
 
 \begin{exercise}
-	ciao ciao
+	There is a second important model of uncertainty using a state space, by \cite{anscombeDefinitionSubjectiveProbability1963}. In this model, the individual chooses acts mapping state of the world to lotteries, rather than outcomes. That is, each act is a function \( f: S \to \Delta(X) \). Write down a subjective expected utility representation for this model. What do you think the advantages of this model are? (Think about the remark about mixing in the text.)
 \end{exercise}
 
 \bibliographystyle{apacite}  % or another  style

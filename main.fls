@@ -1,6 +1,6 @@
-PWD c:\Users\enric\OneDrive\Desktop\micro_notes
+PWD c:\Users\enric\OneDrive - Universita' degli Studi di Roma Tor Vergata\Desktop\micro_notes
 INPUT C:\Users\enric\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\enric\OneDrive\Desktop\micro_notes\main.tex
+INPUT c:\Users\enric\OneDrive - Universita' degli Studi di Roma Tor Vergata\Desktop\micro_notes\main.tex
 OUTPUT main.log
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -642,9 +642,10 @@ OUTPUT chapters\2_eu-representation.aux
 INPUT .\chapters\2_eu-representation.tex
 INPUT .\chapters\2_eu-representation.tex
 INPUT chapters\2_eu-representation.tex
-INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
+INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti0800.tfm
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti0600.tfm
+INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT .\chapters\2_eu-representation.bbl
 INPUT .\chapters\2_eu-representation.bbl
 INPUT chapters\2_eu-representation.bbl
@@ -740,6 +741,8 @@ INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\s
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbi1200.pfb
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbi1200.pfb
+INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1095.pfb
+INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1095.pfb
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1200.pfb
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1200.pfb
 INPUT C:\Users\enric\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfbx1728.pfb

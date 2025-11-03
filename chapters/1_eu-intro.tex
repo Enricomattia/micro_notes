@@ -40,7 +40,7 @@ We can depict lotteries using a tree diagram, as in Figure~\ref{fig:lottery-tree
 	\label{fig:lottery-tree}
 \end{figure}
 
-\begin{remark}
+\begin{remark}\label{rem:lottery-representation}
 	Notice that in this setup we are missing something: whether the coin lands on heads or tails is irrelevant; only the probabilities of the outcomes matter, not the events that generate them. This is a limitation of the model, which we will address later when we introduce a state-space representation of uncertainty.
 \end{remark}
 
@@ -194,7 +194,7 @@ There is another useful way to represent lotteries graphically. Consider again t
 Our goal is to understand how individuals choose between lotteries, whether they like or dislike risk, and how we can compare different individuals’ attitudes toward risk. To do so, we need a way to express statements such as \enquote{an individual weakly prefers lottery \(p\) to lottery \(q\)}. Introduce a binary relation \(\succsim\) over \(\Delta(X)\), where \(p \succsim q\) reads \enquote{the individual weakly prefers lottery \(p\) to lottery \(q\)}.\footnote{Are you curious why we use the symbol \( \succsim \) for preferences instead of \( \geq \)? The historian of economic theory \href{https://ivanboldyrev.net/}{Ivan Boldyrev} told me that it originates from \citet{hersteinAxiomaticApproachMeasurable1953}, who used it in their classic paper providing an axiomatic characterization of expected utility—which we will encounter soon.} Compared to choice under certainty, we are now comparing lotteries—that is, probability distributions over outcomes—rather than outcomes themselves.
 
 \begin{techremark}
-	Technically, \(\succsim\) is a subset of \(\Delta(X) \times \Delta(X)\): a set of ordered pairs of lotteries. For example, if \(p, q, r \in \Delta(X)\), the statement \emph{\(p\) is (weakly) preferred to \(q\)} is equivalent to \((p, q) \in \succsim\).
+	Technically, \(\succsim\) is a subset of \(\Delta(X) \times \Delta(X)\): a set of ordered pairs of lotteries. For example, if \(p, q, r \in \Delta(X)\), the statement \enquote{\(p\) is (weakly) preferred to \(q\)} is equivalent to \((p, q) \in \succsim\).
 \end{techremark}
 
 Recall that we can define strict preference and indifference in terms of weak preference. We write \(p \succ q\), which reads \enquote{\(p\) is strictly preferred to \(q\)}, if and only if \(p \succsim q\) but not \(q \succsim p\); and we write \(p \sim q\), which reads \enquote{\(p\) is indifferent to \(q\)}, if and only if both \(p \succsim q\) and \(q \succsim p\).
@@ -218,10 +218,12 @@ What would be a reasonable utility function representing preferences over lotter
 \end{definition}
 
 In other words, an expected utility function assigns to each lottery \(p\) the \emph{expected value} of the function \(u\) over the outcomes, where the expectation is taken with respect to the probability distribution \(p\). The function \(u\) is sometimes called the \textbf{Bernoulli utility function}. An expected utility function is \emph{linear in probabilities}; that is, for any lotteries \(p, q\) and any \(\alpha \in [0,1]\),
+
 \[
 	U\big(\alpha p + (1-\alpha) q\big) = \alpha U(p) + (1-\alpha) U(q),
 \]
-meaning that the expected utility of a mixture of lotteries is the weighted average of their expected utilities. Linearity is an extremely convenient property in applications, which partially explains the success of expected utility theory.
+
+meaning that the expected utility of a mixture of lotteries is the weighted average of their expected utilities. The other direction of the statement is also true: if \( U \) is linear, then it is an expected utility function.\footnote{You are asked to prove this in Exercise \ref{ex:linear}.} Linearity is an extremely convenient property in applications, which partially explains the success of expected utility theory.
 
 Suppose you observe an individual’s choices and want to test whether their preferences can be represented by an expected utility function. How might you do that? One idea would be to design a choice task, predict the individual’s choices using Equation~\eqref{eq:eu0}, and see whether the predictions are accurate. However, this approach is hard to apply, because to make predictions you would need to assume a specific function \(u\). This is sometimes done—certain functional forms work particularly well—but there is another approach.
 
@@ -255,8 +257,8 @@ See \citet[pp.~31–33]{krepsNotesTheoryChoice1988} for a brief, intuitive intro
 	Show that preferences represented by an expected utility function satisfy reduction of compound lotteries.
 \end{exercise}
 
-\begin{exercise}
-	Show that an expected utility function is linear in probabilities.
+\begin{exercise}\label{ex:linear}
+	Show that a function \( U \) is an expected utility function if and only if it is linear in probabilities.
 \end{exercise}
 
 \begin{exercise}\label{ex:allais}

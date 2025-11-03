@@ -10,27 +10,21 @@
 
 \section{Assumptions on preferences}\label{sec:L2-intro}
 
-We now impose properties on preferences over lotteries. But first, a brief methodological aside on what we are doing. Before discussing properties of \( \succsim \), we should explicit what the interpretation of \( \succsim \) is. Different methodological stances are possible. Is \( \succsim \) tracking what an individual has in mind? What he would say if asked? How he chose in the past?
+We now impose properties on preferences over lotteries and study their behavioural implications. But first, a brief methodological aside on what we are doing. Before discussing properties of \( \succsim \), we should make explicit what the interpretation of \( \succsim \) is. Different methodological stances are possible. Is \( \succsim \) tracking what an individual has in mind? What he would say if asked? How he chose in the past?
 
-Under \textit{revealed preference theory}, we interpret \( \succsim \) as a description of how an individual \textbf{chooses}. Therefore, there is no psychological content to \( \succsim \). Revealed preference theory has been the standard methodological stance in economics for a long time. But why? Wouldn't it be better to develop a theory that exploits psychological insights? Revealed preference theory is exclusively a methodological stance, not a psychological (or, for what matters, a moral) one. The assumption is not that choices are not driven by psychological motives, but that we abstract from these motives and attempt to find patterns in choices directly. There is a strong advantage in doing so: psychological motives are hard to observe, while choices can be observed easily. The implication is that a choice theory based on revealed preferences is more easily testable: if we observe choices that violate the assumptions of the theory, we can reject it. Therefore, revealed preference theory is \textbf{not} a stance on how individuals make choices or what matters for choices, on the contrary, it is silent about these issues.\footnote{If you are interested, you can read \cite{thomaDefenceRevealedPreference2021} for a discussion of the current status of revealed preference theory.} This is often misunderstood: there is a plethora of critics claiming that economics views individuals as cold robots.\footnote{By the way, if you read Asimov's books you now that robots are not cold at all!}
+Under \textit{revealed preference theory}, we interpret \( \succsim \) as a description of how an individual \textbf{chooses}. Therefore, there is no psychological content to \( \succsim \). Revealed preference theory has been the standard methodological stance in economics for a long time. But why? Wouldn't it be better to develop a theory that exploits psychological insights?
 
-Such critics mostly come from behavioural economics, which is a field that attempts to incorporate psychological insights into economic models.\footnote{In \cite{spieglerCuriousCultureEconomic2024a} you can find a view of the motivations of the founding fathers of behavioural economics.} Is it therefore impossible to do behavioural economics under the revealed preference approach? Not at all. Good behavioural theories do what the name of the field suggests: characterise the behavioural content of the theory, so that, as economist, we know how different individuals behave. Two behavioural theories with different psychological content that are observationally equivalent, i.e., they make the same predictions about choices, are not equally useful for economists.\footnote{There is a huge debate on this topic. Among many, I suggest you to read \cite{gulCaseMindlessEconomics2011} and the response by \cite{camererCaseMindfulEconomics2008}. A more recent piece is \cite{spieglerBehavioralEconomicsAtheoretical2019}.}
+Revealed preference theory is a methodological stance, not a psychological (or, for that matter, a moral) one. The assumption is not that choices are unrelated to psychological motives, but that we abstract from these motives and look for patterns in choices directly. There is a strong advantage in doing so: psychological motives are hard to observe, while choices can be observed easily. The implication is that a choice theory based on revealed preferences is empirically testable: if we observe choices that violate the theory’s assumptions, we can reject it. Therefore, revealed preference theory is \textbf{not} a claim about how individuals make choices or about what drives them. On the contrary, it is deliberately silent about these issues.\footnote{If you are interested, see \citet{thomaDefenceRevealedPreference2021} for a discussion of the current status of revealed preference theory and \citet{moscatiPsychologicalNarrativesDecision2025} for the role of psychological narratives in choice theory.} This is often misunderstood: there is a plethora of critics claiming that economics views individuals as cold robots.\footnote{By the way, if you read Asimov’s books you know that robots are not cold at all!}
+
+Such critics mostly come from behavioural economics, a field that aims to incorporate psychological insights into economic models.\footnote{See \citet{spieglerCuriousCultureEconomic2024a} for an account of the motivations of the founding fathers of behavioural economics.} Is it therefore impossible to do behavioural economics within the revealed-preference framework? Not at all. Good behavioural theories do what the name suggests: they characterise the \emph{behavioural} content of a theory, so that we, as economists, can understand how individuals behave. Two behavioural theories with different psychological content but that are observationally equivalent—i.e., they make the same predictions about choices—have the same economic implications.\footnote{There is a huge debate on this topic. Among many, I suggest reading \citet{gulCaseMindlessEconomics2008} and the reply by \citet{camererCaseMindfulEconomics2008}. A more recent discussion is \citet{spieglerBehavioralEconomicsAtheoretical2019}.}
 
 \begin{techremark}
-	An interesting case study is \cite{masatliogluBehavioralAnalysisStochastic2016}, where the authors show that the famous model by \cite{koszegiReferencedependentRiskAttitudes2007} is behaviourally equivalent to the intersection of rank-dependent utility and quadratic utility, two older models. Another example that is quite relevant today is in \cite{eliazCanAnticipatoryFeelings2006}.
+	An interesting case study is \cite{masatliogluBehavioralAnalysisStochastic2016}, where the authors show that the famous model by \cite{koszegiReferencedependentRiskAttitudes2007} is behaviourally equivalent to the intersection of rank-dependent utility and quadratic utility—two older models—despite having a different psychological interpretation. Another example that is quite relevant today is in \cite{eliazCanAnticipatoryFeelings2006}.
 \end{techremark}
 
-In what follows, you can have in mind the interpretation of \( \succsim \) that you prefer, but remember that it is important to be clear about it.
+In what follows, you can have in mind the interpretation of \( \succsim \) that you prefer, but keep in mind that assumptions may have different flavours under different interpretations. Recall that we want to find properties that single out expected utility preferences in Equation~\eqref{eq:eu0}. Therefore, it might be worthwhile to first understand some implications of having expected utility preferences.
 
-Before discussing the properties of preferences over lotteries, let's consider a reasonable functional form for preferences. A natural candidate is the following: the utility of a lottery \( p \) is given by
-
-\begin{equation}\label{eq:eu}
-	\sum_{x\in X} p(x)u(x)
-\end{equation}
-
-for some function \( u \colon X \to \mathbb{R} \), assigning to each outcome \( x \) a number representing its utility \( u (x ) \). The idea is simple, the outcome \( x \) realises with probability \( p \), and when \( x \) realises, the individual gets utility \( u(x) \). The functional form in Equation \eqref{eq:eu} is called \textbf{expected utility}. This is because it is the expectation, computed with the probability \( p \), of the utility the individual gets. Before turning to the properties of preferences that will lead us to this functional form, let's make some observations.
-
-Having expected utility preferences over lotteries implies that indifference curves on the simplex are straight lines. That is, say that \( p \sim q \). Then, for any \( \alpha \in (0,1) \) it holds that \( \alpha p + (1-\alpha) q \sim p \), as illustrate in Figure \ref{fig:simplex-ind}.
+Having expected utility preferences over lotteries implies that indifference curves on the simplex are straight lines. That is, say that if \( p \sim q \), then, for any \( \alpha \in (0,1) \), it holds that \( \alpha p + (1-\alpha) q \sim p \), as illustrated in Figure~\ref{fig:simplex-ind}.
 
 \begin{figure}[H]
 	\centering
@@ -76,13 +70,13 @@ Having expected utility preferences over lotteries implies that indifference cur
 	\label{fig:simplex-ind}
 \end{figure}
 
-Let's show this formally. Assume that \( p \sim q \). Then, by definition of expected utility, we have
+Let's show this formally. Assume that \( p \sim q \). Then, by the definition of expected utility, we have
 
 \[
 	\sum_{x\in X} p(x)u(x) = \sum_{x\in X} q(x)u(x).
 \]
 
-By applying expected utility again, for any \( \alpha \in (0,1) \), the utility of the lottery \( \alpha p + (1-\alpha) q \) is given by
+Applying expected utility again, for any \( \alpha \in (0,1) \), the utility of the lottery \( \alpha p + (1-\alpha) q \) is
 
 \begin{align*}
 	\sum_{x\in X} \big(\alpha p(x) + (1-\alpha) q(x)\big) u(x)
@@ -92,84 +86,105 @@ By applying expected utility again, for any \( \alpha \in (0,1) \), the utility 
 	 & = \sum_{x\in X} q(x) u(x).
 \end{align*}
 
-Indifference curves are also parallel, you are asked to show this in Exercise \ref{ex:parallel-lines}.
+Indifference curves are also parallel; you are asked to show this in Exercise~\ref{ex:parallel-lines}. Of course, the fact that indifference curves are straight lines is related to the linearity of expected utility, which in turn follows from a specific axiom, as we will see shortly.
 
-Let's now turn to the properties of \( \succsim \) we will consider. First, we assume that preferences are a \textbf{weak order}.
+Let's now turn to the properties of \( \succsim \) we will consider. First, we assume that preferences form a \textbf{weak order}.
 
 \begin{axiom}\label{ax:wo}
 	\labelname{axn:wo}{Weak order} (\textbf{Weak order}) Preferences \(\succsim\) are complete and transitive.
 \end{axiom}
 
-Recall that preferences are \textbf{complete} if for any two lotteries \(p,q\), either \(p\succsim q\) or \(q\succsim p\), or both. They are transitive if for any three lotteries \(p,q,r\), if \(p\succsim q\) and \(q\succsim r\), then \(p\succsim r\).
+Recall that preferences are \textbf{complete} if, for any two lotteries \(p,q\), either \(p\succsim q\) or \(q\succsim p\), or both. They are \textbf{transitive} if, for any three lotteries \(p,q,r\), whenever \(p\succsim q\) and \(q\succsim r\), then \(p\succsim r\).
+
+\begin{techremark}
+	Sometimes \usename{axn:wo} is referred to as \textbf{rationality} of preferences (see e.g. \citet[p.~6]{mas-colellMicroeconomicTheory1995}). However, I think this is an unfortunate name. It suggests that it is \enquote{irrational} to violate \usename{axn:wo}, but there are reasons why people might have intransitive or incomplete preferences (can you think of any?).
+\end{techremark}
+
+\usename{axn:wo} is a necessary condition for having any utility representation (see \citet[p.~9]{mas-colellMicroeconomicTheory1995}). It is not the core assumption of expected utility theory, but rather one shared by most theories of choice.
 
 \begin{axiom}\label{ax:continuity}
-	\labelname{axn:continuity}{Continuity} (\textbf{Continuity}) For any three lotteries \(p,q,r\), if \(p\succ q\succ r\) then there exist \(\alpha,\beta\in(0,1)\) such that \(\alpha p+(1-\alpha)r\succ q\succ \beta p+(1-\beta)r\).
+	\labelname{axn:continuity}{Continuity} (\textbf{Continuity}) For any three lotteries \(p,q,r\), if \(p\succ q\succ r\), then there exist \(\alpha,\beta\in(0,1)\) such that \(\alpha p+(1-\alpha)r\succ q\succ \beta p+(1-\beta)r\).
 \end{axiom}
+
+\usename{axn:continuity} says that there is no lottery \( p \) so good that, for \( q \succ r \), a small probability \( \beta \) of \( p \) and a large probability \( 1-\beta \) of \( r \) is always better than \( q \). Similarly, there is no gamble \(r\) so bad that, for \( p \succ q \), a large probability \(\alpha \) of \(p\) and a small probability \(1-\alpha\) of \(r\) is always worse than \(q\). In essence, this axiom implies that preferences do not have \enquote{jumps} when probabilities change slightly—i.e., that preferences are \emph{continuous} in probabilities. \usename{axn:continuity} allows us to obtain a continuous utility representation of preferences (see \citet[p.~47]{mas-colellMicroeconomicTheory1995}), but again, it is not the core assumption of expected utility theory—the next one is.
 
 \begin{axiom}
 	\labelname{axn:independence}{Independence} (\textbf{Independence}) For any three lotteries \(p,q,r\) and for any \(\alpha\in(0,1)\), we have \( p \succsim q \) if and only if \(\alpha p+(1-\alpha)r\succsim \alpha q+(1-\alpha)r\).
 \end{axiom}
 
-\begin{lemma}
-	Let \( \succsim \) satisfy \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}, then there exist two lotteries \( \overline p \) and
-	\( \underline p \) such that \( \overline p \succsim p \succsim \underline p \) \text{for all} \( p \).
+In words, \usename{axn:independence} says that if \(p\) is preferred to \(q\), then mixing both lotteries with any third lottery \(r\), using the same probability \(1-\alpha\), does not change their ranking. One way to justify \usename{axn:independence} is as follows. Suppose \(p \succsim q\). Now consider two compound lotteries obtained by tossing a coin: the first yields \(p\) if the coin shows heads and \(r\) otherwise; the second yields \(q\) if the coin shows heads and \(r\) otherwise. Ex ante, one might reason that what happens if the coin shows tails is the same in both compound lotteries, so that part should not matter—while if the coin shows heads, \(p\) is preferred to \(q\). Therefore, the first compound lottery should be preferred to the second.
+
+This argument relies on the meaning of the mixing operation within the set of lotteries. By contrast, consider the case of mixing foods. One might prefer pasta to cake, yet mixing both with whipped cream could make the cake better than the pasta.\footnote{Feel no shame if you are unconvinced by this example.} You are asked in Exercise~\ref{ex:indlin} to elaborate on the relation between \usename{axn:independence} and the linearity of indifference curves.
+
+Before stating Theorem~\ref{thm:eu} in the next section, we need to prove a preliminary result. Lemma~\ref{lem:max} establishes that, under the assumptions introduced so far, there exist two lotteries that are the best and the worst possible ones.
+
+\begin{lemma}\label{lem:max}
+	Let \( \succsim \) satisfy \usename{axn:wo} and \usename{axn:independence}. Then there exist two lotteries \( \overline p \) and \( \underline p \) such that
+	\[
+		\overline p \succsim p \succsim \underline p \quad \text{for all } p .
+	\]
 \end{lemma}
 
 \begin{proof}
-	The proof is in two steps.
+	The proof proceeds in two steps.
 
-	\paragraph{Step 1.} By \usename{axn:wo}, the restriction of \( \succsim \) to the set of lotteries giving positive probability to only one outcome \( \{\delta_x: x\in X\} \) is a complete and transitive order on a \emph{finite} set. Hence there exist $x^\ast,x_\ast$ such that
-
+	\paragraph{Step 1.} By \usename{axn:wo}, the restriction of \( \succsim \) to the set of degenerate lotteries \(\{\delta_x \in \Delta(X): \delta_x(x) = 1\}\) is a complete and transitive order on a finite set. Hence there exist outcomes \(x^\ast, x_\ast\) such that
 	\[
-		\delta_{x^\ast} \succsim \delta_x \succsim \delta_{x_\ast} \qquad\text{for all } x .
+		\delta_{x^\ast} \succsim \delta_x \succsim \delta_{x_\ast}
+		\qquad \text{for all } x.
+	\]
+	Fix \( \overline p := \delta_{x^\ast} \) and \( \underline p := \delta_{x_\ast} \).
+
+	\paragraph{Step 2.} For any lottery \( p \), let \(\mathrm{supp}(p) = \{x \in X : p(x) > 0\}\) and denote its size by \(|\mathrm{supp}(p)|\). We prove by induction on \(k := |\mathrm{supp}(p)|\) that
+	\[
+		\overline p \succsim p \succsim \underline p.
 	\]
 
-	Fix \( \overline p:=\delta_{x^\ast}\) and \(\underline p:=\delta_{x_\ast}\).
+	\emph{Base case.} If \(k = 1\), then \(p = \delta_x\) for some \(x\), and the claim follows from \textbf{Step 1}.
 
-	\paragraph{Step 2.} For \( p\in \Delta(X) \) write \( supp(p)=\{x\in Z: p(x)>0\} \) and let \(|supp(p)|\) be its size. We prove by induction on \(k:=|supp(p)|\) that
-
+	\emph{Inductive step.} Assume the statement holds for all lotteries whose support size is at most \(k-1\). Let \(p\) have support size \(k \ge 2\). Pick any \(x \in \mathrm{supp}(p)\) and write
 	\[
-		\overline p \succsim p \succsim \underline p .
+		p = \alpha\,\delta_x + (1-\alpha)\,q,
+		\qquad \alpha := p(x) \in (0,1),
+	\]
+	where \(q\) is the renormalized remainder, defined by
+	\[
+		q(y) =
+		\begin{cases}
+			\dfrac{p(y)}{1-\alpha} & \text{if } y \neq x, \\[6pt]
+			0                      & \text{if } y = x.
+		\end{cases}
+	\]
+	Then \(q \in \Delta(X)\) and \(|\mathrm{supp}(q)| \le k-1\).
+
+	By the inductive hypothesis, \(\overline p \succsim q\); and by \textbf{Step 1}, \(\overline p \succsim \delta_x\). We apply \usename{axn:independence} twice.
+
+	\smallskip
+	From \(\overline p \succsim q\), mix with \(\overline p\):
+	\[
+		\overline p = (1-\alpha)\,\overline p + \alpha\,\overline p
+		~\succsim~ (1-\alpha)\,q + \alpha\,\overline p
+		= \alpha\,\overline p + (1-\alpha)\,q.
+	\]
+	From \(\overline p \succsim \delta_x\), mix with \( q\):
+	\[
+		\alpha\,\overline p + (1-\alpha)\,q
+		~\succsim~ \alpha\,\delta_x + (1-\alpha)\,q
+		= p.
+	\]
+	By transitivity,
+	\[
+		\overline p \succsim p.
 	\]
 
-	\emph{Base case $k=1$.}
-	If $supp(p)=\{x\}$, then $p=\delta_x$ and the claim follows from Step~1.
-
-	\emph{Inductive step.}
-	Assume the statement holds for all lotteries with support size $\le k-1$.
-	Let $p$ have support size $k\ge2$. Pick any $x \in supp(p)$ and write
+	A symmetric argument yields \(p \succsim \underline p\). Indeed, by the inductive hypothesis \(q \succsim \underline p\) and by \textbf{Step 1} \(\delta_x \succsim \underline p\). Using \usename{axn:independence} with the same reasoning gives
 	\[
-		p \;=\; \lambda\,\delta_x + (1-\lambda)\,q,
-		\qquad \lambda:=p(x)\in(0,1),
-	\]
-	where $q$ is the renormalized remainder (so $|supp(q)|\le k-1$).
-
-	By the inductive hypothesis, $\overline p \succsim q$; by Step~1, $\overline p \succsim \delta_x$.
-	Using Independence twice and transitivity,
-	\[
-		\overline p
-		~\succsim~ \lambda\,\overline p + (1-\lambda)\,q
-		~\succsim~ \lambda\,\delta_x + (1-\lambda)\,q
-		~=~ p .
-	\]
-	(The first relation comes from $\overline p \succsim q$ with $t=1-\lambda$ and $Z=\overline p$;
-	the second from $\overline p \succsim \delta_x$ with $t=\lambda$ and $Z=q$.)
-
-	A symmetric argument gives $p \succsim \underline p$:
-	by the inductive hypothesis $q \succsim \underline p$ and by Step~1 $\delta_x \succsim \underline p$;
-	then, by Independence and transitivity,
-	\[
-		p=\lambda\,\delta_x+(1-\lambda)\,q
-		~\succsim~ \lambda\,\underline p+(1-\lambda)\,q
-		~\succsim~ \underline p .
+		p = \alpha\,\delta_x + (1-\alpha)\,q
+		~\succsim~ \alpha\,\underline p + (1-\alpha)\,q
+		~\succsim~ \underline p.
 	\]
 
-	Thus $\overline p \succsim p \succsim \underline p$ for all lotteries with support size $k$,
-	closing the induction.
-
-	\medskip
-	Therefore, the fixed Diracs $\overline p=\delta_{x^\ast}$ and
-	$\underline p=\delta_{x_\ast}$ bound every lottery $p\in\Delta(Z)$, as claimed.
+	Therefore, \(\overline p \succsim p \succsim \underline p\) for all lotteries with support size \(k\), completing the induction. The fixed degenerate lotteries \(\overline p = \delta_{x^\ast}\) and \(\underline p = \delta_{x_\ast}\) bound every \(p\), as claimed.
 \end{proof}
 
 
@@ -178,23 +193,20 @@ Recall that preferences are \textbf{complete} if for any two lotteries \(p,q\), 
 We are ready to state and prove the theorem relating the properties of preferences over lotteries to the expected utility functional form.
 
 \begin{theorem}\label{thm:eu}
-	Preferences over lotteries \(\succsim\) satisfy \usename{axn:wo}, \usename{axn:continuity}, \usename{axn:independence} if and only if then there exists a utility function \(u \colon X\to\mathbb{R}\) such that:
-
+	Preferences over lotteries \(\succsim\) satisfy \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence} if and only if there exists a utility function \(u \colon X \to \mathbb{R}\) such that
 	\begin{equation}
-		p \succsim q \text{ if and only if } \sum_{x\in X} p(x)u(x) \geq \sum_{x\in X} q(x)u(x).
+		p \succsim q \ \text{if and only if}\ \sum_{x\in X} p(x)\,u(x) \ge \sum_{x\in X} q(x)\,u(x) \quad \text{for all } p,q .
 	\end{equation}
-
-	We say that \(u\) \textbf{represents} \(\succsim\).
 \end{theorem}
 
-The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomicTheory1995}, but it is complemented by intuition and figures.
+The proof essentially follows \citet[pp.~176–178]{mas-colellMicroeconomicTheory1995}, complemented by intuition and figures.
 
 \begin{proof}
 	We proceed by steps.
 
-	\paragraph{Step 1.} If \( p \succsim q \) then \( p \succsim \alpha p + (1-\alpha) q \succsim q \) for any \( \alpha \in (0,1) \).
+	\paragraph{Step 1.} If \( p \succsim q \), then \( p \succsim \alpha p + (1-\alpha) q \succsim q \) for any \( \alpha \in (0,1) \).
 
-	The intuition behind this step is simple: if \( p \) is better than \( q \), than any mixture between the two is worse than \( p \) and better than \( q \). Figure \ref{fig:step1} illustrates the idea.
+	The intuition behind this step is simple: if \( p \) is better than \( q \), then any mixture of the two is worse than \( p \) and better than \( q \). Figure~\ref{fig:step1} illustrates the idea.
 
 	\begin{figure}[H]
 		\centering
@@ -233,18 +245,18 @@ The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomic
 	This follows from \usename{axn:independence}.
 
 	\begin{equation}\label{eq:comp1}
-		p \succsim q \implies (1-\alpha) p + \alpha p \succsim (1-\alpha) q + \alpha q \implies p \succsim \alpha p + (1-\alpha) q \succsim q.
+		p \succsim q \ \implies\ (1-\alpha)\,p + \alpha\,p \succsim (1-\alpha)\,q + \alpha\,p \ \implies\ p \succsim \alpha p + (1-\alpha) q.
 	\end{equation}
 
 	\begin{equation}\label{eq:comp2}
-		p \succsim q \implies \alpha p + (1-\alpha) q \succsim \alpha q + (1-\alpha) q \implies \alpha p + (1-\alpha) q \succsim q.
+		p \succsim q \ \implies\ \alpha p + (1-\alpha) q \succsim \alpha q + (1-\alpha) q \ \implies\ \alpha p + (1-\alpha) q \succsim q.
 	\end{equation}
 
-	The conclusion follows from Equations \eqref{eq:comp1} and \eqref{eq:comp2}.
+	The conclusion follows from Equations~\eqref{eq:comp1} and~\eqref{eq:comp2}.
 
-	\paragraph{Step 2.} \(\beta>\alpha \) if and only if \( \beta \overline{p} +(1-\beta) \underline{p} \succ \alpha \overline{p}+(1-\alpha) \underline{p} \).
+	\paragraph{Step 2.} \(\beta > \alpha\) if and only if \( \beta \overline{p} + (1-\beta)\,\underline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p} \), where \( \overline{p} \) and \( \underline{p} \) are the best and worst lotteries identified in Lemma~\ref{lem:max}.
 
-	The idea for this step is the following. From \textbf{Step 1}, we know that a mixture between \( p \) and \( q \), where \( p \succsim q \) is better than \( q \) and worse than \( p \). Now, we know that \( \overline{p} \succ \alpha \overline{p} +(1-\alpha) \underline{p}\), since \( \overline{p} \) is the best lottery available. We want to show that \( \beta \overline{p} + (1-\beta) \underline{p} \) is a mixture between \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha) \underline{p} \), and therefore, by \textbf{Step 1}, better than \( \alpha \overline{p} + (1-\alpha) \underline{p} \). The idea is illustrated in Figure \ref{fig:step2}.
+	The idea of this step is as follows. From \textbf{Step 1}, we know that a mixture of \( p \) and \( q \), where \( p \succsim q \), is worse than \( p \) and better than \( q \). Now, since \( \overline{p} \) is the best lottery available, we have \( \overline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p} \). We want to show that \( \beta \overline{p} + (1-\beta)\,\underline{p} \) can be written as a mixture of \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha)\,\underline{p} \); therefore, by \textbf{Step 1}, it must be preferred to \( \alpha \overline{p} + (1-\alpha)\,\underline{p} \). The idea is illustrated in Figure~\ref{fig:step2}.
 
 	\begin{figure}[H]
 		\centering
@@ -287,19 +299,24 @@ The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomic
 		\label{fig:step2}
 	\end{figure}
 
-	We want to write \( \beta \overline{p} + (1-\beta) \underline{p} \) as a mixture between \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha) \underline{p} \). That is, we want to find \( \gamma \in (0,1) \) such that
-
+	We want to express \( \beta \overline{p} + (1-\beta)\,\underline{p} \) as a mixture of \( \overline{p} \) and \( \alpha \overline{p} + (1-\alpha)\,\underline{p} \). That is, we look for some \( \gamma \in (0,1) \) such that
 	\[
-		\beta \overline{p} + (1-\beta) \underline{p} = \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}].
+		\beta \overline{p} + (1-\beta)\,\underline{p}
+		= \gamma \overline{p} + (1-\gamma)\bigl[\alpha \overline{p} + (1-\alpha)\,\underline{p}\bigr].
 	\]
+	A short calculation shows that \( \gamma = \dfrac{\beta - \alpha}{1 - \alpha} \). By \textbf{Step 1} we know that \( \overline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p} \); therefore,
+	\[
+		\gamma \overline{p} + (1-\gamma)\bigl[\alpha \overline{p} + (1-\alpha)\,\underline{p}\bigr]
+		\succ \alpha \overline{p} + (1-\alpha)\,\underline{p}.
+	\]
+	Since \( \beta \overline{p} + (1-\beta)\,\underline{p}
+	= \gamma \overline{p} + (1-\gamma)\bigl[\alpha \overline{p} + (1-\alpha)\,\underline{p}\bigr] \), the conclusion follows.
 
-	With some algebra we get that \( \gamma = \frac{\beta - \alpha}{1 - \alpha} \). By step 1 we know that \( \overline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \), therefore, \( \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}] \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). Since \( \beta \overline{p} + (1-\beta) \underline{p} = \gamma \overline{p} + (1-\gamma)[\alpha \overline{p} + (1-\alpha) \underline{p}] \), the conclusion follows.
+	Up to this point we have proved that if \( \beta > \alpha \), then \( \beta \overline{p} + (1-\beta)\,\underline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p} \). But the statement says \enquote{if and only if}, so we must also show the converse: if \( \alpha \ge \beta \), then it cannot be that \( \beta \overline{p} + (1-\beta)\,\underline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p} \). When \( \beta = \alpha \), the two lotteries coincide and are therefore indifferent. The relevant case is \( \alpha > \beta \). By the argument above, \( \alpha \overline{p} + (1-\alpha)\,\underline{p} \succ \beta \overline{p} + (1-\beta)\,\underline{p} \), and that completes the proof of this step.
 
-	Until now we proved that if \( \beta > \alpha \) then \( \beta \overline{p} + (1-\beta) \underline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). But the statement says \textquote{if and only if}, so we have to prove that if \( \alpha \geq \beta \) then it is not the case that \( \beta \overline{p} + (1-\beta) \underline{p} \succ \alpha \overline{p} + (1-\alpha) \underline{p} \). When \( \beta = \alpha \) the two are the same lotteries and therefore are indifferent. The relevant case is when \( \alpha > \beta \). By the argument above, we know that \( \alpha \overline{p} + (1-\alpha) \underline{p} \succ \beta \overline{p} + (1-\beta) \underline{p} \), and that's all.
+	\paragraph{Step 3.}\footnote{In this step we use a proof by contradiction. Before diving in, make sure you are familiar with the logic of such proofs.} For any \( p \), there exists a unique \( \alpha_p \in [0,1] \) such that \( p \sim \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \).
 
-	\paragraph{Step 3.}\footnote{In this step we make use of proof by contradiction. Before diving in, you should make sure your are familiar with the logic of such proofs.} For any \( p \), there exists a unique \( \alpha_p \in [0,1] \) such that \( p \sim \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \).
-
-	We can derive this step as an implication of previous steps and \usename{axn:continuity}. Unfortunately, this step requires a bit of algebra. But you can get some intuition from Figure \ref{fig:step3}.
+	We can derive this step as a consequence of the previous ones together with \usename{axn:continuity}. This step involves some algebra, but you can get intuition from Figure~\ref{fig:step3}.
 
 	\begin{figure}[H]
 		\centering
@@ -349,122 +366,223 @@ The proof here essentially follows \citet[pp.~176–178]{mas-colellMicroeconomic
 		\label{fig:step3}
 	\end{figure}
 
-	First, notice that if \( \alpha_p \) exists, it must be unique. Suppose there are two such numbers \( \alpha_p \) and \( \alpha_p' \) with \( \alpha_p > \alpha_p' \), then by Step 2, \( \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \succ \alpha_p^{\prime} \overline{p} + (1-\alpha_p^{\prime}) \underline{p} \), contradicting indifference to \( p \).
+	First, notice that if \( \alpha_p \) exists, it must be unique. Suppose there are two such numbers, \( \alpha_p \) and \( \alpha_p' \), with \( \alpha_p > \alpha_p' \). Then, by \textbf{Step 2}, \( \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \succ \alpha_p' \overline{p} + (1-\alpha_p')\,\underline{p} \), contradicting indifference to \( p \).
 
-	Now we have to show that such \( \alpha_p \) exists. If \( \overline{p} \sim p \) then \( \alpha_p = 1 \) works, and if \( \underline{p} \sim p \) then \( \alpha_p = 0 \) works. So we have to look at the interesting case \( \overline{p} \succ p \succ \underline{p} \).
+	Now we need to show that such an \( \alpha_p \) exists. If \( \overline{p} \sim p \), then \( \alpha_p = 1 \) works; if \( \underline{p} \sim p \), then \( \alpha_p = 0 \) works. The interesting case is when \( \overline{p} \succ p \succ \underline{p} \).
 
 	Define
-
 	\begin{equation}\label{eq:astar}
-		\alpha_p \;=\; \sup \bigl\{\alpha\in[0,1]\;:\; p \succsim \alpha \overline{p} + (1-\alpha) \underline{p}\bigr\}.
+		\alpha_p \;=\; \sup \bigl\{\,\alpha \in [0,1] : p \succsim \alpha \overline{p} + (1-\alpha)\,\underline{p}\,\bigr\}.
 	\end{equation}
+	Since \( \alpha = 0 \) belongs to this set, the supremum is well defined and the set is non-empty.
 
-	Since \( \alpha = 0 \) is in this set, we are sure that the supremum is not over an empty set.
-
-	We now have to do a few algebraic arguments.
-
+	We now establish two auxiliary claims. The first is
 	\begin{equation}\label{eq:claim0}
-		\text{If} \: \:  1\ge \alpha >\alpha_p \: \: \text{then} \: \: \alpha \overline{p}+(1-\alpha)\underline{p} \succ p .
+		\text{If } 1 \ge \alpha > \alpha_p, \text{ then } \alpha \overline{p} + (1-\alpha)\,\underline{p} \succ p .
 	\end{equation}
 
-	Indeed, if \(p\succsim \alpha\overline{p}+(1-\alpha)\underline{p}\) held for such \(\alpha \), then \(\alpha_p \) would not satisfy Equation \eqref{eq:astar}. Moreover:
-
+	Indeed, if \( p \succsim \alpha \overline{p} + (1-\alpha)\,\underline{p} \) held for such \(\alpha\), then \(\alpha_p\) would not satisfy Equation~\eqref{eq:astar}. Moreover,
 	\begin{equation}\label{eq:claim1}
-		\text{If} \: \: 0\le \alpha<\alpha_p \: \: \text{then} \: \: p \succ \alpha\overline{p}+(1-\alpha)\underline{p}.
+		\text{If } 0 \le \alpha < \alpha_p, \text{ then } p \succ \alpha \overline{p} + (1-\alpha)\,\underline{p}.
 	\end{equation}
 
-	The reason is as follows. By the definition of \( \alpha_p \), there exists \(\alpha'\) such that \(\alpha<\alpha'\le \alpha_p\) and \(p\succsim \alpha'\overline{p}+(1-\alpha')\underline{p}\). Since \( \alpha < \alpha' \), \textbf{Step 2} implies that \( p \succ \alpha'\overline{p}+(1-\alpha')\underline{p} \succ \alpha \overline{p} + (1-\alpha)\underline{p} \).
+	The reasoning is as follows. By the definition of \( \alpha_p \), there exists some \(\alpha'\) such that \(\alpha < \alpha' \le \alpha_p\) and \( p \succsim \alpha' \overline{p} + (1-\alpha')\,\underline{p} \). Since \( \alpha < \alpha' \), \textbf{Step 2} implies that
+	\[
+		p \succ \alpha' \overline{p} + (1-\alpha')\,\underline{p} \succ \alpha \overline{p} + (1-\alpha)\,\underline{p}.
+	\]
 
-	Now,there are three possibilities to consider:  \( \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \succ p\), \( p\succ \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \), or they are indifferent. If \( \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \succ p\), by \usename{axn:continuity} there exists \(\beta\in(0,1)\) such that \( \beta\bigl(\alpha_p \overline{p} + (1-\alpha_p)\underline{p}\bigr) + (1-\beta)\underline{p} \succ p \). But notice that
+	Now, there are three possibilities to consider:
+	\( \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \succ p \),
+	\( p \succ \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \),
+	or indifference between them.
 
+	If \( \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \succ p \), then by \usename{axn:continuity} there exists \(\beta \in (0,1)\) such that
+	\[
+		\beta \bigl(\alpha_p \overline{p} + (1-\alpha_p)\,\underline{p}\bigr) + (1-\beta)\,\underline{p} \succ p.
+	\]
+	Notice that
 	\[
 		\begin{aligned}
-			\beta\bigl(\alpha_p \overline{p} + (1-\alpha_p)\underline{p}\bigr) + (1-\beta)\underline{p}
-			 & = \beta\alpha_p\,\overline{p} + \beta(1-\alpha_p)\,\underline{p} + (1-\beta)\,\underline{p} \\
-			 & = \beta\alpha_p\,\overline{p} + \bigl[\beta(1-\alpha_p) + (1-\beta)\bigr]\underline{p}      \\
-			 & = \beta\alpha_p\,\overline{p} + \bigl(1-\beta\alpha_p\bigr)\underline{p}
-			\;\succ\; p .
+			\beta \bigl(\alpha_p \overline{p} + (1-\alpha_p)\,\underline{p}\bigr) + (1-\beta)\,\underline{p}
+			 & = \beta \alpha_p\,\overline{p} + \beta (1-\alpha_p)\,\underline{p} + (1-\beta)\,\underline{p} \\
+			 & = \beta \alpha_p\,\overline{p} + \bigl[\beta (1-\alpha_p) + (1-\beta)\bigr]\,\underline{p}    \\
+			 & = \beta \alpha_p\,\overline{p} + \bigl(1-\beta \alpha_p\bigr)\,\underline{p}
+			\;\succ\; p.
 		\end{aligned}
 	\]
 
-	Since \( \beta \alpha_p < \alpha_p \), by Equation \eqref{eq:claim1} we should have \( p \succ \beta\alpha_p\,\overline{p} + (1-\beta\alpha_p)\underline{p} \), which leads to contradiction.
+	Since \( \beta \alpha_p < \alpha_p \), by Equation~\eqref{eq:claim1} we must have \( p \succ \beta \alpha_p\,\overline{p} + (1-\beta \alpha_p)\,\underline{p} \), which is a contradiction.
 
-	If instead \( p\succ \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \), by \usename{axn:continuity} there exists \( \beta\in(0,1) \) such that
-
+	If instead \( p \succ \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p} \), then by \usename{axn:continuity} there exists \( \beta \in (0,1) \) such that
 	\[
 		\begin{aligned}
-			p \  & \succ\ \beta\bigl(\alpha_p \overline{p} + (1-\alpha_p)\underline{p}\bigr) + (1-\beta)\,\overline{p} \\
-			     & =\ \bigl[\beta\alpha_p + (1-\beta)\bigr]\overline{p} + \beta(1-\alpha_p)\,\underline{p}             \\
-			     & =\ \bigl(1-\beta(1-\alpha_p)\bigr)\overline{p} + \beta(1-\alpha_p)\,\underline{p}.
+			p \  & \succ\ \beta \bigl(\alpha_p \overline{p} + (1-\alpha_p)\,\underline{p}\bigr) + (1-\beta)\,\overline{p} \\
+			     & =\ \bigl[\beta \alpha_p + (1-\beta)\bigr]\,\overline{p} + \beta (1-\alpha_p)\,\underline{p}            \\
+			     & =\ \bigl(1-\beta (1-\alpha_p)\bigr)\,\overline{p} + \beta (1-\alpha_p)\,\underline{p}.
 		\end{aligned}
 	\]
+	Since \( 1 - \beta (1-\alpha_p) > \alpha_p \), by Equation~\eqref{eq:claim0} we must have
+	\[
+		\bigl(1-\beta (1-\alpha_p)\bigr)\,\overline{p} + \beta (1-\alpha_p)\,\underline{p} \succ p,
+	\]
+	which is again a contradiction.
 
-	Since \(1-\beta(1-\alpha_p)>\alpha_p\), by Equation \eqref{eq:claim0} we should have \( \bigl(1-\beta(1-\alpha_p)\bigr)\overline{p} + \beta(1-\alpha_p)\underline{p}\ \succ\ p \), a contradiction.
+	\paragraph{Step 4.} Define a utility function \( U : \Delta(X) \to \mathbb{R} \) that assigns to each lottery a number representing its utility, defined by \( U(p) = \alpha_p \). This function represents preferences \( \succsim \).
 
-	\paragraph{Step 4.} The utility function \( U : \Delta(X) \to \mathbb{R} \), assigning to each lottery a number representing its utility defined as \( U(p) = \alpha_p \) represents preferences \( \succsim \).
-
-	Take two lotteries \( p \) and \( p^{\prime} \). By \textbf{Step 3}, there exist unique \( \alpha_p \) and \( \alpha_p^{\prime} \) such that
-
-	\[ p \sim \alpha_p \overline{p} + (1-\alpha_p) \underline{p}, \quad p^{\prime} \sim \alpha_{p^{\prime}} \overline{p} + (1-\alpha_{p^{\prime}}) \underline{p}, \]
-
-	and therefore
-
-	\[ p \succsim p' \: \: \text{if and only if} \: \: \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \succsim \alpha_{p^{\prime}} \overline{p} + (1-\alpha_{p^{\prime}}) \underline{p}. \]
-
+	Take two lotteries \( p \) and \( p' \). By \textbf{Step 3}, there exist unique \( \alpha_p \) and \( \alpha_{p'} \) such that
+	\[
+		p \sim \alpha_p \overline{p} + (1-\alpha_p)\,\underline{p},
+		\quad
+		p' \sim \alpha_{p'} \overline{p} + (1-\alpha_{p'})\,\underline{p}.
+	\]
+	Therefore,
+	\[
+		p \succsim p'
+		\ \text{if and only if}\
+		\alpha_p \overline{p} + (1-\alpha_p)\,\underline{p}
+		\succsim
+		\alpha_{p'} \overline{p} + (1-\alpha_{p'})\,\underline{p}.
+	\]
 	By \textbf{Step 2},
-
-	\[ \alpha_p \overline{p} + (1-\alpha_p) \underline{p} \succsim \alpha_{p^{\prime}} \overline{p} + (1-\alpha_{p^{\prime}}) \underline{p} \: \: \text{if and only if} \: \: \alpha_p \geq \alpha_{p^{\prime}}, \]
-
-	where the last condition holds if and only if \( U(p) \geq U(p^{\prime}) \), which proves the claim.
-
-	\paragraph{Step 5.} The function \( U \) has the expected utility form.
-
-	By the previous steps, we know that for any lottery \( p \) there is a unique number \( U(p) \in [0,1] \) such that
-
 	\[
-		p \sim U(p)\,\bar p + \bigl(1-U(p)\bigr)\underline p,
+		\alpha_p \overline{p} + (1-\alpha_p)\,\underline{p}
+		\succsim
+		\alpha_{p'} \overline{p} + (1-\alpha_{p'})\,\underline{p}
+		\ \text{if and only if}\
+		\alpha_p \ge \alpha_{p'}.
+	\]
+	The last condition holds if and only if \( U(p) \ge U(p') \), which proves the claim.
+
+	\paragraph{Step 5.} The function \( U \) is linear and therefore, by Exercise~\ref{ex:linear}, has the expected utility form.
+
+	From the previous steps we know that, for any lottery \( p \), there is a unique number \( U(p) \in [0,1] \) such that
+	\[
+		p \sim U(p)\,\overline{p} + \bigl(1-U(p)\bigr)\,\underline{p},
 		\qquad
-		p' \sim U(p')\,\bar p + \bigl(1-U(p')\bigr)\underline p .
+		p' \sim U(p')\,\overline{p} + \bigl(1-U(p')\bigr)\,\underline{p}.
 	\]
 
-	Apply \usename{axn:independence} to get:
-
+	Applying \usename{axn:independence}, we get
 	\begin{align*}
 		\beta p + (1-\beta)p'
-		 & \sim \beta\!\left[U(p)\bar p + \bigl(1-U(p)\bigr)\underline p\right] + (1-\beta)p' \\
-		 & \sim \beta\!\left[U(p)\bar p + \bigl(1-U(p)\bigr)\underline p\right]
-		+ (1-\beta)\!\left[U(p')\bar p + \bigl(1-U(p')\bigr)\underline p\right]               \\
-		 & = \bigl[\beta U(p) + (1-\beta)U(p')\bigr]\bar p
-		+ \Bigl(1-\bigl[\beta U(p) + (1-\beta)U(p')\bigr]\Bigr)\underline p .
+		 & \sim \beta\!\left[U(p)\,\overline{p} + \bigl(1-U(p)\bigr)\,\underline{p}\right] + (1-\beta)p' \\
+		 & \sim \beta\!\left[U(p)\,\overline{p} + \bigl(1-U(p)\bigr)\,\underline{p}\right]
+		+ (1-\beta)\!\left[U(p')\,\overline{p} + \bigl(1-U(p')\bigr)\,\underline{p}\right]               \\
+		 & = \bigl[\beta U(p) + (1-\beta)U(p')\bigr]\,\overline{p}
+		+ \Bigl(1 - \bigl[\beta U(p) + (1-\beta)U(p')\bigr]\Bigr)\,\underline{p}.
 	\end{align*}
 
 	Let \(\gamma := \beta U(p) + (1-\beta)U(p')\).
-	By \textbf{Step 4}, for the lottery \(\beta p + (1-\beta)p'\) there is a \emph{unique} number \(\gamma\) such that \(\beta p + (1-\beta)p' \sim \gamma \bar p + (1-\gamma)\underline p\). Therefore
-
+	By \textbf{Step 4}, for the lottery \(\beta p + (1-\beta)p'\) there is a \emph{unique} number \(\gamma\) such that
+	\(\beta p + (1-\beta)p' \sim \gamma\,\overline{p} + (1-\gamma)\,\underline{p}\).
+	Therefore,
 	\[
 		U\!\left(\beta p + (1-\beta)p'\right)
-		= \beta U(p) + (1-\beta)U(p') .
+		= \beta U(p) + (1-\beta)U(p').
 	\]
 \end{proof}
 
-\begin{corollary}
-	If \( u \) represents \( \succsim \), then a function \( u^{\prime} \colon X \to \mathbb{R} \) represents \( \succsim \) if and only if there exist real numbers \( a > 0 \) and \( b \) such that \( u^{\prime} = a u + b \).
+Recall that a functional representation of preferences need not be unique: multiple functions can represent the same preferences. However, for expected utility representations we have a very specific characterization of all possible representations, as stated in the following corollary.
+
+\begin{corollary}\label{cor:uniq}
+	Suppose \( U \) is an expected utility representation of \( \succsim \). Then \( \widetilde U \colon \Delta(X) \to \mathbb{R} \) is another expected utility representation of \( \succsim \) if and only if there exist \( \beta > 0 \) and \( \gamma \in \mathbb{R} \) such that
+	\begin{equation}\label{eq:affine}
+		\widetilde U(p) \;=\; \beta\,U(p) + \gamma \qquad \text{for all } p .
+	\end{equation}
 \end{corollary}
 
-\paragraph{Things to read.} There is already quite a lot to read that I mentioned in the main text. If you want a textbook source of the content of this lecture, check \citet[pp.~170–178]{mas-colellMicroeconomicTheory1995}.
+\begin{proof}
+	First, suppose that Equation~\eqref{eq:affine} holds. Then \(\widetilde U\) is an expected utility representation of \(\succsim\). Assume \(\widetilde U = \beta U + \gamma\) with \(\beta > 0\). Then
+	\[
+		\widetilde U(p)
+		\;=\;
+		\beta \sum_{x} p(x) u(x) + \gamma
+		\;=\;
+		\sum_{x} p(x)\bigl[\beta u(x) + \gamma\bigr].
+	\]
+	Hence, \(\widetilde U\) has the expected utility form with \(\widetilde u(x) := \beta u(x) + \gamma\). Since \(\beta > 0\), it follows that
+	\( p \succsim q \iff U(p) \ge U(q) \iff \widetilde U(p) \ge \widetilde U(q) \).
+
+	Second, suppose that \( U \) and \(\widetilde U\) are both expected utility
+	representations of the same \(\succsim\). Then they must be related by an affine transformation as in Equation~\eqref{eq:affine}. By Lemma~\ref{lem:max}, there exist \(\overline{p}, \underline{p} \) such that \(\overline{p} \succ \underline{p}\) and \(\overline{p} \succsim p \succsim \underline{p}\) for all \(p\). For any lottery \(p\), define \(\alpha_p \in [0,1]\) by
+	\[
+		U(p)
+		\;=\;
+		\alpha_p U(\overline{p}) + (1-\alpha_p) U(\underline{p}),
+		\quad \text{so that} \quad
+		\alpha_p
+		\;=\;
+		\frac{U(p) - U(\underline{p})}{U(\overline{p}) - U(\underline{p})}.
+	\]
+
+	Applying the same construction to \(\widetilde U\) and using the \emph{same} \(\alpha_p\) (since both functions represent the \emph{same} preferences), we obtain
+	\[
+		\widetilde U(p)
+		\;=\;
+		\alpha_p \widetilde U(\overline{p}) + (1-\alpha_p)\,\widetilde U(\underline{p})
+		\;=\;
+		\widetilde U(\underline{p})
+		\;+\;
+		\frac{\widetilde U(\overline{p}) - \widetilde U(\underline{p})}
+		{U(\overline{p}) - U(\underline{p})}
+		\bigl[U(p) - U(\underline{p})\bigr].
+	\]
+	Rearranging yields the affine relation
+	\[
+		\widetilde U(p)
+		\;=\;
+		\beta\,U(p) + \gamma
+		\quad \text{for all } p,
+	\]
+	where
+	\[
+		\beta
+		\;:=\;
+		\frac{\widetilde U(\overline{p}) - \widetilde U(\underline{p})}
+		{U(\overline{p}) - U(\underline{p})}
+		\;>\; 0,
+		\qquad
+		\gamma
+		\;:=\;
+		\widetilde U(\underline{p}) - \beta\,U(\underline{p}).
+	\]
+	Positivity of \(\beta\) follows because \(\overline{p} \succ \underline{p}\) implies
+	\( U(\overline{p}) > U(\underline{p}) \) and
+	\( \widetilde U(\overline{p}) > \widetilde U(\underline{p}) \).
+\end{proof}
+
+In Exercise~\ref{ex:diff}, you are asked to elaborate on the significance of Corollary~\ref{cor:uniq} for interpreting utility numbers as \emph{cardinal} representations of preferences.
+
+\paragraph{Things to read.} For a textbook treatment of the material covered in this lecture, see \citet[pp.~170–178]{mas-colellMicroeconomicTheory1995}. Theorem~\ref{thm:eu} is known as the \emph{von Neumann–Morgenstern representation theorem}, after \citet{vonneumannTheoryGamesEconomic2007}, and it has enormous historical importance. An excellent discussion of the historical context and significance of expected utility theory can be found in \citet{moscatiMeasuringUtilityMarginal2018}.
 
 \section{Exercises}
 
-\begin{exercise}
-	Prove the direction of Theorem \ref{thm:eu} that we did not prove. Show that if \( u \) represents \( \succsim \), then \( \succsim \) satisfies \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}. (It is not difficult, I promise!)
-\end{exercise}
-
 \begin{exercise}\label{ex:parallel-lines}
-	Show that, if preferences are represented by an expected utility function, then indifference curves in the triangle are parallel lines.
+	Show that if preferences are represented by an expected utility function, then indifference curves in the triangle are parallel lines.
+\end{exercise}
+
+\begin{exercise}\label{ex:indlin}
+	Explain why the fact that indifference curves are straight and parallel lines follows from \usename{axn:independence}.
 \end{exercise}
 
 \begin{exercise}
-	Go back to the choice problem in Exercise \ref{ex:allais}. Show that the preferences exhibited there do not satisfy \usename{axn:independence}.
+	Prove the direction of Theorem~\ref{thm:eu} that we did not prove in class. Show that if \( U \) represents \( \succsim \), then \( \succsim \) satisfies \usename{axn:wo}, \usename{axn:continuity}, and \usename{axn:independence}. (It is not difficult, I promise!)
+\end{exercise}
+
+\begin{exercise}
+	Revisit the choice problem in Exercise~\ref{ex:allais}. Show that the preferences exhibited there do not satisfy \usename{axn:independence}.
+\end{exercise}
+
+\begin{exercise}
+	Consider the \textbf{Betweenness Axiom} introduced by \citet{dekelAxiomaticCharacterizationPreferences1986}: for all lotteries \( p, q \) and \( \alpha \in [0,1] \), if \( p \sim q \), then \( \alpha p + (1-\alpha) q \sim p \). Show that \usename{axn:independence} implies Betweenness, but Betweenness does not imply \usename{axn:independence}. (Hint: for the second part, construct a preference relation that satisfies Betweenness but not \usename{axn:independence}.) Are indifference curves still linear under Betweenness? Are they parallel?
+\end{exercise}
+
+\begin{exercise}
+	Show that the choices of the individual in Exercise~\ref{ex:allais} are compatible with Betweenness. (Hint: drawing a picture might help.)
+\end{exercise}
+
+\begin{exercise}\label{ex:diff}
+	Explain why Corollary~\ref{cor:uniq} allows us to make statements such as \textquote{the utility of winning the lottery is twice the utility of not winning.}
 \end{exercise}
 
 \begin{comment}

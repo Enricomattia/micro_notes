@@ -1,29 +1,74 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-{Mas-Colell}%
-, Whinston%
-\BCBL {}\ \BBA {} Green%
+Anscombe%
+\ \BBA {} Aumann%
 }{%
-{Mas-Colell}%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1995}}%
+Anscombe%
+\ \BBA {} Aumann%
+}{%
+{\protect \APACyear {1963}}%
 }]{%
-mas-colellMicroeconomicTheory1995}
+anscombeDefinitionSubjectiveProbability1963}
 \APACinsertmetastar {%
-mas-colellMicroeconomicTheory1995}%
+anscombeDefinitionSubjectiveProbability1963}%
 \begin{APACrefauthors}%
-{Mas-Colell}, A.%
-, Whinston, M\BPBI D.%
-\BCBL {}\ \BBA {} Green, J\BPBI R.%
+Anscombe, F\BPBI J.%
+\BCBT {}\ \BBA {} Aumann, R\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{1995}.
+\APACrefYearMonthDay{1963}{}{}.
 \newblock
-\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+{\BBOQ}\APACrefatitle {A Definition of Subjective Probability} {A definition of
+  subjective probability}.{\BBCQ}
 \newblock
-\APACaddressPublisher{}{Oxford university press New York}.
+\APACjournalVolNumPages{Annals of mathematical statistics}{34}{1}{199--205}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fishburn%
+}{%
+Fishburn%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+fishburnUtilityTheoryDecision1970}
+\APACinsertmetastar {%
+fishburnUtilityTheoryDecision1970}%
+\begin{APACrefauthors}%
+Fishburn, P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1970}.
+\newblock
+\APACrefbtitle {Utility Theory for Decision Making} {Utility theory for
+  decision making}.
+\newblock
+\APACaddressPublisher{New York}{Wiley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+krepsNotesTheoryChoice1988}
+\APACinsertmetastar {%
+krepsNotesTheoryChoice1988}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Notes on the Theory of Choice} {Notes on the theory of choice}.
+\newblock
+\APACaddressPublisher{}{Westview Press}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

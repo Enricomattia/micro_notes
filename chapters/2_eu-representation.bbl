@@ -20,8 +20,36 @@ Camerer, C.%
 {\BBOQ}\APACrefatitle {The Case for Mindful Economics} {The case for mindful
   economics}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Foundations of positive and normative
-  economics}{}{}{43--69}.
+\BIn{} \APACrefbtitle {The {{Foundations}} of {{Positive}} and {{Normative
+  Economics}}: {{A Hand Book}}} {The {{Foundations}} of {{Positive}} and
+  {{Normative Economics}}: {{A Hand Book}}}\ (\BPGS\ 43--69).
+\newblock
+\APACaddressPublisher{}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dekel%
+}{%
+Dekel%
+}{%
+{\protect \APACyear {1986}}%
+}]{%
+dekelAxiomaticCharacterizationPreferences1986}
+\APACinsertmetastar {%
+dekelAxiomaticCharacterizationPreferences1986}%
+\begin{APACrefauthors}%
+Dekel, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An Axiomatic Characterization of Preferences under
+  Uncertainty: {{Weakening}} the Independence Axiom} {An axiomatic
+  characterization of preferences under uncertainty: {{Weakening}} the
+  independence axiom}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic theory}{40}{2}{304--318}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -58,25 +86,25 @@ Gul%
 Gul%
 \ \BBA {} Pesendorfer%
 }{%
-{\protect \APACyear {2011}}%
+{\protect \APACyear {2008}}%
 }]{%
-gulCaseMindlessEconomics2011}
+gulCaseMindlessEconomics2008}
 \APACinsertmetastar {%
-gulCaseMindlessEconomics2011}%
+gulCaseMindlessEconomics2008}%
 \begin{APACrefauthors}%
 Gul, F.%
 \BCBT {}\ \BBA {} Pesendorfer, W.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2011}{}{}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {The Case for Mindless Economics} {The case for mindless
   economics}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {The {{Foundations}} of {{Positive}} and {{Normative
-  Economics}}: {{A Hand Book}}.} {The {{Foundations}} of {{Positive}} and
-  {{Normative Economics}}: {{A Hand Book}}.}
+  Economics}}: {{A Hand Book}}} {The {{Foundations}} of {{Positive}} and
+  {{Normative Economics}}: {{A Hand Book}}}\ (\BPGS\ 3--42).
 \newblock
 \APACaddressPublisher{}{Oxford University Press}.
 \PrintBackRefs{\CurrentBib}
@@ -161,6 +189,54 @@ Masatlioglu, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Moscati%
+}{%
+Moscati%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+moscatiMeasuringUtilityMarginal2018}
+\APACinsertmetastar {%
+moscatiMeasuringUtilityMarginal2018}%
+\begin{APACrefauthors}%
+Moscati, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Measuring Utility: {{From}} the Marginal Revolution to
+  Behavioral Economics} {Measuring utility: {{From}} the marginal revolution to
+  behavioral economics}.
+\newblock
+\APACaddressPublisher{}{Oxford Studies in History of Economics}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moscati%
+}{%
+Moscati%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+moscatiPsychologicalNarrativesDecision2025}
+\APACinsertmetastar {%
+moscatiPsychologicalNarrativesDecision2025}%
+\begin{APACrefauthors}%
+Moscati, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Psychological Narratives in Decision Theory: What They
+  Are and What They Are Good For} {Psychological narratives in decision theory:
+  What they are and what they are good for}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Methodology}{}{}{1--22}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Spiegler%
 }{%
 Spiegler%
@@ -228,6 +304,32 @@ Thoma, J.%
   revealed preference theory}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Economics \& Philosophy}{37}{2}{163--187}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{von Neumann}%
+\ \BBA {} Morgenstern%
+}{%
+{von Neumann}%
+\ \BBA {} Morgenstern%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+vonneumannTheoryGamesEconomic2007}
+\APACinsertmetastar {%
+vonneumannTheoryGamesEconomic2007}%
+\begin{APACrefauthors}%
+{von Neumann}, J.%
+\BCBT {}\ \BBA {} Morgenstern, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {Theory of Games and Economic Behavior} {Theory of games and
+  economic behavior}\ (\PrintOrdinal{60th Anniversary Commemorative}\ \BEd).
+\newblock
+\APACaddressPublisher{Princeton, NJ}{Princeton University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
