@@ -12,7 +12,7 @@
 
 The outcomes of our decisions are often uncertain, so we need a choice theory that takes uncertainty into account. Let us begin by thinking about how to represent uncertainty. Suppose you make a bet with a friend: if a fair coin toss results in heads, you receive \(10\) euros; otherwise, you pay \(10\) euros to your friend. There are two possible outcomes, \(10\) and \(-10\), and since the coin is fair, each occurs with probability \(\nicefrac{1}{2}\). What are the main ingredients of this example?
 
-First, we started from a set of possible outcomes—in this case, the monetary transfers \(10\) and \(-10\). Second, we specified the probability of each outcome occurring, \(\nicefrac{1}{2}\) for both. We call such an object—a set of outcomes, each associated with a probability—a \textbf{lottery}. Denote the set of outcomes by \(X\). Generic elements of \(X\) will be written \(x, y, z\), or sometimes \(x_1, x_2, \dots\). For simplicity, assume that \(X\) is finite. Outcomes alone are not enough to describe a lottery: we also need a probability distribution over outcomes, as in the \(\nicefrac{1}{2}\)–\(\nicefrac{1}{2}\) distribution of the fair coin above. The set of all lotteries over \(X\) is denoted by \(\Delta(X)\).\footnote{Why the notation \(\Delta\)? You will see soon.} Each element of \(\Delta(X)\) is a function \(p : X \to [0,1]\) such that \(\sum_{x\in X} p(x) = 1\); it maps each outcome \(x\) to a number \(p(x) \in [0,1]\), representing the probability that \(x\) occurs.\footnote{Why do we write a sum \(\sum_{x\in X} p(x) = 1\) rather than an integral?} We can equivalently represent a lottery as a vector, for example \(p = (p(x), p(y), p(z))\) if \(X = \{x, y, z\}\).
+First, we started from a set of possible outcomes—in this case, the monetary transfers \(10\) and \(-10\). Second, we specified the probability of each outcome occurring, \(\nicefrac{1}{2}\) for both. We call such an object—a set of outcomes, each associated with a probability—a \textbf{lottery}. Denote the set of outcomes by \(X\). Generic elements of \(X\) will be written \(x, y, z\), or sometimes \(x_1, x_2, \dots\). For simplicity, assume that \(X\) is finite. Outcomes alone are not enough to describe a lottery: we also need a probability distribution over outcomes, as in the \(\nicefrac{1}{2}\)–\(\nicefrac{1}{2}\) distribution of the fair coin above. The set of all lotteries over \(X\) is denoted by \(\Delta(X)\).\footnote{Why the notation \(\Delta\)? You will see soon.} Each element of \(\Delta(X)\) is a function \(p \colon X \to [0,1]\) such that \(\sum_{x\in X} p(x) = 1\); it maps each outcome \(x\) to a number \(p(x) \in [0,1]\), representing the probability that \(x\) occurs.\footnote{Why do we write a sum \(\sum_{x\in X} p(x) = 1\) rather than an integral?} We can equivalently represent a lottery as a vector, for example \(p = (p(x), p(y), p(z))\) if \(X = \{x, y, z\}\).
 
 \begin{example}\label{ex:coin}
 	In the example above, the set of outcomes is \(\{10, -10\}\), and the lottery \(p \in \Delta(\{10, -10\})\) induced by the fair coin toss satisfies \(p(10) = p(-10) = \nicefrac{1}{2}\).
@@ -180,7 +180,7 @@ There is another useful way to represent lotteries graphically. Consider again t
 \begin{techremark}
 	For a finite outcome set \(X\), the probability simplex over \(X\) is
 	\[
-		\Delta(X) = \left\{ p : X \to [0,1] \,\middle|\, \sum_{x \in X} p(x) = 1 \right\},
+		\Delta(X) = \left\{ p \colon X \to [0,1] \,\middle|\, \sum_{x \in X} p(x) = 1 \right\},
 	\]
 	or equivalently,
 	\[
@@ -202,7 +202,7 @@ Recall that we can define strict preference and indifference in terms of weak pr
 In principle, we could describe the preference relation \(\succsim\) by listing, pair by pair, which lotteries are weakly preferred to which others. However, that would be rather inconvenient as a way to work with preferences. It is more practical to have a function that assigns a number to each lottery, so that we can compare lotteries by comparing their associated numbers. Such a function should \enquote{agree} with the preference relation \(\succsim\) in the sense that, if \(p\) is weakly preferred to \(q\), then the number assigned to \(p\) should be at least as large as the number assigned to \(q\). This leads us to the notion of a \textbf{utility function} representing preferences.
 
 \begin{definition}
-	A utility function \(U : \Delta(X) \to \mathbb{R}\) \textbf{represents} the preference relation \(\succsim\) over \(\Delta(X)\) if, for all lotteries \(p, q \),
+	A utility function \(U \colon \Delta(X) \to \mathbb{R}\) \textbf{represents} the preference relation \(\succsim\) over \(\Delta(X)\) if, for all lotteries \(p, q \),
 	\[
 		p \succsim q \iff U(p) \ge U(q).
 	\]
@@ -211,7 +211,7 @@ In principle, we could describe the preference relation \(\succsim\) by listing,
 What would be a reasonable utility function representing preferences over lotteries? A natural candidate is the \textbf{expected utility} function, defined as follows.
 
 \begin{definition}
-	Preferences \(\succsim\) are represented by an \textbf{expected utility function} if there exists a function \(u : X \to \mathbb{R}\) such that, for all lotteries \(p \),
+	Preferences \(\succsim\) are represented by an \textbf{expected utility function} if there exists a function \(u \colon X \to \mathbb{R}\) such that, for all lotteries \(p \),
 	\begin{equation}\label{eq:eu0}
 		U(p) = \sum_{x \in X} p(x)\,u(x).
 	\end{equation}

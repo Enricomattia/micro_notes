@@ -136,6 +136,36 @@ K{\"o}szegi, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Krantz%
+, Luce%
+, Suppes%
+\BCBL {}\ \BBA {} Tversky%
+}{%
+Krantz%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1971}}%
+}]{%
+krantzFoundationsMeasurementVol1971}
+\APACinsertmetastar {%
+krantzFoundationsMeasurementVol1971}%
+\begin{APACrefauthors}%
+Krantz, D\BPBI H.%
+, Luce, R\BPBI D.%
+, Suppes, P.%
+\BCBL {}\ \BBA {} Tversky, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1971}.
+\newblock
+\APACrefbtitle {Foundations of Measurement, Vol. {{I}}: {{Additive}} and
+  Polynomial Representations} {Foundations of measurement, vol. {{I}}:
+  {{Additive}} and polynomial representations}.
+\newblock
+\APACaddressPublisher{New York}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%

@@ -29,20 +29,6 @@
 \contentsline {chapter}{\numberline {3}Money lotteries}{22}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Structuring the set of outcomes}{22}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Risk aversion}{24}{section.3.2}%
-\contentsline {paragraph}{Things to read.}{28}{paragraph*.23}%
-\contentsline {section}{\numberline {3.3}Exercises}{28}{section.3.3}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {4}Applications and stochastic dominance}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Applications}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Stochastic dominance}{29}{section.4.2}%
-\contentsline {paragraph}{Things to read.}{30}{paragraph*.25}%
-\contentsline {section}{\numberline {4.3}Exercises}{31}{section.4.3}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-6}
-\contentsline {chapter}{\numberline {5}States and subjective expected utility}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}State space representation}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Subjective expected utility}{33}{section.5.2}%
-\contentsline {paragraph}{Things to read.}{33}{paragraph*.26}%
-\contentsline {section}{\numberline {5.3}Exercises}{33}{section.5.3}%
+\contentsline {paragraph}{Things to read.}{27}{paragraph*.23}%
+\contentsline {section}{\numberline {3.3}Exercises}{27}{section.3.3}%
 \gdef \the@ipfilectr {}
