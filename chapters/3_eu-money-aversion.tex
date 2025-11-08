@@ -10,7 +10,7 @@
 
 \section{Structuring the set of outcomes}\label{sec:L3-intro}
 
-In the previous section, we studied preferences with the expected–utility form over lotteries on a \textit{finite} outcome set \(X\). We now study a setting where the outcome set is the set of real numbers \(\mathbb{R}\), representing monetary outcomes. This setting is particularly important in economics and finance, as it allows us to model decisions involving money, such as investments, insurance, and consumption.
+In the previous section, we studied preferences with the expected utility form over lotteries on a \textit{finite} outcome set \(X\). We now study a setting where the outcome set is the set of real numbers \(\mathbb{R}\), representing monetary outcomes. This setting is particularly important in economics and finance, as it allows us to model decisions such as investments, insurance, and consumption.
 
 \begin{techremark}
 	You may wonder whether a form of Theorem \ref{thm:eu} extends to this setting. The answer is yes, see \citet[pp.~59–78]{krepsNotesTheoryChoice1988} or \citet[ch.~10]{fishburnUtilityTheoryDecision1970}.
@@ -80,9 +80,13 @@ Since the outcome set is now infinite, we should be careful about how we define 
 	\end{figure}
 \end{example}
 
+\begin{techremark}
+	A second approach to studying lotteries over \(\mathbb{R}\) is via \textit{simple} probability distributions, i.e. probability distributions that assign positive probability to only a finite number of outcomes.
+\end{techremark}
+
 Notice that mixtures of CDFs are also CDFs, so we can employ the same mixture operation defined in Section \ref{sec:L1-intro}. In particular, given two CDFs \(F\) and \(G\), and \(\alpha\in[0,1]\), the mixture \(H=\alpha F+(1-\alpha)G\) is also a CDF, where \(H(x)=\alpha F(x)+(1-\alpha)G(x)\) for all \(x\).
 
-We now define preferences \(\succsim\) over the set of CDFs on \(\mathbb{R}\) that have the expected–utility form. The idea is the same as before: we weight the utility of each monetary outcome by its probability and sum these weighted utilities to obtain the expected utility of the lottery. Formally, a preference relation \(\succsim\) over the set of CDFs has the expected–utility form if there exists a utility function \(u\colon\mathbb{R}\to\mathbb{R}\) such that for any two CDFs \(F\) and \(G\),
+We now define preferences \(\succsim\) over the set of CDFs on \(\mathbb{R}\) that have the expected utility form. The idea is the same as before: we weight the utility of each monetary outcome by its probability and sum these weighted utilities to obtain the expected utility of the lottery. A preference relation \(\succsim\) over the set of CDFs has the expected utility form if there exists a utility function \(u\colon\mathbb{R}\to\mathbb{R}\) such that for any two CDFs \(F\) and \(G\),
 \[
 	F \succsim G \quad \Longleftrightarrow \quad \int u(x)\,\mathrm{d}F(x) \;\ge\; \int u(x)\,\mathrm{d}G(x).
 \]
@@ -99,7 +103,7 @@ Definition \ref{def:increasing} captures the idea that more money is preferred t
 	The utility function \(u\colon\mathbb{R}\to\mathbb{R}\) is \textbf{continuous} if for any \(x\) and any \(\varepsilon>0\), there exists \(\delta>0\) such that for all \(y\) with \(|x-y|<\delta\), we have \(|u(x)-u(y)|<\varepsilon\).
 \end{definition}
 
-Definition \ref{def:continuity} ensures that small changes in money lead to small changes in utility. This could not be stated with a generic outcome set, where expressions like \(x-y\) are undefined.
+Definition \ref{def:continuity} ensures that small changes in money lead to small changes in the Bernoulli utility \( u \). This could not be stated with a generic outcome set, where expressions like \(x-y\) are undefined.
 
 \begin{techremark}
 	Definition \ref{def:continuity} is continuity in \emph{money}. What about continuity in \emph{probabilities}?
@@ -107,9 +111,13 @@ Definition \ref{def:continuity} ensures that small changes in money lead to smal
 
 \section{Risk aversion}
 
-We now have the tools to define and discuss \emph{risk aversion}. Defining this concept allows us to answer: how much does an individual dislike risk? As we will see, the answer has important implications for economic behaviour (investments, insurance, saving).
+We now have the tools to define and discuss \emph{risk aversion}. Defining this concept allows us to answer questions such as: does an individual dislike risk? how much? As we will see in the next Lecture, the answer has important implications for economic behaviour.
 
 The definition of risk aversion is quite intuitive. Consider the following choice: receive \(5\) euros for sure, or take a lottery that pays \(0\) euros with probability \(0.5\) and \(10\) euros with probability \(0.5\). Both options have the same expected monetary value, \(5\) euros. If the individual prefers the certain \(5\) to the lottery, he \emph{dislikes} risk—he prefers getting the mean outcome for sure rather than facing uncertainty. If instead he prefers the lottery, he \emph{likes} risk—he is willing to face uncertainty for the chance of a higher payoff.
+
+\begin{techremark}
+	Did you notice what we just did? We needed to develop a definition of an intuitive, but ex-ante vague concept, risk aversion. We did it by developing a simple thought experiment that \textquote{keeps everything fixed} except for the presence of risk. These thought experiments are very useful to develop effective definitions.
+\end{techremark}
 
 For a general lottery, we say an individual is risk averse if he prefers the certain amount equal to the lottery’s expected value to the lottery itself. For a CDF \(F\), the expected value is
 \begin{equation}\label{eq:ev}
@@ -125,7 +133,7 @@ whereas the lottery yields expected utility
 \end{equation}
 
 \begin{definition}\label{def:raversion}
-	An individual with expected–utility preferences and Bernoulli utility \(u\) is \textbf{risk averse} if for each CDF \(F\),
+	An individual with expected utility preferences and Bernoulli utility \(u\) is \textbf{risk averse} if for each CDF \(F\),
 	\begin{equation}\label{eq:risk_aversion}
 		u\!\left(\int x \,\mathrm{d}F(x)\right) \;\ge\; \int u(x)\,\mathrm{d}F(x).
 	\end{equation}
@@ -135,30 +143,50 @@ whereas the lottery yields expected utility
 	If \(u\) is not increasing (Definition \ref{def:increasing}), Definition \ref{def:raversion} loses its intended meaning.
 \end{techremark}
 
-Inequality \eqref{eq:risk_aversion} is precisely \href{https://en.wikipedia.org/wiki/Jensen%27s_inequality}{Jensen's inequality} and is equivalent to the \emph{concavity} of \(u\). Thus the intuitive notion of risk aversion is equivalent to concavity of \(u\). If \(u\) is twice differentiable, concavity means \(u''(x)\le 0\) for all \(x\); see Figure \ref{fig:risk_aversion}.
+Inequality \eqref{eq:risk_aversion} is precisely \href{https://en.wikipedia.org/wiki/Jensen%27s_inequality}{Jensen's inequality} and is equivalent to the \emph{concavity} of \(u\). Thus, the intuitive notion of risk aversion is equivalent to concavity of \(u\). If \(u\) is twice differentiable, concavity means \(u''(x)\le 0\) for all \(x\); see Figure \ref{fig:risk_aversion}.
 
 \begin{figure}[H]
 	\centering
-	\tikzset{every picture/.style={line width=0.75pt}}
-	\begin{tikzpicture}[x=0.65pt,y=0.65pt,yscale=-1,xscale=1]
-		\draw  (132,370.34) -- (506,370.34)(169.4,62) -- (169.4,404.6)
-		(499,365.34) -- (506,370.34) -- (499,375.34)
-		(164.4,69) -- (169.4,62) -- (174.4,69);
-		\draw (169.4,370.34) .. controls (172,276.6) and (342,108.6) .. (483,108.6);
-		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (430,370) -- (432,115.8);
-		\draw  [dash pattern={on 0.84pt off 2.51pt}]  (169.4,370.34) -- (432,115.8);
-		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (301,370.8) -- (300,181.8);
-		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (169,243.4) -- (300.7,243.07);
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-		\draw (422,372.4) node [anchor=north west] {$10$};
-		\draw (510,369.4) node [anchor=north west] {$x$};
-		\draw (403,89.4) node [anchor=north west] {$u(10)$};
-		\draw (155,372.4) node [anchor=north west] {$0$};
-		\draw (296,372.4) node [anchor=north west] {$5$};
-		\draw (279,148.4) node [anchor=north west] {$u(5)$};
-		\draw (18,223.4) node [anchor=north west] {$\tfrac{1}{2}u(0)+\tfrac{1}{2}u(10)$};
+	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+		%uncomment if require: \path (0,433); %set diagram left start at 0, and has height of 433
+
+		%Shape: Axis 2D [id:dp5660095663202026] 
+		\draw  (132,370.34) -- (506,370.34)(169.4,62) -- (169.4,404.6) (499,365.34) -- (506,370.34) -- (499,375.34) (164.4,69) -- (169.4,62) -- (174.4,69)  ;
+		%Curve Lines [id:da9973639319692577] 
+		\draw    (169.4,370.34) .. controls (172,276.6) and (342,108.6) .. (483,108.6) ;
+		%Straight Lines [id:da04174830964198639] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (430,370) -- (432,115.8) ;
+		%Straight Lines [id:da5426175275814586] 
+		\draw  [dash pattern={on 0.84pt off 2.51pt}]  (169.4,370.34) -- (432,115.8) ;
+		%Straight Lines [id:da33225594312232143] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (301,370.8) -- (300,181.8) ;
+		%Straight Lines [id:da6848091186315952] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (169,243.4) -- (300.7,243.07) ;
+		%Straight Lines [id:da7519258803977817] 
+		\draw  [dash pattern={on 4.5pt off 4.5pt}]  (234.85,243.23) -- (235,370.4) ;
+
+		% Text Node
+		\draw (422,374.4) node [anchor=north west][inner sep=0.75pt]    {$10$};
+		% Text Node
+		\draw (510,369.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+		% Text Node
+		\draw (403,89.4) node [anchor=north west][inner sep=0.75pt]    {$u( 10)$};
+		% Text Node
+		\draw (148,374.4) node [anchor=north west][inner sep=0.75pt]    {$0$};
+		% Text Node
+		\draw (296,375.4) node [anchor=north west][inner sep=0.75pt]    {$5$};
+		% Text Node
+		\draw (279,148.4) node [anchor=north west][inner sep=0.75pt]    {$u( 5)$};
+		% Text Node
+		\draw (22,228.4) node [anchor=north west][inner sep=0.75pt]    {$\tfrac{1}{2} u( 0) \ +\ \tfrac{1}{2} u( 10)$};
+		% Text Node
+		\draw (231,373.4) node [anchor=north west][inner sep=0.75pt]    {$c$};
+
 	\end{tikzpicture}
-	\caption{Example of a concave \(u\) (risk aversion).}
+
+	\caption{Example of a concave \(u\).}
 	\label{fig:risk_aversion}
 \end{figure}
 
@@ -173,6 +201,8 @@ There are other, equivalent ways to define risk aversion. This is good news: it 
 	\end{equation}
 \end{definition}
 
+As an illustration, the certainty equivalent of the lottery paying \(0\) with probability \(1/2\) and \(10\) with probability \(1/2\) in Figure \ref{fig:risk_aversion} is \( c \).
+
 Intuitively, if an individual is risk averse, his certainty equivalent must be less than the expected value of the lottery, as he prefers receiving the expected value for sure rather than facing the lottery. To capture this intuition we can define the \textbf{risk premium} of a lottery as the difference between the expected value of the lottery and its certainty equivalent.
 
 \begin{definition}
@@ -184,10 +214,10 @@ Intuitively, if an individual is risk averse, his certainty equivalent must be l
 
 You will show in Exercise \ref{ex:cerp} that an individual is risk averse if and only if the risk premium is nonnegative for every lottery.
 
-We now have a notion of risk aversion, but not a quantitative measure, which we will develop next. Again, we start from intuition, how could we measure risk aversion? The risk premium might be a starting point, the higher the risk premium, the more risk averse the individual, as he requires a lower certainty equivalent to face the lottery. Consider two individuals with utility function \( u \) and \( v \). If for each lottery \( F \), the risk premium of the first individual is higher than that of the second, i.e. \( \pi(F,u) \geq \pi(F,v) \), we can say that the first individual is more risk averse than the second. However, such condition boils down to comparing certainty equivalents:
+We now have a notion of risk aversion, but not a way to compare the risk attitudes of two individuals. Again, we start from intuition, how could we compare two risk aversion individuals? The risk premium might be a starting point, the higher the risk premium, the more risk averse the individual, as he requires a lower certainty equivalent to face the lottery. Consider two individuals with utility function \( u \) and \( v \). If for each lottery \( F \), the risk premium of the first individual is higher than that of the second, i.e. \( \pi(F,u) \geq \pi(F,v) \), we can say that the first individual is more risk averse than the second. However, such condition boils down to comparing certainty equivalents:
 
 \[
-	\pi(F,u)\ge \pi(F,v)\quad \Longleftrightarrow\quad c(F,u)\le c(F,v).
+	\pi(F,u)\ge \pi(F,v)\quad \Longleftrightarrow\quad c(F,u)\le c(F,v),
 \]
 
 you should show this. We therefore have the following definition.
@@ -199,16 +229,15 @@ you should show this. We therefore have the following definition.
 	\]
 \end{definition}
 
-We now want to develop a measure of risk aversion that is related to the rate at which the certainty equivalent changes as we change the lottery. Consider a lottery over monetary outcomes that pays \(x + \varepsilon\) with probability \(1/2\) and \(x - \varepsilon\) with probability \(1/2\), call it \(F_\varepsilon\). By Definition~\ref{def:ce} \begin{equation}\label{eq:ce_eps} u\!\big(c(F_\varepsilon,u)\big) = \tfrac{1}{2}u(x+\varepsilon) + \tfrac{1}{2}u(x-\varepsilon). \end{equation} Since both sides of Equation \eqref{eq:ce_eps} are twice differentiable in \(\varepsilon\) and \(u'(c(F_\varepsilon,u))>0\) since \( u \) is increasing, the implicit function theorem implies that \(c(F_\varepsilon,u)\) is twice differentiable in a neighborhood of \(0\). Differentiating \eqref{eq:ce_eps} with respect to \(\varepsilon\) gives \[ u'\!\big(c(F_\varepsilon,u)\big)\,c'(\varepsilon) = \tfrac{1}{2}u'(x+\varepsilon) - \tfrac{1}{2}u'(x-\varepsilon). \] Evaluating at \(\varepsilon = 0\), \[ u'(x)\,c'(0) = 0 \quad \Longrightarrow \quad c'(0) = 0, \qquad c(0) = x. \] Differentiating again with respect to \(\varepsilon\), \[ u''\!\big(c(F_\varepsilon,u)\big)\!\big(c'(\varepsilon)\big)^2 + u'\!\big(c(F_\varepsilon,u)\big)c''(\varepsilon) = \tfrac{1}{2}u''(x+\varepsilon) + \tfrac{1}{2}u''(x-\varepsilon). \] Evaluating at \(\varepsilon = 0\) and using \(c'(0)=0\) and \(c(0)=x\), we obtain \[ u'(x)c''(0) = u''(x) \quad \Longrightarrow \quad c''(0) = \frac{u''(x)}{u'(x)}. \] The ratio between the second and first derivative of the utility function is the \textbf{Arrow-Pratt coefficient of absolute risk aversion}. It is not by chance that it appears here. As we noticed already, risk aversion is related to the concavity of the utility function, which is captured by its second derivative. In principle we could use the second derivative alone as a measure of risk aversion, but this would not be satisfactory, as multiplying the utility function by a positive constant would change the second derivative but not risk aversion. Dividing the second derivative by the first derivative solves this problem, as multiplying the utility function by a positive constant multiplies both derivatives by the same constant, leaving their ratio unchanged. The simplest modification of the measure to address such issue is to divide the second derivative by the first derivative, leading to the Arrow-Pratt coefficient.
+We now want to develop a measure of risk aversion that is related to the rate at which the certainty equivalent changes as we change the lottery. Consider a lottery over monetary outcomes that pays \(x + \varepsilon\) with probability \(1/2\) and \(x - \varepsilon\) with probability \(1/2\), call it \(F_\varepsilon\). By Definition~\ref{def:ce} \begin{equation}\label{eq:ce_eps} u\!\big(c(F_\varepsilon,u)\big) = \tfrac{1}{2}u(x+\varepsilon) + \tfrac{1}{2}u(x-\varepsilon). \end{equation} Since both sides of Equation \eqref{eq:ce_eps} are twice differentiable in \(\varepsilon\) and \(u'(c(F_\varepsilon,u))>0\) since \( u \) is increasing, the implicit function theorem implies that \(c(F_\varepsilon,u)\) is twice differentiable in a neighborhood of \(0\). Differentiating \eqref{eq:ce_eps} with respect to \(\varepsilon\) gives \[ u'\!\big(c(F_\varepsilon,u)\big)\,c'(\varepsilon) = \tfrac{1}{2}u'(x+\varepsilon) - \tfrac{1}{2}u'(x-\varepsilon). \] Evaluating at \(\varepsilon = 0\), \[ u'(x)\,c'(0) = 0 \quad \Longrightarrow \quad c'(0) = 0, \qquad c(0) = x. \] Differentiating again with respect to \(\varepsilon\), \[ u''\!\big(c(F_\varepsilon,u)\big)\!\big(c'(\varepsilon)\big)^2 + u'\!\big(c(F_\varepsilon,u)\big)c''(\varepsilon) = \tfrac{1}{2}u''(x+\varepsilon) + \tfrac{1}{2}u''(x-\varepsilon). \] Evaluating at \(\varepsilon = 0\) and using \(c'(0)=0\) and \(c(0)=x\), we obtain \[ u'(x)c''(0) = u''(x) \quad \Longrightarrow \quad c''(0) = \frac{u''(x)}{u'(x)}. \] The ratio between the second and first derivative of the utility function is the \textbf{Arrow-Pratt coefficient of absolute risk aversion}. It is not by chance that it appears here. As we noticed already, risk aversion is related to the concavity of the utility function, which is captured by its second derivative. In principle we could use the second derivative alone as a measure of risk aversion, but this would not be satisfactory, as multiplying the utility function by a positive constant would change the second derivative but not risk aversion. Dividing the second derivative by the first derivative solves this problem, as multiplying the utility function by a positive constant multiplies both derivatives by the same constant, leaving their ratio unchanged.
 
-\begin{definition}\label{def:ap} The \textbf{Arrow-Pratt coefficient of absolute risk aversion} for an individual with utility function \( u \) at outcome \( x \) is \[ r(x,u) = -\frac{u''(x)}{u'(x)}. \] \end{definition} Hence, we just showed that the limit of the second derivative of the certainty equivalent as \(\varepsilon \to 0\) is exactly \(-r(x,u)\). In the exercises, you are asked to show the following equivalence between certainty equivalents and the Arrow-Pratt coefficient.
+\begin{definition}\label{def:ap} The \textbf{Arrow-Pratt coefficient of absolute risk aversion} for an individual with utility function \( u \) at outcome \( x \) is \[ r(x,u) = -\frac{u''(x)}{u'(x)}. \] \end{definition} Hence, we just showed that the limit of the second derivative of the certainty equivalent as \(\varepsilon \to 0\) is exactly \(-r(x,u)\). You should notice that, if \( u \) is increasing and concave, then \( r(x,u) \) is positive. In the exercises, you are asked to show the following equivalence between certainty equivalents and the Arrow-Pratt coefficient.
 
 \begin{proposition}\label{prop:equiv}
 	An individual with utility \(u\) is \textbf{more risk averse} than an individual with utility \(v\) if and only if, for each \(x\),
 	\[
-		r(x,u)\;\ge\; r(x,v),
+		r(x,u)\;\ge\; r(x,v).
 	\]
-	where \(r(x,\cdot)\) denotes the Arrow–Pratt coefficient of absolute risk aversion.
 \end{proposition}
 
 You should notice that, \textquote{more risk averse then} is a partial order on the set of utility functions, it is not complete. There might be two utility functions \( u \) and \( v \) such that neither \( u \) is more risk averse than \( v \), nor \( v \) is more risk averse than \( u \). This happens when the Arrow-Pratt coefficients cross, i.e. there exist \( x \) and \( y \) such that \( r(x,u) > r(x,v) \) and \( r(y,u) < r(y,v) \).
@@ -222,17 +251,20 @@ You should notice that, \textquote{more risk averse then} is a partial order on 
 \end{exercise}
 
 \begin{exercise}\label{ex:cerp}
-	Show that, if an individual with expected–utility preferences and utility \(u\) is risk averse, his risk premium is nonnegative for each lottery.
-\end{exercise}
-
-\begin{exercise}
-	Prove Proposition \ref{prop:equiv}. (If you are stuck, check \cite{krepsMicroeconomicFoundations2013} or exercises 6.C.6 and 6.C.7 in \citet{mas-colellMicroeconomicTheory1995}.)
+	Show that, if an individual with expected utility preferences and utility \(u\) is risk averse, his risk premium is nonnegative for each lottery.
 \end{exercise}
 
 \begin{exercise}
 	We noted that risk aversion is linked to concavity. Can you define \enquote{more risk averse than} directly via concavity? Define when a function is \enquote{more concave than} another, and show that your notion is equivalent to Definition \ref{def:compare}. (Hint: it is easiest to go via the Arrow–Pratt coefficient.)
 \end{exercise}
 
+\begin{exercise}
+	Prove Proposition \ref{prop:equiv}. (If you are stuck, check exercises 6.C.6 and 6.C.7 in \citet{mas-colellMicroeconomicTheory1995}.)
+\end{exercise}
+
+\begin{exercise}
+	A specific utility function that is often used in economics and finance is the \textbf{exponential utility function}, defined as \( u(x) = 1 -e^{-\alpha x} \), where \( \alpha > 0 \) is a parameter. Such function has an interesting property related to how it handles risk. Can you find it? Can you elaborate on what this property implies for risk taking at different wealth levels?
+\end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/
