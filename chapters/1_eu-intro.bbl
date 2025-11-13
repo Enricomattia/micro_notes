@@ -55,6 +55,32 @@ Herstein, I\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jehle%
+\ \BBA {} Reny%
+}{%
+Jehle%
+\ \BBA {} Reny%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+jehleAdvancedMicroeconomicTheory2011}
+\APACinsertmetastar {%
+jehleAdvancedMicroeconomicTheory2011}%
+\begin{APACrefauthors}%
+Jehle, G\BPBI A.%
+\BCBT {}\ \BBA {} Reny, P\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {Advanced Microeconomic Theory} {Advanced microeconomic theory}\
+  (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{Harlow}{Financial Times/Prentice Hall}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kreps%
 }{%
 Kreps%

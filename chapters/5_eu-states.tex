@@ -31,7 +31,7 @@ We now study preferences over acts, that is, if \( f \succsim f^{\prime} \) we s
 \begin{definition}\label{def:seu}
 	Preferences \( \succsim \) over acts have a \textbf{subjective expected utility representation} if there exists a probability distribution over states \( p \in \Delta(S) \) and a utility function over outcomes \( u: X \to \mathbb{R} \) such that, for any two acts \( f, f^{\prime} \),
 	\[
-		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s \in S} p_s u(f_s) \geq \sum_{s \in S} p_s u(f^{\prime}_s).
+		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s } p_s u(f_s) \geq \sum_{s } p_s u(f^{\prime}_s).
 	\]
 \end{definition}
 
@@ -40,7 +40,7 @@ You might be thinking that we are not exploting the first advantage of the state
 \begin{definition}\label{def:seus}
 	Preferences \( \succsim \) over acts have a \textbf{state-dependent subjective expected utility representation} if there exists a probability distribution over states \( p \in \Delta(S) \) and a utility function over outcomes \( u: X \to \mathbb{R} \) such that, for any two acts \( f, f^{\prime} \),
 	\[
-		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s \in S} p_s u_s(f_s) \geq \sum_{s \in S} p_s u_s (f^{\prime}_s).
+		f \succsim f^{\prime} \quad \text{if and only if} \quad \sum_{s } p_s u_s(f_s) \geq \sum_{s } p_s u_s (f^{\prime}_s).
 	\]
 \end{definition}
 
@@ -51,7 +51,7 @@ In Definition \ref{def:seus}, contrary to Definition \ref{def:seu}, individual p
 \section{Exercises}
 
 \begin{exercise}
-	There is a second important model of uncertainty using a state space, by \cite{anscombeDefinitionSubjectiveProbability1963}. In this model, the individual chooses acts mapping state of the world to lotteries, rather than outcomes. That is, each act is a function \( f: S \to \Delta(X) \). Write down a subjective expected utility representation for this model. What do you think the advantages of this model are? (Think about the remark about mixing in the text.)
+	There is a second important model of uncertainty using a state space, by \cite{anscombeDefinitionSubjectiveProbability1963}.\footnote{What is mostly used today is the version in \cite{fishburnUtilityTheoryDecision1970}.} In this model, the individual chooses acts mapping state of the world to lotteries, rather than outcomes. That is, each act is a function \( f: S \to \Delta(X) \). Write down a subjective expected utility representation for this model. What do you think the advantages of this model are? (Think about the remark about mixing in the text.)
 \end{exercise}
 
 \bibliographystyle{apacite}  % or another  style

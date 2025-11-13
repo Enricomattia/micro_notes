@@ -214,7 +214,7 @@ Intuitively, if an individual is risk averse, his certainty equivalent must be l
 
 You will show in Exercise \ref{ex:cerp} that an individual is risk averse if and only if the risk premium is nonnegative for every lottery.
 
-We now have a notion of risk aversion, but not a way to compare the risk attitudes of two individuals. Again, we start from intuition, how could we compare two risk aversion individuals? The risk premium might be a starting point, the higher the risk premium, the more risk averse the individual, as he requires a lower certainty equivalent to face the lottery. Consider two individuals with utility function \( u \) and \( v \). If for each lottery \( F \), the risk premium of the first individual is higher than that of the second, i.e. \( \pi(F,u) \geq \pi(F,v) \), we can say that the first individual is more risk averse than the second. However, such condition boils down to comparing certainty equivalents:
+We now have a notion of risk aversion, but not a way to compare the risk attitudes of two individuals. Again, we start from intuition, how could we compare two risk averse individuals? The risk premium might be a starting point, the higher the risk premium, the more risk averse the individual, as he requires a lower certainty equivalent to face the lottery. Consider two individuals with utility function \( u \) and \( v \). If for each lottery \( F \), the risk premium of the first individual is higher than that of the second, i.e. \( \pi(F,u) \geq \pi(F,v) \), we can say that the first individual is more risk averse than the second. However, such condition boils down to comparing certainty equivalents:
 
 \[
 	\pi(F,u)\ge \pi(F,v)\quad \Longleftrightarrow\quad c(F,u)\le c(F,v),
@@ -242,12 +242,16 @@ We now want to develop a measure of risk aversion that is related to the rate at
 
 You should notice that, \textquote{more risk averse then} is a partial order on the set of utility functions, it is not complete. There might be two utility functions \( u \) and \( v \) such that neither \( u \) is more risk averse than \( v \), nor \( v \) is more risk averse than \( u \). This happens when the Arrow-Pratt coefficients cross, i.e. there exist \( x \) and \( y \) such that \( r(x,u) > r(x,v) \) and \( r(y,u) < r(y,v) \).
 
-\paragraph{Things to read.} This section mostly draws from \citet[ch. 6.C]{mas-colellMicroeconomicTheory1995}. Alternatives treatments can be found in \citet[ch. 6]{krepsNotesTheoryChoice1988} and \citet[ch. 6]{krepsMicroeconomicFoundations2013}.
+\paragraph{Things to read.} This section mostly draws from \citet[ch. 6.C.]{mas-colellMicroeconomicTheory1995}. Alternatives treatments can be found in \citet[ch. 6]{krepsNotesTheoryChoice1988} and \citet[ch. 6]{krepsMicroeconomicFoundations2013}.
 
 \section{Exercises}
 
 \begin{exercise}
 	Check that the CDF in Figure \ref{fig:cdf_example} satisfies the three properties of a CDF.
+\end{exercise}
+
+\begin{exercise}
+	Write the condition for having preferences increasing in money in terms of the binary relation \( \succsim \) over CDFs. Show that such condition implies that the Bernoulli utility \( u \) is increasing.
 \end{exercise}
 
 \begin{exercise}\label{ex:cerp}

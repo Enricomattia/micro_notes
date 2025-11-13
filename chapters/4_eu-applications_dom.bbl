@@ -1,6 +1,29 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Kreps%
+}{%
+Kreps%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+krepsMicroeconomicFoundations2013}
+\APACinsertmetastar {%
+krepsMicroeconomicFoundations2013}%
+\begin{APACrefauthors}%
+Kreps, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Microeconomic Foundations} {Microeconomic foundations}\
+  (\BVOL~1).
+\newblock
+\APACaddressPublisher{}{Princeton university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%
