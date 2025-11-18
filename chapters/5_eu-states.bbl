@@ -50,6 +50,29 @@ Fishburn, P\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gilboa%
+}{%
+Gilboa%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+gilboaTheoryDecisionUncertainty2009}
+\APACinsertmetastar {%
+gilboaTheoryDecisionUncertainty2009}%
+\begin{APACrefauthors}%
+Gilboa, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Theory of Decision under Uncertainty} {Theory of decision under
+  uncertainty}\ (\BVOL~45).
+\newblock
+\APACaddressPublisher{}{Cambridge university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kreps%
 }{%
 Kreps%
@@ -69,6 +92,52 @@ Kreps, D\BPBI M.%
 \APACrefbtitle {Notes on the Theory of Choice} {Notes on the theory of choice}.
 \newblock
 \APACaddressPublisher{}{Westview Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Savage%
+}{%
+Savage%
+}{%
+{\protect \APACyear {1972}}%
+}]{%
+savageFoundationsStatistics1972}
+\APACinsertmetastar {%
+savageFoundationsStatistics1972}%
+\begin{APACrefauthors}%
+Savage, L\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1972}.
+\newblock
+\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}\
+  (\PrintOrdinal{2nd rev.}\ \BEd).
+\newblock
+\APACaddressPublisher{New York}{Dover Publications}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tsakas%
+}{%
+Tsakas%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+tsakasBeliefIdentificationProxy2025}
+\APACinsertmetastar {%
+tsakasBeliefIdentificationProxy2025}%
+\begin{APACrefauthors}%
+Tsakas, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Belief Identification by Proxy} {Belief identification
+  by proxy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Economic Studies}{}{}{rdaf025}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

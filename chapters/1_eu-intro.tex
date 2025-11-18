@@ -201,7 +201,7 @@ Recall that we can define strict preference and indifference in terms of weak pr
 
 In principle, we could describe the preference relation \(\succsim\) by listing, pair by pair, which lotteries are weakly preferred to which others. However, that would be rather inconvenient as a way to work with preferences. It is more practical to have a function that assigns a number to each lottery, so that we can compare lotteries by comparing their associated numbers. Such a function should \enquote{agree} with the preference relation \(\succsim\) in the sense that, if \(p\) is weakly preferred to \(q\), then the number assigned to \(p\) should be at least as large as the number assigned to \(q\). This leads us to the notion of a \textbf{utility function} representing preferences.
 
-\begin{definition}
+\begin{definition}\label{def:utility-rep}
 	A utility function \(U \colon \Delta(X) \to \mathbb{R}\) \textbf{represents} the preference relation \(\succsim\) over \(\Delta(X)\) if, for all lotteries \(p, q \),
 	\[
 		p \succsim q \iff U(p) \ge U(q).

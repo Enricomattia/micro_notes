@@ -1,0 +1,571 @@
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt,envcountsect]{beamer}
+%handout,
+%aspectratio=43
+
+\usepackage{others/prespreamble}
+\usepackage{natbib}
+\usepackage{transparent}
+\newcommand{\fade}[1]{\texttransparent{0.15}{#1}} % 15% opaque (very faint)
+\usepackage[normalem]{ulem}
+\usepackage{colortbl, xcolor}
+\definecolor{RoyalBlue}{rgb}{0.19, 0.55, 0.91}
+\linespread{1}
+\usepackage{mathrsfs}
+\usepackage{transparent}
+
+\usefonttheme{serif}
+\usefonttheme{professionalfonts}
+\usepackage{lmodern}
+\usepackage{csquotes}
+
+\begin{document}
+
+% ---- Title slide -----------------------------
+\begin{frame}[noframenumbering,plain]
+	\maketitle
+
+\end{frame}
+
+% ==== 1. Motivation ======================================================================
+\begin{frame}\frametitle{What is game theory?}
+
+	A logic to think about interacting individuals. \pause
+
+	\vfill
+
+	\begin{enumerate}
+		\item \textbf{Everyday life}: brothers and sisters deciding how to split their toys. \pause
+		      \vfill
+		\item \textbf{Economics and business}:
+		      \begin{enumerate}
+			      \item firms setting prices in competition with each other;
+			      \item manager and employee negotiating a salary.
+		      \end{enumerate} \pause
+		      \vfill
+		\item \textbf{Political science}:
+		      \begin{enumerate}
+			      \item political candidates choosing their electoral platforms;
+			      \item countries negotiating trade agreements.
+		      \end{enumerate} \pause
+		      \vfill
+		\item \textbf{Biology and evolutionary theory}: cancer cells competing with other cells. \pause
+		      \vfill
+		\item \textbf{Computer science}: software agents bidding in online markets or auctions.
+
+	\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{A bit of history}
+
+	\begin{columns}[c]  % vertically centered
+		% ---- Left: picture of von Neumann ----
+		\begin{column}{0.35\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{others/Figures/vonneumann.jpg}% replace path/name
+		\end{column}
+
+		% ---- Right: text ----
+		\begin{column}{0.65\textwidth}
+			The birth of modern game theory is usually traced back to the publication of \textit{Theory of Games and Economic Behavior} by \citeauthor{vonneumannTheoryGamesEconomic2007} in 1944. \pause
+
+			\vspace{1cm}
+
+			Later, von Neumann became involved in the development of nuclear weapons as part of the Manhattan Project, and with the US military in general. \pause
+
+			\vspace{1cm}
+
+			In the 60--70's it started permeating into economics, and later into other fields.
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Program for today}
+
+	Discuss a simple example of a game: \textbf{the Prisoner's Dilemma}. \pause
+
+	\vfill
+
+	Observe that the prisoner's dilemma helps understanding competition in markets. \pause
+
+	\vfill
+
+	The game-theoretic study helps us developing policies to improve collective welfare.
+
+\end{frame}
+
+\begin{frame}<1-5>
+	\frametitle{A simple example}
+
+	Ann has an apple, Bob has a banana.
+
+	\vfill
+
+	However, Ann prefers bananas over apples, and Bob prefers apples over bananas.
+
+	\vfill
+
+	They can either choose to \textbf{Give} their fruit to the other person, or \textbf{Keep} it.
+
+	\vfill
+
+	\begin{columns}[c]
+		% -------- LEFT: payoff table --------
+		\begin{column}{0.5\textwidth}
+			\centering
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{c|c|c|}
+					             & \multicolumn{2}{c}{\textbf{Bob}}                                     \\
+					\cline{2-3}
+					\textbf{Ann} & Give                                                          & Keep \\
+					\hline
+					Give
+					             & \onslide<2->{\alt<2>{\textcolor{blue}{\(6,\,6\)}}{\(6,\,6\)}}        % (Give,Give)
+					             & \onslide<3->{\alt<3>{\textcolor{blue}{\(2,\,8\)}}{\(2,\,8\)}}        % (Give,Keep)
+					\\
+					\hline
+					Keep
+					             & \onslide<4->{\alt<4>{\textcolor{blue}{\(8,\,2\)}}{\(8,\,2\)}}        % (Keep,Give)
+					             & \onslide<5->{\alt<5>{\textcolor{blue}{\(4,\,4\)}}{\(4,\,4\)}}        % (Keep,Keep)
+					\\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+
+		% -------- RIGHT: illustration --------
+		\begin{column}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{others/Figures/ann-bob.png}%
+			% replace with the actual path/name of your image file
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}<1-4>
+	\frametitle{What should Ann do?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Bob}}  \\
+			\cline{2-3}
+			\textbf{Ann}
+			 &                                   % Bob: Give
+			\alt<3>{\fade{Give}}{Give}
+			 &                                   % Bob: Keep
+			\alt<2>{\fade{Keep}}{Keep}           \\
+			\hline
+			% ---------- Ann: Give row ----------
+			Give
+			 &                                   % (Give,Give): faded only when Bob=Keep fixed (slide 3)
+			\alt<3>{\fade{\(6,\,6\)}}{\(6,\,6\)}
+			 &                                   % (Give,Keep): faded only when Bob=Give fixed (slide 2)
+			\alt<2>{\fade{\(2,\,8\)}}{\(2,\,8\)} \\
+			\hline
+			% ---------- Ann: Keep row ----------
+			\textcolor<2-4>{red}{Keep}
+			 &                                   % (Keep,Give): Ann's payoff 8 red on 2 & 4; faded on 3
+			\alt<3>{\fade{\(8,\,2\)}}{%
+				\(\textcolor<2,4>{red}{8},\,2\)%
+			}
+			 &                                   % (Keep,Keep): Ann's payoff 4 red on 3 & 4; faded on 2
+			\alt<2>{\fade{\(4,\,4\)}}{%
+				\(\textcolor<3-4>{red}{4},\,4\)%
+			}                                    \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}<1-3>
+	\frametitle{What should Bob do?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Bob}} \\
+			\cline{2-3}
+			\textbf{Ann}
+			 & Give
+			 & \textcolor<2-3>{red}{Keep}       \\   % Bob's best-reply action
+			\hline
+			% ---------- Ann: Give row ----------
+			\alt<3>{\fade{Give}}{Give}
+			 &                                  % (Give,Give): faded only when Ann=Keep fixed (3)
+			\alt<3>{\fade{\(6,\,6\)}}{\(6,\,6\)}
+			 &                                  % (Give,Keep): Bob's payoff 8 red on 2; faded on 3
+			\alt<3>{\fade{\(2,\,8\)}}{%
+				\(2,\,\textcolor<2>{red}{8}\)%
+			}                                   \\
+			\hline
+			% ---------- Ann: Keep row ----------
+			\alt<2>{\fade{Keep}}{Keep}
+			 &                                  % (Keep,Give): faded only when Ann=Give fixed (2)
+			\alt<2>{\fade{\(8,\,2\)}}{\(8,\,2\)}
+			 &                                  % (Keep,Keep): Bob's payoff 4 red on 3
+			\alt<2>{\fade{\(4,\,4\)}}{%
+				\(4,\,\textcolor<3>{red}{4}\)%
+			}                                   \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What happens then?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Bob}} \\
+			\cline{2-3}
+			\textbf{Ann}
+			 & Give
+			 & \textcolor{red}{Keep}            \\
+			\hline
+			Give
+			 & \(6,\,6\)
+			 & \(2,\,8\)                        \\
+			\hline
+			\textcolor{red}{Keep}
+			 & \(8,\,2\)
+			 & \(\textcolor{red}{4,\,4}\)       \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}<1-5>
+	\frametitle{Innovate or not?}
+
+	Two firms produce plastic bottles.
+
+	\vfill
+
+	Each firm can either \textbf{Innovate} (invest in new technology to make biodegradable bottles) or \textbf{Not} (keep producing regular plastic bottles).
+
+	\vfill
+
+	Innovating is costly, and makes the bottle more expensive.
+
+	\vfill
+
+	\begin{columns}[c]
+		% ---------- LEFT: payoff table ----------
+		\begin{column}{0.5\textwidth}
+			\centering
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{c|c|c|}
+					                  & \multicolumn{2}{c}{\textbf{Column Firm}}                            \\
+					\cline{2-3}
+					\textbf{Row Firm} & Innovate                                                      & Not \\
+					\hline
+					Innovate
+					                  & \onslide<2->{\alt<2>{\textcolor{blue}{\(6,\,6\)}}{\(6,\,6\)}}       % (Innovate,Innovate)
+					                  & \onslide<3->{\alt<3>{\textcolor{blue}{\(2,\,8\)}}{\(2,\,8\)}}       % (Innovate,Not)
+					\\
+					\hline
+					Not
+					                  & \onslide<4->{\alt<4>{\textcolor{blue}{\(8,\,2\)}}{\(8,\,2\)}}       % (Not,Innovate)
+					                  & \onslide<5->{\alt<5>{\textcolor{blue}{\(4,\,4\)}}{\(4,\,4\)}}       % (Not,Not)
+					\\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+
+		% ---------- RIGHT: illustration ----------
+		\begin{column}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{others/Figures/firms.png}%
+			% replace with the actual path/name of your factories image
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{What happens?}
+
+	The strategic interaction in the market leads to a lack of innovation.
+
+	\vfill
+
+	Even if everyone would be better off if both firms innovated!
+
+	\vfill
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Column Firm}} \\
+			\cline{2-3}
+			\textbf{Row Firm}
+			 & Innovate
+			 & \textcolor{red}{Not}                     \\
+			\hline
+			Innovate
+			 & \(6,\,6\)
+			 & \(2,\,8\)                                \\
+			\hline
+			\textcolor{red}{Not}
+			 & \(8,\,2\)
+			 & \(\textcolor{red}{4,\,4}\)               \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}<1-2>
+	\frametitle{What can be done?}
+
+	Obliging firms to do something is usually not a good idea.
+
+	\vfill
+
+	There are advantages in letting firms decide by themselves.
+
+	\vfill
+
+	But we can try to change the \textbf{incentives} they face.
+
+	\vfill
+
+	\textbf{Taxing pollution} is a common policy tool.
+
+	\vfill
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			                  & \multicolumn{2}{c}{\textbf{Column Firm}}         \\
+			\cline{2-3}
+			\textbf{Row Firm} & Innovate                                   & Not \\
+			\hline
+			Innovate
+			                  & \(6,\,6\)
+			                  & \(2,\,8\onslide<2->{\textcolor{red}{-3}}\)       \\
+			\hline
+			Not
+			                  & \(8\onslide<2->{\textcolor{red}{-3}},\,2\)
+			                  & \(4\onslide<2->{\textcolor{red}{-3}},\,
+			4\onslide<2->{\textcolor{red}{-3}}\)                                 \\
+			\hline
+		\end{tabular}
+		% taxes appear on <2>
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A new game}
+
+	After introducing taxes, the game looks like this.
+
+	\vfill
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			                  & \multicolumn{2}{c}{\textbf{Column Firm}}              \\
+			\cline{2-3}
+			\textbf{Row Firm} & Innovate                                 & Not        \\
+			\hline
+			Innovate          & \(6,\, 6\)                               & \(2,\, 5\) \\
+			\hline
+			Not               & \(5,\, 2\)                               & \(1,\, 1\) \\
+			\hline
+		\end{tabular}
+		% \caption{Prisoner's Dilemma with taxes: +1 for Cooperate, -3 for Defect.}
+	\end{table}
+
+\end{frame}
+
+\begin{frame}<1-4>
+	\frametitle{What does row firm do?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Column Firm}} \\
+			\cline{2-3}
+			\textbf{Row Firm}
+			 &                                          % Column: Innovate
+			\alt<3>{\fade{Innovate}}{Innovate}
+			 &                                          % Column: Not
+			\alt<2>{\fade{Not}}{Not}                    \\
+			\hline
+			% ---------- Row: Innovate ----------
+			\textcolor<2-4>{red}{Innovate}
+			 &                                          % (Innovate, Innovate)
+			\alt<3>{\fade{\(6,\,6\)}}{%
+				\(\textcolor<2,4>{red}{6},\,6\)%
+			}
+			 &                                          % (Innovate, Not)
+			\alt<2>{\fade{\(2,\,5\)}}{%
+				\(\textcolor<3-4>{red}{2},\,5\)%
+			}                                           \\
+			\hline
+			% ---------- Row: Not ----------
+			Not
+			 &                                          % (Not, Innovate)
+			\alt<3>{\fade{\(5,\,2\)}}{\(5,\,2\)}
+			 &                                          % (Not, Not)
+			\alt<2>{\fade{\(1,\,1\)}}{\(1,\,1\)}        \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}<1-3>
+	\frametitle{What does column firm do?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Column Firm}} \\
+			\cline{2-3}
+			\textbf{Row Firm}
+			 & \textcolor<2-3>{red}{Innovate}
+			 & Not                                      \\   % Column's best-reply action is Innovate
+			\hline
+			% ---------- Row: Innovate ----------
+			\alt<3>{\fade{Innovate}}{Innovate}
+			 &                                          % (Innovate, Innovate)
+			\alt<3>{\fade{\(6,\,6\)}}{%
+				\(6,\,\textcolor<2>{red}{6}\)%
+			}
+			 &                                          % (Innovate, Not)
+			\alt<3>{\fade{\(2,\,5\)}}{\(2,\,5\)}        \\
+			\hline
+			% ---------- Row: Not ----------
+			\alt<2>{\fade{Not}}{Not}
+			 &                                          % (Not, Innovate)
+			\alt<2>{\fade{\(5,\,2\)}}{%
+				\(5,\,\textcolor<3>{red}{2}\)%
+			}
+			 &                                          % (Not, Not)
+			\alt<2>{\fade{\(1,\,1\)}}{\(1,\,1\)}        \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What happens now?}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|}
+			 & \multicolumn{2}{c}{\textbf{Column Firm}} \\
+			\cline{2-3}
+			\textbf{Row Firm}
+			 & \textcolor{red}{Innovate}
+			 & Not                                      \\
+			\hline
+			\textcolor{red}{Innovate}
+			 & \(\textcolor{red}{6,\,6}\)
+			 & \(2,\,5\)                                \\
+			\hline
+			Not
+			 & \(5,\,2\)
+			 & \(1,\,1\)                                \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{What do people vote?}
+
+	Recently, researchers studied what game people vote to play in experiments.
+
+	\vfill
+
+	\begin{columns}[c]
+		% ---- Left column: old game ----
+		\begin{column}{0.48\textwidth}
+			\centering
+			\textbf{Before taxes and subsidies}\\[0.5em]
+			\begin{tabular}{c|c|c|}
+				         & \multicolumn{2}{c}{\textbf{Column Firm}}                              \\
+				\cline{2-3}
+				\textbf{Row Firm}
+				         & Innovate                                 & Not                        \\
+				\hline
+				Innovate & \(6,\,6\)                                & \(3,\,8\)                  \\
+				\hline
+				Not      & \(8,\,2\)                                & \(\textcolor{red}{4,\,4}\) \\
+				\hline
+			\end{tabular}
+		\end{column}
+
+		% ---- Right column: new game ----
+		\begin{column}{0.48\textwidth}
+			\centering
+			\textbf{After taxes and subsidies}\\[0.5em]
+			\begin{tabular}{c|c|c|}
+				         & \multicolumn{2}{c}{\textbf{Column Firm}}             \\
+				\cline{2-3}
+				\textbf{Row Firm}
+				         & Innovate                                 & Not       \\
+				\hline
+				Innovate & \(\textcolor{red}{6,\,6}\)               & \(4,\,5\) \\
+				\hline
+				Not      & \(5,\,4\)                                & \(1,\,1\) \\
+				\hline
+			\end{tabular}
+		\end{column}
+	\end{columns}
+
+	\vfill
+
+	A lot of people vote to play the game before taxes and subsidies!
+
+	\vfill
+
+	They are not able to predict the effect of changing incentives.
+
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Summary}
+
+	Game theory provides a framework to study strategic interactions.
+
+	\vfill
+
+	It can help understanding real-world phenomena, and design better policies.
+
+	\vfill
+
+	Today we saw a simple example: the Prisoner's Dilemma.
+
+	\vfill
+
+	There are many more concepts and tools in game theory to explore!
+\end{frame}
+
+
+\begin{frame}[noframenumbering,plain]
+
+	\frametitle{References}
+
+	%\nocite{*}
+	\bibliography{chapters/references}
+	\bibliographystyle{apacite}
+
+\end{frame}
+
+\end{document}

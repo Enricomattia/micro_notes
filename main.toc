@@ -45,6 +45,6 @@
 \contentsline {chapter}{\numberline {5}States and subjective expected utility}{35}{chapter.5}%
 \contentsline {section}{\numberline {5.1}State space representation}{35}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Subjective expected utility}{36}{section.5.2}%
-\contentsline {paragraph}{Things to read.}{36}{paragraph*.28}%
-\contentsline {section}{\numberline {5.3}Exercises}{36}{section.5.3}%
+\contentsline {paragraph}{Things to read.}{38}{paragraph*.28}%
+\contentsline {section}{\numberline {5.3}Exercises}{38}{section.5.3}%
 \gdef \the@ipfilectr {}
