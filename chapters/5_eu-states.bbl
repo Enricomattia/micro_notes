@@ -27,6 +27,29 @@ Anscombe, F\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ellsberg%
+}{%
+Ellsberg%
+}{%
+{\protect \APACyear {1961}}%
+}]{%
+ellsbergRiskAmbiguitySavage1961}
+\APACinsertmetastar {%
+ellsbergRiskAmbiguitySavage1961}%
+\begin{APACrefauthors}%
+Ellsberg, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1961}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Risk, Ambiguity, and the {{Savage}} Axioms} {Risk,
+  ambiguity, and the {{Savage}} axioms}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The quarterly journal of economics}{75}{4}{643--669}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fishburn%
 }{%
 Fishburn%
@@ -115,6 +138,31 @@ Savage, L\BPBI J.%
   (\PrintOrdinal{2nd rev.}\ \BEd).
 \newblock
 \APACaddressPublisher{New York}{Dover Publications}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schmeidler%
+}{%
+Schmeidler%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+schmeidlerSubjectiveProbabilityExpected1989}
+\APACinsertmetastar {%
+schmeidlerSubjectiveProbabilityExpected1989}%
+\begin{APACrefauthors}%
+Schmeidler, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Subjective Probability and Expected Utility without
+  Additivity} {Subjective probability and expected utility without
+  additivity}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Econometrica: Journal of the Econometric
+  Society}{}{}{571--587}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

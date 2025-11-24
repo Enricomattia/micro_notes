@@ -1,0 +1,193 @@
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+%\usepackage{amssymb}
+%\usepackage{bbm}
+%\usepackage[T1]{fontenc}
+\usepackage{apacite}
+\usefonttheme[onlymath]{serif}
+%\usepackage{unicode-math}
+%\setmathfont{Cambria Math}
+%\renewcommand{\bibsection}{\subsubsection*{\bibname } }
+
+\setbeamertemplate{itemize item}{\( \circ \)}
+\usepackage{xcolor}
+\hypersetup{colorlinks,linkcolor=black,urlcolor=links,citecolor=black}
+%\usepackage{booktabs}
+
+%\usefonttheme{structuresmallcapsserif}
+%serif
+%professionalfonts
+%structurebold
+%structureitalicserif
+%structuresmallcapsserif
+%\usepackage{bookman}
+%\usepackage{times}
+%\usepackage[sc,osf]{mathpazo}
+%\setlength{\bibsep}{0.0pt}
+%\def\bibfont{\scriptsize}
+\usepackage{newpxtext}
+\RequirePackage{fix-cm}
+
+\usepackage{amsthm}
+
+\newtheorem{brotheorem}{\textsc{Theorem}}
+\newtheorem{prop}{\textsc{Proposition}}
+\newtheorem{df}{\textsc{Definition}}
+\newtheorem*{result*}{Result}
+\newtheorem{newcorollary}{Corollary}
+\newtheorem{newlemma}{\textsc{Lemma}}
+\newtheorem{assumption}{Assumption}
+
+\DeclareMathOperator{\one}{\mathbbm{1}}
+\setbeamertemplate{lemal}[numbered]
+\setbeamertemplate{lem}[numbered]
+\setbeamertemplate{prop}[numbered]
+\setbeamertemplate{thm}[numbered]
+\setbeamertemplate{axiom}[numbered]
+\newtheorem{axiom}{\textsc{Axiom}}
+
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{epigraph}
+\usepackage{caption}
+\usepackage{nicefrac}
+\usepackage{transparent}
+%\usepackage{pgfpages}
+%\usepackage{appendixnumberbeamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\usepackage[normalem]{ulem} 
+
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+\setbeamertemplate{note page}{\pagecolor{yellow!5}\insertnote}\usepackage{palatino}
+
+%\setbeamertemplate{frametitle}{%
+%    \usebeamerfont{frametitle}\insertframetitle\strut%
+%    \vskip-.01\baselineskip%
+%    \leaders\vrule width \paperwidth\vskip0.10pt%
+%    \vskip0pt%
+%    \nointerlineskip
+%}
+
+%\setbeamertemplate{frametitle}[default][center]
+
+%\setbeamercolor{title}{fg=black}
+%\setbeamercolor{frametitle}{fg=Black,bg=Black!20}
+%\setbeamercolor{itemize item}{fg=black}
+
+\setbeamercolor{title}{fg=black, bg=white} % Add this line to set the background color of the title to white
+\setbeamercolor{frametitle}{fg=black,bg=white}
+\setbeamercolor{title}{bg=white}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamerfont{title}{family=\rmfamily, series=\bfseries, size=\LARGE}
+
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{frametitle}[default][colsep=-4bp,rounded=false,shadow=false]
+
+\setbeamertemplate{frametitle}{\vspace*{0.5em}\hfill{\insertframetitle}\hfill\vspace*{0.5em}}
+
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{10pt}}{\enditemize}
+
+\newenvironment{wideenumerate}{\enumerate\addtolength{\itemsep}{10pt}}{\endenumerate}
+
+\let\rfb\reflectbox
+\newcommand{\uglyfrac}[2]{\rfb{\nicefrac{\rfb{#1}}{\rfb{#2}}}}
+
+\usepackage{ragged2e}
+\apptocmd{\frame}{}{\justifying}{}
+
+% superior (?) pause command
+\makeatletter
+\newcommand{\Pause}[1][]{\unless\ifmeasuring@\relax
+\pause[#1]%
+\fi}
+\makeatother
+
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+\setbeamerfont{section in toc}{size=\normalsize,family=\rmfamily}
+\setbeamerfont{subsection in toc}{size=\normalsize,family=\rmfamily}
+
+%slides title font
+%\usepackage{mathptmx}
+\setbeamerfont{frametitle}{family=\rmfamily, series=\bfseries, size=\large}
+\setbeamertemplate{frametitle}{\vspace*{0.5em}\hfill{\scshape\insertframetitle}\hfill\vspace*{0.5em}}
+
+% FOR APPENDIX
+
+\pdfstringdefDisableCommands{%
+\def\translate#1{#1}%
+}
+
+
+\title {\textsc{Approximate common beliefs in rationality in dynamic games}}
+\author{\textbf{\textsc{Aleix Garcia-Galocha}} \and \textsc{Jaromír Kovářík} \and \textsc{Peio Zuazo-Garin}}
+\date{Discussion \\ 
+November 25, 2025 \\
+\vspace{0.5cm}
+\textsc{Enrico Mattia Salonia}}
+
+%\AtBeginSection[]{
+%  \begin{frame}[noframenumbering,plain]
+%    \frametitle{Table of Contents}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+%%%%%%%%%%% NAME OF THE SECTION AT THE BEGINNING OF EACH SECTION $$$$$$$$$$$$$
+
+
+%\AtBeginSection[]
+%{
+%{ \setbeamertemplate{footline}{} \begin{frame}[noframenumbering]
+%  \vfill
+%  \centering
+%  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+%    \usebeamerfont{title}\insertsectionhead\par%
+%  \end{beamercolorbox}
+%  \vfill
+%  \end{frame}
+%}
+%}
+
+\usetheme{default}
+%\usecolortheme{structure}
+% \usecolortheme{dolphin}
+
+	\setbeamerfont{footline}{size=\fontsize{9}{9}\selectfont}
+
+	%%%%%%%%%% AXIOMS AND CONDITIONS
+
+%\theoremstyle{plain}
+%\newtheorem*{namedthm}{\namedthmname}
+%\newcounter{namedthm}
+
+\setbeamercolor{block title}{use=structure,fg=black,bg=white}
+
+%\theoremstyle{plain}
+\newtheorem*{namedthm}{\namedthmname}
+\newcounter{namedthm}
+
+\makeatletter
+\newcommand{\labelname}[2]{%
+  \expandafter\gdef\csname#1@name\endcsname{#2}%
+  \hypertarget{#1}{}%
+}
+\newcommand{\usename}[1]{%
+  \hyperlink{#1}{\csname#1@name\endcsname}%
+}
+\makeatother
+
+% Set table caption text color globally
+\setbeamercolor{caption}{fg=black}

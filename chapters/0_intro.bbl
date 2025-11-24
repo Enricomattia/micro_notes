@@ -71,6 +71,33 @@ Gilboa, I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hildenbrand%
+\ \BBA {} Kirman%
+}{%
+Hildenbrand%
+\ \BBA {} Kirman%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+hildenbrandIntroductionEquilibriumAnalysis1976}
+\APACinsertmetastar {%
+hildenbrandIntroductionEquilibriumAnalysis1976}%
+\begin{APACrefauthors}%
+Hildenbrand, W.%
+\BCBT {}\ \BBA {} Kirman, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1976}.
+\newblock
+\APACrefbtitle {Introduction to Equilibrium Analysis: {{Variations}} on Themes
+  by Edgeworth and Walras} {Introduction to equilibrium analysis:
+  {{Variations}} on themes by edgeworth and walras}\ (\BVOL~6).
+\newblock
+\APACaddressPublisher{Amsterdam}{North-Holland}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kreps%
 }{%
 Kreps%
@@ -139,29 +166,6 @@ mas-colellMicroeconomicTheory1995}%
 \APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
 \newblock
 \APACaddressPublisher{}{Oxford university press New York}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-McKenzie%
-}{%
-McKenzie%
-}{%
-{\protect \APACyear {2005}}%
-}]{%
-mckenzieClassicalGeneralEquilibrium2005}
-\APACinsertmetastar {%
-mckenzieClassicalGeneralEquilibrium2005}%
-\begin{APACrefauthors}%
-McKenzie, L\BPBI W.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Classical General Equilibrium Theory} {Classical general
-  equilibrium theory}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{MIT Press Books}{1}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

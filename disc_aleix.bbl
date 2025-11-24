@@ -1,0 +1,52 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Monderer%
+\ \BBA {} Samet%
+}{%
+Monderer%
+\ \BBA {} Samet%
+}{%
+{\protect \APACyear {1989}}%
+}]{%
+mondererApproximatingCommonKnowledge1989}
+\APACinsertmetastar {%
+mondererApproximatingCommonKnowledge1989}%
+\begin{APACrefauthors}%
+Monderer, D.%
+\BCBT {}\ \BBA {} Samet, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Approximating Common Knowledge with Common Beliefs}
+  {Approximating common knowledge with common beliefs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Games and Economic behavior}{1}{2}{170--190}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siniscalchi%
+}{%
+Siniscalchi%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+siniscalchiStructuralRationalityDynamic2022}
+\APACinsertmetastar {%
+siniscalchiStructuralRationalityDynamic2022}%
+\begin{APACrefauthors}%
+Siniscalchi, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Structural {{Rationality}} in {{Dynamic Games}}}
+  {Structural {{Rationality}} in {{Dynamic Games}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Econometrica}{90}{5}{2437--2469}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

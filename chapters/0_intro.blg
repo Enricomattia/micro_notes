@@ -17,42 +17,42 @@ Database file #1: references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 9 entries,
             6951 wiz_defined-function locations,
-            1332 strings with 12164 characters,
-and the built_in function-call counts, 13481 in all, are:
-= -- 1737
-> -- 110
-< -- 479
-+ -- 475
+            1333 strings with 12273 characters,
+and the built_in function-call counts, 14053 in all, are:
+= -- 1802
+> -- 115
+< -- 528
++ -- 527
 - -- 18
-* -- 717
-:= -- 2201
+* -- 766
+:= -- 2353
 add.period$ -- 38
 call.type$ -- 9
 change.case$ -- 154
 chr.to.int$ -- 0
 cite$ -- 18
-duplicate$ -- 366
-empty$ -- 656
-format.name$ -- 144
-if$ -- 2800
+duplicate$ -- 380
+empty$ -- 664
+format.name$ -- 154
+if$ -- 2884
 int.to.chr$ -- 0
 int.to.str$ -- 27
 missing$ -- 0
-newline$ -- 207
+newline$ -- 210
 num.names$ -- 72
-pop$ -- 348
+pop$ -- 367
 preamble$ -- 1
 purify$ -- 36
 quote$ -- 0
-skip$ -- 994
+skip$ -- 980
 stack$ -- 0
-substring$ -- 551
-swap$ -- 216
-text.length$ -- 34
+substring$ -- 605
+swap$ -- 226
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 784
 warning$ -- 0
-while$ -- 57
+while$ -- 60
 width$ -- 0
-write$ -- 231
+write$ -- 238

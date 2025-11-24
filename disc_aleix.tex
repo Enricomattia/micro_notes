@@ -1,0 +1,158 @@
+
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt,handout]{beamer}
+%handout,
+%aspectratio=43
+
+\usepackage{others/discpreamble}
+\usepackage{natbib}
+\usepackage[normalem]{ulem}
+\usepackage{colortbl, xcolor}
+\definecolor{RoyalBlue}{rgb}{0.19, 0.55, 0.91}
+\linespread{1}
+\usepackage{mathrsfs}
+\usepackage{csquotes}
+
+% small bibliography
+\let\oldthebibliography=\thebibliography
+\renewcommand{\thebibliography}[1]{
+    \oldthebibliography{#1}
+    \setlength{\itemsep}{2pt}
+    \tiny
+}
+
+\begin{document}
+
+\begin{frame}[noframenumbering,plain]
+	\maketitle
+\end{frame}
+
+\begin{frame}
+	\frametitle{Epistemic game theory in 30 seconds}
+
+	Game theory = individual preferences (tastes and beliefs) + equilibrium analysis.
+
+	\vfill
+
+	Equilibrium = rationality (expected utility) + common belief in rationality.
+
+	\vfill
+
+	Behavioural economics introduces “behavioural heuristics” into games.
+
+	\vfill
+
+	How these heuristics relate to classical preferences + equilibrium is often unclear.
+
+	\vfill
+
+	Epistemic game theory takes these sums \underline{\textbf{very seriously}}.
+\end{frame}
+
+\begin{frame}\frametitle{Motivation of this paper}
+
+	Dynamic refinements (e.g. subgame perfection) use the chronological structure of games.
+
+	\vfill
+
+	These refinements often mispredict behaviour in classic experiments.
+
+	\vfill
+
+	Question: how robust are these dynamic concepts to small doubts about rationality?
+\end{frame}
+
+\begin{frame}\frametitle{Framework and concepts}
+
+	Finite multistage games with observable actions.
+
+	\vfill
+
+	Players hold conjectures over others’ strategies.
+
+	\vfill
+
+	Dynamic rationalizability: weak (initial), backward (induction), strong (forward induction).
+
+	\vfill
+
+	Introduce \(p\)-belief: an event is believed with probability at least \(p<1\). \citep{mondererApproximatingCommonKnowledge1989}
+
+	\vfill
+
+	Define weak, backward, strong \(p\)-rationalizability.
+
+\end{frame}
+
+\begin{frame}\frametitle{Main results: rationalizability}
+
+	For \(p=1\): \(p\)-versions coincide with classical notions.
+
+	\vfill
+
+	For any \(p<1\):
+	strong and backward \(p\)-rationalizability \textbf{collapse to weak (initial) rationalizability}.
+
+	\vfill
+
+	Interpretation:
+	even tiny doubts about higher-order rationality destroy the refinement power of dynamic reasoning.
+
+\end{frame}
+
+\begin{frame}\frametitle{Behavioural implications}
+
+	With \(p<1\), dynamic refinements lose bite; predictions become essentially static.
+
+	\vfill
+
+	Centipede game:
+	cooperation in all but the last stage is \(p\)-rationalisable.
+
+	\vfill
+
+	Finitely repeated Prisoner’s Dilemma:
+	all threshold strategies except “cooperate in the final round” are \(p\)-rationalisable.
+
+	\vfill
+
+	Small doubts about rationality can rationalise non-inductive play in these games.
+
+	\vfill
+
+	\textbf{But I add}: for any value of \( p \) you could probably rationalise many things!
+
+\end{frame}
+
+\begin{frame}\frametitle{Comments}
+
+	Results induce a conceptual dilemma:
+
+	\vfill
+
+	\begin{itemize}
+		\item Are there better dynamic refinements we did not develop yet?
+		\item Is the notion of \( p \)-belief in this paper inadequate?
+		\item (\textbf{Pessimistic}): there is no hope.
+	\end{itemize}
+
+	\vfill
+
+	How much is off-path behaviour responsible?
+
+	\vfill
+
+	Structural rationality \citep{siniscalchiStructuralRationalityDynamic2022} may help.
+
+\end{frame}
+
+\begin{frame}[noframenumbering,plain]
+
+	\frametitle{References}
+
+	%\nocite{*}
+	\bibliography{chapters/references}
+	\bibliographystyle{apacite}
+
+\end{frame}
+
+\end{document}

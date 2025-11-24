@@ -16,9 +16,9 @@ Until now we studied a framework of uncertainty in which the underlying state ge
 	The birthday of your child is coming up. The problem is that you do not know whether it will rain or be sunny that day. You are a sophisticated parent who offers him monetary bets on the climate whose payoffs he can spend on his birthday party. If it is sunny, he will have a great time playing outside with his friends, while if it rains he will be obliged to organise something indoors. Therefore, he may enjoy each euro spent on his birthday more when it is sunny than when it is raining: his preferences over money depend on the weather.\footnote{The example is inspired by \cite{tsakasBeliefIdentificationProxy2025}}
 \end{example}
 
-So, the first advantage of modelling states explicitly is that it allows us to capture preferences that depend on the state of the world. There is a second advantage of modelling states explicitly, but it is easier to explain after we introduce the formal model. As in the model in Lecture \ref{ch:L1}, there is a finite set of outcomes \( X \), in Example \ref{ex:states} these are the amounts of money the child could get. Moreover, there is a finite set of mutually exclusive states of the world \( S \). In Example \ref{ex:states}, these are the weather conditions, rain or sun. The individual chooses an \textbf{act}, which is a function from states to outcomes \( f: S \to X \). Act \( f \) in state \( s \) leads to the outcome \( f_s \). In Example \ref{ex:states}, an act is a state-contingent bet. If it rains, the child gets \( f_{\text{rain}} \) euros, while if it is sunny he gets \( f_{\text{sun}} \) euros. Acts are referred to as \textbf{Savage acts}, after \cite{savageFoundationsStatistics1972}, who introduced this model and derived subjective expected utility in Definition \ref{def:seu} below.
+The first advantage of modelling states explicitly is that it allows us to capture preferences that depend on the state of the world, as in Example \ref{ex:states}. There is a second advantage of modelling states explicitly, but it is easier to explain after we introduce the framework. As in Lecture \ref{ch:L1}, there is a finite set of outcomes \( X \), in Example \ref{ex:states} these are the amounts of money the child could get. Moreover, there is a finite set of mutually exclusive states of the world \( S \). In Example \ref{ex:states}, these are the weather conditions, rain or sun. The individual chooses an \textbf{act}, which is a function from states to outcomes \( f: S \to X \). Act \( f \) in state \( s \) leads to the outcome \( f_s \). In Example \ref{ex:states}, an act is a state-contingent bet. If it rains, the child gets \( f_{\text{rain}} \) euros, while if it is sunny he gets \( f_{\text{sun}} \) euros. Acts are referred to as \textbf{Savage acts}, after \cite{savageFoundationsStatistics1972},\footnote{The first edition was published in 1954.} who introduced the framework and derived subjective expected utility in Definition \ref{def:seu} below.
 
-We can now discuss the second advantage of modelling states explicitly. In the model in Lecture \ref{ch:L1}, the individual chooses among lotteries, probability distributions over outcomes. From individual preferences over lotteries, we can infer his utility over outcomes \( u \), and various properties it might have, such as risk aversion. However, the probability of realisation of outcomes is \textit{given}. Most of the time, it is not clear what the probability of an outcome is, and the individual might have her own beliefs about these probabilities. Notice that, in the model with states, we have not introduced any probabilities yet. The idea is that we want to \textit{infer} both the individual’s utility over outcomes \( u \) and her beliefs about the likelihood of states \( p \) from her preferences over acts. We proceed as we did in Lecture \ref{ch:L1}, by studying preferences over acts that have a functional representation of interest.
+We can now discuss the second advantage of modelling states explicitly. In Lecture \ref{ch:L1}, the individual chooses among lotteries, probability distributions over outcomes. From individual preferences over lotteries, we can infer his Bernoulli utility over outcomes \( u \), and various properties it might have, such as risk aversion. However, the probability of realisation of outcomes is \textit{given}. Most of the time, it is not clear what the probability of an outcome is, and the individual might have her own beliefs about these probabilities. Notice that, in the current framework, we have not introduced any probability yet. The idea is that we want to \textit{infer} both the individual’s utility over outcomes \( u \) and her beliefs about the likelihood of states \( p \) from her preferences over acts. We proceed as we did in Lecture \ref{ch:L1}, by studying preferences over acts that have a functional representation of interest.
 
 \begin{techremark}
 	You should notice that, in this setting, there is no natural mixing operation comparable to the one we had for lotteries in Lecture \ref{ch:L1}.
@@ -26,7 +26,7 @@ We can now discuss the second advantage of modelling states explicitly. In the m
 
 \section{Subjective expected utility}
 
-We now study preferences over acts, that is, if \( f \succsim f^{\prime} \) we say the individual prefers act \( f \) to act \( f^{\prime} \). The set of all acts is denoted by \( X^S \), i.e., the set of all functions from \( S \) to \( X \). The definition of a utility function representing preferences is analogous to Definition \ref{def:utility-rep}.
+We now study preferences over acts, that is, if \( f \succsim f^{\prime} \) we say the individual weakly prefers act \( f \) to act \( f^{\prime} \). The set of all acts is denoted by \( X^S \), i.e., the set of all functions from \( S \) to \( X \). The definition of a utility function representing preferences is analogous to Definition \ref{def:utility-rep}.
 
 \begin{definition}
 	A utility function \( U \colon X^S \to \mathbb{R} \) \textbf{represents} the preference relation \( \succsim \) over acts if, for all acts \( f, f^{\prime} \),
@@ -38,10 +38,10 @@ We now study preferences over acts, that is, if \( f \succsim f^{\prime} \) we s
 Under suitable conditions on preferences \( \succsim \), we can represent them through a form of expected utility paralleling the one we considered until now.
 
 \begin{definition}\label{def:seus}
-	Preferences \( \succsim \) over acts have a \textbf{state-dependent subjective expected utility} representation if there exists a probability distribution over states \( p \in \Delta(S) \) and, for each \( s \), a utility function over outcomes \( u_s: X \to \mathbb{R} \) such that, for all acts \( f \),
+	Preferences \( \succsim \) over acts have a \textbf{state-dependent subjective expected utility} representation if there exists a probability distribution over states \( p \in \Delta(S) \) and, for each state \( s \), a utility function over outcomes \( u_s: X \to \mathbb{R} \) such that, for all acts \( f \),
 
 	\begin{equation}\label{eq:seus}
-		U(f) = \sum_{s } p_s u_s(f_s).
+		U(f) = \sum_{s } p (s) u_s(f_s).
 	\end{equation}
 \end{definition}
 
@@ -49,10 +49,10 @@ Let us discuss the interpretation of Definition \ref{def:seus}. The individual h
 
 If you think Equation \eqref{eq:seus} is the same as objective expected utility from Lecture \ref{ch:L1}, think twice. First, we could not define a state-dependent utility \( u_s \), because there were no states. But second, and more importantly, in objective expected utility the probabilities were \textit{given}, while here they are \textit{subjective}, that is, they represent the individual’s beliefs about the likelihood of states. We can infer beliefs from preferences. In other words, if you compare two individuals with distinct preferences over acts, they might have different beliefs about the likelihood of states, even if they have the same utility over outcomes.
 
-A question you might ask yourself is to what extent preferences \( u_s \) and beliefs \( p \) are unique, as we did for objective expected utility in Lecture \ref{ch:L1}. The answer to this question poses problems for the interpretation of sate-dependent subjective expected utility we gave above. Consider the following:
+A question you might ask yourself is to what extent preferences \( u_s \) and beliefs \( p \) are unique, as we did for objective expected utility in Lecture \ref{ch:L1}. The answer to this question poses problems for the interpretation of sate-dependent subjective expected utility we gave above. Consider the following transformation of \( u \):
 
 \[
-	\widetilde{u}_s = \alpha_s + \beta_s \frac{p_s}{\widetilde{p}_s} u_s ,
+	\widetilde{u}_s = \alpha_s + \beta_s \frac{p (s)}{\widetilde{p} (s)} u_s ,
 \]
 
 for \( \alpha_s \in \mathbb{R} \) and \( \beta_s > 0 \), and \( \widetilde{p} \in \Delta(S) \). We can then compute:
@@ -60,52 +60,131 @@ for \( \alpha_s \in \mathbb{R} \) and \( \beta_s > 0 \), and \( \widetilde{p} \i
 \[
 	\begin{aligned}
 		\widetilde U(f)
-		 & = \sum_{s } \widetilde p_s\, \widetilde u_s(f(s))                                                 \\
-		 & = \sum_{s } \widetilde p_s \left( \alpha_s + \beta_s \frac{p_s}{\widetilde p_s} u_s(f(s)) \right) \\
-		 & = \sum_{s } \widetilde p_s \alpha_s + \sum_{s } \beta_s p_s\, u_s(f(s))                           \\
+		 & = \sum_{s } \widetilde p (s)\, \widetilde u_s(f(s))                                                     \\
+		 & = \sum_{s } \widetilde p (s) \left( \alpha_s + \beta_s \frac{p (s)}{\widetilde p (s)} u_s(f(s)) \right) \\
+		 & = \sum_{s } \widetilde p (s) \alpha_s + \sum_{s } \beta_s p (s)\, u_s(f(s))                             \\
 		 & = \alpha + U(f).
 	\end{aligned}
 \]
 
-Therefore, \( \widetilde U(f) \) represents the same preferences as \( U(f) \). We are not able to identify beliefs and preferences uniquely. The statement \textquote{an individual prefers act \( f \) to act \( f^{\prime} \) because she believes state \( s \) is very likely and likes outcome \( x \) a lot in that state} is not well defined, as we can change beliefs and preferences in a way that leaves preferences over acts unchanged.\footnote{Unfortunately, this identification problem is often put under the rug, leading to sloppy interpretations of the role of beliefs.}
+Therefore, \( \widetilde U(f) \) represents the same preferences as \( U(f) \). We are not able to identify beliefs and preferences uniquely. The statement \textquote{an individual prefers act \( f \) to act \( f^{\prime} \) because she believes state \( s \) is very likely and likes outcome \( x \) a lot in that state} is not well defined, as we can change beliefs and preferences in a way that leaves preferences over acts unchanged.\footnote{Unfortunately, this identification problem is often put under the rug, leading to sloppy interpretations of the role of beliefs.} \cite[p. 36]{krepsNotesTheoryChoice1988} suggests that it would be more appropriate to write Equation \eqref{eq:seus} as
 
-However, we can solve this identification problem by imposing that preferences over outcomes do not depend on the state of the world, that is, \( u_s = u \) for all \( s \). In this case, we obtain the following definition.
+\[
+	U(f) = \sum_{s } v_s(f_s),
+\]
+
+that is, state-dependent subjective expected utility is just additive separability across states.
+
+We can solve this identification problem by imposing that preferences over outcomes do not depend on the state of the world, that is, \( u_s = u \) for all states \( s \). In this case, we obtain the following definition.
 
 \begin{definition}\label{def:seu}
 	Preferences \( \succsim \) over acts have a \textbf{subjective expected utility} representation if there exists a probability distribution over states \( p \in \Delta(S) \) and a utility function over outcomes \( u: X \to \mathbb{R} \) such that, for all acts \( f \),
 
 	\begin{equation}\label{eq:seu}
-		U(f) = \sum_{s } p_s u(f_s).
+		U(f) = \sum_{s } p (s) u(f_s).
 	\end{equation}
 \end{definition}
 
-In Definition \ref{def:seu}, contrary to Definition \ref{def:seus}, individual preferences over outcomes do not depend on the state. Such model has stronger uniqueness properties: if \( (p, u) \) and \( (\widetilde p, \widetilde u) \) both represent preferences through Equation \eqref{eq:seu}, then there exist \( \alpha \in \mathbb{R} \) and \( \beta > 0 \) such that \( \widetilde u = \alpha + \beta u \) and \( \widetilde p = p \). Therefore, beliefs \( p \) are uniquely identified, while utility \( u \) is identified up to positive affine transformations, as in objective expected utility. Therefore, in this case we can interpret beliefs \( p \) as the individual’s subjective beliefs about the likelihood of states.
+In Definition \ref{def:seu}, contrary to Definition \ref{def:seus}, individual preferences over outcomes do not depend on the state. Such model has stronger uniqueness properties: if \( (p, u) \) and \( (\widetilde p, \widetilde u) \) both represent preferences through Equation \eqref{eq:seu}, then there exist \( \alpha \in \mathbb{R} \) and \( \beta > 0 \) such that \( \widetilde u = \alpha + \beta u \) and \( \widetilde p = p \). Therefore, beliefs \( p \) are uniquely identified, while utility \( u \) is identified up to positive affine transformations, as in objective expected utility. In this case we can interpret the probability \( p \) as the individual’s subjective beliefs about the likelihood of states.
 
-What assumptions over preferences over acts are equivalent to the existence of a subjective expected utility representation? The answer is given by Savage’s Theorem \citep{savageFoundationsStatistics1972}. Unfortunately, such axiomatic analysis is beyond the scope of this lecture. However, we will focus on the main axiom that allows us to obtain subjective expected utility, the \textbf{Sure-Thing Principle}.
+What assumptions over preferences over acts are equivalent to the existence of a subjective expected utility representation? The answer is given by Savage’s Theorem \citep{savageFoundationsStatistics1972}. Unfortunately, such axiomatic analysis is beyond the scope of this lecture. However, we will focus on the main axiom that allows us to obtain subjective expected utility, the \textbf{Sure-Thing Principle}. To state it, we need some notation.
+
+Recall that an \textit{event} is a subset of states \(E \subseteq S\). For each event \( E \), we write \( E^c \) for the complement of \( E \) in \( S \), that is, the set of states in \( S \) that are not in \( E \). For any two acts \( f, g \) and any event \(E \subseteq S\) define an act \(f_E g\) such that
+
+\[
+	f_E g(s)= \begin{cases}f(s) & \text { if } s \in E \\ g(s) & \text { if } s \in E^c\end{cases}
+\]
+
+That is, act \( f_E g \) agrees with act \( f \) on states in event \( E \), and with act \( g \) on states outside event \( E \).
 
 \begin{axiom}\label{ax:stp}
 	\labelname{axn:stp}{Sure-thing principle} (\textbf{Sure-thing principle})
-	For all acts \( f, f^{\prime}, g, g^{\prime} \) and state \( s \), if
+	For all acts \( f,g,f',g'\) and event \( E \),
+
 	\[
-		f_{s^{\prime}} = g_{s^{\prime}}, \quad f^{\prime}_{s^{\prime}} = g^{\prime}_{s^{\prime}} \quad \text{for all } s^{\prime} \neq s,
-	\]
-	and
-	\[
-		f_s \succsim f^{\prime}_s, \quad g_s \succsim g^{\prime}_s,
-	\]
-	then
-	\[
-		f \succsim f^{\prime} \quad \text{implies} \quad g \succsim g^{\prime}.
+		f_E g \succsim f^{\prime}_E g \: \: \text{if and only if} \: \: \: f_E g^{\prime} \succsim f^{\prime}_E g^{\prime} .
 	\]
 \end{axiom}
+
+In words, the \usename{axn:stp} says the following: if the individual prefers \( f \) to \( f^{\prime} \) on states in event \( E \), then what happens outside \( E \) should not matter. The ranking between \( f \) and \( f' \) on \( E \) should not be reversed by changing \( g \) to \( g' \) outside \( E \). The \usename{axn:stp} is the key axiom of Subjective Expected Utility. \cite{savageFoundationsStatistics1972} showed that the \usename{axn:stp}, together with other axioms, is equivalent to the existence of a subjective expected utility representation as in Definition \ref{def:seu}, an axiomatic analysis paralleling the one we developed for objective expected utility in Theorem \ref{thm:eu}.
+
+However, as for \usename{axn:independence}, we have empirical evidence that individuals' choices sometimes violate the \usename{axn:stp}. The most famous example is the Ellsberg paradox, by \cite{ellsbergRiskAmbiguitySavage1961}. Consider the following tought experiment. An urn contains \( 90 \) balls, of which \( 30 \) are red, while the remaining \( 60 \) are either black or yellow, in an unknown proportion. The state space in this example comprises therefore the colors of the balls: \( S = \{ R,B,Y \}\). You are offered to bet on the colour of a randomly drawn ball from the urn. You can choose between the following acts:
+
+\begin{itemize}
+	\item \( f \): You win \( 1 \) euro if the ball is red, and nothing otherwise.
+	\item \( g \): You win \( 1 \) euro if the ball is black, and nothing otherwise.
+	\item \( f^{\prime} \): You win \( 1 \) euro if the ball is red or yellow, and nothing otherwise.
+	\item \( g^{\prime} \): You win \( 1 \) euro if the ball is black or yellow, and nothing otherwise.
+\end{itemize}
+
+These acts can be summarised in the following table:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|ccc}
+		        & \( R \) & \( B \) & \( Y \) \\
+		\hline
+		\(f \)  & \( 1 \) & \( 0 \) & \( 0 \) \\
+		\(g \)  & \( 0 \) & \( 1 \) & \( 0 \) \\
+		\(f' \) & \( 1 \) & \( 0 \) & \( 1 \) \\
+		\(g' \) & \( 0 \) & \( 1 \) & \( 1 \) \\
+	\end{tabular}
+\end{table}
+
+Many people prefer \( f \) to \( g \), and \( g' \) to \( f' \). However, such
+preferences violate the \usename{axn:stp}. Let \( E = \{R,B\} \) and consider
+two acts \( h^0 \) and \( h^1 \) such that
+
+\[
+	h^0(s) = 0 \quad\text{and}\quad h^1(s) = 1 \quad \text{for all } s.
+\]
+
+Then we can rewrite the four acts in the table as
+
+\[
+	f   = f_E h^0, \qquad
+	g   = g_E h^0, \qquad
+	f'  = f_E h^1, \qquad
+	g'  = g_E h^1 .
+\]
+
+Apply the \usename{axn:stp} with the acts \(f,g,h^0,h^1\) and event \(E\). The
+axiom says that
+
+\[
+	f_E h^0 \succsim g_E h^0
+	\;\;\Longleftrightarrow\;\;
+	f_E h^1 \succsim g_E h^1,
+\]
+
+that is,
+
+\[
+	f \succsim g \;\;\Longleftrightarrow\;\; f' \succsim g'.
+\]
+
+Hence it is impossible to have \( f \succ g \) and \( g' \succ f' \) without
+violating the \usename{axn:stp}.
+
+One explanation for this behaviour is that people dislike \textbf{ambiguity},
+that is, situations in which the likelihood of states is unknown. In the Ellsberg paradox there are \(30\) red balls and \(60\) balls that are either blue or yellow, in unknown proportions. Thus, the probability of drawing a red ball is known, while the probability of drawing a blue ball is unknown. In the first pair, act \(f\) pays \(1\) only if \(R\) occurs, so it yields a known probability of winning of \(\tfrac{1}{3}\). Act \(g\) pays \(1\) only if \(B\) occurs, so its probability of winning depends on the unknown fraction of blue balls in the urn. Many people therefore prefer the bet with known probability \(f\) to the bet with unknown probability \(g\).
+
+In the second pair, act \(f'\) pays \(1\) if either \(R\) or \(Y\) occurs. Since
+the probability of \(B\) is unknown, the probability of \(R\cup Y\) is also
+unknown: it could be anywhere between \(\tfrac{1}{3}\) and \(1\). By contrast,
+\(g'\) pays \(1\) if either \(B\) or \(Y\) occurs, and the probability of
+\(B\cup Y\) is known to be \(\tfrac{2}{3}\). So in this case people tend to
+prefer \(g'\), a bet with known probability \(\tfrac{2}{3}\), to \(f'\), a bet
+with unknown probability.
+
+A plethora of theories of choice under uncertainty have been proposed to account for such violations of the \usename{axn:stp}. One of the most influential branches attempts to explain the Ellsberg paradox with \textbf{ambiguity aversion}, therefore introducing a notion of preferences exhibiting such a property. The seminal paper is \cite{schmeidlerSubjectiveProbabilityExpected1989}.
+
+\begin{techremark}
+	Any ideas on how the \usename{axn:stp} could be relaxed to account for the Ellsberg paradox?
+\end{techremark}
 
 \paragraph{Things to read.} For a textbook treatment of the content of this lecture, see \citet[pp. 33-38]{krepsNotesTheoryChoice1988} or \citet[ch. 12]{fishburnUtilityTheoryDecision1970}. If you are interested in more details, read \citet[Chs. 8-9]{krepsNotesTheoryChoice1988} or \citet[ch. 14]{fishburnUtilityTheoryDecision1970}. By the way, \citet[p. 127]{krepsNotesTheoryChoice1988} defines \cite{savageFoundationsStatistics1972}'s theory nothing less than \textquote{the crowning achievement of single-person decision theory}. At this point of the class, you might be interested in reading \citet{gilboaTheoryDecisionUncertainty2009} for an overview of our current understanding of decision-making under uncertainty.
 
 \section{Exercises}
-
-\begin{exercise}
-	There is a second important model of uncertainty using a state space, by \cite{anscombeDefinitionSubjectiveProbability1963}.\footnote{What is mostly used today is the version in \cite{fishburnUtilityTheoryDecision1970}.} In this model, the individual chooses acts mapping state of the world to lotteries, rather than outcomes. That is, each act is a function \( f: S \to \Delta(X) \). Write down a subjective expected utility representation for this model. What do you think the advantages of this model are? (Think about the remark about mixing in the text.)
-\end{exercise}
 
 \begin{exercise}
 	Show that the subjective expected utility representation in Definition \ref{def:seu} satisfies the \usename{axn:stp}.
@@ -113,6 +192,26 @@ What assumptions over preferences over acts are equivalent to the existence of a
 
 \begin{exercise}
 	Can you find a parallel between the \usename{axn:stp} and the \usename{axn:independence} from Lecture \ref{ch:L2}? Think about compound lotteries and acts that agree on all states except one.
+\end{exercise}
+
+\begin{comment}
+
+\begin{exercise}
+	On belief identification.
+\end{exercise}
+
+\begin{exercise}
+	On de finetti.
+\end{exercise}
+
+\begin{exercise}
+	On maxmin.
+\end{exercise}
+
+\end{comment}
+
+\begin{exercise}
+	There is a second important model of uncertainty using a state space, by \cite{anscombeDefinitionSubjectiveProbability1963}.\footnote{What is mostly used today is the version in \cite{fishburnUtilityTheoryDecision1970}.} In this model, the individual chooses acts mapping state of the world to lotteries, rather than outcomes. That is, each act is a function \( f: S \to \Delta(X) \). Write down a subjective expected utility representation for this model. What do you think the advantages of this model are? (Think about the remark about mixing in the text.)
 \end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
