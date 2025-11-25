@@ -1,53 +1,61 @@
 # Fdb version 4
-["bibtex chapters/0_intro"] 1763495998 "chapters/0_intro.aux" "chapters/0_intro.bbl" "chapters/0_intro" 1763498052 0
+["bibtex chapters/0_intro"] 1764068976 "chapters/0_intro.aux" "chapters/0_intro.bbl" "chapters/0_intro" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/0_intro.aux" 1763498043 5227 23938a526f5929511d10a5f2f357e6a1 "pdflatex"
+  "chapters/0_intro.aux" 1764072836 5227 23938a526f5929511d10a5f2f357e6a1 "pdflatex"
   (generated)
   "chapters/0_intro.bbl"
   "chapters/0_intro.blg"
   (rewritten before read)
-["bibtex chapters/1_eu-intro"] 1763495998 "chapters/1_eu-intro.aux" "chapters/1_eu-intro.bbl" "chapters/1_eu-intro" 1763498052 0
+["bibtex chapters/1_eu-intro"] 1764068975 "chapters/1_eu-intro.aux" "chapters/1_eu-intro.bbl" "chapters/1_eu-intro" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/1_eu-intro.aux" 1763498044 5624 5f9c85d6dac29dd8f6fcded6c1d59fd7 "pdflatex"
+  "chapters/1_eu-intro.aux" 1764072836 5624 5f9c85d6dac29dd8f6fcded6c1d59fd7 "pdflatex"
   (generated)
   "chapters/1_eu-intro.bbl"
   "chapters/1_eu-intro.blg"
   (rewritten before read)
-["bibtex chapters/2_eu-representation"] 1763495998 "chapters/2_eu-representation.aux" "chapters/2_eu-representation.bbl" "chapters/2_eu-representation" 1763498052 0
+["bibtex chapters/2_eu-representation"] 1764068975 "chapters/2_eu-representation.aux" "chapters/2_eu-representation.bbl" "chapters/2_eu-representation" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/2_eu-representation.aux" 1763498045 9253 9e5aab555bc64247c792ec075591fce3 "pdflatex"
+  "chapters/2_eu-representation.aux" 1764072836 9253 9e5aab555bc64247c792ec075591fce3 "pdflatex"
   (generated)
   "chapters/2_eu-representation.bbl"
   "chapters/2_eu-representation.blg"
   (rewritten before read)
-["bibtex chapters/3_eu-money-aversion"] 1763495997 "chapters/3_eu-money-aversion.aux" "chapters/3_eu-money-aversion.bbl" "chapters/3_eu-money-aversion" 1763498052 0
+["bibtex chapters/3_eu-money-aversion"] 1764068975 "chapters/3_eu-money-aversion.aux" "chapters/3_eu-money-aversion.bbl" "chapters/3_eu-money-aversion" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/3_eu-money-aversion.aux" 1763498045 5222 fe52db27131111a713a5f1d16ca042ef "pdflatex"
+  "chapters/3_eu-money-aversion.aux" 1764072836 5222 fe52db27131111a713a5f1d16ca042ef "pdflatex"
   (generated)
   "chapters/3_eu-money-aversion.bbl"
   "chapters/3_eu-money-aversion.blg"
   (rewritten before read)
-["bibtex chapters/4_eu-applications_dom"] 1763495996 "chapters/4_eu-applications_dom.aux" "chapters/4_eu-applications_dom.bbl" "chapters/4_eu-applications_dom" 1763498052 0
+["bibtex chapters/4_eu-applications_dom"] 1764068974 "chapters/4_eu-applications_dom.aux" "chapters/4_eu-applications_dom.bbl" "chapters/4_eu-applications_dom" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/4_eu-applications_dom.aux" 1763498045 4481 f1016123ba95b636fd1f5c2be5e1e235 "pdflatex"
+  "chapters/4_eu-applications_dom.aux" 1764072836 4481 f1016123ba95b636fd1f5c2be5e1e235 "pdflatex"
   (generated)
   "chapters/4_eu-applications_dom.bbl"
   "chapters/4_eu-applications_dom.blg"
   (rewritten before read)
-["bibtex chapters/5_eu-states"] 1763498037 "chapters/5_eu-states.aux" "chapters/5_eu-states.bbl" "chapters/5_eu-states" 1763498052 0
+["bibtex chapters/5_eu-states"] 1764068974 "chapters/5_eu-states.aux" "chapters/5_eu-states.bbl" "chapters/5_eu-states" 1764072841 0
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "chapters/5_eu-states.aux" 1763498046 5824 bcd3f70950a546e41175f300f7f4a09d "pdflatex"
+  "chapters/5_eu-states.aux" 1764072836 5824 bcd3f70950a546e41175f300f7f4a09d "pdflatex"
   (generated)
   "chapters/5_eu-states.bbl"
   "chapters/5_eu-states.blg"
   (rewritten before read)
-["pdflatex"] 1763498038 "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/main.tex" "main.pdf" "main" 1763498052 0
+["bibtex chapters/6_ge_intro"] 1764072832 "chapters/6_ge_intro.aux" "chapters/6_ge_intro.bbl" "chapters/6_ge_intro" 1764072841 0
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bib/tikz-feynman/references.bib" 1454663014 3843 4744c087bc34b85451b33d95346f9586 ""
+  "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
+  "chapters/6_ge_intro.aux" 1764072836 3222 ba2b82d1cbc2c3274c41d56314ecb779 "pdflatex"
+  (generated)
+  "chapters/6_ge_intro.bbl"
+  "chapters/6_ge_intro.blg"
+  (rewritten before read)
+["pdflatex"] 1764072832 "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/main.tex" "main.pdf" "main" 1764072841 0
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757859027 409634 33ab44a304f033b2f5875279f1b535c0 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1626210098 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1626210101 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -388,30 +396,33 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
   "Others/preamble.sty" 1761579152 7959 f7e70300a7627206ff5a77a09cea862f ""
-  "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/main.tex" 1763139770 2517 70be2bf013e6b7b9bf83dcbd1a826fe0 ""
-  "chapters/0_intro.aux" 1763498043 5227 23938a526f5929511d10a5f2f357e6a1 "pdflatex"
-  "chapters/0_intro.bbl" 1763495999 5142 8e147cfed7e585b80f8286493479a3e5 "bibtex chapters/0_intro"
+  "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/main.tex" 1764007383 2516 c15a492dd5fa0398900047eeb45c31bc ""
+  "chapters/0_intro.aux" 1764072836 5227 23938a526f5929511d10a5f2f357e6a1 "pdflatex"
+  "chapters/0_intro.bbl" 1764068976 5142 8e147cfed7e585b80f8286493479a3e5 "bibtex chapters/0_intro"
   "chapters/0_intro.tex" 1763483696 2963 5f4a1cd61517c0c76a6db1ab21693ba9 ""
-  "chapters/1_eu-intro.aux" 1763498044 5624 5f9c85d6dac29dd8f6fcded6c1d59fd7 "pdflatex"
-  "chapters/1_eu-intro.bbl" 1763495998 3757 4c41054d2e547ae4d66e0521eaf9274b "bibtex chapters/1_eu-intro"
+  "chapters/1_eu-intro.aux" 1764072836 5624 5f9c85d6dac29dd8f6fcded6c1d59fd7 "pdflatex"
+  "chapters/1_eu-intro.bbl" 1764068976 3757 4c41054d2e547ae4d66e0521eaf9274b "bibtex chapters/1_eu-intro"
   "chapters/1_eu-intro.tex" 1763130431 19687 0a775105b347f9c3e9eea670a33d4e1f ""
-  "chapters/2_eu-representation.aux" 1763498045 9253 9e5aab555bc64247c792ec075591fce3 "pdflatex"
-  "chapters/2_eu-representation.bbl" 1763495998 9388 245c8604cd46b47ca545a959ca69f798 "bibtex chapters/2_eu-representation"
+  "chapters/2_eu-representation.aux" 1764072836 9253 9e5aab555bc64247c792ec075591fce3 "pdflatex"
+  "chapters/2_eu-representation.bbl" 1764068975 9388 245c8604cd46b47ca545a959ca69f798 "bibtex chapters/2_eu-representation"
   "chapters/2_eu-representation.tex" 1763045618 42238 65334a539b132fbe254483a35e4c8bb5 ""
-  "chapters/3_eu-money-aversion.aux" 1763498045 5222 fe52db27131111a713a5f1d16ca042ef "pdflatex"
-  "chapters/3_eu-money-aversion.bbl" 1763495997 2146 245537b2e7b2ce62b38b92b57277d8b8 "bibtex chapters/3_eu-money-aversion"
+  "chapters/3_eu-money-aversion.aux" 1764072836 5222 fe52db27131111a713a5f1d16ca042ef "pdflatex"
+  "chapters/3_eu-money-aversion.bbl" 1764068975 2146 245537b2e7b2ce62b38b92b57277d8b8 "bibtex chapters/3_eu-money-aversion"
   "chapters/3_eu-money-aversion.tex" 1763041220 19129 94115caaa76757e4f082a433eef2530a ""
-  "chapters/4_eu-applications_dom.aux" 1763498045 4481 f1016123ba95b636fd1f5c2be5e1e235 "pdflatex"
-  "chapters/4_eu-applications_dom.bbl" 1763495997 1173 cce64fb22b91d60d5824de4b20c4c57f "bibtex chapters/4_eu-applications_dom"
+  "chapters/4_eu-applications_dom.aux" 1764072836 4481 f1016123ba95b636fd1f5c2be5e1e235 "pdflatex"
+  "chapters/4_eu-applications_dom.bbl" 1764068975 1173 cce64fb22b91d60d5824de4b20c4c57f "bibtex chapters/4_eu-applications_dom"
   "chapters/4_eu-applications_dom.tex" 1763126188 13859 218b1359d42274561ea76a5ee081d40b ""
-  "chapters/5_eu-states.aux" 1763498046 5824 bcd3f70950a546e41175f300f7f4a09d "pdflatex"
-  "chapters/5_eu-states.bbl" 1763498037 4522 a14f0eafea7fa55d8e96793b1179e226 "bibtex chapters/5_eu-states"
+  "chapters/5_eu-states.aux" 1764072836 5824 bcd3f70950a546e41175f300f7f4a09d "pdflatex"
+  "chapters/5_eu-states.bbl" 1764068974 4522 a14f0eafea7fa55d8e96793b1179e226 "bibtex chapters/5_eu-states"
   "chapters/5_eu-states.tex" 1763498021 17546 70bcfcbceff94d5648c5a5a593b9da5a ""
-  "main.aux" 1763498046 2624 388059e6c4afa92ebdd5a493a3e5cd7a "pdflatex"
-  "main.brf" 1763498046 5011 a9dd34b2e649534d0ddb7a876d9a8761 "pdflatex"
-  "main.out" 1763498046 3319 3a2bc652113e387a23354fdedbcfc903 "pdflatex"
-  "main.tex" 1763139770 2517 70be2bf013e6b7b9bf83dcbd1a826fe0 ""
-  "main.toc" 1763498046 2962 1ae492c02f524bf7d601e8f66b06c153 "pdflatex"
+  "chapters/6_ge_intro.aux" 1764072836 3222 ba2b82d1cbc2c3274c41d56314ecb779 "pdflatex"
+  "chapters/6_ge_intro.bbl" 1764072832 1947 e7abbfbd4bbaaa527e3c7b7a56fe7e95 "bibtex chapters/6_ge_intro"
+  "chapters/6_ge_intro.tex" 1764072821 3700 5bd4fa91c25f3d40508aaa2afd0c6208 ""
+  "main.aux" 1764072836 2951 45bb2bf0d766452d8a1d668e3071a792 "pdflatex"
+  "main.brf" 1764072836 5247 b566ef9de71bc947fcf3ef7f3414aff5 "pdflatex"
+  "main.out" 1764072836 3709 8dd63ce6fec9c5b2cb6666c51618624c "pdflatex"
+  "main.tex" 1764007383 2516 c15a492dd5fa0398900047eeb45c31bc ""
+  "main.toc" 1764072836 3301 5760f2927a3f276a2814c4d7bf5b09de "pdflatex"
   (generated)
   "chapters/0_intro.aux"
   "chapters/1_eu-intro.aux"
@@ -419,6 +430,7 @@
   "chapters/3_eu-money-aversion.aux"
   "chapters/4_eu-applications_dom.aux"
   "chapters/5_eu-states.aux"
+  "chapters/6_ge_intro.aux"
   "main.aux"
   "main.brf"
   "main.log"

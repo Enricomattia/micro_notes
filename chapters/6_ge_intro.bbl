@@ -23,4 +23,57 @@ Arrow, K\BPBI J.%
 \APACaddressPublisher{New Haven, CT}{Yale University Press}.
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+Hildenbrand%
+\ \BBA {} Kirman%
+}{%
+Hildenbrand%
+\ \BBA {} Kirman%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+hildenbrandIntroductionEquilibriumAnalysis1976}
+\APACinsertmetastar {%
+hildenbrandIntroductionEquilibriumAnalysis1976}%
+\begin{APACrefauthors}%
+Hildenbrand, W.%
+\BCBT {}\ \BBA {} Kirman, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1976}.
+\newblock
+\APACrefbtitle {Introduction to Equilibrium Analysis: {{Variations}} on Themes
+  by Edgeworth and Walras} {Introduction to equilibrium analysis:
+  {{Variations}} on themes by edgeworth and walras}\ (\BVOL~6).
+\newblock
+\APACaddressPublisher{Amsterdam}{North-Holland}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Mas-Colell}%
+, Whinston%
+\BCBL {}\ \BBA {} Green%
+}{%
+{Mas-Colell}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+mas-colellMicroeconomicTheory1995}
+\APACinsertmetastar {%
+mas-colellMicroeconomicTheory1995}%
+\begin{APACrefauthors}%
+{Mas-Colell}, A.%
+, Whinston, M\BPBI D.%
+\BCBL {}\ \BBA {} Green, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
+\newblock
+\APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

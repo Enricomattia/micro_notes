@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex disc_aleix"] 1764004356 "disc_aleix.aux" "disc_aleix.bbl" "disc_aleix" 1764004474 0
+["bibtex disc_aleix"] 1764073607 "disc_aleix.aux" "disc_aleix.bbl" "disc_aleix" 1764074480 0
   "./chapters/references.bib" 1764004330 244557 e2ff335ab182a6b5b72a7c4bfe9eb874 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/bibtex/bst/apacite/apacite.bst" 1374949128 146156 9d7b79dbf9d91133318126032cff8c27 ""
-  "disc_aleix.aux" 1764004473 2489 451c4dc61870b46bf5a11213c499c881 "pdflatex"
+  "disc_aleix.aux" 1764074479 2489 451c4dc61870b46bf5a11213c499c881 "pdflatex"
   (generated)
   "disc_aleix.bbl"
   "disc_aleix.blg"
   (rewritten before read)
-["pdflatex"] 1764004472 "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/disc_aleix.tex" "disc_aleix.pdf" "disc_aleix" 1764004474 0
+["pdflatex"] 1764074477 "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/disc_aleix.tex" "disc_aleix.pdf" "disc_aleix" 1764074480 0
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1757859027 409634 33ab44a304f033b2f5875279f1b535c0 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1626210098 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/enric/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1626210101 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -265,12 +265,12 @@
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/enric/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/disc_aleix.tex" 1764004470 3646 c2c3ddd38cf03627fb14c4121fab4500 ""
-  "disc_aleix.aux" 1764004473 2489 451c4dc61870b46bf5a11213c499c881 "pdflatex"
-  "disc_aleix.bbl" 1764004356 1313 dd950946b3dd1659a392826b2c7b5461 "bibtex disc_aleix"
-  "disc_aleix.nav" 1764004473 1075 11d15c1e06335816a7f70c0245949b60 "pdflatex"
-  "disc_aleix.out" 1764004473 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "disc_aleix.tex" 1764004470 3646 c2c3ddd38cf03627fb14c4121fab4500 ""
+  "c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/disc_aleix.tex" 1764074444 4057 e37fca8a8fed4aaec6e62b7888bf799c ""
+  "disc_aleix.aux" 1764074479 2489 451c4dc61870b46bf5a11213c499c881 "pdflatex"
+  "disc_aleix.bbl" 1764073607 1313 dd950946b3dd1659a392826b2c7b5461 "bibtex disc_aleix"
+  "disc_aleix.nav" 1764074479 1075 11d15c1e06335816a7f70c0245949b60 "pdflatex"
+  "disc_aleix.out" 1764074479 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "disc_aleix.tex" 1764074444 4057 e37fca8a8fed4aaec6e62b7888bf799c ""
   "others/discpreamble.sty" 1763984208 5592 c919b9da1beea74eac3e2327650f5bdb ""
   (generated)
   "disc_aleix.aux"

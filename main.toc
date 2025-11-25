@@ -48,3 +48,9 @@
 \contentsline {paragraph}{Things to read.}{40}{paragraph*.29}%
 \contentsline {section}{\numberline {5.3}Exercises}{40}{section.5.3}%
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\contentsline {chapter}{\numberline {6}General Equilibrium}{42}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Exchange economies}{42}{section.6.1}%
+\contentsline {paragraph}{Things to read.}{43}{paragraph*.30}%
+\contentsline {section}{\numberline {6.2}Exercises}{43}{section.6.2}%
+\gdef \the@ipfilectr {}
