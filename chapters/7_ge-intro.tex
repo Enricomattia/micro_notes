@@ -147,54 +147,6 @@ That is, an allocation rule is Walrasian if it selects all Walrasian equilibria 
 	\]
 \end{theorem}
 
-\begin{definition}
-	An allocation \( x \) is \textbf{envy-free} if for all individuals \( i, j \), \( x_i \succsim_i x_j \).
-\end{definition}
-
-\begin{proposition}
-	Every allocation selected by an Egalitarian Walrasian equilibrium is envy-free. That is,
-	\[
-		x \in R^{EW}(E) \quad \Longrightarrow \quad x \quad \text{is envy-free}.
-	\]
-\end{proposition}
-
-\begin{proof}
-	Let \( E \) be an economy and suppose that \( x \in R^{EW}(E) \). By definition of the Egalitarian Walrasian rule, there exists a price vector \( p \in \mathbb{R}^\ell_{++} \) such that, for every individual \( i \in I \),
-	\[
-		x_i \in D_i\!\left(\frac{\bar e}{n},p\right),
-	\]
-	where \( D_i(e,p) \) denotes the set of most preferred bundles of \( i \) in the budget set
-	\[
-		B(e,p) = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot e \,\}.
-	\]
-
-	Because all individuals face the same ``egalitarian'' endowment \( \frac{\bar e}{n} \) and the same price vector \( p \), they all face the same budget set
-	\[
-		B := B\!\left(\frac{\bar e}{n},p\right)
-		= \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot \tfrac{\bar e}{n} \,\}.
-	\]
-
-	Fix any individual \( i \). Since \( x_i \in D_i\!\left(\frac{\bar e}{n},p\right) \), \( x_i \) is a most preferred bundle for \( i \) in \( B \). Therefore,
-	\begin{equation}
-		\label{eq:maximal}
-		\forall x' \in B,\qquad x_i \succsim_i y.
-	\end{equation}
-
-	Now consider any other individual \( j \in I \). Because \( x_j \in D_j\!\left(\frac{\bar e}{n},p\right) \), we also have \( x_j \in B \). Applying \eqref{eq:maximal} to the specific bundle \( x' = x_j \) yields
-	\[
-		x_i \succsim_i x_j.
-	\]
-
-	Thus, for every pair of individuals \( i,j \in I \), consumer \( i \) (weakly) prefers her own allocation \( x_i \) to the allocation \( x_j \) of consumer \( j \):
-	\[
-		\forall i,j \in I,\qquad x_i \succsim_i x_j.
-	\]
-
-	In particular, this implies that there is no pair \( i \neq j \) for which \( x_j \succ_i x_i \). Hence no individual strictly prefers someone else's bundle to her own.
-
-	Therefore, the allocation \( x \) is envy-free.
-\end{proof}
-
 \paragraph{Things to read.} It might be useful for you to review (or study, if you never encountered these topics before), \citet[pp. 51-70, 76-84]{hildenbrandIntroductionEquilibriumAnalysis1976}. If you want (and you \textquote{should want}) to go deeper, study study \citet[pp. 17–23, 40–56]{mas-colellMicroeconomicTheory1995}. \cite{arrowSocialChoiceIndividual2012}.
 
 \section{Exercises}

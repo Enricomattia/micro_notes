@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  27 NOV 2025 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  27 NOV 2025 18:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2091,19 +2091,19 @@ Lecture 7.
 
 
 
-] [45] (chapters/7_ge-intro.bbl (main.brf) [46])) [47]
+] [45] (chapters/7_ge-intro.bbl (main.brf))) [46]
 \openout2 = `chapters/8_ge-firstwelf.aux'.
 
 
 (chapters/8_ge-firstwelf.tex
 Lecture 8.
-[48
+[47
 
 
 
 
 
-] [49] (chapters/8_ge-firstwelf.bbl (main.brf))) [50] (main.aux
+] [48] [49] (chapters/8_ge-firstwelf.bbl (main.brf) [50])) [51] (main.aux
 (chapters/0_intro.aux) (chapters/1_eu-intro.aux)
 (chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux)
 (chapters/4_eu-applications_dom.aux) (chapters/5_eu-states.aux)
@@ -2116,16 +2116,16 @@ L3 programming layer <2023-06-30>
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8EA02F98A9784D5F470A91CFCFFFA60B;4747.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 9BC7E5519828255CB4D2C591ADC47E74;5632.
+(rerunfilecheck)             Checksum: A9E506EFC05E2D8666BB7266AC2B6CC9;5930.
  ) 
 Here is how much of TeX's memory you used:
- 51534 strings out of 475551
- 1204952 string characters out of 5762554
+ 51556 strings out of 475551
+ 1205724 string characters out of 5762554
  1938238 words of memory out of 5000000
- 71504 multiletter control sequences out of 15000+600000
+ 71518 multiletter control sequences out of 15000+600000
  581688 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,13n,136p,2442b,1121s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,13n,136p,2442b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -2158,9 +2158,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/en
 ric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/
 Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.
 pfb>
-Output written on main.pdf (52 pages, 770833 bytes).
+Output written on main.pdf (53 pages, 779732 bytes).
 PDF statistics:
- 1161 PDF objects out of 1200 (max. 8388607)
- 281 named destinations out of 1000 (max. 500000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 289 named destinations out of 1000 (max. 500000)
  261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

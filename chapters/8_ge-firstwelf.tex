@@ -124,9 +124,61 @@ Let us discuss why Local non-satiation is necessary for Theorem \ref{thm:fftwe} 
     \end{center}
 \end{figure}
 
-There are two ways to interpret Theorem \ref{thm:fftwe}. A \textit{logical} one, and a \textit{positive} one. The logical interpretation is the following. One might want to answer
+Let us now interpret Theorem \ref{thm:fftwe}. A standard question in economics is how to allocate resources given data on preferences.\footnote{In the most general form, a question of this kind is asked in \cite{arrowSocialChoiceIndividual2012}.} We might want such an allocation of resources to satisfy some good properties from a \textit{normative} perspective. One such property is Pareto optimality. An allocation rule taking preferences and endowments as inputs and returning a Pareto optimal allocation as output might therefore be desirable. However, once one has an allocation rule, one might wonder whether such an allocation rule could be implemented in a decentralized way. A rule taking preferences and endowments as inputs and returning allocations as output does not tell us \textit{how} to reach such allocations. Theorem \ref{thm:fftwe} tells us that the Walrasian equilibrium with transfers implements an allocation rule always delivering Pareto optimal allocations. There is a bit more, however. A Walrasian equilibrium with transfers is not just a mechanism to implement Pareto optimal allocations. It delivers prices for each good allowing to trade so to reach such allocations. Prices may be interpreted as \textquote{values} for goods, where these values depends on the preferences all individuals in the economy. In fact, \cite{debreuTheoryValueAxiomatic1959} is titled \textit{Theory of Value:}. A lot of more or less sophisticated critiques of economics stem from the idea that it is inappropriate to view the value of goods as determined by prices. In fact, there is famous citation, misattributed to Oscar Wilde,\footnote{Apparently the original citation is.} that says: \textquote{An economist is someone who knows the price of everything and the value of nothing}. Of course, there are legitimate reason to question weather values should be entirely derived from individual preferences. But there is nothing special in prices that is not related to preferences, in the setting under consideration here.
 
-First, it shows that the Walrasian equilibrium with transfers is an \textit{efficient} allocation rule, in the sense that it always selects Pareto optimal allocations. Second, it shows that if we observe an allocation that is not Pareto optimal, then we can conclude that this allocation could not have arisen as a Walrasian equilibrium with transfers.
+Unfortunately, an allocation rule delivering Pareto optimal allocations can sometimes be undesirable from other points of view. For instance, such an allocation rule might deliver very unequal allocations. Let us consider a second property we might want an allocation to satisfy.
+
+\begin{definition}
+    An allocation \( x \) is \textbf{envy-free} if for all individuals \( i, j \), \( x_i \succsim_i x_j \).
+\end{definition}
+
+An allocation is envy-free if no individual prefers someone else's bundle to her own. Envy-freeness is a desirable property from a fairness perspective.\footnote{For recent and deeper analyses of envy-freeness, check \cite{fleurbaeyFairnessResponsibilityWelfare2008} and \cite{thomsonFairAllocationRules2011}.} In particular, envy-freeness is strongly related to the idea of equality of opportunity. A way of looking at such relationship is captured in the following proposition.
+
+\begin{proposition}\label{prop:envy}
+    Every allocation selected by an Egalitarian Walrasian equilibrium is envy-free. That is,
+    \[
+        x \in R^{EW}(E) \quad \Longrightarrow \quad x \quad \text{is envy-free}.
+    \]
+\end{proposition}
+
+\begin{proof}
+    Let \( E \) be an economy and suppose that \( x \in R^{EW}(E) \). By definition of the Egalitarian Walrasian rule, there exists a price vector \( p \in \mathbb{R}^\ell_{++} \) such that, for every individual \( i \in I \),
+    \[
+        x_i \in D_i\!\left(\frac{\bar e}{n},p\right),
+    \]
+    where \( D_i(e,p) \) denotes the set of most preferred bundles of \( i \) in the budget set
+    \[
+        B(e,p) = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot e \,\}.
+    \]
+
+    Because all individuals face the same ``egalitarian'' endowment \( \frac{\bar e}{n} \) and the same price vector \( p \), they all face the same budget set
+    \[
+        B := B\!\left(\frac{\bar e}{n},p\right)
+        = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot \tfrac{\bar e}{n} \,\}.
+    \]
+
+    Fix any individual \( i \). Since \( x_i \in D_i\!\left(\frac{\bar e}{n},p\right) \), \( x_i \) is a most preferred bundle for \( i \) in \( B \). Therefore,
+    \begin{equation}
+        \label{eq:maximal}
+        \forall x' \in B,\qquad x_i \succsim_i y.
+    \end{equation}
+
+    Now consider any other individual \( j \in I \). Because \( x_j \in D_j\!\left(\frac{\bar e}{n},p\right) \), we also have \( x_j \in B \). Applying \eqref{eq:maximal} to the specific bundle \( x' = x_j \) yields
+    \[
+        x_i \succsim_i x_j.
+    \]
+
+    Thus, for every pair of individuals \( i,j \in I \), consumer \( i \) (weakly) prefers her own allocation \( x_i \) to the allocation \( x_j \) of consumer \( j \):
+    \[
+        \forall i,j \in I,\qquad x_i \succsim_i x_j.
+    \]
+
+    In particular, this implies that there is no pair \( i \neq j \) for which \( x_j \succ_i x_i \). Hence no individual strictly prefers someone else's bundle to her own.
+
+    Therefore, the allocation \( x \) is envy-free.
+\end{proof}
+
+By Theorem \ref{thm:fftwe} and Proposition \ref{prop:envy}, we know that the Walrasian Egalitarian allocation rule delivers allocations that are both Pareto optimal and envy-free. However, endowments might be distinct from the egalitarian endowment \( \frac{\bar e}{n} \). We might therefore be interested in knowing how to implement such allocation rule. The Second Fundamental Theorem of Welfare Economics, which we will discuss in the next chapter, provides conditions under which this is possible.
 
 \paragraph{Things to read.} This lecture is based on \citet[pp. 545-550]{mas-colellMicroeconomicTheory1995}.
 

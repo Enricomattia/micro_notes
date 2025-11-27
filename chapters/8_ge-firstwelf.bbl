@@ -1,6 +1,76 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arrow%
+}{%
+Arrow%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+arrowSocialChoiceIndividual2012}
+\APACinsertmetastar {%
+arrowSocialChoiceIndividual2012}%
+\begin{APACrefauthors}%
+Arrow, K\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Social Choice and Individual Values} {Social choice and
+  individual values}\ (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{New Haven, CT}{Yale University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Debreu%
+}{%
+Debreu%
+}{%
+{\protect \APACyear {1959}}%
+}]{%
+debreuTheoryValueAxiomatic1959}
+\APACinsertmetastar {%
+debreuTheoryValueAxiomatic1959}%
+\begin{APACrefauthors}%
+Debreu, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1959}.
+\newblock
+\APACrefbtitle {Theory of Value: {{An}} Axiomatic Analysis of Economic
+  Equilibrium} {Theory of value: {{An}} axiomatic analysis of economic
+  equilibrium}\ (\BVOL~17).
+\newblock
+\APACaddressPublisher{}{Yale University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+}{%
+Fleurbaey%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+fleurbaeyFairnessResponsibilityWelfare2008}
+\APACinsertmetastar {%
+fleurbaeyFairnessResponsibilityWelfare2008}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2008}.
+\newblock
+\APACrefbtitle {Fairness, Responsibility, and Welfare} {Fairness,
+  responsibility, and welfare}.
+\newblock
+\APACaddressPublisher{Oxford}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%
@@ -24,6 +94,31 @@ mas-colellMicroeconomicTheory1995}%
 \APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
 \newblock
 \APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thomson%
+}{%
+Thomson%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+thomsonFairAllocationRules2011}
+\APACinsertmetastar {%
+thomsonFairAllocationRules2011}%
+\begin{APACrefauthors}%
+Thomson, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fair Allocation Rules} {Fair allocation rules}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Handbook of Social Choice and Welfare} {Handbook of
+  social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

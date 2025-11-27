@@ -57,13 +57,13 @@
 \gdef \the@ipfilectr {@-8}
 \contentsline {chapter}{\numberline {7}General Equilibrium}{44}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Exchange economies}{44}{section.7.1}%
-\contentsline {paragraph}{Things to read.}{47}{paragraph*.31}%
-\contentsline {section}{\numberline {7.2}Exercises}{47}{section.7.2}%
+\contentsline {paragraph}{Things to read.}{46}{paragraph*.31}%
+\contentsline {section}{\numberline {7.2}Exercises}{46}{section.7.2}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{48}{chapter.8}%
-\contentsline {section}{\numberline {8.1}A preliminary lemma}{48}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}The main result}{48}{subsection.8.1.1}%
+\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{47}{chapter.8}%
+\contentsline {section}{\numberline {8.1}A preliminary lemma}{47}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The main result}{47}{subsection.8.1.1}%
 \contentsline {paragraph}{Things to read.}{50}{paragraph*.33}%
 \contentsline {section}{\numberline {8.2}Exercises}{50}{section.8.2}%
 \gdef \the@ipfilectr {}
