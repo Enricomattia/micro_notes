@@ -46,7 +46,7 @@
 %\usepackage{txfonts}
 %\usepackage{bookman}
 \usepackage{etoolbox}
-\usepackage{xparse} 
+\usepackage{xparse}
 \usepackage{titlesec}
 \usepackage{csquotes}
 \usepackage{caption}
@@ -58,7 +58,7 @@
 %\tikzexternalize[prefix=tikz/]
 
 \AtBeginDocument{%
-    \renewcommand*{\PrintBackRefs}[1]{}%
+  \renewcommand*{\PrintBackRefs}[1]{}%
 }
 
 \makeatletter
@@ -96,10 +96,10 @@
 % If used right after an exercise, it picks up \currentexnumber automatically.
 % You can also do \begin{solution}[<ex:label>] to reference a specific exercise.
 \NewDocumentEnvironment{solution}{o}{%
-  \IfNoValueTF{#1}%
-    {\begin{proof}[Solution to Exercise \currentexnumber]}%
-    {\begin{proof}[Solution to Exercise~\ref{#1}]}%
-}{\end{proof}}
+\IfNoValueTF{#1}%
+{\begin{proof}[Solution to Exercise \currentexnumber]}%
+{\begin{proof}[Solution to Exercise~\ref{#1}]}%
+    }{\end{proof}}
 
 %\usepackage{natbib}
 %\setlength{\bibsep}{0.0pt}
@@ -117,7 +117,7 @@
 \newenvironment{corproof}{%
   \renewcommand{\proofname}{Proof of Corollary \ref{cor:uniq}}\proof}{\endproof}
 
-  \newenvironment{implproof}{%
+\newenvironment{implproof}{%
   \renewcommand{\proofname}{Proof of Proposition \ref{prop:impl}}\proof}{\endproof}
 
 \newenvironment{paretoproof}{%
@@ -127,7 +127,7 @@
   \renewcommand{\proofname}{Proof of Proposition \ref{prop:prop}}\proof}%{\endproof}
 
 %\newenvironment{propproof}{%
- % \renewcommand{\proofname}{Proof of Proposition \ref{prop:mix}}\proof}%{\endproof}
+% \renewcommand{\proofname}{Proof of Proposition \ref{prop:mix}}\proof}%{\endproof}
 
 \newenvironment{linproof}{%
   \renewcommand{\proofname}{Proof of Theorem \ref{thm:sep}}\proof}{\endproof}
@@ -155,12 +155,12 @@
 
 % ---------- chapter‑abstract environment (roman text) ----------
 \newenvironment{chapterabstract}%
-  {\bigskip                   % space below the chapter title
-   \begin{center}\bfseries Abstract\end{center}%
-   \begin{quotation}\normalfont}%
-  {\end{quotation}\bigskip}
+{\bigskip                   % space below the chapter title
+  \begin{center}\bfseries Abstract\end{center}%
+  \begin{quotation}\normalfont}%
+    {\end{quotation}\bigskip}
 
-  \newcommand{\chapthanks}[1]{%  #1 = text of the footnote
+\newcommand{\chapthanks}[1]{%  #1 = text of the footnote
   \renewcommand{\thefootnote}{\fnsymbol{footnote}}% use *, †, …
   \footnotetext{#1}%                print the footnote
   \setcounter{footnote}{0}%         reset for the next chapter (optional)
@@ -194,12 +194,12 @@
 
 % ---------- chapter heading: stacked “Chapter N” + title, smaller than default
 \titleformat{\chapter}%           <- which heading
-  [display]%                      <- put label on its own line
-  {\normalfont\LARGE\bfseries}%   <- overall font for both lines
-  {Lecture \ \thechapter}%         <- label line  (“Chapter 2” …)
-  {1ex}%                          <- vertical gap between label and title
-  {\LARGE\bfseries}%              <- font for the title line
-  []
+[display]%                      <- put label on its own line
+{\normalfont\LARGE\bfseries}%   <- overall font for both lines
+{Lecture \ \thechapter}%         <- label line  (“Chapter 2” …)
+{1ex}%                          <- vertical gap between label and title
+{\LARGE\bfseries}%              <- font for the title line
+[]
 
 \addto\captionsenglish{\renewcommand{\chaptername}{Lecture}}
 \providecommand*{\chapterautorefname}{Lecture}

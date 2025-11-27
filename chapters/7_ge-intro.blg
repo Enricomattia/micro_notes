@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: 5_eu-states.aux
+The top-level auxiliary file: 7_ge-intro.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apacite.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
@@ -15,44 +15,44 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 9 entries,
+You've used 3 entries,
             6951 wiz_defined-function locations,
-            1337 strings with 12274 characters,
-and the built_in function-call counts, 13097 in all, are:
-= -- 1657
-> -- 96
-< -- 493
-+ -- 489
-- -- 18
-* -- 739
-:= -- 2243
-add.period$ -- 36
-call.type$ -- 9
-change.case$ -- 153
+            1289 strings with 11273 characters,
+and the built_in function-call counts, 5160 in all, are:
+= -- 644
+> -- 44
+< -- 212
++ -- 228
+- -- 6
+* -- 304
+:= -- 919
+add.period$ -- 12
+call.type$ -- 3
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 337
-empty$ -- 633
-format.name$ -- 136
-if$ -- 2663
+cite$ -- 6
+duplicate$ -- 149
+empty$ -- 229
+format.name$ -- 70
+if$ -- 1018
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 204
-num.names$ -- 72
-pop$ -- 304
+newline$ -- 76
+num.names$ -- 24
+pop$ -- 132
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 12
 quote$ -- 0
-skip$ -- 958
+skip$ -- 305
 stack$ -- 0
-substring$ -- 551
-swap$ -- 209
-text.length$ -- 21
+substring$ -- 254
+swap$ -- 86
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 720
+type$ -- 240
 warning$ -- 0
-while$ -- 48
+while$ -- 25
 width$ -- 0
-write$ -- 225
+write$ -- 92

@@ -1,10 +1,12 @@
 INFO:  latexindent.pl version 3.22.2, 2023-07-14, a script to indent .tex files
        latexindent.pl lives here: C:/Users/enric/AppData/Local/Programs/MiKTeX/scripts/latexindent/
-       Tue Nov 25 13:41:15 2025
-       Filename: c:\Users\enric\OneDrive - Universita' degli Studi di Roma Tor Vergata\Desktop\micro_notes\disc_aleix.tex
+       Thu Nov 27 17:14:14 2025
+       Filename: c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/chapters/__latexindent_temp_5_eu-states.tex
 INFO:  Processing switches:
-INFO:  Directory for backup files and indent.log:
-       c:\Users\enric\OneDrive - Universita' degli Studi di Roma Tor Vergata\Desktop\micro_notes
+       -y|--yaml: YAML settings specified via command line
+       -c|--cruft: cruft directory
+INFO:  Directory for backup files and c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes//indent.log:
+       c:/Users/enric/OneDrive - Universita' degli Studi di Roma Tor Vergata/Desktop/micro_notes/
 INFO:  Perl modules are being loaded from the following directories:
        C:/Strawberry/perl/lib/FindBin.pm
        C:/Strawberry/perl/vendor/lib/YAML/Tiny.pm
@@ -20,6 +22,10 @@ INFO:  YAML reading settings
        Home directory is C:\Users\enric
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  YAML settings read: -y switch
+       YAML setting: defaultIndent:'\t'
+       single-quoted string found in -y switch: '\t', substitute to 	
+       Updating mainSettings with defaultIndent: 	
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects

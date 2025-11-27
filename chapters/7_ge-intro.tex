@@ -1,0 +1,205 @@
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\chapter[General Equilibrium]%
+ {General Equilibrium}%
+\label{ch:L7}
+
+% 3) Reset things so later footnotes go back to 1, 2, 3, …
+%\setcounter{footnote}{0}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\section{Exchange economies}\label{sec:L7-intro}
+
+There is a set of \( n \) individuals \( I = \{1,\dots,n\} \) and a set of consumption bundles \( \mathbb{R}^{\ell}_+ \). Each individual has preferences \( \succsim_i \) on \( \mathbb{R}^{\ell}_+ \). A generic consumption bundle of individual \( i \) is \( x_i = (x_i^1, \dots, x_i^{\ell}) \). We always assume preferences are complete and transitive for each individual \( i \). Each individual has an endowment \( e_i \in \mathbb{R}^{\ell}_+ \), where \( e_i = (e_i^1, \dots, e_i^{\ell}) \) and therefore there is a total endowment of
+
+\[
+	\sum_{i} e_i = \bar{e}.
+\]
+
+An \textbf{economy} is a profile \( E = ((\succsim_i, e_i)_{i \in I}) \). A \textbf{feasible} allocation for \( E \) is \( x = (x_i)_{i \in I} \) such that
+
+\[
+	\sum_{i} x_i \le \bar{e}.
+\]
+
+Feasible allocations lie in the set \( \mathbb{R}^{\ell n}_+ \).
+
+\begin{definition}
+	The budget set given endowment \( e_i \) and prices \( p \in \mathbb{R}^{\ell}_{+} \), is
+
+	\[
+		B(e_i,p)
+		= \left\{
+		x_i \in \mathbb{R}^{\ell}_+ \;\middle|\; p \cdot x_i \le p \cdot e_i
+		\right\}.
+	\]
+\end{definition}
+
+Notice that the budget set is always convex and, when all prices are strictly positive, it is also compact.
+
+\begin{definition}
+	The \textbf{Walrasian demand} of \( i \), given endowment \( e_i \) and prices \( p \), is
+	\[
+		D_i(e_i,p)
+		= \left\{
+		x_i \in B(e_i,p) \;\middle|\;
+		x_i \succsim_i x'_i \ \forall x'_i \in B(e_i,p)
+		\right\}
+	\]
+\end{definition}
+
+For each preference relation \( \succsim_i \), we define the upper and lower contour sets at a bundle \( x_i \):
+
+\[
+	U_i(x_i)
+	:= \{\, x'_i \in \mathbb{R}^\ell_+ \mid x'_i \succsim_i x_i \,\}
+	\quad \text{and} \quad
+	L_i(x_i)
+	:= \{\, x'_i \in \mathbb{R}^\ell_+ \mid x_i \succsim_i x'_i \,\} .
+\]
+
+\begin{definition}
+	A preference relation \( \succsim_i \) is \textbf{locally non-satiated} if for every \( x_i \in \mathbb{R}^\ell_+ \) and every \( \varepsilon > 0 \), there exists \( x'_i \in \mathbb{R}^\ell_+ \) such that \( \|y - x_i\| < \varepsilon \) and \( x'_i \succ_i x_i \).
+\end{definition}
+
+Local non-satiation rules out thick indifference curves. It rules out that all goods are \textit{bads}, i.e. individuals do not like them.
+
+\begin{definition}
+	A preference relation \( \succsim_i \) is \textbf{convex} if for all
+	\( x_i, x'_i, x''_i \in \mathbb{R}^\ell_+ \),
+	whenever \( x'_i \succsim_i x_i \) and \( x''_i \succsim_i x_i \), then
+	\[
+		\alpha x'_i + (1 - \alpha) x''_i \succsim_i x_i
+		\quad \text{for all } \alpha \in [0,1].
+	\]
+\end{definition}
+
+Convexity is equivalent to convexity of upper contour sets. It is an expression of \textit{diminishing marginal returns}. It can also be viewed as a preference for \textit{diversification}.
+
+\begin{definition}\label{def:cont-pref}
+	A preference relation \( \succsim_i \) on \( \mathbb{R}^\ell_+ \) is \textbf{continuous} if for every bundle \( x_i \in \mathbb{R}^\ell_+ \), both the upper and the lower contour sets of \( x_i \) are closed.
+\end{definition}
+
+If a preference relation \( \succsim_i \) is continuous, then for every endowment \( e_i \) and every strictly positive price vector \( p \in \mathbb{R}^\ell_{++} \), the Walrasian demand \( D_i(e_i,p) \) is non-empty. This is because a complete, transitive, and continuous preference relation can be represented by a continuous utility function. The budget set \( B(e_i,p) \) is compact when prices are strictly positive, and therefore the continuous utility function attains a maximum on it. If preferences are also locally non-satiated, then the Walrasian demand \( D_i(e_i,p) \) is contained in the budget hyperplane \( \{ x \in \mathbb{R}^\ell_+ \mid p \cdot x = p \cdot e_i \} \).
+
+Let \( F(E) \) be the set of feasible allocations. An \textbf{allocation rule} \( R \) maps an economy \( E \) to a subset of feasible allocations \( R(E) \subseteq F(E) \).
+
+\begin{definition}
+	An allocation \( x \) is a \textbf{Walrasian equilibrium} if there exist prices \( p \in \mathbb{R}^\ell_{++} \) such that for all individuals \( i \),
+	\[
+		x_i \in D_i(e_i, p).
+	\]
+\end{definition}
+
+\begin{definition}
+	An allocation rule \(R^{W}\) is \textbf{Walrasian} if for all economies \(E\)
+	there exist prices \(p \in \mathbb{R}^\ell_{++}\) such that
+	\[
+		R^{W}(E)
+		=
+		\left\{
+		x \in F(E) \;\middle|\;
+		x_i \in D_i(e_i, p) \text{ for all } i
+		\right\}.
+	\]
+\end{definition}
+
+That is, an allocation rule is Walrasian if it selects all Walrasian equilibria of the economy.
+
+\begin{definition}
+	An allocation rule \(R^{EW}\) is \textbf{Egalitarian Walrasian} if for all
+	economies \(E\) there exist prices \(p \in \mathbb{R}^\ell_{++}\) such that
+	\[
+		R^{EW}(E)
+		=
+		\left\{
+		x \in F(E) \;\middle|\;
+		x_i \in D_i\!\left(\frac{\bar e}{n}, p\right) \text{ for all } i
+		\right\}.
+	\]
+\end{definition}
+
+\begin{definition}
+	An allocation \( x \) is \textbf{Pareto optimal} if there is no other feasible allocation \( x' \) with \( x'_i \succsim_i x_i \) for all \( i \) and \( x'_j \succ_j x_j \) for some \( j \).
+\end{definition}
+
+\begin{definition}
+	An allocation rule \(R^{WT}\) is a \textbf{Walrasian equilibrium with transfers} if for all economies \(E\) there exist strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_{i\in I}\) satisfying
+	\[
+		\sum_{i\in I} T_i = 0
+		\quad\text{and}\quad
+		e_i + T_i \in \mathbb{R}^\ell_{+}\ \text{for all } i,
+	\]
+	such that
+	\[
+		R^{WT}(E)
+		=
+		\left\{
+		x \in F(E) \;\middle|\ x_i \in D_i(e_i + T_i, p) \text{ for all } i
+		\right\}.
+	\]
+\end{definition}
+
+\begin{theorem}\label{thm:sftwe} (\textbf{Second fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, convex, and continuous, and \( e_i \in \mathbb{R}^\ell_{++} \) for all individuals \( i \), then every Pareto optimal allocation can be supported as a Walrasian equilibrium with transfers. That is,
+
+	\[
+		x \quad \text{is Pareto optimal} \quad \Longrightarrow \quad x \in R^{WT}(E).
+	\]
+\end{theorem}
+
+\begin{definition}
+	An allocation \( x \) is \textbf{envy-free} if for all individuals \( i, j \), \( x_i \succsim_i x_j \).
+\end{definition}
+
+\begin{proposition}
+	Every allocation selected by an Egalitarian Walrasian equilibrium is envy-free. That is,
+	\[
+		x \in R^{EW}(E) \quad \Longrightarrow \quad x \quad \text{is envy-free}.
+	\]
+\end{proposition}
+
+\begin{proof}
+	Let \( E \) be an economy and suppose that \( x \in R^{EW}(E) \). By definition of the Egalitarian Walrasian rule, there exists a price vector \( p \in \mathbb{R}^\ell_{++} \) such that, for every individual \( i \in I \),
+	\[
+		x_i \in D_i\!\left(\frac{\bar e}{n},p\right),
+	\]
+	where \( D_i(e,p) \) denotes the set of most preferred bundles of \( i \) in the budget set
+	\[
+		B(e,p) = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot e \,\}.
+	\]
+
+	Because all individuals face the same ``egalitarian'' endowment \( \frac{\bar e}{n} \) and the same price vector \( p \), they all face the same budget set
+	\[
+		B := B\!\left(\frac{\bar e}{n},p\right)
+		= \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot \tfrac{\bar e}{n} \,\}.
+	\]
+
+	Fix any individual \( i \). Since \( x_i \in D_i\!\left(\frac{\bar e}{n},p\right) \), \( x_i \) is a most preferred bundle for \( i \) in \( B \). Therefore,
+	\begin{equation}
+		\label{eq:maximal}
+		\forall x' \in B,\qquad x_i \succsim_i y.
+	\end{equation}
+
+	Now consider any other individual \( j \in I \). Because \( x_j \in D_j\!\left(\frac{\bar e}{n},p\right) \), we also have \( x_j \in B \). Applying \eqref{eq:maximal} to the specific bundle \( x' = x_j \) yields
+	\[
+		x_i \succsim_i x_j.
+	\]
+
+	Thus, for every pair of individuals \( i,j \in I \), consumer \( i \) (weakly) prefers her own allocation \( x_i \) to the allocation \( x_j \) of consumer \( j \):
+	\[
+		\forall i,j \in I,\qquad x_i \succsim_i x_j.
+	\]
+
+	In particular, this implies that there is no pair \( i \neq j \) for which \( x_j \succ_i x_i \). Hence no individual strictly prefers someone else's bundle to her own.
+
+	Therefore, the allocation \( x \) is envy-free.
+\end{proof}
+
+\paragraph{Things to read.} It might be useful for you to review (or study, if you never encountered these topics before), \citet[pp. 51-70, 76-84]{hildenbrandIntroductionEquilibriumAnalysis1976}. If you want (and you \textquote{should want}) to go deeper, study study \citet[pp. 17–23, 40–56]{mas-colellMicroeconomicTheory1995}. \cite{arrowSocialChoiceIndividual2012}.
+
+\section{Exercises}
+
+hey.
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

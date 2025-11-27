@@ -64,7 +64,7 @@
 %\usepackage{appendixnumberbeamer}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}[frame number]
-\usepackage[normalem]{ulem} 
+\usepackage[normalem]{ulem}
 
 \setbeameroption{hide notes} % Only slides
 %\setbeameroption{show only notes} % Only notes
@@ -109,8 +109,8 @@
 % superior (?) pause command
 \makeatletter
 \newcommand{\Pause}[1][]{\unless\ifmeasuring@\relax
-\pause[#1]%
-\fi}
+		\pause[#1]%
+	\fi}
 \makeatother
 
 \setbeamertemplate{section in toc}[sections numbered]
@@ -127,16 +127,16 @@
 % FOR APPENDIX
 
 \pdfstringdefDisableCommands{%
-\def\translate#1{#1}%
+	\def\translate#1{#1}%
 }
 
 
 \title {\textsc{Approximate common beliefs in rationality in dynamic games}}
 \author{\textbf{\textsc{Aleix Garcia-Galocha}} \and \textsc{Jaromír Kovářík} \and \textsc{Peio Zuazo-Garin}}
-\date{Discussion \\ 
-November 25, 2025 \\
-\vspace{0.5cm}
-\textsc{Enrico Mattia Salonia}}
+\date{Discussion \\
+	November 25, 2025 \\
+	\vspace{0.5cm}
+	\textsc{Enrico Mattia Salonia}}
 
 %\AtBeginSection[]{
 %  \begin{frame}[noframenumbering,plain]
@@ -165,9 +165,9 @@ November 25, 2025 \\
 %\usecolortheme{structure}
 % \usecolortheme{dolphin}
 
-	\setbeamerfont{footline}{size=\fontsize{9}{9}\selectfont}
+\setbeamerfont{footline}{size=\fontsize{9}{9}\selectfont}
 
-	%%%%%%%%%% AXIOMS AND CONDITIONS
+%%%%%%%%%% AXIOMS AND CONDITIONS
 
 %\theoremstyle{plain}
 %\newtheorem*{namedthm}{\namedthmname}
@@ -181,11 +181,11 @@ November 25, 2025 \\
 
 \makeatletter
 \newcommand{\labelname}[2]{%
-  \expandafter\gdef\csname#1@name\endcsname{#2}%
-  \hypertarget{#1}{}%
+	\expandafter\gdef\csname#1@name\endcsname{#2}%
+	\hypertarget{#1}{}%
 }
 \newcommand{\usename}[1]{%
-  \hyperlink{#1}{\csname#1@name\endcsname}%
+	\hyperlink{#1}{\csname#1@name\endcsname}%
 }
 \makeatother
 

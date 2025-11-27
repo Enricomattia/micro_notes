@@ -27,6 +27,29 @@ Anscombe, F\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Arrow%
+}{%
+Arrow%
+}{%
+{\protect \APACyear {1971}}%
+}]{%
+arrowEssaysTheoryRiskbearing1971}
+\APACinsertmetastar {%
+arrowEssaysTheoryRiskbearing1971}%
+\begin{APACrefauthors}%
+Arrow, K\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1971}.
+\newblock
+\APACrefbtitle {Essays in the Theory of Risk-Bearing} {Essays in the theory of
+  risk-bearing}.
+\newblock
+\APACaddressPublisher{Chicago}{Markham Publishing Company}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ellsberg%
 }{%
 Ellsberg%
