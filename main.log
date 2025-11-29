@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  27 NOV 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  29 NOV 2025 11:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1450,6 +1450,99 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks52
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+arypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/pgf-blur\tikzlibrarysha
+dows.blur.code.tex  v1.02, 2012/12/09
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfbs@fading@count=\count379
+)
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.callouts.code.tex))
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box82
+\pgfnodeparttwobox=\box83
+\pgfnodepartthreebox=\box84
+\pgfnodepartfourbox=\box85
+\pgfnodeparttwentybox=\box86
+\pgfnodepartnineteenbox=\box87
+\pgfnodeparteighteenbox=\box88
+\pgfnodepartseventeenbox=\box89
+\pgfnodepartsixteenbox=\box90
+\pgfnodepartfifteenbox=\box91
+\pgfnodepartfourteenbox=\box92
+\pgfnodepartthirteenbox=\box93
+\pgfnodeparttwelvebox=\box94
+\pgfnodepartelevenbox=\box95
+\pgfnodeparttenbox=\box96
+\pgfnodepartninebox=\box97
+\pgfnodeparteightbox=\box98
+\pgfnodepartsevenbox=\box99
+\pgfnodepartsixbox=\box100
+\pgfnodepartfivebox=\box101
+)))
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/cm-super\type1ec.sty
 Package: type1ec 2002/09/07 v1.1 Type1 EC font definitions (for CM-Super fonts)
 
@@ -1459,9 +1552,9 @@ File: t1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count379
-\c@@ppsavesec=\count380
-\c@@ppsaveapp=\count381
+\c@@pps=\count380
+\c@@ppsavesec=\count381
+\c@@ppsaveapp=\count382
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write4
@@ -1489,7 +1582,7 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box82
+\ttl@box=\box102
 \beforetitleunit=\skip80
 \aftertitleunit=\skip81
 \ttl@plus=\dimen359
@@ -1501,12 +1594,12 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count382
-\csq@gtype=\count383
-\csq@glevel=\count384
-\csq@qlevel=\count385
-\csq@maxlvl=\count386
-\csq@tshold=\count387
+\csq@reset=\count383
+\csq@gtype=\count384
+\csq@glevel=\count385
+\csq@qlevel=\count386
+\csq@maxlvl=\count387
+\csq@tshold=\count388
 \csq@ltx@everypar=\toks56
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
@@ -1519,17 +1612,17 @@ Package csquotes Info: ... configuration file loaded successfully.
 File: csquotes.cfg 
 )) (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count388
+\c@KVtest=\count389
 \sf@farskip=\skip82
 \sf@captopadj=\dimen364
 \sf@capskip=\skip83
 \sf@nearskip=\skip84
-\c@subfigure=\count389
-\c@subfigure@save=\count390
-\c@lofdepth=\count391
-\c@subtable=\count392
-\c@subtable@save=\count393
-\c@lotdepth=\count394
+\c@subfigure=\count390
+\c@subfigure@save=\count391
+\c@lofdepth=\count392
+\c@subtable=\count393
+\c@subtable@save=\count394
+\c@lotdepth=\count395
 \sf@top=\skip85
 \sf@bottom=\skip86
 )
@@ -1545,21 +1638,21 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip89
 \dth@everypar=\toks62
 )
-\c@remark=\count395
-\c@conjecture=\count396
-\c@theorem=\count397
-\c@proposition=\count398
-\c@definition=\count399
-\c@corollary=\count400
-\c@lemma=\count401
-\c@assumption=\count402
-\c@axiom=\count403
-\c@example=\count404
-\c@exercise=\count405
+\c@remark=\count396
+\c@conjecture=\count397
+\c@theorem=\count398
+\c@proposition=\count399
+\c@definition=\count400
+\c@corollary=\count401
+\c@lemma=\count402
+\c@assumption=\count403
+\c@axiom=\count404
+\c@example=\count405
+\c@exercise=\count406
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/markdown\markdown.sty
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/markdown\markdown.tex
-\markdownOptionFrozenCacheCounter=\count406
+\markdownOptionFrozenCacheCounter=\count407
 \markdownInputFileStream=\read6
 \markdownOutputFileStream=\write5
 Package markdown Info: Using mode 3: The lt3luabridge package on input line 266
@@ -1567,7 +1660,7 @@ Package markdown Info: Using mode 3: The lt3luabridge package on input line 266
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/lt3luabridge\lt3luabr
 idge.tex
-\g_luabridge_method_int=\count407
+\g_luabridge_method_int=\count408
 
 Package luabridge Info: Using shell escape as the bridging method
 
@@ -1599,21 +1692,21 @@ Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 \csv@file=\read7
-\c@csvinputline=\count408
-\c@csvrow=\count409
-\c@csvcol=\count410
+\c@csvinputline=\count409
+\c@csvrow=\count410
+\c@csvcol=\count411
 \csv@out=\write6
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count411
+\FV@CodeLineNo=\count412
 \FV@InFile=\read8
-\FV@TabBox=\box83
-\c@FancyVerbLine=\count412
-\FV@StepNumber=\count413
+\FV@TabBox=\box103
+\c@FancyVerbLine=\count413
+\FV@StepNumber=\count414
 \FV@OutFile=\write7
 )
-\markdownLaTeXCitationsCounter=\count414
+\markdownLaTeXCitationsCounter=\count415
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/gobble\gobble.sty
 Package: gobble 2019/01/04 v0.2 Provides more gobble macros
@@ -1623,15 +1716,15 @@ Package: gobble 2019/01/04 v0.2 Provides more gobble macros
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\markdownLaTeXRowCounter=\count415
-\markdownLaTeXRowTotal=\count416
-\markdownLaTeXColumnCounter=\count417
-\markdownLaTeXColumnTotal=\count418
+\markdownLaTeXRowCounter=\count416
+\markdownLaTeXRowTotal=\count417
+\markdownLaTeXColumnCounter=\count418
+\markdownLaTeXColumnTotal=\count419
 \markdownLaTeXTable=\toks64
 \markdownLaTeXTableAlignment=\toks65
 \markdownLaTeXTableEnd=\toks66
 )
-\c@namedthm=\count419
+\c@namedthm=\count420
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
@@ -1648,14 +1741,14 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count420
-\AM@pagebox=\box84
+\pdfpages@includegraphics@status=\count421
+\AM@pagebox=\box104
 \AM@global@opts=\toks67
-\AM@pagecnt=\count421
+\AM@pagecnt=\count422
 \AM@toc@title=\toks68
 \AM@lof@heading=\toks69
-\c@AM@survey=\count422
-\AM@templatesizebox=\box85
+\c@AM@survey=\count423
+\AM@templatesizebox=\box105
 ) (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip94
@@ -1663,10 +1756,10 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 LaTeX Info: Redefining \citeauthor on input line 712.
 LaTeX Info: Redefining \citeyear on input line 735.
-\c@NAT@ctr=\count423
+\c@NAT@ctr=\count424
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/cite\chapterbib.sty
-\c@inputfile=\count424
+\c@inputfile=\count425
 Package: chapterbib 2010/09/18  v 1.17
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
@@ -1705,11 +1798,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count425
+\c@section@level=\count426
 )
 \@linkdim=\dimen370
-\Hy@linkcounter=\count426
-\Hy@pagecounter=\count427
+\Hy@linkcounter=\count427
+\Hy@pagecounter=\count428
  (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1717,7 +1810,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count428
+\Hy@SavedSpaceFactor=\count429
  (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1764,14 +1857,14 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 ))
-\c@Hy@tempcnt=\count429
+\c@Hy@tempcnt=\count430
 LaTeX Info: Redefining \url on input line 4772.
 \XeTeXLinkMargin=\dimen371
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count430
+\Fld@menulength=\count431
 \Field@Width=\dimen372
 \Fld@charsize=\dimen373
 Package hyperref Info: Hyper figures OFF on input line 6051.
@@ -1786,15 +1879,15 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count431
-\c@Item=\count432
-\c@Hfootnote=\count433
+\Hy@abspage=\count432
+\c@Item=\count433
+\c@Hfootnote=\count434
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
-\Fld@listcount=\count434
-\c@bookmark@seq@number=\count435
+\Fld@listcount=\count435
+\c@bookmark@seq@number=\count436
 \Hy@SectionHShift=\skip96
 )
 Package csquotes Info: Checking for multilingual support...
@@ -1839,16 +1932,16 @@ LaTeX Font Info:    ... okay on input line 19.
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count436
+\scratchcounter=\count437
 \scratchdimen=\dimen374
-\scratchbox=\box86
-\nofMPsegments=\count437
-\nofMParguments=\count438
+\scratchbox=\box106
+\nofMPsegments=\count438
+\nofMParguments=\count439
 \everyMPshowfont=\toks70
-\MPscratchCnt=\count439
+\MPscratchCnt=\count440
 \MPscratchDim=\dimen375
-\MPnumerator=\count440
-\makeMPintoPDFobject=\count441
+\MPnumerator=\count441
+\makeMPintoPDFobject=\count442
 \everyMPtoPDFconversion=\toks71
 )
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1878,7 +1971,7 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 19.
-\c@maskedRefs=\count442
+\c@maskedRefs=\count443
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/apacite\english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
@@ -1994,7 +2087,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 
-]
+] [3]
 \openout2 = `chapters/0_intro.aux'.
 
  (chapters/0_intro.tex (chapters/0_intro.bbl (main.brf)
@@ -2074,36 +2167,37 @@ Lecture 5.
 
 (chapters/6_ge-example.tex
 Lecture 6.
-(chapters/6_ge-example.bbl (main.brf) [42
+[42
 
 
 
 
 
-])) [43]
+] [43] [44] [45] (chapters/6_ge-example.bbl (main.brf))) [46]
 \openout2 = `chapters/7_ge-intro.aux'.
 
- (chapters/7_ge-intro.tex
+
+(chapters/7_ge-intro.tex
 Lecture 7.
-[44
-
-
-
-
-
-] [45] (chapters/7_ge-intro.bbl (main.brf))) [46]
-\openout2 = `chapters/8_ge-firstwelf.aux'.
-
-
-(chapters/8_ge-firstwelf.tex
-Lecture 8.
 [47
 
 
 
 
 
-] [48] [49] (chapters/8_ge-firstwelf.bbl (main.brf) [50])) [51] (main.aux
+] [48] (chapters/7_ge-intro.bbl (main.brf))) [49]
+\openout2 = `chapters/8_ge-firstwelf.aux'.
+
+
+(chapters/8_ge-firstwelf.tex
+Lecture 8.
+[50
+
+
+
+
+
+] [51] [52] (chapters/8_ge-firstwelf.bbl (main.brf) [53])) [54] (main.aux
 (chapters/0_intro.aux) (chapters/1_eu-intro.aux)
 (chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux)
 (chapters/4_eu-applications_dom.aux) (chapters/5_eu-states.aux)
@@ -2114,15 +2208,15 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8EA02F98A9784D5F470A91CFCFFFA60B;4747.
+(rerunfilecheck)             Checksum: BAADE26B3CF59B429A0353AFD4309C36;4949.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: A9E506EFC05E2D8666BB7266AC2B6CC9;5930.
+(rerunfilecheck)             Checksum: B1CE8724E05D497822A1F7AAD3D2B48F;5930.
  ) 
 Here is how much of TeX's memory you used:
- 51556 strings out of 475551
- 1205724 string characters out of 5762554
- 1938238 words of memory out of 5000000
- 71518 multiletter control sequences out of 15000+600000
+ 53733 strings out of 475551
+ 1270584 string characters out of 5762554
+ 1939238 words of memory out of 5000000
+ 73627 multiletter control sequences out of 15000+600000
  581688 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,13n,136p,2442b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2130,37 +2224,39 @@ Here is how much of TeX's memory you used:
 cmex10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/enric/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/enric/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/enric/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/enric/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/e
-nric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/symbols/msam10.pfb><C:/Users/enric/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/enric/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Users/enric/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/enr
-ic/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/U
-sers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.p
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/enric/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/enric/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/enric/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/enric/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
+/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/enric/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/enric/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/enri
+c/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Us
+ers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pf
+b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfb
+x1200.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
+uper/sfbx1440.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/cm-super/sfbx1728.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/cm-super/sfbx2074.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/enric/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/enric/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/enric/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/enr
+ic/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/U
+sers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.p
 fb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
-bx1728.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-
-super/sfbx2074.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/cm-super/sfrm0700.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/cm-super/sfrm0800.pfb><C:/Users/enric/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/enric/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/enric/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/enric/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/en
-ric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/
-Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.
-pfb>
-Output written on main.pdf (53 pages, 779732 bytes).
+ti1095.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-
+super/sfti1200.pfb>
+Output written on main.pdf (57 pages, 816498 bytes).
 PDF statistics:
- 1193 PDF objects out of 1200 (max. 8388607)
- 289 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1260 PDF objects out of 1440 (max. 8388607)
+ 298 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

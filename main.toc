@@ -50,20 +50,21 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \contentsline {chapter}{\numberline {6}Exchange economies}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}An illustrative example}{42}{section.6.1}%
-\contentsline {paragraph}{Things to read.}{42}{paragraph*.30}%
-\contentsline {section}{\numberline {6.2}Exercises}{42}{section.6.2}%
+\contentsline {section}{\numberline {6.1}A primer on consumer choice}{42}{section.6.1}%
+\contentsline {section}{\numberline {6.2}An illustrative example}{45}{section.6.2}%
+\contentsline {paragraph}{Things to read.}{46}{paragraph*.34}%
+\contentsline {section}{\numberline {6.3}Exercises}{46}{section.6.3}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\numberline {7}General Equilibrium}{44}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Exchange economies}{44}{section.7.1}%
-\contentsline {paragraph}{Things to read.}{46}{paragraph*.31}%
-\contentsline {section}{\numberline {7.2}Exercises}{46}{section.7.2}%
+\contentsline {chapter}{\numberline {7}General Equilibrium}{47}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Exchange economies}{47}{section.7.1}%
+\contentsline {paragraph}{Things to read.}{49}{paragraph*.35}%
+\contentsline {section}{\numberline {7.2}Exercises}{49}{section.7.2}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{47}{chapter.8}%
-\contentsline {section}{\numberline {8.1}A preliminary lemma}{47}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}The main result}{47}{subsection.8.1.1}%
-\contentsline {paragraph}{Things to read.}{50}{paragraph*.33}%
-\contentsline {section}{\numberline {8.2}Exercises}{50}{section.8.2}%
+\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{50}{chapter.8}%
+\contentsline {section}{\numberline {8.1}A preliminary lemma}{50}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The main result}{50}{subsection.8.1.1}%
+\contentsline {paragraph}{Things to read.}{53}{paragraph*.37}%
+\contentsline {section}{\numberline {8.2}Exercises}{53}{section.8.2}%
 \gdef \the@ipfilectr {}
