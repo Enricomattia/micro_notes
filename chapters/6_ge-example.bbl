@@ -1,29 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Arrow%
-}{%
-Arrow%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-arrowSocialChoiceIndividual2012}
-\APACinsertmetastar {%
-arrowSocialChoiceIndividual2012}%
-\begin{APACrefauthors}%
-Arrow, K\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2012}.
-\newblock
-\APACrefbtitle {Social Choice and Individual Values} {Social choice and
-  individual values}\ (\PrintOrdinal{3}\ \BEd).
-\newblock
-\APACaddressPublisher{New Haven, CT}{Yale University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Hildenbrand%
 \ \BBA {} Kirman%
 }{%

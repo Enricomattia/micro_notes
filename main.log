@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  29 NOV 2025 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  9 DEC 2025 09:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1899,7 +1899,8 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux)
 (chapters/4_eu-applications_dom.aux) (chapters/5_eu-states.aux)
 (chapters/6_ge-example.aux) (chapters/7_ge-intro.aux)
-(chapters/8_ge-firstwelf.aux))
+(chapters/8_ge-firstwelf.aux) (chapters/9_ge-secondwelf.aux)
+(chapters/10_ge-existuniq.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -2078,16 +2079,16 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
-
+)
 [2
 
 
 
-] [3]
+])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [3]
 \openout2 = `chapters/0_intro.aux'.
 
  (chapters/0_intro.tex (chapters/0_intro.bbl (main.brf)
@@ -2173,90 +2174,115 @@ Lecture 6.
 
 
 
-] [43] [44] [45] (chapters/6_ge-example.bbl (main.brf))) [46]
+] [43] [44] [45] [46] [47] [48] [49] (chapters/6_ge-example.bbl (main.brf))) [5
+0]
 \openout2 = `chapters/7_ge-intro.aux'.
 
-
-(chapters/7_ge-intro.tex
+ (chapters/7_ge-intro.tex
 Lecture 7.
-[47
+[51
 
 
 
 
 
-] [48] (chapters/7_ge-intro.bbl (main.brf))) [49]
+] [52] (chapters/7_ge-intro.bbl (main.brf))) [53]
 \openout2 = `chapters/8_ge-firstwelf.aux'.
 
 
 (chapters/8_ge-firstwelf.tex
 Lecture 8.
-[50
+[54
 
 
 
 
 
-] [51] [52] (chapters/8_ge-firstwelf.bbl (main.brf) [53])) [54] (main.aux
-(chapters/0_intro.aux) (chapters/1_eu-intro.aux)
-(chapters/2_eu-representation.aux) (chapters/3_eu-money-aversion.aux)
-(chapters/4_eu-applications_dom.aux) (chapters/5_eu-states.aux)
-(chapters/6_ge-example.aux) (chapters/7_ge-intro.aux)
-(chapters/8_ge-firstwelf.aux))
+] [55] [56] (chapters/8_ge-firstwelf.bbl (main.brf))) [57]
+\openout2 = `chapters/9_ge-secondwelf.aux'.
+
+
+(chapters/9_ge-secondwelf.tex
+Lecture 9.
+[58
+
+
+
+
+
+] [59] [60] (chapters/9_ge-secondwelf.bbl (main.brf))) [61]
+\openout2 = `chapters/10_ge-existuniq.aux'.
+
+
+(chapters/10_ge-existuniq.tex
+Lecture 10.
+(chapters/10_ge-existuniq.bbl (main.brf))) [62
+
+
+
+
+
+] (main.aux (chapters/0_intro.aux) (chapters/1_eu-intro.aux) (chapters/2_eu-rep
+resentation.aux)
+(chapters/3_eu-money-aversion.aux) (chapters/4_eu-applications_dom.aux)
+(chapters/5_eu-states.aux) (chapters/6_ge-example.aux) (chapters/7_ge-intro.aux
+) (chapters/8_ge-firstwelf.aux) (chapters/9_ge-secondwelf.aux)
+(chapters/10_ge-existuniq.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BAADE26B3CF59B429A0353AFD4309C36;4949.
+(rerunfilecheck)             Checksum: 8907C514C4AD1316D6B1842BFFE325A4;5856.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: B1CE8724E05D497822A1F7AAD3D2B48F;5930.
+(rerunfilecheck)             Checksum: 4BE85F421486B6C21DBB7954AA72C17C;6000.
  ) 
 Here is how much of TeX's memory you used:
- 53733 strings out of 475551
- 1270584 string characters out of 5762554
+ 53844 strings out of 475551
+ 1274418 string characters out of 5762554
  1939238 words of memory out of 5000000
- 73627 multiletter control sequences out of 15000+600000
- 581688 words of font info for 95 fonts, out of 8000000 for 9000
+ 73687 multiletter control sequences out of 15000+600000
+ 581073 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,13n,136p,2442b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,13n,136p,2442b,1121s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/enric/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/enric/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/enric/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/enric/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
-enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
-/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/enric/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/enric/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/enri
-c/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbi1200.pfb><C:/Us
-ers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pf
+cmbx12.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/enric/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/enric/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/enric/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/enric/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users
+/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+6.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr7.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/enric/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/enric/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/enric/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/en
+ric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfb
-x1200.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
-uper/sfbx1440.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/cm-super/sfbx1728.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/cm-super/sfbx2074.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/enric/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/enric/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/enric/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/enr
-ic/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/U
-sers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728.p
+i1200.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
+uper/sfbx1095.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/cm-super/sfbx1200.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/cm-super/sfbx1728.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/enric/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/enric/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/enric/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/enr
+ic/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/U
+sers/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.p
 fb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
-ti1095.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-
-super/sfti1200.pfb>
-Output written on main.pdf (57 pages, 816498 bytes).
+rm1728.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-
+super/sfti1095.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/cm-super/sfti1200.pfb>
+Output written on main.pdf (65 pages, 861107 bytes).
 PDF statistics:
- 1260 PDF objects out of 1440 (max. 8388607)
- 298 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 326 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

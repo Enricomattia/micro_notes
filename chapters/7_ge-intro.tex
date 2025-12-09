@@ -1,7 +1,7 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\chapter[General Equilibrium]%
- {General Equilibrium}%
+\chapter[General equilibrium theory]%
+ {General equilibrium theory}%
 \label{ch:L7}
 
 % 3) Reset things so later footnotes go back to 1, 2, 3, …
@@ -82,6 +82,8 @@ Convexity is equivalent to convexity of upper contour sets. It is an expression 
 
 If a preference relation \( \succsim_i \) is continuous, then for every endowment \( e_i \) and every strictly positive price vector \( p \in \mathbb{R}^\ell_{++} \), the Walrasian demand \( D_i(e_i,p) \) is non-empty. This is because a complete, transitive, and continuous preference relation can be represented by a continuous utility function. The budget set \( B(e_i,p) \) is compact when prices are strictly positive, and therefore the continuous utility function attains a maximum on it. If preferences are also locally non-satiated, then the Walrasian demand \( D_i(e_i,p) \) is contained in the budget hyperplane \( \{ x \in \mathbb{R}^\ell_+ \mid p \cdot x = p \cdot e_i \} \).
 
+\section{Allocation rules and their properties}
+
 Let \( F(E) \) be the set of feasible allocations. An \textbf{allocation rule} \( R \) maps an economy \( E \) to a subset of feasible allocations \( R(E) \subseteq F(E) \).
 
 \begin{definition}
@@ -139,13 +141,6 @@ That is, an allocation rule is Walrasian if it selects all Walrasian equilibria 
 		\right\}.
 	\]
 \end{definition}
-
-\begin{theorem}\label{thm:sftwe} (\textbf{Second fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, convex, and continuous, and \( e_i \in \mathbb{R}^\ell_{++} \) for all individuals \( i \), then every Pareto optimal allocation can be supported as a Walrasian equilibrium with transfers. That is,
-
-	\[
-		x \quad \text{is Pareto optimal} \quad \Longrightarrow \quad x \in R^{WT}(E).
-	\]
-\end{theorem}
 
 \paragraph{Things to read.} It might be useful for you to review (or study, if you never encountered these topics before), \citet[pp. 51-70, 76-84]{hildenbrandIntroductionEquilibriumAnalysis1976}. If you want (and you \textquote{should want}) to go deeper, study study \citet[pp. 17–23, 40–56]{mas-colellMicroeconomicTheory1995}. \cite{arrowSocialChoiceIndividual2012}.
 

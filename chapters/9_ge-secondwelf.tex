@@ -1,0 +1,248 @@
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\chapter[Second theorem of welfare economics]%
+ {Second theorem of welfare economics}%
+\label{ch:L9}
+
+% 3) Reset things so later footnotes go back to 1, 2, 3, …
+%\setcounter{footnote}{0}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+%\section{Separating hyperplane}\label{sec:L9-intro}
+
+\begin{theorem}[Supporting hyperplane theorem]\label{thm:supporting-hyperplane}
+    Let \(B \subset \mathbb{R}^L\) be a convex set and let \(x \notin \operatorname{Int} B\)
+    (the interior of \(B\)). Then there exists a nonzero vector \(p \in \mathbb{R}^L\) such that
+    \[
+        p \cdot x \;\ge\; p \cdot y \qquad \text{for every } y \in B.
+    \]
+    In words: there is a hyperplane through \(x\) that supports \(B\) from one side.
+\end{theorem}
+
+\begin{proof}
+    We use the separating hyperplane theorem in the following form:
+
+    \medskip
+    \noindent
+    \textit{Separating hyperplane theorem.}
+    Let \(B \subset \mathbb{R}^L\) be convex and let \(z \notin \overline B\) (the
+    closure of \(B\)). Then there exist \(p \in \mathbb{R}^L\) with \(p \neq 0\) and
+    \(a \in \mathbb{R}\) such that
+    \[
+        p \cdot z \;>\; a \;\ge\; p \cdot y \qquad\text{for all } y \in B.
+    \]
+    \medskip
+
+    Now take \(x \notin \operatorname{Int} B\). Then every neighbourhood of \(x\)
+    contains points that are not in \(B\). In particular, we can find a sequence
+    \((x^m)_{m\ge 1}\) such that
+    \[
+        x^m \to x \qquad\text{and}\qquad x^m \notin \overline B
+        \quad\text{for all } m.
+    \]
+    (Think of \(x^m\) approaching \(x\) from “outside” \(B\).)
+
+    For each \(m\), apply the separating hyperplane theorem to the convex set \(B\)
+    and the point \(x^m \notin \overline B\). We obtain a nonzero vector
+    \(p^m \in \mathbb{R}^L\) and a scalar \(c^m \in \mathbb{R}\) such that
+    \begin{equation}\label{eq:sep-m}
+        p^m \cdot x^m \;>\; c^m \;\ge\; p^m \cdot y
+        \qquad\text{for all } y \in B.
+    \end{equation}
+
+    Normalize the vectors \(p^m\) so that \(\|p^m\| = 1\) for every \(m\) (we can always
+    divide \(p^m\) and \(c^m\) by the same positive constant without changing the
+    inequalities). The sequence \((p^m)\) lives on the unit sphere, which is compact,
+    so there is a subsequence (still denoted \((p^m)\) for simplicity) that converges:
+    \[
+        p^m \to p \qquad\text{for some } p \in \mathbb{R}^L \text{ with } \|p\|=1.
+    \]
+    In particular \(p \neq 0\). Since \((c^m)\) is a sequence of real numbers, we can
+    also extract a further subsequence (again not relabelled) such that
+    \[
+        c^m \to c \qquad\text{for some } c \in \mathbb{R}.
+    \]
+
+    Fix any \(y \in B\). Inequality \eqref{eq:sep-m} gives, for each \(m\),
+    \[
+        p^m \cdot x^m \;>\; c^m \;\ge\; p^m \cdot y.
+    \]
+    Taking limits as \(m\to\infty\) and using continuity of the dot product,
+    and the convergences \(x^m \to x\), \(p^m \to p\) and \(c^m \to c\), we obtain
+    \[
+        p \cdot x \;\ge\; c \;\ge\; p \cdot y.
+    \]
+    Since this holds for every \(y \in B\), we have
+    \[
+        p \cdot x \;\ge\; p \cdot y \qquad\text{for all } y \in B,
+    \]
+    which is exactly the desired supporting hyperplane inequality.
+\end{proof}
+
+%\section{The welfare theorem}
+
+\begin{theorem}\label{thm:sftwe} (\textbf{Second fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, convex, and continuous, and endowments are strictly positive \( e_i \in \mathbb{R}^\ell_{++} \) for all individuals \( i \), then every interior Pareto optimal allocation \( x \in \mathbb{R}^{\ell n}_{++}\) can be supported as a Walrasian equilibrium with transfers. That is,
+
+    \[
+        x \quad \text{is Pareto optimal} \quad \Longrightarrow \quad x \in R^{WT}(E).
+    \]
+\end{theorem}
+
+\begin{proof}
+    Say we want to implement the interior Pareto optimal allocation \( x \). Define transfers \( T_i \) by
+
+    \[
+        T_i = x_i - e_i \qquad\text{for each } i.
+    \]
+
+    Feasibility of \( x \) implies \( \sum_{i} x_i = \sum_{i} e_i \), hence \( \sum_{i} T_i = 0 \), so \( (T_i)_{i} \) is a feasible vector of lump–sum transfers. We have to find strictly positive prices \( p \) such that for each individual, endowed with \( e_i+T_i = x_i \), the bundle \( x_i \) is in the Walrasian demand of \( i \):
+
+    \[
+        x_i \in D_i(p, e_i+T_i ) \qquad\text{for each } i.
+    \]
+
+    \paragraph{Step 1: “Strictly better–than” sets.}
+
+    For each individual \( i \), let
+
+    \[
+        \overline{U}^i(x_i) := \{x'_i : x'_i \succ_i x_i\}
+    \]
+
+    denote the \textbf{strict} upper contour set at \( x_i \). By continuity and convexity of \( \succsim_i \) this set is convex, and \( x_i \notin \overline{U}^i(x_i) \). Define the set of aggregate improvements
+
+    \[
+        \overline{U} (x) = \sum_i \overline{U}^i (x)
+        :=
+        \Bigl\{\sum_{i} x'_i \in \mathbb{R}^{\ell}_{++} \;\Big|\; x'_i \in \overline{U}^i(x_i)\text{ for each }i\Bigr\}.
+    \]
+
+    So \( \overline{U}(x) \) is the set of all aggregate bundles that can be obtained by letting each individual choose a bundle strictly preferred to her allocation in \( x \). Since it is the sum of convex sets, \( \overline{U} (x) \) is convex. Pareto optimality of \( x \) says that there is no feasible allocation \( x'=(x'_i)_{i} \) with \( x'_i \succ_i x_i \) for all \( i \). Equivalently,
+
+    \[
+        \sum_{i} x_i \notin \overline{U} (x).
+    \]
+
+    \paragraph{Step 2: A supporting price hyperplane.}
+    We have a convex set \( \overline{U}(x) \) and a point \( \sum_i x_i \) outside it. By the supporting hyperplane theorem, there exists a nonzero vector \( p \in \mathbb{R}^\ell_{+} \) such that
+
+    \[
+        p \cdot x' \;\ge\; p \cdot \Bigl(\sum_{i} x_i\Bigr)
+        \qquad\text{for all } x' \in \overline{U}(x).
+    \]
+
+    In particular, for any profile \( (x'_i)_{i} \) with \( x'_i \in \overline{U}^i(x_i) \) for all \( i \),
+
+    \begin{equation}\label{eq:sftwe}
+        \sum_{i} p\cdot x'_i
+        =
+        p \cdot \Bigl(\sum_{i} x'_i\Bigr)
+        \;\ge\;
+        p \cdot \Bigl(\sum_{i} x_i\Bigr)
+        =
+        \sum_{i} p\cdot x_i.
+    \end{equation}
+
+    \paragraph{Step 3: Prices must be strictly positive.}
+    We now show that prices are strictly positive, i.e., \( p \in \mathbb{R}^\ell_{++} \).
+
+    \emph{(i) No component of \( p \) can be negative.} Suppose \( p_\ell < 0 \) for some \( \ell \). Pick any individual \( i \). By monotonicity, for any small \( \varepsilon>0 \) the bundle
+
+    \[
+        x'_i := x_i + \varepsilon e_\ell
+    \]
+
+    satisfies \( x'_i \succ_i x_i \), hence \( x'_i \in \overline{U}^i(x_i) \), while all
+    other individuals \( j\neq i \) keep \( x'_j = x_j \). Thus \( x' := \sum_i x'_i \in \overline{U}(x) \). By the supporting hyperplane inequality from Step~2,
+
+    \[
+        p\cdot x' \;\ge\; p\cdot \sum_i x_i.
+    \]
+
+    But
+
+    \[
+        p\cdot x'
+        =
+        p\cdot \sum_i x_i + \varepsilon p_\ell
+        <
+        p\cdot \sum_i x_i,
+    \]
+
+    a contradiction. Hence \( p_\ell \ge 0 \) for each \( \ell \), so \( p \in \mathbb{R}^\ell_{+} \).
+
+    \emph{(ii) No component of \( p \) can be zero.} Suppose \( p_\ell = 0 \) for some \( \ell \). Again choose any individual \( i \). Because \(x_i \in \mathbb{R}^\ell_{++}\), there is some small \( \varepsilon>0 \) such that \(x_i - \varepsilon \mathbf{1} \in \mathbb{R}^\ell_{+}\), where \(\mathbf{1}\) is the vector of all ones. Consider bundles \(y_i\) of the form
+
+    \[
+        y^i_\ell > x^i_\ell,
+        \qquad
+        y^i_{k} = x^i_{k} - \varepsilon
+        \ \text{ for all } k \neq \ell.
+    \]
+
+    By continuity and monotonicity of preferences, we can choose \(y_i\) of this form (with \(\varepsilon\) small and \(y^i_\ell\) large enough) so that \( y_i \succ_i x_i \), hence \(y_i \in \overline{U}^i(x_i)\). For all \( j\neq i \), set \( y_j := x_j \). Then \( y := \sum_j y_j \in \overline{U}(x) \), so Step~2 gives
+
+    \[
+        p\cdot y \;\ge\; p\cdot \sum_j x_j.
+    \]
+
+    But
+
+    \[
+        p\cdot y
+        =
+        p\cdot \sum_j x_j
+        +
+        \sum_{k\neq \ell} (y^i_k - x^i_k) p_k
+        +
+        (y^i_\ell - x^i_\ell)p_\ell.
+    \]
+
+    Here \(y^i_k - x^i_k = -\varepsilon <0\) for all \(k\neq \ell\) and \(p_k \ge 0\), while \(p_\ell = 0\). Since \(p\neq 0\), at least one of the \(p_k\) with \(k\neq \ell\) is strictly positive, so
+
+    \[
+        \sum_{k\neq \ell} (y^i_k - x^i_k) p_k < 0,
+    \]
+
+    and hence \(p\cdot y < p\cdot \sum_j x_j\), a contradiction. Therefore no component of \(p\) can be zero either, and we conclude that \(p \in \mathbb{R}^\ell_{++}\).
+
+    \paragraph{Step 4: Individual optimality.} Fix an individual \(i\). We show that \(x_i\) is optimal in her budget set. Suppose, by contradiction, that there exists \(x'_i \in \overline{U}^i(x_i)\) with \(p\cdot x'_i \le p\cdot x_i\). Keep all other individuals at their original bundles: \(x'_j := x_j\) for every \(j\neq i\). Then the profile \((x'_k)_k\) satisfies \(x'_k \in \overline{U}^k(x_k)\) for all \(k\), so \(\sum_k x'_k \in \overline{U}(x)\). By Equation \eqref{eq:sftwe} we must have
+
+    \[
+        \sum_k p\cdot x'_k \;\ge\; \sum_k p\cdot x_k.
+    \]
+
+    On the other hand,
+
+    \[
+        \sum_k p\cdot x'_k
+        =
+        p\cdot x'_i + \sum_{j\neq i} p\cdot x_j
+        \le
+        p\cdot x_i + \sum_{j\neq i} p\cdot x_j
+        =
+        \sum_k p\cdot x_k,
+    \]
+
+    with strict inequality if \(p\cdot x'_i < p\cdot x_i\). This contradicts \eqref{eq:sftwe}. Hence no such \(x'_i\) exists, and \(x_i\) is optimal at prices \(p\), that is,
+
+    \[
+        x_i \in D_i(p, e_i+T_i).
+    \]
+
+    \paragraph{Conclusion.}
+    We have found prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_i\) such that
+    \[
+        x_i \in D_i(p, e_i+T_i)\qquad\text{for all } i.
+    \]
+    Hence \(x\) is a Walrasian equilibrium with transfers: \(x \in R^{WT}(E)\). Since \(x\) was an arbitrary interior Pareto optimal allocation, the theorem follows.
+\end{proof}
+
+\paragraph{Things to read.} This lecture is based on \citet[pp. 545-550]{mas-colellMicroeconomicTheory1995}.
+
+\section{Exercises}
+
+hey.
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

@@ -49,22 +49,37 @@
 \contentsline {section}{\numberline {5.3}Exercises}{40}{section.5.3}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {6}Exchange economies}{42}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Introduction to exchange economies}{42}{chapter.6}%
 \contentsline {section}{\numberline {6.1}A primer on consumer choice}{42}{section.6.1}%
-\contentsline {section}{\numberline {6.2}An illustrative example}{45}{section.6.2}%
-\contentsline {paragraph}{Things to read.}{46}{paragraph*.34}%
-\contentsline {section}{\numberline {6.3}Exercises}{46}{section.6.3}%
+\contentsline {section}{\numberline {6.2}Illustrative example of exchange economy}{45}{section.6.2}%
+\contentsline {paragraph}{Things to read.}{50}{paragraph*.38}%
+\contentsline {section}{\numberline {6.3}Exercises}{50}{section.6.3}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\numberline {7}General Equilibrium}{47}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Exchange economies}{47}{section.7.1}%
-\contentsline {paragraph}{Things to read.}{49}{paragraph*.35}%
-\contentsline {section}{\numberline {7.2}Exercises}{49}{section.7.2}%
+\contentsline {chapter}{\numberline {7}General equilibrium theory}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Exchange economies}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Allocation rules and their properties}{52}{section.7.2}%
+\contentsline {paragraph}{Things to read.}{53}{paragraph*.39}%
+\contentsline {section}{\numberline {7.3}Exercises}{53}{section.7.3}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{50}{chapter.8}%
-\contentsline {section}{\numberline {8.1}A preliminary lemma}{50}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}The main result}{50}{subsection.8.1.1}%
-\contentsline {paragraph}{Things to read.}{53}{paragraph*.37}%
-\contentsline {section}{\numberline {8.2}Exercises}{53}{section.8.2}%
+\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{54}{chapter.8}%
+\contentsline {paragraph}{Things to read.}{57}{paragraph*.41}%
+\contentsline {section}{\numberline {8.1}Exercises}{57}{section.8.1}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-10}
+\contentsline {chapter}{\numberline {9}Second theorem of welfare economics}{58}{chapter.9}%
+\contentsline {paragraph}{Step 1: “Strictly better–than” sets.}{59}{paragraph*.42}%
+\contentsline {paragraph}{Step 2: A supporting price hyperplane.}{60}{paragraph*.43}%
+\contentsline {paragraph}{Step 3: Prices must be strictly positive.}{60}{paragraph*.44}%
+\contentsline {paragraph}{Step 4: Individual optimality.}{61}{paragraph*.45}%
+\contentsline {paragraph}{Conclusion.}{61}{paragraph*.46}%
+\contentsline {paragraph}{Things to read.}{61}{paragraph*.47}%
+\contentsline {section}{\numberline {9.1}Exercises}{61}{section.9.1}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\contentsline {chapter}{\numberline {10}Existence of competitive equilibria}{62}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Ciao}{62}{section.10.1}%
+\contentsline {paragraph}{Things to read.}{62}{paragraph*.48}%
+\contentsline {section}{\numberline {10.2}Exercises}{62}{section.10.2}%
 \gdef \the@ipfilectr {}
