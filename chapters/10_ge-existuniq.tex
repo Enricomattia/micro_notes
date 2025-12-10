@@ -8,15 +8,264 @@
 %\setcounter{footnote}{0}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-\section{Ciao}\label{sec:L10-intro}
+We assume preferences are continuous, strictly convex, and strongly monotone. Under these assumptions, we can prove that a competitive equilibrium exists.
 
-come va.
+\begin{definition}
+    A preference relation is \textbf{strongly monotone} if for all \(x, y \in \mathbb{R}^L_+\) such that \(x \geq y\) and \(x \neq y\), we have \(x \succ y\).
+\end{definition}
+
+\begin{definition}
+    A preference relation is \textbf{strictly convex} if for all \(x, y, z \in \mathbb{R}^L_+\) such that \(y \succ x\) and \(z \succ x\), we have for all \(\alpha \in (0,1)\), \(\alpha y + (1-\alpha) z \succ x\). Equivalently, all upper contour sets are strictly convex sets.
+\end{definition}
+
+If a preference relation is continuous, strictly convex, and strongly monotone, then the Walrasian demand is single-valued and can therefore be viewed as a function. We can then define the excess demand function as follows.
+
+\begin{definition}
+    The \textbf{excess demand function} of and individual \( i \) with a single-valued Walrasian demand function \( D_i(p, e_i) \) is given by
+    \[z_i(p, e_i) = D_i(p, e_i) - e_i.\]
+\end{definition}
+
+From the individual excess demand functions, we can construct the aggregate excess demand function.
+
+\[
+    z(p) = \sum_i z_i (p) .
+\]
+
+The excess demand function maps prices to allocations. Under our assumptions on preferences, Walrasian equilibrium can be characterised through the excess demand function as follows.
+
+\begin{proposition}\label{prop:walr_excess}
+    If individual preferences \( \succsim_i \) are continuous, strictly convex, and strongly monotone for each \( i \), then an allocation \( x \) is a Walrasian equilibrium if and only if there exists a price vector \( p \) such that \( z (p) = 0 \).
+\end{proposition}
+
+The excess demand function has several important properties that we will use to prove the existence of a competitive equilibrium.
+
+\begin{proposition}\label{prop:excess}
+    If individual preferences \( \succsim_i \) are continuous, strictly convex, and strongly monotone for each \( i \), then the aggregate excess demand function \( z(p) \) satisfies the following properties:
+    \begin{enumerate}
+        \item \( z(p) \) is \textbf{homogeneous of degree zero}:\( z( \alpha p) = z(p) \) for all \( \alpha > 0 \);
+        \item \( z(p) \) satisfies Walras' law: \( p \cdot z(p) = 0 \) for all strictly positive prices \( p \);
+        \item \( z(p) \) is continuous;
+        \item there is an \( s > 0 \) such that for all goods \( \ell \) and prices \( p \), \( z_{\ell} (p) > -s \);
+        \item if \(p^n \) is a sequence of prices converging to \( p \) with \( p_{\ell} = 0 \) for some good \( \ell \), then \( \max \{ z^1 (p^n), \ldots, z^L (p^n) \} \to +\infty \).
+    \end{enumerate}
+\end{proposition}
+
+\begin{theorem}\label{thm:kaku} (\textbf{Kakutani's fixed point})
+    Let \( A \subseteq \mathbb{R}^L \) be a non-empty, compact, and convex set, and \( f : A \rightrightarrows A \) be an upper hemicontinuous correspondence such that \( f(x) \subseteq A \) is non-empty and convex for each \( x \in A \). Then, \( f \) has a fixed point, i.e., there exists \( x \in A \) such that \( x \in f(x) \).
+\end{theorem}
+
+\begin{proposition}
+    If the aggregate excess demand function \( z(p) \) satisfies the properties in Proposition \ref{prop:excess}, then there exists a price vector \( p \) such that \( z(p) = 0 \). Therefore, in such economy a Walrasian equilibrium exists.
+\end{proposition}
+
+\begin{proof}
+    Because \( z(\cdot) \) is homogeneous of degree zero we can restrict attention to prices on the \emph{unit simplex}
+
+    \[
+        \Delta
+        :=
+        \Bigl\{
+        p \in \mathbb{R}^\ell_+ \;\Bigm|\;
+        \sum_{\ell=1}^\ell p^\ell = 1
+        \Bigr\}.
+    \]
+
+    Let
+
+    \[
+        \text{Interior }\Delta
+        :=
+        \{ p \in \Delta : p^\ell > 0 \text{ for all } \ell \}
+        \quad\text{and}\quad
+        \text{Boundary }\Delta := \Delta \setminus \text{Interior }\Delta .
+    \]
+
+    Recall that \( z(\cdot) \) was originally defined for strictly positive
+    prices only; by continuity, we can extend it uniquely to \( \Delta \).
+
+    We construct a correspondence
+    \( f : \Delta \rightrightarrows \Delta \) and then apply Kakutani's
+    fixed–point theorem to \( f \). For notational simplicity, whenever
+    \( q \in f(p) \) we write just ``\( q \)'' for such a vector.
+
+    \paragraph{Step 1. Construction on Interior \( \Delta \).}
+    For \( p \in \text{Interior }\Delta \) and \( p>0 \), define
+    \[
+        f(p)
+        :=
+        \bigl\{
+        q \in \Delta
+        \;\bigm|\;
+        z(p)\cdot q \ge z(p)\cdot q'
+        \text{ for all } q' \in \Delta
+        \bigr\}.
+    \]
+    In words, given the current ``proposal'' \( p \), the correspondence
+    \( f(\cdot) \) selects price vectors \( q \) that, among all admissible price
+    vectors on the simplex, maximise the value of the (aggregate) excess
+    demand vector \( z(p) \).
+
+    Write \( z^\ell(p) \) for the excess demand of good \( \ell \) at prices \( p \).
+    From the definition of \( f(p) \) one easily checks that
+    \[
+        f(p)
+        =
+        \Bigl\{
+        q \in \Delta
+        \;\Bigm|\;
+        q^\ell = 0
+        \text{ whenever }
+        z^\ell(p) < \max\{ z^1(p),\dots,z^\ell(p)\}
+        \Bigr\}.
+    \]
+    Indeed, if \( q \) put positive weight on some good with strictly lower
+    excess demand than the maximum, we could reallocate that weight
+    towards a good with maximal excess demand and increase
+    \( z(p)\cdot q \), contradicting optimality of \( q \).
+
+    By Walras' law, \( p \cdot z(p) = 0 \) for all strictly positive \( p \).
+    Hence if \( z(p)\neq 0 \), at least one component of \( z(p) \) is negative
+    and at least one is positive, so the maximum of the components is
+    strictly positive. In that case, every \( q\in f(p) \) has \( q^\ell=0 \) for
+    some \( \ell \), so \( f(p) \subseteq \text{Boundary }\Delta \).
+    In contrast, if \( z(p)=0 \), then \( z(p)\cdot q = 0 \) for all \( q \in \Delta \),
+    so every \( q\in\Delta \) is a maximiser and \( f(p)=\Delta \).
+
+    \paragraph{Step 2. Construction on Boundary \( \Delta \).}
+    For \( p \in \text{Boundary }\Delta \), define
+    \[
+        f(p)
+        :=
+        \{ q \in \Delta : p\cdot q = 0 \}
+        =
+        \{ q \in \Delta : q^\ell = 0 \text{ whenever } p^\ell > 0 \}.
+    \]
+    Because \( p \) has at least one component equal to zero, this set is not
+    empty: we can place all the weight of \( q \) on goods whose price is
+    zero under \( p \).
+
+    Note that with this construction no price vector on
+    \( \text{Boundary }\Delta \) can be a fixed point of \( f(\cdot) \).
+    Indeed, if \( p \in \text{Boundary }\Delta \) and \( p \in f(p) \), then
+    we would have \( p\cdot p = 0 \), which is impossible because
+    \( p \in \Delta \) implies \( p\cdot p>0 \).
+
+    \paragraph{Step 3. Any fixed point of \( f \) is an equilibrium price.}
+    Suppose that \( p^* \in \Delta \) is a fixed point of \( f \), i.e.
+    \( p^* \in f(p^*) \).
+    From Step~2 we know that no point on \( \text{Boundary }\Delta \) can be a
+    fixed point, so we must have \( p^* \notin \text{Boundary }\Delta \),
+    that is, \( p^* \in \text{Interior }\Delta \) and \( p^* > 0 \).
+
+    If \( z(p^*) \neq 0 \), then Step~1 tells us that
+    \( f(p^*) \subseteq \text{Boundary }\Delta \), so \( p^* \) cannot belong to
+    \( f(p^*) \), a contradiction.
+    Hence it must be that \( z(p^*) = 0 \).
+    In other words, any fixed point of \( f(\cdot) \) is a price vector with
+    zero aggregate excess demand.
+
+    \paragraph{Step 4. The correspondence \( f \) is convex–valued and upper hemicontinuous.}
+    \emph{Convex–valuedness.}
+    When \( p \in \text{Interior }\Delta \), the set \( f(p) \) is the set of
+    maximisers of a linear function \( q \mapsto z(p)\cdot q \) over the
+    convex set \( \Delta \), hence it is convex.
+    When \( p \in \text{Boundary }\Delta \), the set
+    \( f(p) = \{q \in \Delta : p\cdot q=0\} \) is the intersection of the
+    simplex \( \Delta \) with a linear subspace, and is therefore convex.
+    Thus \( f(p) \) is convex for all \( p\in\Delta \).
+
+    \smallskip
+    \emph{Upper hemicontinuity.}
+    Take any sequence \( p^n \to p \) in \( \Delta \) and a sequence
+    \( q^n \in f(p^n) \) with \( q^n \to q \).
+    We must show that \( q \in f(p) \).
+
+    \medskip
+    \noindent
+    \textit{Case 1: \( p \in \text{Interior }\Delta \).}
+    For \( n \) large enough, \( p^n \) is also in \( \text{Interior }\Delta \) and
+    \( q^n \) maximises \( z(p^n)\cdot q \) over \( q\in\Delta \).
+    The continuity of \( z(\cdot) \) gives \( z(p^n)\to z(p) \), and a standard
+    argument for maximisers of continuous linear functionals on compact
+    sets shows that any limit point of maximisers is a maximiser.
+    Hence \( q \) maximises \( z(p)\cdot q \) over \( \Delta \), i.e.\ \( q \in f(p) \).
+
+    \medskip
+    \noindent
+    \textit{Case 2: \( p \in \text{Boundary }\Delta \).}
+    We need to show that \( p\cdot q = 0 \).
+    Pick any good \( \ell \) with \( p^\ell>0 \).
+    For \( n \) large enough we have \( p^{n,\ell} > 0 \) as well.
+
+    First suppose that \( p^n \in \text{Boundary }\Delta \) for all large \( n \).
+    Then by the definition of \( f(p^n) \) we have \( p^n\cdot q^n = 0 \) for
+    such \( n \). Taking limits yields \( p\cdot q = 0 \).
+
+    The more delicate case is when some \( p^n \) lie in
+    \( \text{Interior }\Delta \) and converge to \( p \) on Boundary \( \Delta \).
+    For those \( n \), \( q^n \) maximises \( z(p^n)\cdot q \) over \( \Delta \).
+    We claim that, for large \( n \), \( q^{n,\ell}=0 \) whenever \( p^\ell>0 \).
+    Once this is shown, passing to the limit gives \( q^\ell = 0 \) for all
+    \( \ell \) with \( p^\ell>0 \), and hence \( p\cdot q = 0 \).
+
+    Fix such an \( \ell \) with \( p^\ell>0 \).
+    Because \( p^\ell>0 \), there is an \( \varepsilon>0 \) such that
+    \( p^{n,\ell} \ge \varepsilon \) for all large \( n \).
+    For those \( n \), optimality of \( q^n \) implies
+    \[
+        z^\ell(p^n)
+        \le \max_k z^k(p^n),
+    \]
+    and by property~(v) of Proposition~\ref{prop:excess},
+    the right–hand side tends to \( +\infty \) as \( n\to\infty \)
+    whenever \( p^n \) approaches the boundary.
+    On the other hand, the lower bound on excess demand in
+    property~(iv) bounds \( z^\ell(p^n) \) from below, and
+    Walras' law implies
+    \[
+        z^\ell(p^n)
+        = - \frac{1}{p^{n,\ell}}
+        \sum_{r\neq \ell} p^{n,r} z^r(p^n)
+        \le \frac{s}{\varepsilon},
+    \]
+    where \( s>0 \) is the bound from property~(iv).
+    Thus \( z^\ell(p^n) \) is bounded above, which is only compatible with
+    property~(v) if \( q^{n,\ell}=0 \) for all large \( n \).
+    (Intuitively, as \( p^n \) approaches the boundary, any maximal excess
+    demand must be concentrated on goods whose prices go to zero.)
+
+    We conclude that in the limit \( q \) assigns positive weight only to
+    goods whose prices under \( p \) are zero, so \( p\cdot q = 0 \) and hence
+    \( q \in f(p) \).
+
+    In both cases \( q \in f(p) \), so \( f \) is upper hemicontinuous.
+
+    \paragraph{Step 5. Existence of a fixed point.}
+    The simplex \( \Delta \) is nonempty, compact, and convex.
+    By the previous step, the correspondence
+    \( f : \Delta \rightrightarrows \Delta \) has nonempty, convex values
+    and is upper hemicontinuous.
+    Theorem \ref{thm:kaku} therefore guarantees the existence of
+    a fixed point \( p^* \in \Delta \) with \( p^* \in f(p^*) \).
+
+    By Step~3, any such fixed point satisfies \( z(p^*) = 0 \).
+    Hence there exists a price vector \( p^* \in \mathbb{R}^\ell_{++} \) such
+    that \( z(p^*) = 0 \).
+    By Proposition~\ref{prop:walr_excess}, this means that a Walrasian
+    equilibrium exists.
+\end{proof}
 
 \paragraph{Things to read.} This lecture is based on \citet[pp. 578-586]{mas-colellMicroeconomicTheory1995}.
 
 \section{Exercises}
 
-hey.
+\begin{exercise}
+    Prove Proposition \ref{prop:walr_excess}.
+\end{exercise}
+
+\begin{exercise}
+    Prove property 1. of the excess demand function in Proposition \ref{prop:excess}.
+\end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/

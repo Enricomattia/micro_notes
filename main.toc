@@ -79,7 +79,11 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
 \contentsline {chapter}{\numberline {10}Existence of competitive equilibria}{62}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Ciao}{62}{section.10.1}%
-\contentsline {paragraph}{Things to read.}{62}{paragraph*.48}%
-\contentsline {section}{\numberline {10.2}Exercises}{62}{section.10.2}%
+\contentsline {paragraph}{Step 1. Construction on Interior \( \Delta \).}{63}{paragraph*.48}%
+\contentsline {paragraph}{Step 2. Construction on Boundary \( \Delta \).}{64}{paragraph*.49}%
+\contentsline {paragraph}{Step 3. Any fixed point of \( f \) is an equilibrium price.}{64}{paragraph*.50}%
+\contentsline {paragraph}{Step 4. The correspondence \( f \) is convex–valued and upper hemicontinuous.}{64}{paragraph*.51}%
+\contentsline {paragraph}{Step 5. Existence of a fixed point.}{65}{paragraph*.52}%
+\contentsline {paragraph}{Things to read.}{65}{paragraph*.53}%
+\contentsline {section}{\numberline {10.1}Exercises}{65}{section.10.1}%
 \gdef \the@ipfilectr {}
