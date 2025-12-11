@@ -19,68 +19,6 @@
     In words: there is a hyperplane through \(x\) that supports \(B\) from one side.
 \end{theorem}
 
-\begin{proof}
-    We use the separating hyperplane theorem in the following form:
-
-    \medskip
-    \noindent
-    \textit{Separating hyperplane theorem.}
-    Let \(B \subset \mathbb{R}^L\) be convex and let \(z \notin \overline B\) (the
-    closure of \(B\)). Then there exist \(p \in \mathbb{R}^L\) with \(p \neq 0\) and
-    \(a \in \mathbb{R}\) such that
-    \[
-        p \cdot z \;>\; a \;\ge\; p \cdot y \qquad\text{for all } y \in B.
-    \]
-    \medskip
-
-    Now take \(x \notin \operatorname{Int} B\). Then every neighbourhood of \(x\)
-    contains points that are not in \(B\). In particular, we can find a sequence
-    \((x^m)_{m\ge 1}\) such that
-    \[
-        x^m \to x \qquad\text{and}\qquad x^m \notin \overline B
-        \quad\text{for all } m.
-    \]
-    (Think of \(x^m\) approaching \(x\) from “outside” \(B\).)
-
-    For each \(m\), apply the separating hyperplane theorem to the convex set \(B\)
-    and the point \(x^m \notin \overline B\). We obtain a nonzero vector
-    \(p^m \in \mathbb{R}^L\) and a scalar \(c^m \in \mathbb{R}\) such that
-    \begin{equation}\label{eq:sep-m}
-        p^m \cdot x^m \;>\; c^m \;\ge\; p^m \cdot y
-        \qquad\text{for all } y \in B.
-    \end{equation}
-
-    Normalize the vectors \(p^m\) so that \(\|p^m\| = 1\) for every \(m\) (we can always
-    divide \(p^m\) and \(c^m\) by the same positive constant without changing the
-    inequalities). The sequence \((p^m)\) lives on the unit sphere, which is compact,
-    so there is a subsequence (still denoted \((p^m)\) for simplicity) that converges:
-    \[
-        p^m \to p \qquad\text{for some } p \in \mathbb{R}^L \text{ with } \|p\|=1.
-    \]
-    In particular \(p \neq 0\). Since \((c^m)\) is a sequence of real numbers, we can
-    also extract a further subsequence (again not relabelled) such that
-    \[
-        c^m \to c \qquad\text{for some } c \in \mathbb{R}.
-    \]
-
-    Fix any \(y \in B\). Inequality \eqref{eq:sep-m} gives, for each \(m\),
-    \[
-        p^m \cdot x^m \;>\; c^m \;\ge\; p^m \cdot y.
-    \]
-    Taking limits as \(m\to\infty\) and using continuity of the dot product,
-    and the convergences \(x^m \to x\), \(p^m \to p\) and \(c^m \to c\), we obtain
-    \[
-        p \cdot x \;\ge\; c \;\ge\; p \cdot y.
-    \]
-    Since this holds for every \(y \in B\), we have
-    \[
-        p \cdot x \;\ge\; p \cdot y \qquad\text{for all } y \in B,
-    \]
-    which is exactly the desired supporting hyperplane inequality.
-\end{proof}
-
-%\section{The welfare theorem}
-
 \begin{theorem}\label{thm:sftwe} (\textbf{Second fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, convex, and continuous, and endowments are strictly positive \( e_i \in \mathbb{R}^\ell_{++} \) for all individuals \( i \), then every interior Pareto optimal allocation \( x \in \mathbb{R}^{\ell n}_{++}\) can be supported as a Walrasian equilibrium with transfers. That is,
 
     \[
