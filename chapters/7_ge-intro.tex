@@ -13,7 +13,7 @@
 \paragraph{Primitives and definitions.} We now generalise the example in Section~\ref{sec:L6-example}. There is a set of \( n \) individuals \( I = \{1,\dots,n\} \) and the consumption space \( \mathbb{R}^{\ell}_{+} \). Each individual has an endowment \( e_i \in \mathbb{R}^{\ell}_{+} \), where \( e_i = (e_i^{1}, \dots, e_i^{\ell}) \). The total endowment in the economy is
 
 \[
-	\sum_{i} e_i .
+	\sum_{i} e_i = \bar e .
 \]
 
 Each individual has preferences \( \succsim_i \) over \( \mathbb{R}^{\ell}_{+} \). A generic consumption bundle for individual \( i \) is \( x_i = (x_i^{1}, \dots, x_i^{\ell}) \). We always assume that preferences are complete and transitive for each \( i \).
@@ -21,7 +21,7 @@ Each individual has preferences \( \succsim_i \) over \( \mathbb{R}^{\ell}_{+} \
 An \textbf{economy} is a profile \( E = (\succsim_i, e_i)_{i \in I} \). An allocation \( x \) is \textbf{feasible} for \( E \) if
 
 \[
-	\sum_{i} x_i \le \sum_{i} e_i .
+	\sum_{i} x_i \le \bar e .
 \]
 
 Feasible allocations are elements of \( \mathbb{R}^{\ell n}_{+} \). A price vector is \( p = (p^{1}, \dots, p^{\ell}) \in \mathbb{R}^{\ell}_{+} \), which assigns a price to each good. For each price vector, we define the budget set of an individual with endowment \( e_i \).
@@ -85,11 +85,9 @@ A bundle \( x_i' \) is in the upper contour set of \( x_i \) if it is weakly pre
 			% Text Node
 			\draw (284,263.4) node [anchor=north west][inner sep=0.75pt]    {$x_{i}$};
 			% Text Node
-			\draw (312,209.4) node [anchor=north west][inner sep=0.75pt]    {$U( x_{i})$};
+			\draw (312,209.4) node [anchor=north west][inner sep=0.75pt]    {$U_i( x_{i})$};
 			% Text Node
-			\draw (207,304.4) node [anchor=north west][inner sep=0.75pt]    {$L( x_{i})$};
-
-
+			\draw (207,304.4) node [anchor=north west][inner sep=0.75pt]    {$L_i( x_{i})$};
 		\end{tikzpicture}
 		\caption{Upper and lower contour sets at bundle \( x_i \).}
 		\label{fig:contour-sets}
@@ -199,7 +197,7 @@ For individual incentives, we consider \textbf{Walrasian equilibrium}.
 
 \begin{definition}\label{ax:weq}
 	\labelname{axn:weq}{Walrasian equilibrium}
-	An allocation \( x \) is a \textbf{Walrasian equilibrium} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) such that, for all individuals \( i \),
+	A feasible allocation \( x \) is a \textbf{Walrasian equilibrium} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) such that, for all individuals \( i \),
 
 	\[
 		x_i \in D_i(p, e_i).
@@ -212,7 +210,7 @@ We will consider a couple of variants of \usename{axn:weq}. A \textbf{Walrasian 
 
 \begin{definition}\label{ax:weqt}
 	\labelname{axn:weqt}{Walrasian equilibrium with transfers}
-	An allocation \( x \) is a \textbf{Walrasian equilibrium with transfers} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) and transfers \( (T_i)_{i\in I} \) satisfying
+	A feasible allocation \( x \) is a \textbf{Walrasian equilibrium with transfers} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) and transfers \( (T_i)_{i\in I} \) satisfying
 
 	\[
 		\sum_{i} T_i = 0
@@ -231,7 +229,7 @@ The last equilibrium notion we consider is \textbf{Egalitarian Walrasian equilib
 
 \begin{definition}\label{ax:weqe}
 	\labelname{axn:weqe}{Egalitarian Walrasian equilibrium}
-	An allocation \( x \) is an \textbf{Egalitarian Walrasian equilibrium} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) such that
+	A feasible allocation \( x \) is an \textbf{Egalitarian Walrasian equilibrium} if there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) such that
 
 	\[
 		x_i \in D_i \left(p,\frac{\bar e}{n}\right) \text{ for all } i .
@@ -243,13 +241,12 @@ An allocation is a \usename{axn:weqe} if there exist prices such that each indiv
 Let \( F(E) \) be the set of feasible allocations. Which feasible allocations do we want to select? To answer this question, we introduce allocation rules. An \textbf{allocation rule} \( R \) maps an economy \( E \) to a subset of feasible allocations \( R(E) \subseteq F(E) \). The standard axiomatic approach is to introduce assumptions on \( R \) and see what allocations it induces. For example, we might impose that \( R \) only selects Pareto optimal allocations. In what follows, we study allocation rules that select allocations with the efficiency, distributional, and incentive properties we introduced above.
 
 \begin{definition}
-	An allocation rule \( R^{W} \) is \textbf{Walrasian} if for all economies \( E \) it selects allocations that are Walrasian equilibria; that is, if for all \( E \) there exist prices \( p \in \mathbb{R}^{\ell}_{++} \) such that
+	An allocation rule \( R^{W} \) is \textbf{Walrasian} if for all economies \( E \) it selects allocations that are Walrasian equilibria; that is, if for all \( E \)
 	\[
 		R^{W}(E)
 		=
 		\left\{
-		x \in F(E) \;\middle|\;
-		x_i \in D_i(p, e_i) \text{ for all } i
+		x \in F(E) \;\middle|\; \exists p \in \mathbb{R}_{++}^{\ell} \text { s.t. } x_i \in D_i(p, e_i) \text{ for all } i
 		\right\}.
 	\]
 \end{definition}
@@ -257,34 +254,32 @@ Let \( F(E) \) be the set of feasible allocations. Which feasible allocations do
 An allocation rule is Walrasian if it selects all Walrasian equilibria of the economy. Equivalently, we can define allocation rules that select all Walrasian equilibria with transfers and all Egalitarian Walrasian equilibria.
 
 \begin{definition}
-	An allocation rule \( R^{WT} \) is \textbf{Walrasian with transfers} if for all economies \( E \) it selects allocations that are Walrasian equilibria with transfers; that is, if for all \( E \) there exist strictly positive prices \( p \in \mathbb{R}^{\ell}_{++} \) and transfers \( (T_i)_{i\in I} \) satisfying
-
-	\[
-		\sum_{i} T_i = 0
-		\quad\text{and}\quad
-		e_i + T_i \in \mathbb{R}^{\ell}_{+}\ \text{for all } i,
-	\]
-
-	such that
+	An allocation rule \( R^{WT} \) is \textbf{Walrasian with transfers} if for all economies \( E \) it selects allocations that are Walrasian equilibria with transfers; that is, if for all \( E \)
 
 	\[
 		R^{WT}(E)
 		=
 		\left\{
-		x \in F(E) \;\middle|\; x_i \in D_i(p, e_i + T_i) \text{ for all } i
+		x \in F(E) \;\middle|\;
+		\exists\, p \in \mathbb{R}^{\ell}_{++},\ \exists\, (T_i)_{i}
+		\ \text{s.t.}
+		\ \begin{array}{l}
+			\\[2pt]
+			e_i + T_i \in \mathbb{R}^{\ell}_{+} \ \text{for all } i, \ \sum_i T_i = 0 \\[2pt]
+			x_i \in D_i(p, e_i + T_i) \ \text{for all } i
+		\end{array}
 		\right\}.
 	\]
 \end{definition}
 
 \begin{definition}
-	An allocation rule \( R^{EW} \) is \textbf{Egalitarian Walrasian} if for all economies \( E \) it selects allocations that are Egalitarian Walrasian equilibria; that is, if for all \( E \) there exist prices \( p \in \mathbb{R}^{\ell}_{++} \) such that
+	An allocation rule \( R^{EW} \) is \textbf{Egalitarian Walrasian} if for all economies \( E \) it selects allocations that are Egalitarian Walrasian equilibria; that is, if for all \( E \)
 
 	\[
 		R^{EW}(E)
 		=
 		\left\{
-		x \in F(E) \;\middle|\;
-		x_i \in D_i\!\left(p,\frac{\bar e}{n}\right) \text{ for all } i
+		x \in F(E) \;\middle|\; \exists p \in \mathbb{R}_{++}^{\ell} \text { s.t. } x_i \in D_i\!\left(p,\frac{\bar e}{n}\right) \text{ for all } i
 		\right\}.
 	\]
 \end{definition}

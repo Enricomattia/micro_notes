@@ -110,7 +110,7 @@ The budget set is illustrated in Figure~\ref{fig:L6-cons-budget} in the two-good
     \end{center}
 \end{figure}
 
-The individual has preferences over consumption bundles. In previous lectures we studied choice under uncertainty, where the outcome of a choice is to some extent random. Here there is no uncertainty: the individual has preferences \( \succsim_i \) over the consumption space \( \mathbb{R}^{\ell}_{+} \). As we did for the simplex, we can visualize these preferences by drawing indifference curves in the consumption space, as in Figure~\ref{fig:ind-curve}. All bundles on the same indifference curve are equally good for the individual.
+The individual has preferences over consumption bundles. In previous lectures we studied choice under uncertainty, where the outcome of a choice is to some extent random. Here there is no uncertainty: the individual has preferences \( \succsim_i \) over the consumption space \( \mathbb{R}^{\ell}_{+} \). As we did for the simplex, we can visualise these preferences by drawing indifference curves in the consumption space, as in Figure~\ref{fig:ind-curve}. All bundles on the same indifference curve are equally good for the individual.
 
 \begin{figure}[H]
     \begin{center}
@@ -131,7 +131,7 @@ The individual has preferences over consumption bundles. In previous lectures we
             % Text Node
             \draw (468,267.4) node [anchor=north west][inner sep=0.75pt]    {$\succsim_{i}$};
         \end{tikzpicture}
-        \caption{An indifference curve in the consumption space \( \mathbb{R}^2 \).}
+        \caption{An indifference curve in the consumption space \( \mathbb{R}^2_{+} \).}
         \label{fig:ind-curve}
     \end{center}
 \end{figure}
@@ -142,7 +142,7 @@ The individual would like to choose the most preferred bundle among those he can
     D_i(p,w_i) = \{ x_i \in B(p,w_i) \mid x_i \succsim_i x_i' \ \text{for all} \ x_i' \in B(p,w_i) \}.
 \]
 
-In other words, a bundle \( x_i \) belongs to \( D_i(p,w_i) \) if it is affordable and at least as good as every other affordable bundle. In general, Walrasian demand is a set: it may happen that several affordable bundles tie for being best. We can visualize Walrasian demand graphically. For example, for the preferences represented in Figure~\ref{fig:ind-curve}, and assuming preferences are increasing in each good, Walrasian demand is a single point, as shown in Figure~\ref{fig:walrdem}.
+In other words, a bundle \( x_i \) belongs to \( D_i(p,w_i) \) if it is affordable and at least as good as every other affordable bundle. In general, Walrasian demand is a set: it may happen that several affordable bundles tie for being best. We can visualise Walrasian demand graphically. For example, for the preferences represented in Figure~\ref{fig:ind-curve}, and assuming preferences are increasing in each good, Walrasian demand is a single point, as shown in Figure~\ref{fig:walrdem}.
 
 \begin{figure}[H]
     \begin{center}
@@ -182,7 +182,7 @@ In the next section, we build on these basics to consider the choices of two ind
 
 \section{Illustrative example of exchange economy}\label{sec:L6-example}
 
-We now move from individual choice, which we studied in the previous lectures, to \textit{collective} choice. In general equilibrium theory, we generalize concepts from individual consumer choice to an economy with multiple individuals. In this section we start from a simple example with two individuals and two goods, which we will later generalize.
+We now move from individual choice, which we studied in the previous lectures, to \textit{collective} choice. In general equilibrium theory, we generalise concepts from individual consumer choice to an economy with multiple individuals. In this section we start from a simple example with two individuals and two goods, which we will later generalise.
 
 Suppose there are two individuals \( 1 \) and \( 2 \) and two goods. Each individual has the consumption space \( \mathbb{R}^{2}_{+} \), and a consumption bundle \( x_i = (x_i^{1}, x_i^{2}) \). We can represent the consumption space of individual \( 1 \), together with his indifference curves, as we did in Figure~\ref{fig:ind-curve}. For individual \( 2 \), we can do the same, but suppose we draw his consumption space upside down, as in Figure~\ref{fig:L6-ind-2} (bear with me).
 
@@ -315,7 +315,7 @@ We assume that preferences are increasing in each good. Therefore, both individu
     \end{center}
 \end{figure}
 
-Now suppose that each individual has an initial endowment of goods, that is, a bundle of goods that he initially owns. The endowment of individual \( i \) is denoted by \( e_i = (e_i^{1}, e_i^{2}) \). The initial endowments determine the initial allocation in the Edgeworth box. The total endowment in the economy is \( e = e_1 + e_2 \), and this determines the size of the Edgeworth box. In principle, individuals can trade their endowments to reach preferred allocations.
+Now suppose that each individual has an initial endowment of goods, that is, a bundle of goods that he initially owns. The endowment of individual \( i \) is denoted by \( e_i = (e_i^{1}, e_i^{2}) \). The initial endowments determine the initial allocation in the Edgeworth box. The total endowment in the economy is \( \bar{e} = e_1 + e_2 \), and this determines the size of the Edgeworth box. In principle, individuals can trade their endowments to reach preferred allocations.
 
 Now suppose there are prices in the economy, given by the vector \( p = (p^{1}, p^{2}) \), one for each good. Given prices and endowments, we can compute the initial wealth of each individual. In individual consumer choice, wealth was given as a monetary amount \( w_i \), whereas here it is the value of the endowment at the given prices. The wealth of individual \( i \) is therefore \( w_i = p \cdot e_i = p^{1} e_i^{1} + p^{2} e_i^{2} \). Hence, the budget set of individual \( i \) consists of all consumption bundles \( x_i \) such that \( p \cdot x_i \leq p \cdot e_i \). So the budget set is\footnote{There is a slight abuse of notation: to be fully consistent with the earlier definition, I should write \( B(p, p \cdot e_i) \).}
 
@@ -450,7 +450,7 @@ We know from the first theorem of welfare economics that Walrasian equilibria ar
 \end{exercise}
 
 \begin{exercise}
-    Assume that preferences \( \succsim_i \) are increasing in each good. Prove that, for any prices \( p \) and wealth \( w_i \), the Walrasian demand \( D_i(p,w_i) \) contains only bundles \( x_i \) that satisfy \( p \cdot x_i = w_i \). This property is referred to as \textbf{Walras' law}.
+    Assume that preferences \( \succsim_i \) are increasing in each good. Prove that, for any strictly positive prices \( p \) and wealth \( w_i \), the Walrasian demand \( D_i(p,w_i) \) contains only bundles \( x_i \) that satisfy \( p \cdot x_i = w_i \). This property is referred to as \textbf{Walras' law}.
 \end{exercise}
 
 \begin{exercise}
@@ -505,7 +505,7 @@ We know from the first theorem of welfare economics that Walrasian equilibria ar
                 % Text Node
                 \draw (205,159) node [anchor=north west][inner sep=0.75pt]    {$x$};
                 % Text Node
-                \draw (319,184.4) node [anchor=north west][inner sep=0.75pt]    {$\left(\frac{e}{2} ,\frac{e}{2}\right)$};
+                \draw (319,184.4) node [anchor=north west][inner sep=0.75pt]    {$\left(\frac{\bar{e}}{2} ,\frac{\bar{e}}{2}\right)$};
                 % Text Node
                 \draw (428,294.4) node [anchor=north west][inner sep=0.75pt]    {$x'$};
             \end{tikzpicture}
