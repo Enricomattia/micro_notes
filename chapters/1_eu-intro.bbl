@@ -55,6 +55,27 @@ Herstein, I\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{House}%
+}{%
+{House}%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+houseChangesEpisode202011}
+\APACinsertmetastar {%
+houseChangesEpisode202011}%
+\begin{APACrefauthors}%
+{House}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\APACrefbtitle {Changes, {{Episode}} 20 {{Season}} 7.} {Changes, {{Episode}} 20
+  {{Season}} 7.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Jehle%
 \ \BBA {} Reny%
 }{%

@@ -71,6 +71,33 @@ Fleurbaey, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+, Kanbur%
+\BCBL {}\ \BBA {} Snower%
+}{%
+Fleurbaey%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+fleurbaeyEfficiencyEquitySociallyembedded2025}
+\APACinsertmetastar {%
+fleurbaeyEfficiencyEquitySociallyembedded2025}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+, Kanbur, R.%
+\BCBL {}\ \BBA {} Snower, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Efficiency and Equity in a Socially-Embedded Economy}
+  {Efficiency and equity in a socially-embedded economy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economic Theory}{79}{1}{1--56}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%
@@ -97,6 +124,31 @@ mas-colellMicroeconomicTheory1995}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Sophocles}%
+}{%
+{Sophocles}%
+}{%
+{\protect \APACyear {1939}}%
+}]{%
+sophoclesAntigoneSophoclesEnglish1939}
+\APACinsertmetastar {%
+sophoclesAntigoneSophoclesEnglish1939}%
+\begin{APACrefauthors}%
+{Sophocles}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1939}.
+\newblock
+\APACrefbtitle {The Antigone of Sophocles: {{An}} English Version by Dudley
+  Fitts and Robert Fitzgerald} {The antigone of sophocles: {{An}} english
+  version by dudley fitts and robert fitzgerald}\ (D.~Fitts\ \BBA {}
+  R.~Fitzgerald, \BTRANSS{}).
+\newblock
+\APACaddressPublisher{New York}{{Harcourt, Brace and Company}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Thomson%
 }{%
 Thomson%
@@ -119,6 +171,28 @@ Thomson, W.%
   social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
 \newblock
 \APACaddressPublisher{}{Elsevier}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wilde%
+}{%
+Wilde%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+wildeLadyWindermeresFan1995}
+\APACinsertmetastar {%
+wildeLadyWindermeresFan1995}%
+\begin{APACrefauthors}%
+Wilde, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1995}.
+\newblock
+\APACrefbtitle {Lady Windermere's Fan} {Lady windermere's fan}.
+\newblock
+\APACaddressPublisher{}{Penguin}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

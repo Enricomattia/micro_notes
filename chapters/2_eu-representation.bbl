@@ -267,6 +267,29 @@ Moscati, I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Myerson%
+}{%
+Myerson%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+myersonGameTheoryAnalysis1997}
+\APACinsertmetastar {%
+myersonGameTheoryAnalysis1997}%
+\begin{APACrefauthors}%
+Myerson, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1997}.
+\newblock
+\APACrefbtitle {Game Theory: {{Analysis}} of Conflict} {Game theory:
+  {{Analysis}} of conflict}.
+\newblock
+\APACaddressPublisher{Cambridge, Massachusetts, USA}{Harvard University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Spiegler%
 }{%
 Spiegler%

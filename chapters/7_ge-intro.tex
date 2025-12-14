@@ -10,45 +10,49 @@
 
 \section{Exchange economies}\label{sec:L7-intro}
 
-There is a set of \( n \) individuals \( I = \{1,\dots,n\} \) and a set of consumption bundles \( \mathbb{R}^{\ell}_+ \). Each individual has preferences \( \succsim_i \) on \( \mathbb{R}^{\ell}_+ \). A generic consumption bundle of individual \( i \) is \( x_i = (x_i^1, \dots, x_i^{\ell}) \). We always assume preferences are complete and transitive for each individual \( i \). Each individual has an endowment \( e_i \in \mathbb{R}^{\ell}_+ \), where \( e_i = (e_i^1, \dots, e_i^{\ell}) \) and therefore there is a total endowment of
+\paragraph{Primitives.} We now generalise the example in Section \ref{sec:L6-example}. There is a set of \( n \) individuals \( I = \{1,\dots,n\} \) and a set of consumption bundles \( \mathbb{R}^{\ell}_+ \). Each individual has an endowment \( e_i \in \mathbb{R}^{\ell}_+ \), where \( e_i = (e_i^1, \dots, e_i^{\ell}) \) and therefore there is a total endowment of
 
 \[
 	\sum_{i} e_i = \bar{e}.
 \]
 
-An \textbf{economy} is a profile \( E = ((\succsim_i, e_i)_{i \in I}) \). A \textbf{feasible} allocation for \( E \) is \( x = (x_i)_{i \in I} \) such that
+Each individual has preferences \( \succsim_i \) on \( \mathbb{R}^{\ell}_+ \). A generic consumption bundle of individual \( i \) is \( x_i = (x_i^1, \dots, x_i^{\ell}) \). We always assume preferences are complete and transitive for each individual \( i \).
+
+An \textbf{economy} is a profile \( E = ((\succsim_i, e_i)_{i \in I}) \). A \textbf{feasible} allocation for \( E \) is \( x \) such that
 
 \[
 	\sum_{i} x_i \le \bar{e}.
 \]
 
-Feasible allocations lie in the set \( \mathbb{R}^{\ell n}_+ \).
+Feasible allocations lie in the set \( \mathbb{R}^{\ell n}_+ \). A vector of prices is \( p = (p^1, \dots, p^{\ell}) \in \mathbb{R}^{\ell}_+ \), assigning a price to each good. For each vector of prices, we define the budget set of individual with endowment \( e_i \).
 
 \begin{definition}
-	The budget set given endowment \( e_i \) and prices \( p \in \mathbb{R}^{\ell}_{+} \), is
+	The budget set given endowment \( e_i \) and prices \( p \), is
 
 	\[
-		B(e_i,p)
+		B(p, e_i)
 		= \left\{
 		x_i \in \mathbb{R}^{\ell}_+ \;\middle|\; p \cdot x_i \le p \cdot e_i
 		\right\}.
 	\]
 \end{definition}
 
-Notice that the budget set is always convex and, when all prices are strictly positive, it is also compact.
+Notice that the budget set is always convex and, when all prices are strictly positive, it is also compact. We assume prices are strictly positive often. For each vector of prices \( p \), endowment \( e_i \), and preference relation \( \succsim_i \), we define the Walrasian demand.
 
 \begin{definition}
 	The \textbf{Walrasian demand} of \( i \), given endowment \( e_i \) and prices \( p \), is
 	\[
-		D_i(e_i,p)
+		D_i(p, e_i)
 		= \left\{
-		x_i \in B(e_i,p) \;\middle|\;
-		x_i \succsim_i x'_i \ \forall x'_i \in B(e_i,p)
+		x_i \in B(p, e_i) \;\middle|\;
+		x_i \succsim_i x'_i \ \forall x'_i \in B(p, e_i)
 		\right\}
 	\]
 \end{definition}
 
-For each preference relation \( \succsim_i \), we define the upper and lower contour sets at a bundle \( x_i \):
+The Walrasian demand is the set of most preferred bundles in the budget set.
+
+For each preference relation \( \succsim_i \), we define the \textbf{upper and lower contour sets} at a bundle \( x_i \):
 
 \[
 	U_i(x_i)
@@ -58,13 +62,85 @@ For each preference relation \( \succsim_i \), we define the upper and lower con
 	:= \{\, x'_i \in \mathbb{R}^\ell_+ \mid x_i \succsim_i x'_i \,\} .
 \]
 
+An allocation \( x_i' \) is in the upper contour set of \( x_i \) if it is weakly preferred to \( x_i \); it is in the lower contour set if it is weakly less preferred than \( x_i \). These sets are useful to define some properties of preference relations. These are illustrated in Figure \ref{fig:contour-sets}, under the assumption that \( \succsim_i \) is increasing.
+
+\begin{figure}[H]
+	\begin{center}
+		\begin{tikzpicture}[x=0.70pt,y=0.70pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,469); %set diagram left start at 0, and has height of 469
+
+			%Shape: Axis 2D [id:dp6363214867054915] 
+			\draw  (143,368.12) -- (491,368.12)(177.8,74) -- (177.8,400.8) (484,363.12) -- (491,368.12) -- (484,373.12) (172.8,81) -- (177.8,74) -- (182.8,81)  ;
+			%Curve Lines [id:da3683132673609393] 
+			\draw    (213,100.6) .. controls (205,256.6) and (299,352.6) .. (454,339.6) ;
+			%Shape: Circle [id:dp9112121344081351] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (273.4,286.6) .. controls (273.4,284.94) and (274.74,283.6) .. (276.4,283.6) .. controls (278.06,283.6) and (279.4,284.94) .. (279.4,286.6) .. controls (279.4,288.26) and (278.06,289.6) .. (276.4,289.6) .. controls (274.74,289.6) and (273.4,288.26) .. (273.4,286.6) -- cycle ;
+
+			% Text Node
+			\draw (481,380.4) node [anchor=north west][inner sep=0.75pt]    {$x^{1}$};
+			% Text Node
+			\draw (138,68.4) node [anchor=north west][inner sep=0.75pt]    {$x^{2}$};
+			% Text Node
+			\draw (464,329.4) node [anchor=north west][inner sep=0.75pt]    {$\succsim _{i}$};
+			% Text Node
+			\draw (284,263.4) node [anchor=north west][inner sep=0.75pt]    {$x_{i}$};
+			% Text Node
+			\draw (312,209.4) node [anchor=north west][inner sep=0.75pt]    {$U( x_{i})$};
+			% Text Node
+			\draw (207,304.4) node [anchor=north west][inner sep=0.75pt]    {$L( x_{i})$};
+
+
+		\end{tikzpicture}
+		\caption{Upper and lower contour sets at bundle \( x_i \).}
+		\label{fig:contour-sets}
+	\end{center}
+\end{figure}
+
+\paragraph{Properties of preferences.} As we did for preferences over lotteries, we now define some properties of preferences over consumption bundles. The results we will present later require some of these properties. Notice that we are studying preferences over \( \mathbb{R}^\ell_+ \), which has a structure we can exploit. However, we do not have lotteries any more, so we cannot use properties that rely on that structure, e.g. independence.\footnote{However, in general equilibrium under uncertainty the lottery structure is important, see \citet[ch. 19]{mas-colellMicroeconomicTheory1995}.}
+
 \begin{definition}
-	A preference relation \( \succsim_i \) is \textbf{locally non-satiated} if for every \( x_i \in \mathbb{R}^\ell_+ \) and every \( \varepsilon > 0 \), there exists \( x'_i \in \mathbb{R}^\ell_+ \) such that \( \|y - x_i\| < \varepsilon \) and \( x'_i \succ_i x_i \).
+	A preference relation \( \succsim_i \) is \textbf{locally non-satiated} if for every \( x_i \in \mathbb{R}^\ell_+ \) and every \( \varepsilon > 0 \), there exists \( x'_i \in \mathbb{R}^\ell_+ \) such that \( \|x_i' - x_i\| < \varepsilon \) and \( x'_i \succ_i x_i \).
 \end{definition}
 
-Local non-satiation rules out thick indifference curves. It rules out that all goods are \textit{bads}, i.e. individuals do not like them.
+Local non-satiation means that in any neighbourhood of any bundle there is another bundle that is strictly preferred. It is a weak form of monotonicity. In fact, monotonicity implies local non-satiation, but the converse is not true. It only rules out that all goods are \textit{bads}, i.e. individuals do not like them. Local non-satiation also rules out thick indifference curves. Consider preferences represented in Figure \ref{fig:satiation}. These preferences are not locally non-satiated at bundle \( x_i \) because in any neighbourhood of \( x_i \) there are no strictly preferred bundles.
 
-\begin{definition}
+\begin{figure}[H]
+	\begin{center}
+		\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,502); %set diagram left start at 0, and has height of 502
+
+			%Shape: Axis 2D [id:dp20007957527937936] 
+			\draw  (143,375.12) -- (491,375.12)(177.8,81) -- (177.8,407.8) (484,370.12) -- (491,375.12) -- (484,380.12) (172.8,88) -- (177.8,81) -- (182.8,88)  ;
+			%Curve Lines [id:da3724834131003195] 
+			\draw    (225,95.6) .. controls (217,251.6) and (311,347.6) .. (466,334.6) ;
+			%Curve Lines [id:da5809305123487184] 
+			\draw    (256,64.6) .. controls (248,220.6) and (342,316.6) .. (497,303.6) ;
+			%Straight Lines [id:da4600562742754496] 
+			\draw    (225,95.6) -- (256,64.6) ;
+			%Straight Lines [id:da003738031499627703] 
+			\draw    (466,334.6) -- (497,303.6) ;
+			%Shape: Circle [id:dp6153634380448432] 
+			\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (286.4,255.6) .. controls (286.4,253.94) and (287.74,252.6) .. (289.4,252.6) .. controls (291.06,252.6) and (292.4,253.94) .. (292.4,255.6) .. controls (292.4,257.26) and (291.06,258.6) .. (289.4,258.6) .. controls (287.74,258.6) and (286.4,257.26) .. (286.4,255.6) -- cycle ;
+			%Shape: Circle [id:dp7656031105045924] 
+			\draw   (275.4,255.6) .. controls (275.4,247.87) and (281.67,241.6) .. (289.4,241.6) .. controls (297.13,241.6) and (303.4,247.87) .. (303.4,255.6) .. controls (303.4,263.33) and (297.13,269.6) .. (289.4,269.6) .. controls (281.67,269.6) and (275.4,263.33) .. (275.4,255.6) -- cycle ;
+
+			% Text Node
+			\draw (481,387.4) node [anchor=north west][inner sep=0.75pt]    {$x^{1}$};
+			% Text Node
+			\draw (138,75.4) node [anchor=north west][inner sep=0.75pt]    {$x^{2}$};
+			% Text Node
+			\draw (480,332.4) node [anchor=north west][inner sep=0.75pt]    {$\succsim _{i}$};
+			% Text Node
+			\draw (305.4,259) node [anchor=north west][inner sep=0.75pt]    {$x_{i}$};
+		\end{tikzpicture}
+		\caption{Preferences that are not locally non-satiated at bundle \( x_i \).}
+		\label{fig:satiation}
+	\end{center}
+\end{figure}
+
+A second important property is convexity.
+
+\begin{definition}\label{def:convexity}
 	A preference relation \( \succsim_i \) is \textbf{convex} if for all
 	\( x_i, x'_i, x''_i \in \mathbb{R}^\ell_+ \),
 	whenever \( x'_i \succsim_i x_i \) and \( x''_i \succsim_i x_i \), then
@@ -74,24 +150,91 @@ Local non-satiation rules out thick indifference curves. It rules out that all g
 	\]
 \end{definition}
 
-Convexity is equivalent to convexity of upper contour sets. It is an expression of \textit{diminishing marginal returns}. It can also be viewed as a preference for \textit{diversification}.
+Convexity is equivalent to convexity of upper contour sets.\footnote{You are asked to show this in Exercise \ref{ex:convexity}.} It is an expression of \textit{diminishing marginal returns}. It can also be viewed as a preference for \textit{diversification}.
+
+Lastly, we define continuity.
 
 \begin{definition}\label{def:cont-pref}
 	A preference relation \( \succsim_i \) on \( \mathbb{R}^\ell_+ \) is \textbf{continuous} if for every bundle \( x_i \in \mathbb{R}^\ell_+ \), both the upper and the lower contour sets of \( x_i \) are closed.
 \end{definition}
 
-If a preference relation \( \succsim_i \) is continuous, then for every endowment \( e_i \) and every strictly positive price vector \( p \in \mathbb{R}^\ell_{++} \), the Walrasian demand \( D_i(e_i,p) \) is non-empty. This is because a complete, transitive, and continuous preference relation can be represented by a continuous utility function. The budget set \( B(e_i,p) \) is compact when prices are strictly positive, and therefore the continuous utility function attains a maximum on it. If preferences are also locally non-satiated, then the Walrasian demand \( D_i(e_i,p) \) is contained in the budget hyperplane \( \{ x \in \mathbb{R}^\ell_+ \mid p \cdot x = p \cdot e_i \} \).
+Continuity says that small changes in consumption bundles do not lead to jumps in preferences. If you are wondering about the relationship between this notion of continuity and \usename{axn:continuity} over lotteries from Chapter \ref{ch:L2}, the answer is that the second is \textit{weaker} than the first, but under the independence axiom of preferences over lotteries they are equivalent.\footnote{Actually, the notion of Archimedean continuity in Lecture \ref{ch:L2} is equivalent to continuity in Definition \ref{def:cont-pref} even under a specific weakening of independence \citep{karniArchimedeanContinuity2007}.}
 
-\section{Allocation rules and their properties}
+If a preference relation \( \succsim_i \) is continuous, then for every endowment \( e_i \) and every strictly positive price vector \( p \in \mathbb{R}^\ell_{++} \), the Walrasian demand \( D_i(p, e_i) \) is non-empty. This is because a complete, transitive, and continuous preference relation can be represented by a continuous utility function \citep[Proposition 3.C.1]{mas-colellMicroeconomicTheory1995}.\footnote{Interestingly, the result dates back to \cite{cantorContributionsFoundingTheory1915}, see the discussion in \citet[ch. 6.1]{gilboaTheoryDecisionUncertainty2009}} The budget set \( B(p, e_i) \) is compact when prices are strictly positive, and therefore the continuous utility function attains a maximum on it. If preferences are also locally non-satiated, then the Walrasian demand \( D_i(p, e_i) \) is on the budget line \( \{ x_i \in \mathbb{R}^\ell_+ \mid p \cdot x_i = p \cdot e_i \} \).\footnote{You are asked to show this in Exercise \ref{ex:lns}.}
+
+\begin{techremark}
+	You might wonder whether there exists a reasonable preference relation that is not continuous. The answer is yes. Consider the \textbf{lexicographic} preference relation on \(\mathbb{R}^2_+\): for any two bundles \(x_i=(x_i^1,x_i^2)\) and \(x_i'=(x_i'^1,x_i'^2)\), define \(x_i' \succsim_i x_i\) if either (i) \(x_i'^1 > x_i^1\), or (ii) \(x_i'^1 = x_i^1\) and \(x_i'^2 \ge x_i^2\). This preference relation is complete and transitive, but it is not continuous. If you want you can have fun showing this (or check \citet[p. 47]{mas-colellMicroeconomicTheory1995}).
+\end{techremark}
+
+\section{Allocations, rules and their properties}
+
+We introduced the primitives of an exchange economy we care about. Starting from these data, we ask what allocations can we select in this economy. Such an allocation should have two type of properties: first, it should satisfy some normative criteria, as an example efficiency or distributional properties; second, it should be compatible with individual incentives, otherwise we could just force an allocation disregarding individual preferences.
+
+The efficiency criterion we consider is \textbf{Pareto optimality}.
+
+\begin{definition}\label{ax:po}
+	\labelname{axn:po}{Pareto optimality}
+	A feasible allocation \( x \) is \textbf{Pareto optimal} if there is no other feasible allocation \( x' \) with \( x'_i \succsim_i x_i \) for all \( i \) and \( x'_j \succ_j x_j \) for some \( j \).
+\end{definition}
+
+\usename{axn:po} says that a feasible allocation is Pareto optimal if there is no other feasible allocation that makes everyone weakly better off and at least one individual strictly better off.
+
+The distributional criterion we consider is \textbf{no-envy}.
+
+\begin{definition}\label{ax:no-envy}
+	\labelname{axn:no-envy}{No-envy}
+	An allocation \( x \) satisfies \textbf{no-envy} if for all individuals \( i \) and \( j \),
+	\[
+		x_i \succsim_i x_j.
+	\]
+\end{definition}
+
+An allocation satisfies \usename{axn:no-envy} if no individual prefers the bundle of another individual to her own bundle.
+
+As for individual incentives, we consider \textbf{Walrasian equilibrium}.
+
+\begin{definition}\label{ax:weq}
+	\labelname{axn:weq}{Walrasian equilibrium}
+	An allocation \( x \) is a \textbf{Walrasian equilibrium} if there exist strictly positive prices \( p \in \mathbb{R}^\ell_{++} \) such that for all individuals \( i \),
+	\[
+		x_i \in D_i(p, e_i).
+	\]
+\end{definition}
+
+An allocation is a \usename{axn:weq} if there exist prices such that each individual would consume a bundle in her Walrasian demand given her endowment and those prices. Notice that we are not saying that these prices exists and that individuals actually face them. Instead, we are detailing properties of an allocation: can such allocation be in principle the result of an individual optimisation problem in the style of choice theory? If yes, then the allocation is a \usename{axn:weq}.
+
+We will consider a couple of versions of \usename{axn:weq}. A \textbf{Walrasian equilibrium with transfers} is a generalisation in which we allow to consider monetary transfers among individuals before they optimise.
+
+\begin{definition}\label{ax:weqt}
+	\labelname{axn:weqt}{Walrasian equilibrium with transfers}
+	An allocation \( x \) is a \textbf{Walrasian equilibrium with transfers} if there exist strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_{i\in I}\) satisfying
+	\[
+		\sum_{i} T_i = 0
+		\quad\text{and}\quad
+		e_i + T_i \in \mathbb{R}^\ell_{+}\ \text{for all } i,
+	\]
+	such that
+	\[
+		x_i \in D_i(p, e_i + T_i) \text{ for all } i .
+	\]
+\end{definition}
+
+An allocation is a \usename{axn:weqt} if there exist prices and transfers such that each individual would consume a bundle in her Walrasian demand given her adjusted endowment and those prices. Each \usename{axn:weq} is also a \usename{axn:weqt} where there are no transfers, i.e. \( T_i = 0 \) for all \( i \).
+
+The last equilibrium notion we consider is \textbf{Egalitarian Walrasian equilibrium}.
+
+\begin{definition}\label{ax:weqe}
+	\labelname{axn:weqe}{Egalitarian Walrasian equilibrium}
+	An allocation \(x\) is an \textbf{Egalitarian Walrasian equilibrium} if there exist strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) such that
+	\[
+		x_i \in D_i \left(p,\frac{\bar e}{n}\right) \text{ for all } i .
+	\]
+\end{definition}
+
+An allocation is a \usename{axn:weqe} if there exist prices such that each individual would consume a bundle in her Walrasian demand given an equal share of the total endowment and those prices. Say that we collect all the resources in the economy and redistribute them equally among individuals before they optimise. If the resulting allocation is a \usename{axn:weq}, then it is a \usename{axn:weqe}.
 
 Let \( F(E) \) be the set of feasible allocations. An \textbf{allocation rule} \( R \) maps an economy \( E \) to a subset of feasible allocations \( R(E) \subseteq F(E) \).
 
-\begin{definition}
-	An allocation \( x \) is a \textbf{Walrasian equilibrium} if there exist prices \( p \in \mathbb{R}^\ell_{++} \) such that for all individuals \( i \),
-	\[
-		x_i \in D_i(e_i, p).
-	\]
-\end{definition}
 
 \begin{definition}
 	An allocation rule \(R^{W}\) is \textbf{Walrasian} if for all economies \(E\)
@@ -101,7 +244,7 @@ Let \( F(E) \) be the set of feasible allocations. An \textbf{allocation rule} \
 		=
 		\left\{
 		x \in F(E) \;\middle|\;
-		x_i \in D_i(e_i, p) \text{ for all } i
+		x_i \in D_i(p, e_i) \text{ for all } i
 		\right\}.
 	\]
 \end{definition}
@@ -116,19 +259,15 @@ That is, an allocation rule is Walrasian if it selects all Walrasian equilibria 
 		=
 		\left\{
 		x \in F(E) \;\middle|\;
-		x_i \in D_i\!\left(\frac{\bar e}{n}, p\right) \text{ for all } i
+		x_i \in D_i\!\left(p,\frac{\bar e}{n}\right) \text{ for all } i
 		\right\}.
 	\]
 \end{definition}
 
 \begin{definition}
-	An allocation \( x \) is \textbf{Pareto optimal} if there is no other feasible allocation \( x' \) with \( x'_i \succsim_i x_i \) for all \( i \) and \( x'_j \succ_j x_j \) for some \( j \).
-\end{definition}
-
-\begin{definition}
-	An allocation rule \(R^{WT}\) is a \textbf{Walrasian equilibrium with transfers} if for all economies \(E\) there exist strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_{i\in I}\) satisfying
+	An allocation rule \( x \) is a \textbf{Walrasian equilibrium with transfers} if there exist strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_{i\in I}\) satisfying
 	\[
-		\sum_{i\in I} T_i = 0
+		\sum_{i} T_i = 0
 		\quad\text{and}\quad
 		e_i + T_i \in \mathbb{R}^\ell_{+}\ \text{for all } i,
 	\]
@@ -137,16 +276,26 @@ That is, an allocation rule is Walrasian if it selects all Walrasian equilibria 
 		R^{WT}(E)
 		=
 		\left\{
-		x \in F(E) \;\middle|\ x_i \in D_i(e_i + T_i, p) \text{ for all } i
+		x \in F(E) \;\middle|\ x_i \in D_i(p, e_i + T_i) \text{ for all } i
 		\right\}.
 	\]
 \end{definition}
 
-\paragraph{Things to read.} It might be useful for you to review (or study, if you never encountered these topics before), \citet[pp. 51-70, 76-84]{hildenbrandIntroductionEquilibriumAnalysis1976}. If you want (and you \textquote{should want}) to go deeper, study study \citet[pp. 17–23, 40–56]{mas-colellMicroeconomicTheory1995}. \cite{arrowSocialChoiceIndividual2012}.
+\begin{techremark}
+	A question you might ask yourself to better understand these definitions is: what are allocations exactly? It is easier to think immediately about a static problem where allocations are just consumption bundles. However, in principle an allocation might encode information about time and uncertainty. A consumption bundle might be a stream of consumption over time, or a contingent consumption plan over states of the world. We are just not putting the structure on the set of allocations explicitly. A deep discussion of this point is in \citet[ch. 2]{debreuTheoryValueAxiomatic1959}.
+\end{techremark}
+
+\paragraph{Things to read.} Properties of preferences are discussed in detail in \citet[ch. 3]{mas-colellMicroeconomicTheory1995}. Exchange economies are introduced in \citet[ch. 2]{hildenbrandIntroductionEquilibriumAnalysis1976}. You can also read \citet[ch. 16]{mas-colellMicroeconomicTheory1995} if you like, but it goes straight to production economies. A treatment close to the one in these notes is in \cite{thomsonFairAllocationRules2011}. A brief dicussion of various egalitarian walrasian allocation rules is in \citet[ch. 1]{fleurbaeyTheoryFairnessSocial2011}.
 
 \section{Exercises}
 
-hey.
+\begin{exercise}\label{ex:convexity}
+	Show that convexity in Definition \ref{def:convexity} is equivalent to the following: for every bundle \( x_i \in \mathbb{R}^\ell_+ \), both the upper and the lower contour sets of \( x_i \) are convex.
+\end{exercise}
+
+\begin{exercise}\label{ex:lns}
+	Show that if a preference relation \( \succsim_i \) is locally non-satiated, then for every endowment \( e_i \) and every strictly positive price vector \( p \in \mathbb{R}^\ell_{++} \), the Walrasian demand \( D_i(p, e_i) \) is on the budget line \( \{ x_i \in \mathbb{R}^\ell_+ \mid p \cdot x_i = p \cdot e_i \} \).
+\end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/

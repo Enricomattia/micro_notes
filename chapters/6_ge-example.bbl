@@ -1,6 +1,82 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+}{%
+Fleurbaey%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+fleurbaeyFairnessResponsibilityWelfare2008}
+\APACinsertmetastar {%
+fleurbaeyFairnessResponsibilityWelfare2008}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2008}.
+\newblock
+\APACrefbtitle {Fairness, Responsibility, and Welfare} {Fairness,
+  responsibility, and welfare}.
+\newblock
+\APACaddressPublisher{Oxford}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+fleurbaeyTheoryFairnessSocial2011}
+\APACinsertmetastar {%
+fleurbaeyTheoryFairnessSocial2011}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+\BCBT {}\ \BBA {} Maniquet, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {A Theory of Fairness and Social Welfare} {A theory of fairness
+  and social welfare}\ (\BVOL~48).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Heilmann%
+\ \BBA {} Wintein%
+}{%
+Heilmann%
+\ \BBA {} Wintein%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+heilmannNoEnvyJan2021}
+\APACinsertmetastar {%
+heilmannNoEnvyJan2021}%
+\begin{APACrefauthors}%
+Heilmann, C.%
+\BCBT {}\ \BBA {} Wintein, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {No Envy: {{Jan Tinbergen}} on Fairness} {No envy: {{Jan
+  Tinbergen}} on fairness}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Erasmus Journal for Philosophy and
+  Economics}{14}{1}{222--245}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hildenbrand%
 \ \BBA {} Kirman%
 }{%
@@ -51,6 +127,123 @@ mas-colellMicroeconomicTheory1995}%
 \APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
 \newblock
 \APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moulin%
+}{%
+Moulin%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+moulinAxiomsCooperativeDecision1988}
+\APACinsertmetastar {%
+moulinAxiomsCooperativeDecision1988}%
+\begin{APACrefauthors}%
+Moulin, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Axioms of Cooperative Decision Making} {Axioms of cooperative
+  decision making}.
+\newblock
+\APACaddressPublisher{Cambridge, UK}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moulin%
+}{%
+Moulin%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+moulinFairDivisionCollective2004}
+\APACinsertmetastar {%
+moulinFairDivisionCollective2004}%
+\begin{APACrefauthors}%
+Moulin, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {Fair Division and Collective Welfare} {Fair division and
+  collective welfare}.
+\newblock
+\APACaddressPublisher{Cambridge, MA}{MIT Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Roemer%
+}{%
+Roemer%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+roemerTheoriesDistributiveJustice1996}
+\APACinsertmetastar {%
+roemerTheoriesDistributiveJustice1996}%
+\begin{APACrefauthors}%
+Roemer, J\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1996}.
+\newblock
+\APACrefbtitle {Theories of Distributive Justice} {Theories of distributive
+  justice}.
+\newblock
+\APACaddressPublisher{}{Harvard University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thomson%
+}{%
+Thomson%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+thomsonFairAllocationRules2011}
+\APACinsertmetastar {%
+thomsonFairAllocationRules2011}%
+\begin{APACrefauthors}%
+Thomson, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fair Allocation Rules} {Fair allocation rules}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Handbook of Social Choice and Welfare} {Handbook of
+  social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Young%
+}{%
+Young%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+youngEquityTheoryPractice1994}
+\APACinsertmetastar {%
+youngEquityTheoryPractice1994}%
+\begin{APACrefauthors}%
+Young, H\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1994}.
+\newblock
+\APACrefbtitle {Equity: {{In}} Theory and Practice} {Equity: {{In}} theory and
+  practice}.
+\newblock
+\APACaddressPublisher{Princeton, NJ}{Princeton University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

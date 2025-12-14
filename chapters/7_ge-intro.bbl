@@ -1,26 +1,100 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Arrow%
+Cantor%
 }{%
-Arrow%
+Cantor%
 }{%
-{\protect \APACyear {2012}}%
+{\protect \APACyear {1915}}%
 }]{%
-arrowSocialChoiceIndividual2012}
+cantorContributionsFoundingTheory1915}
 \APACinsertmetastar {%
-arrowSocialChoiceIndividual2012}%
+cantorContributionsFoundingTheory1915}%
 \begin{APACrefauthors}%
-Arrow, K\BPBI J.%
+Cantor, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2012}.
+\APACrefYear{1915}.
 \newblock
-\APACrefbtitle {Social Choice and Individual Values} {Social choice and
-  individual values}\ (\PrintOrdinal{3}\ \BEd).
+\APACrefbtitle {Contributions to the Founding of the Theory of Transfinite
+  Numbers} {Contributions to the founding of the theory of transfinite
+  numbers}\ (P\BPBI E\BPBI B.~Jourdain, \BTRANS{}).
 \newblock
-\APACaddressPublisher{New Haven, CT}{Yale University Press}.
+\APACaddressPublisher{Chicago and London}{The Open Court Publishing Company}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Debreu%
+}{%
+Debreu%
+}{%
+{\protect \APACyear {1959}}%
+}]{%
+debreuTheoryValueAxiomatic1959}
+\APACinsertmetastar {%
+debreuTheoryValueAxiomatic1959}%
+\begin{APACrefauthors}%
+Debreu, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1959}.
+\newblock
+\APACrefbtitle {Theory of Value: {{An}} Axiomatic Analysis of Economic
+  Equilibrium} {Theory of value: {{An}} axiomatic analysis of economic
+  equilibrium}\ (\BVOL~17).
+\newblock
+\APACaddressPublisher{}{Yale University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+Fleurbaey%
+\ \BBA {} Maniquet%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+fleurbaeyTheoryFairnessSocial2011}
+\APACinsertmetastar {%
+fleurbaeyTheoryFairnessSocial2011}%
+\begin{APACrefauthors}%
+Fleurbaey, M.%
+\BCBT {}\ \BBA {} Maniquet, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {A Theory of Fairness and Social Welfare} {A theory of fairness
+  and social welfare}\ (\BVOL~48).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gilboa%
+}{%
+Gilboa%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+gilboaTheoryDecisionUncertainty2009}
+\APACinsertmetastar {%
+gilboaTheoryDecisionUncertainty2009}%
+\begin{APACrefauthors}%
+Gilboa, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Theory of Decision under Uncertainty} {Theory of decision under
+  uncertainty}\ (\BVOL~45).
+\newblock
+\APACaddressPublisher{}{Cambridge university press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -51,6 +125,29 @@ Hildenbrand, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Karni%
+}{%
+Karni%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+karniArchimedeanContinuity2007}
+\APACinsertmetastar {%
+karniArchimedeanContinuity2007}%
+\begin{APACrefauthors}%
+Karni, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Archimedean and Continuity} {Archimedean and
+  continuity}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Mathematical Social Sciences}{53}{3}{332--334}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%
@@ -74,6 +171,31 @@ mas-colellMicroeconomicTheory1995}%
 \APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
 \newblock
 \APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thomson%
+}{%
+Thomson%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+thomsonFairAllocationRules2011}
+\APACinsertmetastar {%
+thomsonFairAllocationRules2011}%
+\begin{APACrefauthors}%
+Thomson, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fair Allocation Rules} {Fair allocation rules}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Handbook of Social Choice and Welfare} {Handbook of
+  social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
