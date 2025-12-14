@@ -55,3 +55,12 @@
 \contentsline {paragraph}{Things to read.}{50}{paragraph*.40}%
 \contentsline {section}{\numberline {6.3}Exercises}{50}{section.6.3}%
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\contentsline {chapter}{\numberline {7}General equilibrium theory}{53}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Exchange economies}{53}{section.7.1}%
+\contentsline {paragraph}{Primitives and definitions.}{53}{paragraph*.42}%
+\contentsline {paragraph}{Properties of preferences.}{54}{paragraph*.44}%
+\contentsline {section}{\numberline {7.2}Allocations, rules and their properties}{56}{section.7.2}%
+\contentsline {paragraph}{Things to read.}{58}{paragraph*.46}%
+\contentsline {section}{\numberline {7.3}Exercises}{59}{section.7.3}%
+\gdef \the@ipfilectr {}
