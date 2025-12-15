@@ -64,3 +64,8 @@
 \contentsline {paragraph}{Things to read.}{58}{paragraph*.46}%
 \contentsline {section}{\numberline {7.3}Exercises}{59}{section.7.3}%
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-9}
+\contentsline {chapter}{\numberline {8}First theorem of welfare economics}{60}{chapter.8}%
+\contentsline {paragraph}{Things to read.}{64}{paragraph*.49}%
+\contentsline {section}{\numberline {8.1}Exercises}{64}{section.8.1}%
+\gdef \the@ipfilectr {}

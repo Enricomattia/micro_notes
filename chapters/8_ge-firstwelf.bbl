@@ -24,6 +24,29 @@ Arrow, K\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Cummings%
+}{%
+Cummings%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+cummingsProofsLongFormMathematics2021}
+\APACinsertmetastar {%
+cummingsProofsLongFormMathematics2021}%
+\begin{APACrefauthors}%
+Cummings, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {Proofs: {{A Long-Form Mathematics Textbook}}} {Proofs: {{A
+  Long-Form Mathematics Textbook}}}.
+\newblock
+\APACaddressPublisher{}{Independently published}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Debreu%
 }{%
 Debreu%
@@ -95,6 +118,29 @@ Fleurbaey, M.%
   {Efficiency and equity in a socially-embedded economy}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Economic Theory}{79}{1}{1--56}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lolli%
+}{%
+Lolli%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+lolliQEDFenomenologiaDimostrazione2020}
+\APACinsertmetastar {%
+lolliQEDFenomenologiaDimostrazione2020}%
+\begin{APACrefauthors}%
+Lolli, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {{QED. Fenomenologia della dimostrazione}} {{QED. Fenomenologia
+  della dimostrazione}}\ (\PrintOrdinal{4}\ \BEd).
+\newblock
+\APACaddressPublisher{Torino}{Bollati Boringhieri}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

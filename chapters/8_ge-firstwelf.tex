@@ -10,69 +10,86 @@
 
 %\section{A preliminary lemma}\label{sec:L8-intro}
 
-We start with a preliminary lemma. All the proofs here are by contradiction. The logic of these proofs is as follows. We want to prove some statement \( S \). We assume that \( S \) is false, and we show that this assumption leads to a contradiction, that is, some conclusion of the type \( C \) and \textbf{not} \( C \), which is impossible. Therefore, \( S \) must be true.
+In this lecture we discuss the first theorem of welfare economics, which states that every Walrasian equilibrium with transfers is \usename{axn:po}. We now start seeing proofs that are a bit more sophisticated.\footnote{An immensely valuable resource to learn fundamental proof strategies is \cite{cummingsProofsLongFormMathematics2021}. If you want to have fun and understand Italian, you can read \cite{lolliQEDFenomenologiaDimostrazione2020}.} In particular, we will make use of proofs \textit{by contradiction}. The logic is as follows. We want to prove a statement \( S \). We assume that \( S \) is false and show that this assumption leads to a contradiction: for instance, we derive a conclusion of the form \( C \) and \textbf{not} \( C \), or we obtain a conclusion that contradicts one of the premises needed for \( S \). Either way, the assumption that \( S \) is false cannot be sustained, so \( S \) must be true.
+
+We begin with a preliminary lemma.
 
 \begin{lemma}\label{lem:lns}
-    Assume preferences \( \succsim_i \) are locally non-satiated. Let \( x_i \in D_i (p,e_i) \). If \( x'_i \succsim_i x_i \), then \( p \cdot x'_i \ge p \cdot x_i \).
+    Assume that preferences \( \succsim_i \) are locally non-satiated. Let \( x_i \in D_i(p,e_i) \). If \( x'_i \succsim_i x_i \), then \( p \cdot x'_i \ge p \cdot x_i \).
 \end{lemma}
 
 \begin{proof}
-    Suppose not. Then \( p \cdot x'_i < p \cdot x_i \). By local non-satiation, there exists \( x''_i \) such that \( \|x''_i - x'_i\| < \varepsilon \) and \( x''_i \succ_i x'_i \). By choosing \( \varepsilon \) small enough, we can ensure that \( p \cdot x''_i < p \cdot x_i \). But then \( x''_i \in B(e_i,p) \) and \( x''_i \succ_i x_i \), by transitivity, contradicting the fact that \( x_i \in D_i (e_i, p) \).
-\end{proof}
-
-%\subsection{The main result}
-
-\begin{theorem}\label{thm:fftwe} (\textbf{First fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, then every allocation selected by a Walrasian equilibrium with transfers is Pareto optimal. That is,
+    Suppose, to the contrary, that \( p \cdot x'_i < p \cdot x_i \). Let
 
     \[
-        x \in R^{WT} (E) \quad \Longrightarrow \quad x \quad \text{is Pareto optimal}.
+        \delta = \frac{p \cdot x_i - p \cdot x'_i}{2} > 0.
+    \]
+
+    By \usename{axn:lns}, for every \( \varepsilon > 0 \) there exists \( x''_i \in \mathbb{R}^{\ell}_{+} \) such that \( \|x''_i - x'_i\| < \varepsilon \) and \( x''_i \succ_i x'_i \).
+
+    Choose \( \varepsilon \) small enough so that \( \|x''_i - x'_i\| < \varepsilon \) implies \( |p \cdot x''_i - p \cdot x'_i| < \delta \). Then
+
+    \[
+        p \cdot x''_i \le p \cdot x'_i + \delta < p \cdot x_i .
+    \]
+
+    Since \( x_i \in D_i(p,e_i) \), we have \( p \cdot x_i \le p \cdot e_i \), hence \( p \cdot x''_i < p \cdot e_i \) and therefore \( x''_i \in B(p,e_i) \).
+    Moreover, \( x''_i \succ_i x'_i \) and \( x'_i \succsim_i x_i \) imply \( x''_i \succ_i x_i \) by transitivity. This contradicts the fact that \( x_i \in D_i(p,e_i) \).
+\end{proof}
+
+And now the main result.
+
+\begin{theorem}\label{thm:fftwe} (\textbf{First theorem of welfare economics})
+    If preferences in economy \( E \) are locally non-satiated, then every allocation selected by \( R^{WT} \) is \usename{axn:po}. That is,
+    \[
+        x \in R^{WT}(E) \quad \Longrightarrow \quad x \text{ is \usename{axn:po}}.
     \]
 \end{theorem}
 
 \begin{proof}
-    Let \(E\) be an economy and suppose that \(x \in R^{WT}(E)\).
-    Then there exist strictly positive prices \(p\) and transfers
-    \((T_i)_{i\in I}\) such that, for every individual \(i\),
-    \[
-        x_i \in D_i(e_i + T_i,p),
-    \]
-    that is, \(x_i\) is a most preferred bundle in the budget set
-    \(B(e_i+T_i,p)\).
+    Let \(E\) be an economy and suppose that \(x \in R^{WT}(E)\). Then there exist strictly positive prices \(p\) and transfers \((T_i)_{i}\) such that, for every individual \(i\),
 
-    Suppose, towards a contradiction, that \(x\) is not Pareto optimal.
-    Then there exists a feasible allocation \(x'\) such that
-    \(x'_i \succsim_i x_i\) for all \(i\), and
-    \(x'_j \succ_j x_j\) for some individual \(j\).
-    By the Lemma \ref{lem:lns}, local non-satiation implies
     \[
-        p\cdot x'_i \ge p\cdot x_i \quad \forall i,
-        \qquad
-        p\cdot x'_j > p\cdot x_j.
+        x_i \in D_i(p, e_i + T_i),
     \]
+
+    that is, \(x_i\) is a most preferred bundle in the budget set \(B(p, e_i + T_i)\).
+
+    Suppose, for a contradiction, that \(x\) is not \usename{axn:po}. Then there exists a feasible allocation \(x'\) such that \(x'_i \succsim_i x_i\) for all \(i\), and \(x'_j \succ_j x_j\) for some individual \(j\). By Lemma~\ref{lem:lns}, this implies
+
+    \[
+        p\cdot x'_i \ge p\cdot x_i \quad \text{for all } i.
+    \]
+
+    Moreover, for the individual \(j\) with \(x'_j \succ_j x_j\) we in fact have \(p\cdot x'_j > p\cdot x_j\): if \(p\cdot x'_j \le p\cdot x_j\), then \(x'_j \in B(p,e_j+T_j)\), since \(x_j \in B(p,e_j+T_j)\), contradicting \(x_j \in D_j(p,e_j+T_j)\). Therefore,
+
+    \[
+        p\cdot x'_j > p\cdot x_j \quad \text{for some } j.
+    \]
+
     Summing over all individuals,
+
+    \begin{equation}
+        \sum_{i} p\cdot x'_i > \sum_{i} p\cdot x_i .
+        \tag{*}
+    \end{equation}
+
+    On the other hand, local non-satiation implies that each demanded bundle exhausts the budget, so \(p\cdot x_i = p\cdot(e_i+T_i)\) for all \(i\). Summing and using \(\sum_i T_i = 0\),
+
     \[
-        \sum_{i\in I} p\cdot x'_i > \sum_{i\in I} p\cdot x_i.
+        \sum_i p\cdot x_i \;=\; \sum_i p\cdot(e_i+T_i) \;=\; \sum_i p\cdot e_i .
     \]
 
-    On the other hand, feasibility of \(x'\) implies
+    Since \(x'\) is feasible, \(\sum_i x'_i \le \sum_i e_i\), and multiplying by the strictly positive price vector \(p\) gives
+
     \[
-        \sum_{i\in I} x'_i \le \sum_{i\in I} e_i
-        = \sum_{i\in I} x_i,
+        \sum_i p\cdot x'_i \;\le\; \sum_i p\cdot e_i \;=\; \sum_i p\cdot x_i,
     \]
-    since \(x\) is feasible as well.
-    Multiplying the inequality
-    \(\sum_i (x'_i - x_i) \le 0\)
-    by the strictly positive price vector \(p\) yields
-    \[
-        \sum_{i\in I} p\cdot x'_i
-        \le \sum_{i\in I} p\cdot x_i,
-    \]
-    contradicting the strict inequality obtained above.
-    Hence no such \(x'\) exists, and
-    \(x\) is Pareto optimal.
+
+    contradicting \((*)\). Hence no such \(x'\) exists, and \(x\) is \usename{axn:po}.
 \end{proof}
 
-Let us discuss why Local non-satiation is necessary for Theorem \ref{thm:fftwe} to hold. Individual \( 1 \) has \textquote{thick} indifference curves, thus violating local non-satiation. The allocation \( x \) is not Pareto optimal, since we can find another feasible allocation \( x' \) that makes individual \( 2 \) strictly better off without making individual \( 1 \) worse off. However, \( x \) can still be supported as a Walrasian equilibrium with transfers at prices \( p \). Thus, without local non-satiation, Theorem \ref{thm:fftwe} fails.
+Before turning to the interpretation of Theorem~\ref{thm:fftwe}, let us discuss why \usename{axn:lns} is necessary for the theorem to hold. Look at Figure~\ref{fig:lns-welf}. Individual \(1\) has \textquote{thick} indifference curves, so he violates local non-satiation. The allocation \(x\) is not \usename{axn:po}, since there is another feasible allocation \(x'\) that makes individual \(2\) strictly better off without making individual \(1\) worse off. However, \(x\) can still be supported as a \usename{axn:weqt} at prices \(p\). Thus, without local non-satiation, Theorem~\ref{thm:fftwe} fails.
 
 \begin{figure}[H]
     \begin{center}
@@ -119,73 +136,77 @@ Let us discuss why Local non-satiation is necessary for Theorem \ref{thm:fftwe} 
             % Text Node
             \draw (395,298.4) node [anchor=north west][inner sep=0.75pt]    {$p$};
         \end{tikzpicture}
-        \label{fig:lns-fwelf}
-        \caption{Local Non-Satiation is necessary for the First Welfare Theorem.}
+        \caption{Local non-satiation is necessary for the First Welfare Theorem.}
+        \label{fig:lns-welf}
     \end{center}
 \end{figure}
 
-Let us now interpret Theorem \ref{thm:fftwe}. A standard question in economics is how to allocate resources given data on preferences.\footnote{In the most general form, a question of this kind is asked in \cite{arrowSocialChoiceIndividual2012}.} We might want such an allocation of resources to satisfy some good properties from a \textit{normative} perspective. One such property is Pareto optimality. An allocation rule taking preferences and endowments as inputs and returning a Pareto optimal allocation as output might therefore be desirable. However, once one has an allocation rule, one might wonder whether such an allocation rule could be implemented in a decentralized way. A rule taking preferences and endowments as inputs and returning allocations as output does not tell us \textit{how} to reach such allocations. Theorem \ref{thm:fftwe} tells us that the Walrasian equilibrium with transfers implements an allocation rule always delivering Pareto optimal allocations. There is a bit more, however. A Walrasian equilibrium with transfers is not just a mechanism to implement Pareto optimal allocations. It delivers prices for each good allowing to trade so to reach such allocations. Prices may be interpreted as \textquote{values} for goods, where these values depends on the preferences all individuals in the economy. In fact, \cite{debreuTheoryValueAxiomatic1959} is titled \textit{Theory of Value}. A lot of more or less sophisticated critiques of economics stem from the idea that it is inappropriate to view the value of goods as determined by prices. In fact, there is famous citation, misattributed to Oscar Wilde,\footnote{Apparently the original citation is \textquote{[A cynic is] a man who knows the price of everything, and the value of nothing} from \citet[p. 55]{wildeLadyWindermeresFan1995}.} that says: \textquote{An economist is someone who knows the price of everything and the value of nothing}. Of course, there are legitimate reason to question weather values should be entirely derived from individual preferences. But there is nothing special in prices that is not related to preferences, in the setting under consideration here.\footnote{However, sometimes prices induce disgust towards commodification of goods which \textquote{should not be priced}. As \citet[p. 201]{sophoclesAntigoneSophoclesEnglish1939} puts it: \textquote{There’s nothing in the world so demoralizing as money}. \cite{fleurbaeyEfficiencyEquitySociallyembedded2025} studies a class of problems of which commodification is one.}
+\begin{techremark}
+    Why can \(x\) be supported as a \usename{axn:weqt} in Figure~\ref{fig:lns-welf}?
+\end{techremark}
 
-Unfortunately, an allocation rule delivering Pareto optimal allocations can sometimes be undesirable from other points of view. For instance, such an allocation rule might deliver very unequal allocations. Let us consider a second property we might want an allocation to satisfy.
+Let us now interpret Theorem~\ref{thm:fftwe}. A classical economic question is how to allocate resources given information about preferences.\footnote{In its most general form, a question of this kind is asked in \cite{arrowSocialChoiceIndividual2012}, the spark that gave rise to modern social choice theory.} We might want such an allocation of resources to satisfy some attractive properties from a \textit{normative} perspective. One such property is Pareto optimality. An allocation rule that takes preferences and endowments as inputs and returns a \usename{axn:po} allocation as output might therefore be desirable. However, once one has an allocation rule, one might wonder whether it can be implemented in a decentralised way. A rule that maps preferences and endowments into an allocation does not, by itself, tell us \textit{how} to reach that allocation.
 
-\begin{definition}
-    An allocation \( x \) is \textbf{envy-free} if for all individuals \( i, j \), \( x_i \succsim_i x_j \).
-\end{definition}
+Theorem~\ref{thm:fftwe} tells us that Walrasian equilibrium with transfers implements an allocation rule that always delivers \usename{axn:po} allocations. Decentralised individual optimisation at some prices can therefore lead to desirable allocations from this point of view. There is a bit more, however. A Walrasian equilibrium with transfers is not just a mechanism to implement \usename{axn:po} allocations. It also induces a price for each good, which individuals can use to trade in order to reach those allocations. Prices may be interpreted as \textquote{values} for goods, where these values depend on the preferences and endowments of all individuals in the economy. In fact, \cite{debreuTheoryValueAxiomatic1959} is titled \textit{Theory of Value}.
 
-An allocation is envy-free if no individual prefers someone else's bundle to her own. Envy-freeness is a desirable property from a fairness perspective.\footnote{For recent and deeper analyses of envy-freeness, check \cite{fleurbaeyFairnessResponsibilityWelfare2008} and \cite{thomsonFairAllocationRules2011}.} In particular, envy-freeness is strongly related to the idea of equality of opportunity. A way of looking at such relationship is captured in the following proposition.
+Many more or less sophisticated critiques of economics stem from the idea that it is inappropriate to view the value of goods as determined by prices. There is a famous quotation, often misattributed to Oscar Wilde,\footnote{Apparently the original quotation is \textquote{[A cynic is] a man who knows the price of everything, and the value of nothing} from \citet[p. 55]{wildeLadyWindermeresFan1995}.} that says: \textquote{An economist is someone who knows the price of everything and the value of nothing}. Of course, there are legitimate reasons to question whether values should be entirely derived from individual preferences. But, in the setting we consider here, there is nothing special about prices that is not ultimately related to preferences or endowments.\footnote{However, sometimes the mere existence of prices, from a physical point of view, induces disgust towards the commodification of goods that \textquote{should not be priced}. As \citet[p. 201]{sophoclesAntigoneSophoclesEnglish1939} puts it: \textquote{There’s nothing in the world so demoralizing as money}. \cite{fleurbaeyEfficiencyEquitySociallyembedded2025} studies a class of problems, of which commodification is one, in a general equilibrium setting, so you are ready to read it!}
+
+Unfortunately, an allocation rule that delivers \usename{axn:po} allocations can sometimes be undesirable from other points of view. For instance, it might deliver very unequal allocations. We might therefore want to complement Pareto optimality with a distributional requirement. One candidate is envy-freeness, which is closely related to the idea of equality of opportunity. One way to make this relationship precise is captured in the following proposition.
 
 \begin{proposition}\label{prop:envy}
-    Every allocation selected by an Egalitarian Walrasian equilibrium is envy-free. That is,
+    Every allocation selected by \(R^{EW}\) satisfies \usename{axn:no-envy}. That is,
+
     \[
-        x \in R^{EW}(E) \quad \Longrightarrow \quad x \quad \text{is envy-free}.
+        x \in R^{EW}(E) \quad \Longrightarrow \quad x \ \text{satisfies \usename{axn:no-envy}}.
     \]
 \end{proposition}
 
 \begin{proof}
-    Let \( E \) be an economy and suppose that \( x \in R^{EW}(E) \). By definition of the Egalitarian Walrasian rule, there exists a price vector \( p \in \mathbb{R}^\ell_{++} \) such that, for every individual \( i \in I \),
+    Let \(E\) be an economy and suppose that \(x \in R^{EW}(E)\). By definition of \usename{axn:weqe}, there exists a price vector \(p \in \mathbb{R}^\ell_{++}\) such that, for each individual \(i\),
+
     \[
-        x_i \in D_i\!\left(\frac{\bar e}{n},p\right),
-    \]
-    where \( D_i(e,p) \) denotes the set of most preferred bundles of \( i \) in the budget set
-    \[
-        B(e,p) = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot e \,\}.
+        x_i \in D_i\!\left(p,\frac{\bar e}{n}\right).
     \]
 
-    Because all individuals face the same ``egalitarian'' endowment \( \frac{\bar e}{n} \) and the same price vector \( p \), they all face the same budget set
+    Because all individuals face the same endowment \(\frac{\bar e}{n}\) and the same price vector \(p\), they all face the same budget set
+
     \[
-        B := B\!\left(\frac{\bar e}{n},p\right)
-        = \{\, x' \in \mathbb{R}^\ell_+ \mid p \cdot x' \le p \cdot \tfrac{\bar e}{n} \,\}.
+        B := B\!\left(p, \frac{\bar e}{n}\right)
+        = \left\{\, x_i' \in \mathbb{R}^\ell_+ \ \middle|\ p \cdot x_i' \le p \cdot \tfrac{\bar e}{n} \,\right\}.
     \]
 
-    Fix any individual \( i \). Since \( x_i \in D_i\!\left(\frac{\bar e}{n},p\right) \), \( x_i \) is a most preferred bundle for \( i \) in \( B \). Therefore,
+    Fix any individual \(i\). Since \(x_i \in D_i\!\left(p,\frac{\bar e}{n}\right)\), \(x_i\) is a most preferred bundle for \(i\) in \(B\). Therefore,
+
     \begin{equation}
         \label{eq:maximal}
-        \forall x' \in B,\qquad x_i \succsim_i y.
+        \text{for all } x_i' \in B,\qquad x_i \succsim_i x_i'.
     \end{equation}
 
-    Now consider any other individual \( j \in I \). Because \( x_j \in D_j\!\left(\frac{\bar e}{n},p\right) \), we also have \( x_j \in B \). Applying \eqref{eq:maximal} to the specific bundle \( x' = x_j \) yields
+    Now consider any other individual \(j\neq i\). Since \(x_j \in D_j\!\left(p,\frac{\bar e}{n}\right)\), we have \(x_j \in B\). Applying \eqref{eq:maximal} to the specific bundle \(x_j\) yields
+
     \[
         x_i \succsim_i x_j.
     \]
 
-    Thus, for every pair of individuals \( i,j \in I \), consumer \( i \) (weakly) prefers her own allocation \( x_i \) to the allocation \( x_j \) of consumer \( j \):
+    Since \(i\) and \(j\neq i\) were arbitrary, it follows that for all \(i\neq j\),
+
     \[
-        \forall i,j \in I,\qquad x_i \succsim_i x_j.
+        x_i \succsim_i x_j,
     \]
 
-    In particular, this implies that there is no pair \( i \neq j \) for which \( x_j \succ_i x_i \). Hence no individual strictly prefers someone else's bundle to her own.
-
-    Therefore, the allocation \( x \) is envy-free.
+    which is exactly \usename{axn:no-envy}. Hence the allocation \(x\) satisfies \usename{axn:no-envy}.
 \end{proof}
 
-By Theorem \ref{thm:fftwe} and Proposition \ref{prop:envy}, we know that the Walrasian Egalitarian allocation rule delivers allocations that are both Pareto optimal and envy-free. However, endowments might be distinct from the egalitarian endowment \( \frac{\bar e}{n} \). We might therefore be interested in knowing how to implement such allocation rule. The Second Fundamental Theorem of Welfare Economics, which we will discuss in the next chapter, provides conditions under which this is possible.
+Since any \usename{axn:weqe} is also a \usename{axn:weqt}, take transfers \(T_i := \tfrac{\bar e}{n} - e_i\), Theorem~\ref{thm:fftwe} and Proposition~\ref{prop:envy} together imply that the Egalitarian Walrasian allocation rule delivers allocations that are both \usename{axn:po} and satisfy \usename{axn:no-envy}. Therefore, in this simple setting, requirements of \textit{efficiency}, \textit{fairness}, and \textit{incentives} are not incompatible!\footnote{\citet[p. 405]{thomsonFairAllocationRules2011} discusses that the Egalitarian Walrasian allocation rule is also easy to implement under incomplete information about preferences.}
 
-\paragraph{Things to read.} This lecture is based on \citet[pp. 545-550]{mas-colellMicroeconomicTheory1995}. A version of Proposition \ref{prop:envy} can be found in \citet[p. 46]{fleurbaeyFairnessResponsibilityWelfare2008}.
+However, the actual endowments \(e_i\) need not coincide with the egalitarian endowment \(\tfrac{\bar e}{n}\). We might therefore be interested in understanding when such an allocation rule can be implemented starting from an arbitrary endowment profile. The second fundamental theorem of welfare economics, which we discuss in the next lecture, provides conditions under which this is possible.
+
+\paragraph{Things to read.} The proof of Theorem~\ref{thm:fftwe} in these notes follows \citet[pp. 545--550]{mas-colellMicroeconomicTheory1995}. A proof of a closely related version of Proposition~\ref{prop:envy} appears in \citet[p. 46]{fleurbaeyFairnessResponsibilityWelfare2008}, which also discusses further properties of allocations satisfying \usename{axn:no-envy}.
 
 \section{Exercises}
 
 \begin{exercise}
-    Elaborate on why Proposition \ref{prop:envy} relates envy-freeness to equality of opportunity. There are at least a couple of things to say. As an example, does the egalitarian Walrasian allocation rule depend on individuals' endowments?
+    Explain why Proposition~\ref{prop:envy} links envy-freeness to equality of opportunity. There are at least a couple of things to say here. For instance, do the allocations selected by the Egalitarian Walrasian allocation rule depend on individuals' endowments?
 \end{exercise}
 
 \bibliographystyle{apacite}  % or another  style
