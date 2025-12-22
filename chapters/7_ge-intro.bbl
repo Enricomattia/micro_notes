@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arrow%
+\ \BBA {} Hahn%
+}{%
+Arrow%
+\ \BBA {} Hahn%
+}{%
+{\protect \APACyear {1971}}%
+}]{%
+arrowGeneralCompetitiveAnalysis1971}
+\APACinsertmetastar {%
+arrowGeneralCompetitiveAnalysis1971}%
+\begin{APACrefauthors}%
+Arrow, K\BPBI J.%
+\BCBT {}\ \BBA {} Hahn, F\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1971}.
+\newblock
+\APACrefbtitle {General Competitive Analysis} {General competitive analysis}.
+\newblock
+\APACaddressPublisher{San Francisco}{Holden-Day}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Cantor%
 }{%
 Cantor%
@@ -196,6 +221,29 @@ Thomson, W.%
   social choice and welfare}\ (\BVOL~2, \BPGS\ 393--506).
 \newblock
 \APACaddressPublisher{}{Elsevier}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Varian%
+}{%
+Varian%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+varianMicroeconomicAnalysis1992}
+\APACinsertmetastar {%
+varianMicroeconomicAnalysis1992}%
+\begin{APACrefauthors}%
+Varian, H\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {Microeconomic Analysis} {Microeconomic analysis}\
+  (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{New York}{W. W. Norton \& Company}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

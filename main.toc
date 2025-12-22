@@ -69,3 +69,14 @@
 \contentsline {paragraph}{Things to read.}{64}{paragraph*.49}%
 \contentsline {section}{\numberline {8.1}Exercises}{64}{section.8.1}%
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-10}
+\contentsline {chapter}{\numberline {9}Second theorem of welfare economics}{66}{chapter.9}%
+\contentsline {paragraph}{Step 1: “Strictly better–than” sets.}{67}{paragraph*.51}%
+\contentsline {paragraph}{Step 2: A supporting price hyperplane.}{68}{paragraph*.52}%
+\contentsline {paragraph}{Step 3: Nonnegativity of supporting prices.}{68}{paragraph*.53}%
+\contentsline {paragraph}{Step 4: Any strictly preferred bundle must cost strictly more.}{68}{paragraph*.54}%
+\contentsline {paragraph}{Step 5: Strict positivity and individual optimality.}{69}{paragraph*.55}%
+\contentsline {paragraph}{Conclusion.}{69}{paragraph*.56}%
+\contentsline {paragraph}{Things to read.}{69}{paragraph*.57}%
+\contentsline {section}{\numberline {9.1}Exercises}{70}{section.9.1}%
+\gdef \the@ipfilectr {}

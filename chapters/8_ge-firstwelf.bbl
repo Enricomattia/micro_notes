@@ -220,6 +220,29 @@ Thomson, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Varian%
+}{%
+Varian%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+varianMicroeconomicAnalysis1992}
+\APACinsertmetastar {%
+varianMicroeconomicAnalysis1992}%
+\begin{APACrefauthors}%
+Varian, H\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {Microeconomic Analysis} {Microeconomic analysis}\
+  (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{New York}{W. W. Norton \& Company}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Wilde%
 }{%
 Wilde%

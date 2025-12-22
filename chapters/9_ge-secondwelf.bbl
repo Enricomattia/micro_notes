@@ -1,6 +1,29 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Gilboa%
+}{%
+Gilboa%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+gilboaTheoryDecisionUncertainty2009}
+\APACinsertmetastar {%
+gilboaTheoryDecisionUncertainty2009}%
+\begin{APACrefauthors}%
+Gilboa, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Theory of Decision under Uncertainty} {Theory of decision under
+  uncertainty}\ (\BVOL~45).
+\newblock
+\APACaddressPublisher{}{Cambridge university press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Mas-Colell}%
 , Whinston%
 \BCBL {}\ \BBA {} Green%
@@ -24,6 +47,51 @@ mas-colellMicroeconomicTheory1995}%
 \APACrefbtitle {Microeconomic Theory} {Microeconomic theory}.
 \newblock
 \APACaddressPublisher{}{Oxford university press New York}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rockafellar%
+}{%
+Rockafellar%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+rockafellarConvexAnalysis1970}
+\APACinsertmetastar {%
+rockafellarConvexAnalysis1970}%
+\begin{APACrefauthors}%
+Rockafellar, R\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1970}.
+\newblock
+\APACrefbtitle {Convex Analysis} {Convex analysis}.
+\newblock
+\APACaddressPublisher{Princeton, NJ}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Varian%
+}{%
+Varian%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+varianMicroeconomicAnalysis1992}
+\APACinsertmetastar {%
+varianMicroeconomicAnalysis1992}%
+\begin{APACrefauthors}%
+Varian, H\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {Microeconomic Analysis} {Microeconomic analysis}\
+  (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{New York}{W. W. Norton \& Company}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

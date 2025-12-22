@@ -8,21 +8,69 @@
 %\setcounter{footnote}{0}
 \renewcommand{\thefootnote}{\arabic{footnote}}
 
-%\section{Separating hyperplane}\label{sec:L9-intro}
+We now turn to the second theorem of welfare economics, which establishes that, under certain conditions, any Pareto optimal allocation can be implemented as a \usename{axn:weqt}. The proof relies on convexity of preferences and uses a geometric argument based on supporting hyperplanes. Supporting and separating hyperplane arguments are common in economic theory.\footnote{As an example, a proof of the expected utility representation in Lecture \ref{ch:L2} using a separation argument is in \citet[ch.~8.3.3]{gilboaTheoryDecisionUncertainty2009}.} In particular, we will invoke the specific result stated below.\footnote{If you are interested, a nice source is \citet[ch.~11]{rockafellarConvexAnalysis1970}.} Recall that the interior of a set \(X \subset \mathbb{R}^{\ell}\), denoted \(\operatorname{int} X\), is the set of all points \(x \in X\) for which there exists an open ball around \(x\) that is fully contained in \(X\).
 
-\begin{theorem}\label{thm:supporting-hyperplane} (\textbf{Separating hyperplane})
-    Let \(B \subset \mathbb{R}^L\) be a convex set and let \(x \notin \operatorname{Int} B\)
-    (the interior of \(B\)). Then there exists a nonzero vector \(p \in \mathbb{R}^L\) such that
+\begin{theorem}\label{thm:supporting-hyperplane} (\textbf{Supporting hyperplane})
+    Let \(X \subset \mathbb{R}^{\ell}\) be a convex set and let \(x \notin \operatorname{int} X\). Then there exists \(p \in \mathbb{R}^{\ell}\) with \(p \neq 0\) such that
     \[
-        p \cdot x \;\ge\; p \cdot y \qquad \text{for every } y \in B.
+        p \cdot x \;\ge\; p \cdot y \qquad \text{for all } y \in X .
     \]
-    In words: there is a hyperplane through \(x\) that supports \(B\) from one side.
 \end{theorem}
 
-\begin{theorem}\label{thm:sftwe} (\textbf{Second fundamental theorem of welfare economics}) If preferences in the economy \( E \) are locally non-satiated, convex, and continuous, and endowments are strictly positive \( e_i \in \mathbb{R}^\ell_{++} \) for all individuals \( i \), then every interior Pareto optimal allocation \( x \in \mathbb{R}^{\ell n}_{++}\) can be supported as a Walrasian equilibrium with transfers. That is,
+In words, there is a hyperplane with normal vector \(p\) passing through \(x\) such that \(X\) lies entirely in the weak half-space on one side of it. Figure \ref{fig:supporting-hyperplane} illustrates the theorem in two dimensions.
 
+\begin{figure}[H]
+    \begin{center}
+        \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+            %uncomment if require: \path (0,414); %set diagram left start at 0, and has height of 414
+
+            %Shape: Axis 2D [id:dp9653789202234155] 
+            \draw  (147,306.86) -- (473,306.86)(179.6,41) -- (179.6,336.4) (466,301.86) -- (473,306.86) -- (466,311.86) (174.6,48) -- (179.6,41) -- (184.6,48)  ;
+            %Curve Lines [id:da15506102017650236] 
+            \draw    (157,61.2) .. controls (364,127.2) and (378,189.2) .. (372,365.2) ;
+            %Shape: Circle [id:dp463732573499136] 
+            \draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (301.4,224.6) .. controls (301.4,222.94) and (302.74,221.6) .. (304.4,221.6) .. controls (306.06,221.6) and (307.4,222.94) .. (307.4,224.6) .. controls (307.4,226.26) and (306.06,227.6) .. (304.4,227.6) .. controls (302.74,227.6) and (301.4,226.26) .. (301.4,224.6) -- cycle ;
+            %Shape: Circle [id:dp24331242668872677] 
+            \draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (340.4,170.6) .. controls (340.4,168.94) and (341.74,167.6) .. (343.4,167.6) .. controls (345.06,167.6) and (346.4,168.94) .. (346.4,170.6) .. controls (346.4,172.26) and (345.06,173.6) .. (343.4,173.6) .. controls (341.74,173.6) and (340.4,172.26) .. (340.4,170.6) -- cycle ;
+            %Straight Lines [id:da20808313465799966] 
+            \draw    (289.67,83.99) -- (392.67,248.99) ;
+
+            % Text Node
+            \draw (238,190.4) node [anchor=north west][inner sep=0.75pt]    {$X$};
+            % Text Node
+            \draw (289,224.4) node [anchor=north west][inner sep=0.75pt]    {$y$};
+            % Text Node
+            \draw (316,155.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+            % Text Node
+            \draw (393,222.4) node [anchor=north west][inner sep=0.75pt]    {$p$};
+            % Text Node
+            \draw (460,317.4) node [anchor=north west][inner sep=0.75pt]    {$x^{1}$};
+            % Text Node
+            \draw (155,69.4) node [anchor=north west][inner sep=0.75pt]    {$x^{2}$};
+
+
+        \end{tikzpicture}
+        \caption{A supporting hyperplane through \(x\) for the convex set \(X\).}
+        \label{fig:supporting-hyperplane}
+    \end{center}
+\end{figure}
+
+The last ingredient we need is a strengthening of \usename{axn:local-nonsat}.
+
+\begin{definition}
+    A preference relation \(\succsim_i\) on \(\mathbb{R}^\ell_{+}\) is \textbf{monotonic} if for every \(x_i, x'_i \in \mathbb{R}^\ell_{+}\) with \(x'_i \ge x_i\) and \(x'_i \neq x_i\), we have \(x'_i \succ_i x_i\).
+\end{definition}
+
+A monotonic preference relation is one where (holding everything else fixed) more of any good is always strictly preferred to less. Monotonicity implies local non-satiation, but the converse is not true.
+
+We can now state and prove the second fundamental theorem of welfare economics.
+
+\begin{theorem}\label{thm:sftwe} (\textbf{Second welfare theorem})
+    If all preferences in the economy \(E\) are monotonic, convex, and continuous, and each individual has a strictly positive endowment \(e_i \in \mathbb{R}^\ell_{++}\), then every interior Pareto optimal allocation \(x \in \mathbb{R}^{\ell n}_{++}\) can be supported as a Walrasian equilibrium with transfers. That is,
     \[
-        x \quad \text{is Pareto optimal} \quad \Longrightarrow \quad x \in R^{WT}(E).
+        x \text{ is Pareto optimal and } x \in \mathbb{R}^{\ell n}_{++}
+        \quad \Longrightarrow \quad
+        x \in R^{WT}(E).
     \]
 \end{theorem}
 
@@ -50,19 +98,19 @@
     denote the \textbf{strict} upper contour set at \( x_i \). By continuity and convexity of \( \succsim_i \) this set is convex, and \( x_i \notin \overline{U}^i(x_i) \). Define the set of aggregate improvements
 
     \[
-        \overline{U} (x) = \sum_i \overline{U}^i (x)
+        \overline{U} (x) = \sum_i \overline{U}^i (x_i)
         :=
-        \Bigl\{\sum_{i} x'_i \in \mathbb{R}^{\ell}_{++} \;\Big|\; x'_i \in \overline{U}^i(x_i)\text{ for each }i\Bigr\}.
+        \Bigl\{x' \;\Big|\;  x' = \sum_{i} x'_i \; \text{with} \;  x'_i \in \overline{U}^i(x_i)\text{ for each }i\Bigr\}.
     \]
 
-    So \( \overline{U}(x) \) is the set of all aggregate bundles that can be obtained by letting each individual choose a bundle strictly preferred to her allocation in \( x \). Since it is the sum of convex sets, \( \overline{U} (x) \) is convex. Pareto optimality of \( x \) says that there is no feasible allocation \( x'=(x'_i)_{i} \) with \( x'_i \succ_i x_i \) for all \( i \). Equivalently,
+    So \( \overline{U}(x) \) is the set of all aggregate bundles that can be obtained by letting each individual choose a bundle strictly preferred to her allocation in \( x \). Since it is the sum of convex sets, \( \overline{U} (x) \) is convex. Pareto optimality of \( x \) says that there is no \textbf{feasible} allocation \( x'=(x'_i)_{i} \) with \( x'_i \succ_i x_i \) for all \( i \). Equivalently,
 
     \[
         \sum_{i} x_i \notin \overline{U} (x).
     \]
 
     \paragraph{Step 2: A supporting price hyperplane.}
-    We have a convex set \( \overline{U}(x) \) and a point \( \sum_i x_i \) outside it. By the supporting hyperplane theorem, there exists a nonzero vector \( p \in \mathbb{R}^\ell_{+} \) such that
+    We have a convex set \( \overline{U}(x) \) and a point \( \sum_i x_i \) outside it. By Theorem \ref{thm:supporting-hyperplane}, there exists a nonzero vector \( p \) such that\footnote{Reversing the inequality does not affect Theorem \ref{thm:supporting-hyperplane}.}
 
     \[
         p \cdot x' \;\ge\; p \cdot \Bigl(\sum_{i} x_i\Bigr)
@@ -81,106 +129,119 @@
         \sum_{i} p\cdot x_i.
     \end{equation}
 
-    \paragraph{Step 3: Prices must be strictly positive.}
-    We now show that prices are strictly positive, i.e., \( p \in \mathbb{R}^\ell_{++} \).
+    We need to show that prices are strictly positive and that each \(x_i\) is optimal in individual \(i\)'s budget set at prices \(p\) and income \(p\cdot (e_i+T_i)=p\cdot x_i\).
 
-    \emph{(i) No component of \( p \) can be negative.} Suppose \( p_\ell < 0 \) for some \( \ell \). Pick any individual \( i \). By monotonicity, for any small \( \varepsilon>0 \) the bundle
+    \paragraph{Step 3: Nonnegativity of supporting prices.}
+    Let \(\omega := \sum_{i} x_i\) denote the aggregate bundle at the Pareto optimal allocation. For each good \(k\in\{1,\dots,\ell\}\), let \(\mathbf{e}^k\in\mathbb{R}^\ell\) be the \(k\)-th unit vector.
+
+    Consider the allocation \(\widehat x\) defined by
 
     \[
-        x'_i := x_i + \varepsilon e_\ell
+        \widehat x_i := x_i + \frac{1}{n}\mathbf{e}^k \qquad\text{for each } i.
     \]
 
-    satisfies \( x'_i \succ_i x_i \), hence \( x'_i \in \overline{U}^i(x_i) \), while all
-    other individuals \( j\neq i \) keep \( x'_j = x_j \). Thus \( x' := \sum_i x'_i \in \overline{U}(x) \). By the supporting hyperplane inequality from Step~2,
+    By monotonicity, \(\widehat x_i \succ_i x_i\) for every \(i\), hence
+    \(\sum_i \widehat x_i = \omega + \mathbf{e}^k \in \overline U(x)\).
+    Applying Equation \eqref{eq:sftwe} to the profile \((\widehat x_i)_i\) gives
 
     \[
-        p\cdot x' \;\ge\; p\cdot \sum_i x_i.
+        p\cdot(\omega+\mathbf{e}^k) \;\ge\; p\cdot \omega,
     \]
 
-    But
+    hence \(p\cdot \mathbf{e}^k \ge 0\), i.e. \(p^k\ge 0\). Since \(k\) was arbitrary, \( p \in \mathbb{R}^\ell_{+} \).
+
+    \paragraph{Step 4: Any strictly preferred bundle must cost strictly more.}
+    Fix an individual \(j\). We claim that if \(x^{'}_j \succ_j x_j\), then
 
     \[
-        p\cdot x'
-        =
-        p\cdot \sum_i x_i + \varepsilon p_\ell
-        <
-        p\cdot \sum_i x_i,
+        p\cdot x^{'}_j \;>\; p\cdot x_j.
     \]
 
-    a contradiction. Hence \( p_\ell \ge 0 \) for each \( \ell \), so \( p \in \mathbb{R}^\ell_{+} \).
-
-    \emph{(ii) No component of \( p \) can be zero.} Suppose \( p_\ell = 0 \) for some \( \ell \). Again choose any individual \( i \). Because \(x_i \in \mathbb{R}^\ell_{++}\), there is some small \( \varepsilon>0 \) such that \(x_i - \varepsilon \mathbf{1} \in \mathbb{R}^\ell_{+}\), where \(\mathbf{1}\) is the vector of all ones. Consider bundles \(y_i\) of the form
+    \emph{Step 4(a): weak inequality.}
+    Suppose \(x^{'}_j \succ_j x_j\). By continuity of \(\succsim_j\), there exists \(\theta\in(0,1)\) close enough to \(0\) such that \((1-\theta)x^{'}_j \succ_j x_j\). Define a profile \(x'\) by
 
     \[
-        y^i_\ell > x^i_\ell,
+        x'_j := (1-\theta)x^{'}_j,
         \qquad
-        y^i_{k} = x^i_{k} - \varepsilon
-        \ \text{ for all } k \neq \ell.
+        x'_i := x_i + \frac{\theta}{\,n-1\,}x^{'}_j \quad\text{for all } i\neq j.
     \]
 
-    By continuity and monotonicity of preferences, we can choose \(y_i\) of this form (with \(\varepsilon\) small and \(y^i_\ell\) large enough) so that \( y_i \succ_i x_i \), hence \(y_i \in \overline{U}^i(x_i)\). For all \( j\neq i \), set \( y_j := x_j \). Then \( y := \sum_j y_j \in \overline{U}(x) \), so Step~2 gives
+    By monotonicity, for each \(i\neq j\) we have \(x'_i \succ_i x_i\), and by construction \(x'_j \succ_j x_j\). Hence \(\sum_i x'_i \in \overline U(x)\), and therefore \eqref{eq:sftwe} implies
 
     \[
-        p\cdot y \;\ge\; p\cdot \sum_j x_j.
+        p\cdot\Bigl(\sum_i x'_i\Bigr) \;\ge\; p\cdot\Bigl(\sum_i x_i\Bigr).
     \]
 
-    But
+    But \(\sum_i x'_i = x^{'}_j + \sum_{i\neq j} x_i\), so cancelling \(\sum_{i\neq j}p\cdot x_i\) yields
 
     \[
-        p\cdot y
-        =
-        p\cdot \sum_j x_j
-        +
-        \sum_{k\neq \ell} (y^i_k - x^i_k) p_k
-        +
-        (y^i_\ell - x^i_\ell)p_\ell.
+        p\cdot x^{'}_j \;\ge\; p\cdot x_j.
     \]
 
-    Here \(y^i_k - x^i_k = -\varepsilon <0\) for all \(k\neq \ell\) and \(p_k \ge 0\), while \(p_\ell = 0\). Since \(p\neq 0\), at least one of the \(p_k\) with \(k\neq \ell\) is strictly positive, so
-
+    \emph{Step 4(b): strict inequality.}
+    Assume for contradiction that \(p\cdot x^{'}_j = p\cdot x_j\).
+    Since \(x^{'}_j \succ_j x_j\) and preferences are continuous, we can pick \(\alpha\in(0,1)\)
+    close enough to \(1\) so that \(\alpha x^{'}_j \succ_j x_j\).
+    Applying Step 4(a) to \(\alpha x^{'}_j\) gives
     \[
-        \sum_{k\neq \ell} (y^i_k - x^i_k) p_k < 0,
+        p\cdot(\alpha x^{'}_j) \;\ge\; p\cdot x_j.
     \]
+    Using \(p\cdot x^{'}_j = p\cdot x_j\), this becomes \(\alpha\, p\cdot x_j \ge p\cdot x_j\),
+    hence \(p\cdot x_j \le 0\). But \(x_j\in\mathbb{R}^\ell_{++}\) and \(p\in\mathbb{R}^\ell_{+}\) with
+    \(p\neq 0\) imply \(p\cdot x_j>0\), a contradiction. Therefore \(p\cdot x^{'}_j > p\cdot x_j\).
 
-    and hence \(p\cdot y < p\cdot \sum_j x_j\), a contradiction. Therefore no component of \(p\) can be zero either, and we conclude that \(p \in \mathbb{R}^\ell_{++}\).
-
-    \paragraph{Step 4: Individual optimality.} Fix an individual \(i\). We show that \(x_i\) is optimal in her budget set. Suppose, by contradiction, that there exists \(x'_i \in \overline{U}^i(x_i)\) with \(p\cdot x'_i \le p\cdot x_i\). Keep all other individuals at their original bundles: \(x'_j := x_j\) for every \(j\neq i\). Then the profile \((x'_k)_k\) satisfies \(x'_k \in \overline{U}^k(x_k)\) for all \(k\), so \(\sum_k x'_k \in \overline{U}(x)\). By Equation \eqref{eq:sftwe} we must have
-
+    \paragraph{Step 5: Strict positivity and individual optimality.}
+    \emph{Strict positivity.} Fix any good \(k\). For any \(\varepsilon>0\),
+    monotonicity implies \(x_j+\varepsilon \mathbf{e}^k \succ_j x_j\). By Step 4,
     \[
-        \sum_k p\cdot x'_k \;\ge\; \sum_k p\cdot x_k.
+        p\cdot(x_j+\varepsilon \mathbf{e}^k) \;>\; p\cdot x_j
+        \quad\Rightarrow\quad
+        \varepsilon p^k>0
+        \quad\Rightarrow\quad
+        p^k>0.
     \]
+    Since \(k\) was arbitrary, \(p\in\mathbb{R}^\ell_{++}\).
 
-    On the other hand,
-
-    \[
-        \sum_k p\cdot x'_k
-        =
-        p\cdot x'_i + \sum_{j\neq i} p\cdot x_j
-        \le
-        p\cdot x_i + \sum_{j\neq i} p\cdot x_j
-        =
-        \sum_k p\cdot x_k,
-    \]
-
-    with strict inequality if \(p\cdot x'_i < p\cdot x_i\). This contradicts \eqref{eq:sftwe}. Hence no such \(x'_i\) exists, and \(x_i\) is optimal at prices \(p\), that is,
-
+    \emph{Optimality.} Fix \(i\). Suppose there exists \(x'_i\in\mathbb{R}^\ell_{+}\) with
+    \(p\cdot x'_i \le p\cdot x_i\) and \(x'_i \succ_i x_i\). This contradicts Step 4, which says
+    \(x'_i \succ_i x_i \Rightarrow p\cdot x'_i > p\cdot x_i\). Hence no strictly preferred bundle is
+    affordable at income \(p\cdot x_i\), so \(x_i\) is optimal in the budget set:
     \[
         x_i \in D_i(p, e_i+T_i).
     \]
 
+
     \paragraph{Conclusion.}
-    We have found prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_i\) such that
+    We have found strictly positive prices \(p \in \mathbb{R}^\ell_{++}\) and transfers \((T_i)_i\) such that
+
     \[
         x_i \in D_i(p, e_i+T_i)\qquad\text{for all } i.
     \]
+
     Hence \(x\) is a Walrasian equilibrium with transfers: \(x \in R^{WT}(E)\). Since \(x\) was an arbitrary interior Pareto optimal allocation, the theorem follows.
 \end{proof}
 
-\paragraph{Things to read.} This lecture is based on \citet[pp. 545-550]{mas-colellMicroeconomicTheory1995}.
+Let us now take stock of what we have achieved so far. The first fundamental theorem of welfare economics, Theorem \ref{thm:fftwe}, says that every Walrasian equilibrium allocation is Pareto optimal. The second fundamental theorem of welfare economics, Theorem \ref{thm:sftwe}, says that, under stronger assumptions, every interior Pareto optimal allocation can be implemented as a Walrasian equilibrium with transfers. Together, these two theorems establish a strong link between competitive equilibria and efficiency.
+
+\begin{comment}
+
+\begin{itemize}
+    \item \textbf{Price-taking:}
+    \item \textbf{Complete information};
+    \item \textbf{No externalities:}
+    \item \textbf{Linear prices:}
+\end{itemize}
+
+\end{comment}
+
+\paragraph{Things to read.} This lecture is based on \citet[ch.~17]{varianMicroeconomicAnalysis1992}. For a treatment that includes production, see \citet[pp.~545--550]{mas-colellMicroeconomicTheory1995}.
 
 \section{Exercises}
 
-hey.
+\begin{exercise}
+    If one \textbf{assumes} the existence of a \usename{axn:weqt}, an indirect proof of the second welfare theorem can be given. Prove the following statement. Suppose that all preferences in the economy are locally non-satiated and that \(x^{*}\) is a Pareto optimal allocation. Suppose further that a Walrasian equilibrium exists when endowments are \(e_i = x^{*}_i\) for all \(i\). Then \(x^{*}\) can be supported as a Walrasian equilibrium allocation with transfers. (Hint: if you are stuck, see \citet[p.~329]{varianMicroeconomicAnalysis1992}.)
+\end{exercise}
+
 
 \bibliographystyle{apacite}  % or another  style
 \bibliography{references} % .bib file goes in ./bib/
