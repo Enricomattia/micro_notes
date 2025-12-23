@@ -80,3 +80,8 @@
 \contentsline {paragraph}{Things to read.}{69}{paragraph*.57}%
 \contentsline {section}{\numberline {9.1}Exercises}{70}{section.9.1}%
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\contentsline {chapter}{\numberline {10}Existence of competitive equilibria}{71}{chapter.10}%
+\contentsline {paragraph}{Things to read.}{72}{paragraph*.58}%
+\contentsline {section}{\numberline {10.1}Exercises}{72}{section.10.1}%
+\gdef \the@ipfilectr {}
